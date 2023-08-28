@@ -9,7 +9,7 @@ if __name__ == '__main__':
     weights = {}
     with open("data/input2.graph") as fi:
         for line in fi.readlines():
-            data = line.split()
+            data = [int(i) for i in line.split()]
             cfg[data[0]] = []
             for v in data[2:]:
                 cfg[data[0]].append(v)
@@ -17,3 +17,6 @@ if __name__ == '__main__':
 
     g = Graph(cfg, weights)
     a = DPAlgorithm(g, 3)
+    selections = a.solve()
+
+    print(f"{selections}")

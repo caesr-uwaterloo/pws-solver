@@ -6,5 +6,5 @@ class Algorithm():
         self.s = s
         return
 
-    def solve(self) -> None:
-        return
+    def solve(self) -> List[int]:
+        return [-1]
