@@ -1,3 +1,5 @@
+from collections import deque
+
 import numpy as np
 
 from alg.algorithm import *
@@ -10,9 +12,22 @@ class DPAlgorithm(Algorithm):
         self.alloc_tables()
         self.init_tables()
         self.fill_tables()
+    
+        stack = deque([(0, self.s)])
+        splits = []
+        while len(stack):
+            (u, j) = stack.pop()
+            m = self.n[u][j]
+            if m[0] + m[1] == j:
+                splits.append(u)
+            for r in self.A.right_children(u):
+                if r in self.A.branch_vertices() and m[1] > 1:
+                    stack.append((r, int(m[1])))
+            for l in self.A.left_children(u):
+                if l in self.A.branch_vertices() and m[0] > 1:
+                    stack.append((l, int(m[0])))
         
-        # TODO: Return the list of branches selected as split points
-        return [-1]
+        return splits
     
     def alloc_tables(self) -> None:
         self.t = np.full(

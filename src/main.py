@@ -7,7 +7,7 @@ from alg.dp_algorithm import *
 if __name__ == '__main__':
     cfg = {}
     weights = {}
-    with open("data/input2.graph") as fi:
+    with open("data/input3.graph") as fi:
         for line in fi.readlines():
             data = [int(i) for i in line.split()]
             cfg[data[0]] = []
@@ -17,6 +17,6 @@ if __name__ == '__main__':
 
     g = Graph(cfg, weights)
     a = DPAlgorithm(g, 3)
-    selections = a.solve()
+    selections = sorted(a.solve())
 
     print(f"{selections}")
