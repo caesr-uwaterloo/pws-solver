@@ -45,25 +45,37 @@ class DPAlgorithm(Algorithm):
                 self.n[b_i][j] = [0, 0, 0] # is this needed?
         for b_i in sorted(self.A.branch_vertices(), reverse=True):
             self.t[b_i][1] = self.A.execution_time(b_i) \
-                                + self.t[self.A.left_child(b_i)][1] \
-                                + self.t[self.A.right_child(b_i)][1]
+                                + self.sum_children(b_i, 1, left=True) \
+                                + self.sum_children(b_i, 1, left=False)
             self.n[b_i][1] = [1, 1, 1]
     
     def fill_tables(self) -> None:
         for j in range(2, self.s + 1):
             for b_i in sorted(self.A.branch_vertices(), reverse=True):
                 m_l = self.A.execution_time(b_i) \
-                    + self.t[self.A.left_child(b_i)][j] \
-                    + self.t[self.A.right_child(b_i)][1]
+                    + self.sum_children(b_i, j, left=True) \
+                    + self.sum_children(b_i, 1, left=False)
                 m_r = self.A.execution_time(b_i) \
-                    + self.t[self.A.left_child(b_i)][1] \
-                    + self.t[self.A.right_child(b_i)][j]
+                    + self.sum_children(b_i, 1, left=True) \
+                    + self.sum_children(b_i, j, left=False)
                 m = min(m_l, m_r)
                 self.n[b_i][j] = [j, 1, j] if m_l < m_r else [1, j, j]
                 for d in range(1, j):
-                    max_value = max(self.t[self.A.left_child(b_i)][d], \
-                                    self.t[self.A.right_child(b_i)][j-d])
+                    max_value = max(self.sum_children(b_i, d, left=True), \
+                                    self.sum_children(b_i, j-d, left=False))
                     if self.A.execution_time(b_i) + max_value < m:
                         self.t[b_i][j] = self.A.execution_time(b_i) + max_value
                         self.n[b_i][j] = [d, j-d, j]
                         m = self.t[b_i][j]
+
+    def sum_children(self, node: int, num_chunks: int,
+                     left: bool = False) -> int:
+        assert node in self.A.branch_vertices()
+        sum = 0
+        if left:
+            for l in self.A.left_children(node):
+                sum += self.t[l][num_chunks]
+        else:
+            for r in self.A.right_children(node):
+                sum += self.t[r][num_chunks]
+        return sum
