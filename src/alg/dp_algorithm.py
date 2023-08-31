@@ -13,8 +13,8 @@ class DPAlgorithm(Algorithm):
         self.init_tables()
         self.fill_tables()
     
-        stack = deque([(0, self.s)])
         splits = []
+        stack = deque([(0, self.s)])
         while len(stack):
             (u, j) = stack.pop()
             m = self.n[u][j]
