@@ -19,7 +19,7 @@ if __name__ == '__main__':
             weights[data[0]] = data[1]
 
     g = Graph(cfg, weights)
-    a = NaiveAlgorithm(g, 3)
+    a = BruteForceAlgorithm(g, 3)
     selections = sorted(a.solve())
 
     print(f"{selections}")
