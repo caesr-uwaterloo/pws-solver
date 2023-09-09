@@ -39,7 +39,7 @@ class Graph():
     def execution_time(self, node: int) -> int:
         w = self.weight[node]
         if node in self.branches:
-            w += self.weight[self.bsb[node]] + self.weight[self.reconv[node]]
+            w += self.weight[self.bsb[node]] #+ self.weight[self.reconv[node]]
         return w
     
     def left_child(self, node: int) -> int:
