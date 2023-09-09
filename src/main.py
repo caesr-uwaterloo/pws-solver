@@ -2,7 +2,10 @@
 
 from graph import *
 from alg.algorithm import *
+from alg.brute_force_algorithm import *
 from alg.dp_algorithm import *
+from alg.naive_algorithm import *
+from alg.random_algorithm import *
 
 if __name__ == '__main__':
     cfg = {}
@@ -16,7 +19,7 @@ if __name__ == '__main__':
             weights[data[0]] = data[1]
 
     g = Graph(cfg, weights)
-    a = DPAlgorithm(g, 3)
+    a = NaiveAlgorithm(g, 3)
     selections = sorted(a.solve())
 
     print(f"{selections}")
