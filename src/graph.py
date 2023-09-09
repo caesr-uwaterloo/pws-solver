@@ -49,21 +49,31 @@ class Graph():
     def right_child(self, node: int) -> int:
         assert node in self.branches
         return self.bsb[node] + 1
-    
+
+    def next_branch(self, node: int) -> int:
+        for b_i in sorted(self.branches):
+            if b_i >= node:
+                return b_i
+        return 0
+
     def left_children(self, node: int) -> List[int]:
         assert node in self.branches
-        children = []
         i = node + 1
-        while i + 1 < self.bsb[node]:
+        if i not in self.branches:
+            return [i]
+        children = []
+        while self.next_branch(i) and i < self.bsb[node]:
             children.append(i)
-            i = self.reconv[i]
+            i = self.next_branch(self.reconv[i])
         return children
     
     def right_children(self, node: int) -> List[int]:
         assert node in self.branches
-        children = []
         i = self.bsb[node] + 1
-        while i + 1 < self.reconv[node]:
+        if i not in self.branches:
+            return [i]
+        children = []
+        while self.next_branch(i) and i < self.reconv[node]:
             children.append(i)
-            i = self.reconv[i]
+            i = self.next_branch(self.reconv[i])
         return children
