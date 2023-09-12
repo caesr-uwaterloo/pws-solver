@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import argparse
+
 from graph import *
 from alg.algorithm import *
 from alg.brute_force_algorithm import *
@@ -8,9 +10,19 @@ from alg.naive_algorithm import *
 from alg.random_algorithm import *
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+            "-i",
+            "--input",
+            help="Input file name",
+            type=str,
+            required=True
+        )
+    args = parser.parse_args()
+
     cfg = {}
     weights = {}
-    with open("data/depth2test00.graph") as fi:
+    with open(args.input) as fi:
         for line in fi.readlines():
             data = [int(i) for i in line.split()]
             cfg[data[0]] = []
@@ -19,15 +31,15 @@ if __name__ == '__main__':
             weights[data[0]] = data[1]
 
     g = Graph(cfg, weights)
-    a = BruteForceAlgorithm(g, 3)
-    wcet = a.wcet(a.solve())
-    print(f"Brute Force: {wcet}")
-    a = DPAlgorithm(g, 3)
-    wcet = a.wcet(a.solve())
-    print(f"DP: {wcet}")
-    a = NaiveAlgorithm(g, 3)
-    wcet = a.wcet(a.solve())
-    print(f"Naive: {wcet}")
-    a = RandomAlgorithm(g, 3)
-    wcet = a.wcet(a.solve())
-    print(f"Random: {wcet}")
+    algs = [
+        BruteForceAlgorithm(g, 3),
+        NaiveAlgorithm(g, 3),
+        RandomAlgorithm(g, 3),
+        DPAlgorithm(g, 3)
+    ]
+
+    a: Algorithm
+    for a in algs:
+    #   wcet = a.wcet(a.solve())
+        wcet = a.solve()
+        print(f"{a.name():<25}: {wcet}")

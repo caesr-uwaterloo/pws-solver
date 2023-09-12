@@ -6,5 +6,8 @@ class RandomAlgorithm(Algorithm):
     def __init__(self, A: Graph, s: int) -> None:
         Algorithm.__init__(self, A, s)
 
+    def name(self) -> str:
+        return "Random Algorithm"
+
     def solve(self) -> List[int]:
         return np.random.choice(self.A.branch_vertices(), size=self.s)

@@ -8,6 +8,9 @@ class Algorithm():
 
     def solve(self) -> List[int]:
         return [-1]
+    
+    def name(self) -> str:
+        return "Algorithm"
 
     def wcet(self, start: int = 0, splits: List[int] = []) -> int:
         left = right = weight = 0

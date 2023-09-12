@@ -9,6 +9,9 @@ class BruteForceAlgorithm(Algorithm):
         self.branches = self.A.branch_vertices()
         self.combo = ()
 
+    def name(self) -> str:
+        return "Brute Force Algorithm"
+
     def solve(self) -> List[int]:
         n = len(self.branches)
         combos = itertools.product([0, 1], repeat=n)

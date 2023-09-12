@@ -8,6 +8,9 @@ class DPAlgorithm(Algorithm):
     def __init__(self, A: Graph, s: int) -> None:
         Algorithm.__init__(self, A, s)
 
+    def name(self) -> str:
+        return "DP Algorithm"
+
     def solve(self) -> List[int]:
         self.alloc_tables()
         self.init_tables()

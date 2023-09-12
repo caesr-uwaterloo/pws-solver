@@ -5,6 +5,9 @@ class NaiveAlgorithm(Algorithm):
         Algorithm.__init__(self, A, s)
         self.benefit = {}
 
+    def name(self) -> str:
+        return "Naive Algorithm"
+
     def solve(self) -> List[int]:
         self.compute_benefits(self.A.branch_vertices()[0])
         splits = [m[0] for m in sorted(self.benefit.items(),
