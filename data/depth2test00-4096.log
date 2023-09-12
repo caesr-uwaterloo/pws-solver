@@ -1,0 +1,266 @@
+Global frequency set at 1000000000000 ticks per second
+build/GCN3_X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.2.1.0
+gem5 compiled Sep 11 2023 12:28:27
+gem5 started Sep 12 2023 03:15:31
+gem5 executing on 39d8d5943bb7, pid 484220
+command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/synthetic/depth2/test00/synthetic.out -o '4096 4 1024'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: dir_cntrl0.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+build/GCN3_X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build/GCN3_X86/mem/ruby/system/Sequencer.cc:573: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:704: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+build/GCN3_X86/sim/syscall_emul.hh:1862: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:455: warn: Signal events are only supported currently
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:599: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:609: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+info: running on device 
+info: launch 'synthetic' kernel
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+PASSED!
+77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77993401000: system.cpu0.workload.drivers0.device.dispatcher:      | START_PC     | END_PC       | LATENCY      |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff6720126c | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff67201260 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201124 | 7fff6720112c | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201038 | 7fff67201044 | 000000419000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201118 | 7fff67201124 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f4 | 7fff672010f8 | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e0 | 7fff672010e8 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010d4 | 7fff672010e0 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c0 | 7fff672011c8 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010d4 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010c8 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011b4 | 7fff672011c0 | 000000263000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720109c | 7fff672010a0 | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201104 | 7fff6720110c | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201090 | 7fff6720109c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720117c | 7fff67201184 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201088 | 7fff67201090 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff67201118 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff6720110c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201024 | 7fff6720102c | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201058 | 7fff6720105c | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e8 | 7fff672010f4 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d4 | 7fff672011d8 | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff67201208 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff672011fc | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201000 | 7fff67201010 | 000001416999 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d8 | 7fff672011e4 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201068 | 7fff67201070 | 000000276000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f8 | 7fff67201104 | 000000223000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e4 | 7fff672011f4 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 000000000000 | 7fff67201000 | 077977050001 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201010 | 7fff67201024 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201240 | 7fff6720124c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201044 | 7fff6720104c | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720121c | 7fff67201228 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010ac | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010ac | 7fff672010c0 | 000000231000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c0 | 7fff672010c8 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff67201058 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff6720104c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201138 | 7fff6720113c | 000000219000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201258 | 7fff67201260 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff67201068 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720126c | 7fff67201270 | 000000048000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff6720107c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff67201070 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720115c | 7fff67201164 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720107c | 7fff67201088 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff67201138 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff6720112c | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720113c | 7fff67201140 | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff67201038 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff6720102c | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201228 | 7fff6720122c | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201140 | 7fff6720114c | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720122c | 7fff67201238 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720114c | 7fff6720115c | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201238 | 7fff67201240 | 000000427000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201164 | 7fff67201170 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201170 | 7fff6720117c | 000000272000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201190 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201184 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201190 | 7fff67201194 | 000000064000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201194 | 7fff672011a0 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a0 | 7fff672011a8 | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011b4 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011a8 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011d4 | 000000196000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011c8 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011f4 | 7fff672011fc | 000000368000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201208 | 7fff67201214 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201214 | 7fff6720121c | 000000256000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720124c | 7fff67201258 | 000000192000 |
+77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ~ 0 ~ Total Kernel Time ~ 16350999
+Ticks: 81264178000
+Exiting because  exiting with last active thread context
+
+real	1m18.542s
+user	1m17.869s
+sys	0m0.551s

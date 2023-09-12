@@ -10,7 +10,7 @@ from alg.random_algorithm import *
 if __name__ == '__main__':
     cfg = {}
     weights = {}
-    with open("data/input3.graph") as fi:
+    with open("data/depth2test00.graph") as fi:
         for line in fi.readlines():
             data = [int(i) for i in line.split()]
             cfg[data[0]] = []
@@ -21,5 +21,13 @@ if __name__ == '__main__':
     g = Graph(cfg, weights)
     a = BruteForceAlgorithm(g, 3)
     selections = sorted(a.solve())
-
-    print(f"{selections}")
+    print(f"Brute Force: {selections}")
+    a = DPAlgorithm(g, 3)
+    selections = sorted(a.solve())
+    print(f"DP: {selections}")
+    a = NaiveAlgorithm(g, 3)
+    selections = sorted(a.solve())
+    print(f"Naive: {selections}")
+    a = RandomAlgorithm(g, 3)
+    selections = sorted(a.solve())
+    print(f"Random: {selections}")

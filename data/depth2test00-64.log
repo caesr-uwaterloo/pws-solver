@@ -1,0 +1,980 @@
+Global frequency set at 1000000000000 ticks per second
+build/GCN3_X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.2.1.0
+gem5 compiled Sep 11 2023 12:28:27
+gem5 started Sep 12 2023 03:16:49
+gem5 executing on 39d8d5943bb7, pid 484923
+command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=WavefrontSplit,IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/synthetic/depth2/test00/synthetic.out -o '64 1 64'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: dir_cntrl0.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+build/GCN3_X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build/GCN3_X86/mem/ruby/system/Sequencer.cc:573: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:704: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+build/GCN3_X86/sim/syscall_emul.hh:1862: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:455: warn: Signal events are only supported currently
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:599: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:609: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+info: running on device 
+info: launch 'synthetic' kernel
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+PASSED!
+77977047001: system.cpu3.CUs0: CU0: Dispatching WG0
+77978241000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v0, 63, v0 (pc: 0x7fff67201000; seqNum: 1)
+77978241000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77978245000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_cmp_lt_u32 vcc, 31, v0 (pc: 0x7fff67201004; seqNum: 2)
+77978245000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77978248000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s0, vcc (pc: 0x7fff67201008; seqNum: 3)
+77978248000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77978248000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77978252000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s2, exec, s0 (pc: 0x7fff6720100c; seqNum: 4)
+77978252000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978256000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_94 (pc: 0x7fff67201010; seqNum: 5)
+77978256000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978256000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111111111111111111100000000000000000000000000000000.
+77978256000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978256000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_94 @ OLDPC:0x7fff67201010 NEWPC:0x7fff67201010 BRANCH
+77978257000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_cmp_lt_u32 s[0:1], 47, v0 (pc: 0x7fff67201014; seqNum: 6)
+77978257000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978260000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s4, s0 (pc: 0x7fff6720101c; seqNum: 7)
+77978260000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978260000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111000000000000000000000000000000000000000000000000
+77978264000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s4, exec, s4 (pc: 0x7fff67201020; seqNum: 8)
+77978264000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978268000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201024; seqNum: 9)
+77978268000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978268000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111000000000000000000000000000000000000000000000000.
+77978268000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978268000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201024 NEWPC:0x7fff67201024 BRANCH
+77978272000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s6, 4 (pc: 0x7fff67201028; seqNum: 10)
+77978272000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978276000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720102c; seqNum: 11)
+77978276000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978280000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff67201030; seqNum: 12)
+77978280000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978281000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201034; seqNum: 13)
+77978281000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978284000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201038; seqNum: 14)
+77978284000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978284000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201038 NEWPC:0x7fff6720102c BRANCH
+77978290000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720102c; seqNum: 15)
+77978290000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978294000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff67201030; seqNum: 16)
+77978294000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978295000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201034; seqNum: 17)
+77978295000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978298000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201038; seqNum: 18)
+77978298000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978298000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201038 NEWPC:0x7fff6720102c BRANCH
+77978304000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720102c; seqNum: 19)
+77978304000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978308000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff67201030; seqNum: 20)
+77978308000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978309000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201034; seqNum: 21)
+77978309000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978312000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201038; seqNum: 22)
+77978312000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978312000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201038 NEWPC:0x7fff6720102c BRANCH
+77978318000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720102c; seqNum: 23)
+77978318000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978322000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff67201030; seqNum: 24)
+77978322000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978323000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201034; seqNum: 25)
+77978323000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978326000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201038; seqNum: 26)
+77978326000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978326000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201038 NEWPC:0x7fff67201038 BRANCH
+77978545000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s4, s4 (pc: 0x7fff6720103c; seqNum: 27)
+77978545000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978545000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77978549000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s4 (pc: 0x7fff67201040; seqNum: 28)
+77978549000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978549000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000111111111111111100000000000000000000000000000000
+77978553000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201044; seqNum: 29)
+77978553000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978553000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000111111111111111100000000000000000000000000000000.
+77978553000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978553000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201044 NEWPC:0x7fff67201044 BRANCH
+77978557000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s6, 3 (pc: 0x7fff67201048; seqNum: 30)
+77978557000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978561000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720104c; seqNum: 31)
+77978561000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978565000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s6, 0 (pc: 0x7fff67201050; seqNum: 32)
+77978565000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978566000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201054; seqNum: 33)
+77978566000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978569000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201058; seqNum: 34)
+77978569000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978569000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201058 NEWPC:0x7fff6720104c BRANCH
+77978575000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720104c; seqNum: 43)
+77978575000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978579000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s6, 0 (pc: 0x7fff67201050; seqNum: 44)
+77978579000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978580000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201054; seqNum: 45)
+77978580000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978583000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201058; seqNum: 46)
+77978583000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978583000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201058 NEWPC:0x7fff6720104c BRANCH
+77978589000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff6720104c; seqNum: 55)
+77978589000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978593000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s6, 0 (pc: 0x7fff67201050; seqNum: 56)
+77978593000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978594000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201054; seqNum: 57)
+77978594000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978597000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201058; seqNum: 58)
+77978597000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978597000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201058 NEWPC:0x7fff67201058 BRANCH
+77978601000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s4 (pc: 0x7fff6720105c; seqNum: 59)
+77978601000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978601000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77978605000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s4, s0 (pc: 0x7fff67201060; seqNum: 60)
+77978605000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978605000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111000000000000000000000000000000000000000000000000
+77978609000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s0, exec, s4 (pc: 0x7fff67201064; seqNum: 61)
+77978609000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978613000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201068; seqNum: 62)
+77978613000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978613000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111000000000000000000000000000000000000000000000000.
+77978613000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978613000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201068 NEWPC:0x7fff67201068 BRANCH
+77978617000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 3 (pc: 0x7fff6720106c; seqNum: 63)
+77978617000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978621000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201070; seqNum: 64)
+77978621000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978625000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff67201074; seqNum: 65)
+77978625000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978626000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201078; seqNum: 66)
+77978626000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978828000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff6720107c; seqNum: 67)
+77978828000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978828000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff6720107c NEWPC:0x7fff67201070 BRANCH
+77978834000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201070; seqNum: 80)
+77978834000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978838000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff67201074; seqNum: 81)
+77978838000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978839000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201078; seqNum: 82)
+77978839000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978842000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff6720107c; seqNum: 83)
+77978842000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978842000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff6720107c NEWPC:0x7fff67201070 BRANCH
+77978848000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201070; seqNum: 96)
+77978848000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978852000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff67201074; seqNum: 97)
+77978852000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978853000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201078; seqNum: 98)
+77978853000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978856000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff6720107c; seqNum: 99)
+77978856000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978856000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff6720107c NEWPC:0x7fff6720107c BRANCH
+77978860000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s0, s0 (pc: 0x7fff67201080; seqNum: 100)
+77978860000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77978860000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77978864000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s0 (pc: 0x7fff67201084; seqNum: 101)
+77978864000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978864000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000111111111111111100000000000000000000000000000000
+77978868000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201088; seqNum: 102)
+77978868000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978868000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000111111111111111100000000000000000000000000000000.
+77978868000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978868000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201088 NEWPC:0x7fff67201088 BRANCH
+77978872000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 1 (pc: 0x7fff6720108c; seqNum: 103)
+77978872000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978876000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201090; seqNum: 104)
+77978876000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978880000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff67201094; seqNum: 105)
+77978880000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978881000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201098; seqNum: 106)
+77978881000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978884000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720109c; seqNum: 107)
+77978884000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978884000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720109c NEWPC:0x7fff67201090 BRANCH
+77978890000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201090; seqNum: 114)
+77978890000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978894000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff67201094; seqNum: 115)
+77978894000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978895000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201098; seqNum: 116)
+77978895000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978898000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720109c; seqNum: 117)
+77978898000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978898000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720109c NEWPC:0x7fff6720109c BRANCH
+77978902000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s0 (pc: 0x7fff672010a0; seqNum: 118)
+77978902000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77978902000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77978906000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s2, s2 (pc: 0x7fff672010a4; seqNum: 119)
+77978906000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77978906000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111111111111111111111111111111111111
+77978910000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s2 (pc: 0x7fff672010a8; seqNum: 120)
+77978910000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77978910000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77978914000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_94 (pc: 0x7fff672010ac; seqNum: 121)
+77978914000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77978914000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111111111111111111111.
+77978914000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77978914000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_94 @ OLDPC:0x7fff672010ac NEWPC:0x7fff672010ac BRANCH
+77978915000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_cmp_lt_u32 s[0:1], 15, v0 (pc: 0x7fff672010b0; seqNum: 122)
+77978915000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77978918000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s4, s0 (pc: 0x7fff672010b8; seqNum: 123)
+77978918000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77978918000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111110000000000000000
+77979133000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s4, exec, s4 (pc: 0x7fff672010bc; seqNum: 124)
+77979133000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979137000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff672010c0; seqNum: 125)
+77979137000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979137000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111110000000000000000.
+77979137000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77979137000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff672010c0 NEWPC:0x7fff672010c0 BRANCH
+77979141000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s6, 4 (pc: 0x7fff672010c4; seqNum: 126)
+77979141000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979145000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010c8; seqNum: 127)
+77979145000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979149000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010cc; seqNum: 128)
+77979149000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979150000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010d0; seqNum: 129)
+77979150000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979153000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672010d4; seqNum: 130)
+77979153000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979153000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672010d4 NEWPC:0x7fff672010c8 BRANCH
+77979159000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010c8; seqNum: 140)
+77979159000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979163000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010cc; seqNum: 141)
+77979163000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979164000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010d0; seqNum: 142)
+77979164000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979167000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672010d4; seqNum: 143)
+77979167000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979167000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672010d4 NEWPC:0x7fff672010c8 BRANCH
+77979173000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010c8; seqNum: 153)
+77979173000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979177000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010cc; seqNum: 154)
+77979177000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979178000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010d0; seqNum: 155)
+77979178000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979181000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672010d4; seqNum: 156)
+77979181000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979181000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672010d4 NEWPC:0x7fff672010c8 BRANCH
+77979187000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010c8; seqNum: 166)
+77979187000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979191000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010cc; seqNum: 167)
+77979191000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979192000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010d0; seqNum: 168)
+77979192000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979195000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672010d4; seqNum: 169)
+77979195000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979195000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672010d4 NEWPC:0x7fff672010d4 BRANCH
+77979199000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s4, s4 (pc: 0x7fff672010d8; seqNum: 170)
+77979199000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979199000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77979203000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s4 (pc: 0x7fff672010dc; seqNum: 171)
+77979203000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77979203000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000000000000000000001111111111111111
+77979207000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff672010e0; seqNum: 172)
+77979207000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979207000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000000000000000000001111111111111111.
+77979207000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77979207000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff672010e0 NEWPC:0x7fff672010e0 BRANCH
+77979211000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s6, 1 (pc: 0x7fff672010e4; seqNum: 173)
+77979211000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979215000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010e8; seqNum: 174)
+77979215000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979219000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010ec; seqNum: 175)
+77979219000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979220000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010f0; seqNum: 176)
+77979220000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979223000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672010f4; seqNum: 177)
+77979223000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979223000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672010f4 NEWPC:0x7fff672010e8 BRANCH
+77979229000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s6, s6, -1 (pc: 0x7fff672010e8; seqNum: 179)
+77979229000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979233000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s6, 0 (pc: 0x7fff672010ec; seqNum: 180)
+77979233000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979234000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672010f0; seqNum: 181)
+77979234000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979237000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672010f4; seqNum: 182)
+77979237000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979237000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672010f4 NEWPC:0x7fff672010f4 BRANCH
+77979241000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s4 (pc: 0x7fff672010f8; seqNum: 183)
+77979241000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979241000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77979650000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s4, s0 (pc: 0x7fff672010fc; seqNum: 184)
+77979650000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77979650000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111110000000000000000
+77979654000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s0, exec, s4 (pc: 0x7fff67201100; seqNum: 185)
+77979654000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979658000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201104; seqNum: 186)
+77979658000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979658000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111110000000000000000.
+77979658000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77979658000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201104 NEWPC:0x7fff67201104 BRANCH
+77979662000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 4 (pc: 0x7fff67201108; seqNum: 187)
+77979662000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979666000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720110c; seqNum: 188)
+77979666000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979670000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201110; seqNum: 189)
+77979670000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979671000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201114; seqNum: 190)
+77979671000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979674000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201118; seqNum: 191)
+77979674000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979674000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201118 NEWPC:0x7fff6720110c BRANCH
+77979680000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720110c; seqNum: 200)
+77979680000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979684000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201110; seqNum: 201)
+77979684000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979685000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201114; seqNum: 202)
+77979685000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979688000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201118; seqNum: 203)
+77979688000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979688000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201118 NEWPC:0x7fff6720110c BRANCH
+77979694000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720110c; seqNum: 212)
+77979694000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979698000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201110; seqNum: 213)
+77979698000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979699000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201114; seqNum: 214)
+77979699000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979702000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201118; seqNum: 215)
+77979702000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979702000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201118 NEWPC:0x7fff6720110c BRANCH
+77979708000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720110c; seqNum: 224)
+77979708000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979712000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201110; seqNum: 225)
+77979712000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979713000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201114; seqNum: 226)
+77979713000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979716000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201118; seqNum: 227)
+77979716000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979716000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201118 NEWPC:0x7fff67201118 BRANCH
+77979720000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s0, s0 (pc: 0x7fff6720111c; seqNum: 228)
+77979720000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77979720000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77979724000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s0 (pc: 0x7fff67201120; seqNum: 229)
+77979724000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77979724000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000000000000000000001111111111111111
+77979728000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201124; seqNum: 230)
+77979728000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979728000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000000000000000000001111111111111111.
+77979728000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77979728000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201124 NEWPC:0x7fff67201124 BRANCH
+77979732000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 3 (pc: 0x7fff67201128; seqNum: 231)
+77979732000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979736000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720112c; seqNum: 232)
+77979736000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979740000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201130; seqNum: 233)
+77979740000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979741000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201134; seqNum: 234)
+77979741000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979744000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201138; seqNum: 235)
+77979744000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979744000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201138 NEWPC:0x7fff6720112c BRANCH
+77979750000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720112c; seqNum: 236)
+77979750000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979754000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201130; seqNum: 237)
+77979754000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979755000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201134; seqNum: 238)
+77979755000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979758000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201138; seqNum: 239)
+77979758000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979758000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201138 NEWPC:0x7fff6720112c BRANCH
+77979764000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff6720112c; seqNum: 240)
+77979764000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979768000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201130; seqNum: 241)
+77979768000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979769000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201134; seqNum: 242)
+77979769000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979772000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201138; seqNum: 243)
+77979772000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979772000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201138 NEWPC:0x7fff67201138 BRANCH
+77979991000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s0 (pc: 0x7fff6720113c; seqNum: 244)
+77979991000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77979991000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77979995000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s2 (pc: 0x7fff67201140; seqNum: 245)
+77979995000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77979995000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111111111111111111111111111111111111
+77979999000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s0, vcc (pc: 0x7fff67201144; seqNum: 246)
+77979999000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77979999000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77980003000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s0, exec, s0 (pc: 0x7fff67201148; seqNum: 247)
+77980003000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980007000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_90 (pc: 0x7fff6720114c; seqNum: 248)
+77980007000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980007000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111111111111111111100000000000000000000000000000000.
+77980007000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980007000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_90 @ OLDPC:0x7fff6720114c NEWPC:0x7fff6720114c BRANCH
+77980008000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_cmp_lt_u32 vcc, 47, v0 (pc: 0x7fff67201150; seqNum: 249)
+77980008000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980011000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s2, vcc (pc: 0x7fff67201154; seqNum: 250)
+77980011000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980011000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111000000000000000000000000000000000000000000000000
+77980015000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s2, exec, s2 (pc: 0x7fff67201158; seqNum: 251)
+77980015000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980019000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff6720115c; seqNum: 252)
+77980019000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980019000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111000000000000000000000000000000000000000000000000.
+77980019000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980019000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff6720115c NEWPC:0x7fff6720115c BRANCH
+77980023000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 1 (pc: 0x7fff67201160; seqNum: 253)
+77980023000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980027000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201164; seqNum: 254)
+77980027000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980031000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201168; seqNum: 255)
+77980031000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980032000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff6720116c; seqNum: 256)
+77980032000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980035000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201170; seqNum: 257)
+77980035000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980035000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201170 NEWPC:0x7fff67201164 BRANCH
+77980041000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201164; seqNum: 260)
+77980041000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980045000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201168; seqNum: 261)
+77980045000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980046000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff6720116c; seqNum: 262)
+77980046000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980049000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201170; seqNum: 263)
+77980049000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980049000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201170 NEWPC:0x7fff67201170 BRANCH
+77980053000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s2, s2 (pc: 0x7fff67201174; seqNum: 264)
+77980053000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980053000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77980057000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s2 (pc: 0x7fff67201178; seqNum: 265)
+77980057000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980057000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000111111111111111100000000000000000000000000000000
+77980264000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff6720117c; seqNum: 266)
+77980264000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980264000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000111111111111111100000000000000000000000000000000.
+77980264000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980264000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff6720117c NEWPC:0x7fff6720117c BRANCH
+77980268000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 3 (pc: 0x7fff67201180; seqNum: 267)
+77980268000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980272000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201184; seqNum: 268)
+77980272000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980276000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201188; seqNum: 269)
+77980276000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980277000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff6720118c; seqNum: 270)
+77980277000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980280000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201190; seqNum: 271)
+77980280000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980280000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201190 NEWPC:0x7fff67201184 BRANCH
+77980286000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201184; seqNum: 282)
+77980286000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980290000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201188; seqNum: 283)
+77980290000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980291000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff6720118c; seqNum: 284)
+77980291000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980294000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201190; seqNum: 285)
+77980294000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980294000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201190 NEWPC:0x7fff67201184 BRANCH
+77980300000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff67201184; seqNum: 296)
+77980300000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980304000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff67201188; seqNum: 297)
+77980304000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980305000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff6720118c; seqNum: 298)
+77980305000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980308000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201190; seqNum: 299)
+77980308000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980308000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201190 NEWPC:0x7fff67201190 BRANCH
+77980312000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s2 (pc: 0x7fff67201194; seqNum: 300)
+77980312000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980312000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77980316000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s2, vcc (pc: 0x7fff67201198; seqNum: 301)
+77980316000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980316000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111000000000000000000000000000000000000000000000000
+77980320000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s2, exec, s2 (pc: 0x7fff6720119c; seqNum: 302)
+77980320000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980324000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff672011a0; seqNum: 303)
+77980324000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980324000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 1111111111111111000000000000000000000000000000000000000000000000.
+77980324000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980324000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff672011a0 NEWPC:0x7fff672011a0 BRANCH
+77980328000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 3 (pc: 0x7fff672011a4; seqNum: 304)
+77980328000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980332000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011a8; seqNum: 305)
+77980332000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980336000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff672011ac; seqNum: 306)
+77980336000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980337000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011b0; seqNum: 307)
+77980337000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980340000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672011b4; seqNum: 308)
+77980340000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980340000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672011b4 NEWPC:0x7fff672011a8 BRANCH
+77980346000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011a8; seqNum: 310)
+77980346000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980350000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff672011ac; seqNum: 311)
+77980350000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980351000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011b0; seqNum: 312)
+77980351000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980354000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672011b4; seqNum: 313)
+77980354000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980354000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672011b4 NEWPC:0x7fff672011a8 BRANCH
+77980360000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011a8; seqNum: 315)
+77980360000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980364000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s4, 0 (pc: 0x7fff672011ac; seqNum: 316)
+77980364000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980365000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011b0; seqNum: 317)
+77980365000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980368000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff672011b4; seqNum: 318)
+77980368000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980368000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff672011b4 NEWPC:0x7fff672011b4 BRANCH
+77980372000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s2, s2 (pc: 0x7fff672011b8; seqNum: 319)
+77980372000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111000000000000000000000000000000000000000000000000.
+77980372000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77980587000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s2 (pc: 0x7fff672011bc; seqNum: 320)
+77980587000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980587000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000111111111111111100000000000000000000000000000000
+77980591000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff672011c0; seqNum: 321)
+77980591000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980591000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000111111111111111100000000000000000000000000000000.
+77980591000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980591000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff672011c0 NEWPC:0x7fff672011c0 BRANCH
+77980595000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s4, 4 (pc: 0x7fff672011c4; seqNum: 322)
+77980595000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980599000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011c8; seqNum: 323)
+77980599000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980603000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff672011cc; seqNum: 324)
+77980603000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980604000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011d0; seqNum: 325)
+77980604000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980607000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672011d4; seqNum: 326)
+77980607000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980607000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672011d4 NEWPC:0x7fff672011c8 BRANCH
+77980613000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011c8; seqNum: 336)
+77980613000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980617000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff672011cc; seqNum: 337)
+77980617000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980618000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011d0; seqNum: 338)
+77980618000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980621000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672011d4; seqNum: 339)
+77980621000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980621000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672011d4 NEWPC:0x7fff672011c8 BRANCH
+77980627000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011c8; seqNum: 349)
+77980627000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980631000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff672011cc; seqNum: 350)
+77980631000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980632000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011d0; seqNum: 351)
+77980632000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980635000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672011d4; seqNum: 352)
+77980635000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980635000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672011d4 NEWPC:0x7fff672011c8 BRANCH
+77980641000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s4, s4, -1 (pc: 0x7fff672011c8; seqNum: 362)
+77980641000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980645000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s4, 0 (pc: 0x7fff672011cc; seqNum: 363)
+77980645000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980646000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff672011d0; seqNum: 364)
+77980646000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980649000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff672011d4; seqNum: 365)
+77980649000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980649000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff672011d4 NEWPC:0x7fff672011d4 BRANCH
+77980653000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s2 (pc: 0x7fff672011d8; seqNum: 366)
+77980653000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000111111111111111100000000000000000000000000000000.
+77980653000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111100000000000000000000000000000000
+77980657000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s0, s0 (pc: 0x7fff672011dc; seqNum: 367)
+77980657000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111100000000000000000000000000000000.
+77980657000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 1111111111111111111111111111111111111111111111111111111111111111
+77980661000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s0 (pc: 0x7fff672011e0; seqNum: 368)
+77980661000: system.cpu3.CUs0.wavefronts00: execMask 1111111111111111111111111111111111111111111111111111111111111111.
+77980661000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77980665000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_8c (pc: 0x7fff672011e4; seqNum: 369)
+77980665000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77980665000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111111111111111111111.
+77980665000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980665000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_8c @ OLDPC:0x7fff672011e4 NEWPC:0x7fff672011e4 BRANCH
+77980666000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_cmp_lt_u32 vcc, 15, v0 (pc: 0x7fff672011e8; seqNum: 370)
+77980666000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77980669000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s0, vcc (pc: 0x7fff672011ec; seqNum: 371)
+77980669000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77980669000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111110000000000000000
+77980673000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s0, exec, s0 (pc: 0x7fff672011f0; seqNum: 372)
+77980673000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980677000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff672011f4; seqNum: 373)
+77980677000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980677000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111110000000000000000.
+77980677000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980677000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff672011f4 NEWPC:0x7fff672011f4 BRANCH
+77980681000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s2, 3 (pc: 0x7fff672011f8; seqNum: 374)
+77980681000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980892000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff672011fc; seqNum: 375)
+77980892000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980896000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201200; seqNum: 376)
+77980896000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980897000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201204; seqNum: 377)
+77980897000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980900000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201208; seqNum: 378)
+77980900000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980900000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201208 NEWPC:0x7fff672011fc BRANCH
+77980909000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff672011fc; seqNum: 391)
+77980909000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980913000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201200; seqNum: 392)
+77980913000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980914000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201204; seqNum: 393)
+77980914000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980917000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201208; seqNum: 394)
+77980917000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980917000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201208 NEWPC:0x7fff672011fc BRANCH
+77980926000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff672011fc; seqNum: 407)
+77980926000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980930000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201200; seqNum: 408)
+77980930000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980931000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201204; seqNum: 409)
+77980931000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980934000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc1 (pc: 0x7fff67201208; seqNum: 410)
+77980934000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980934000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc1 @ OLDPC:0x7fff67201208 NEWPC:0x7fff67201208 BRANCH
+77980938000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s0, s0 (pc: 0x7fff6720120c; seqNum: 411)
+77980938000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980938000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77980942000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s0 (pc: 0x7fff67201210; seqNum: 412)
+77980942000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77980942000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000000000000000000001111111111111111
+77980946000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201214; seqNum: 413)
+77980946000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980946000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000000000000000000001111111111111111.
+77980946000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980946000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201214 NEWPC:0x7fff67201214 BRANCH
+77980950000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s2, 1 (pc: 0x7fff67201218; seqNum: 414)
+77980950000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980954000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff6720121c; seqNum: 415)
+77980954000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980958000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201220; seqNum: 416)
+77980958000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980959000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201224; seqNum: 417)
+77980959000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980962000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201228; seqNum: 418)
+77980962000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980962000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201228 NEWPC:0x7fff6720121c BRANCH
+77980968000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff6720121c; seqNum: 423)
+77980968000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980972000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201220; seqNum: 424)
+77980972000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980973000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201224; seqNum: 425)
+77980973000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980976000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff67201228; seqNum: 426)
+77980976000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980976000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff67201228 NEWPC:0x7fff67201228 BRANCH
+77980980000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_b64 exec, exec, s0 (pc: 0x7fff6720122c; seqNum: 427)
+77980980000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77980980000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77980984000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_and_saveexec_b64 s0, vcc (pc: 0x7fff67201230; seqNum: 428)
+77980984000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77980984000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111110000000000000000
+77980988000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 s0, exec, s0 (pc: 0x7fff67201234; seqNum: 429)
+77980988000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980992000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201238; seqNum: 430)
+77980992000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77980992000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000011111111111111110000000000000000.
+77980992000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77980992000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201238 NEWPC:0x7fff67201238 BRANCH
+77981211000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s2, 1 (pc: 0x7fff6720123c; seqNum: 431)
+77981211000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981215000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff67201240; seqNum: 432)
+77981215000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981219000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201244; seqNum: 433)
+77981219000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981220000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201248; seqNum: 434)
+77981220000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981223000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720124c; seqNum: 435)
+77981223000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981223000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720124c NEWPC:0x7fff67201240 BRANCH
+77981229000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s2, s2, -1 (pc: 0x7fff67201240; seqNum: 447)
+77981229000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981233000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_lg_u32 s2, 0 (pc: 0x7fff67201244; seqNum: 448)
+77981233000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981234000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201248; seqNum: 449)
+77981234000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981237000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720124c; seqNum: 450)
+77981237000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981237000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720124c NEWPC:0x7fff6720124c BRANCH
+77981241000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_or_saveexec_b64 s0, s0 (pc: 0x7fff67201250; seqNum: 451)
+77981241000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111110000000000000000.
+77981241000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000011111111111111111111111111111111
+77981245000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_xor_b64 exec, exec, s0 (pc: 0x7fff67201254; seqNum: 452)
+77981245000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000011111111111111111111111111111111.
+77981245000: system.cpu3.CUs0.wavefronts00: wave[0]: Updated execMask 0000000000000000000000000000000000000000000000001111111111111111
+77981249000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_execz label_18 (pc: 0x7fff67201258; seqNum: 453)
+77981249000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981249000: system.cpu3.CUs0.wavefronts00: Branch divergence detected, execMask is 0000000000000000000000000000000000000000000000001111111111111111.
+77981249000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0] attempting split to WF[0][0]; split enable: 0
+77981249000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_execz label_18 @ OLDPC:0x7fff67201258 NEWPC:0x7fff67201258 BRANCH
+77981253000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_mov_b32 s0, 4 (pc: 0x7fff6720125c; seqNum: 454)
+77981253000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981257000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s0, s0, -1 (pc: 0x7fff67201260; seqNum: 455)
+77981257000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981261000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s0, 0 (pc: 0x7fff67201264; seqNum: 456)
+77981261000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981262000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201268; seqNum: 457)
+77981262000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981265000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720126c; seqNum: 458)
+77981265000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981265000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720126c NEWPC:0x7fff67201260 BRANCH
+77981271000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s0, s0, -1 (pc: 0x7fff67201260; seqNum: 462)
+77981271000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981275000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s0, 0 (pc: 0x7fff67201264; seqNum: 463)
+77981275000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981276000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201268; seqNum: 464)
+77981276000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981279000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720126c; seqNum: 465)
+77981279000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981279000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720126c NEWPC:0x7fff67201260 BRANCH
+77981285000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s0, s0, -1 (pc: 0x7fff67201260; seqNum: 469)
+77981285000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981289000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s0, 0 (pc: 0x7fff67201264; seqNum: 470)
+77981289000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981290000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201268; seqNum: 471)
+77981290000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981293000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720126c; seqNum: 472)
+77981293000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981293000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720126c NEWPC:0x7fff67201260 BRANCH
+77981299000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_add_i32 s0, s0, -1 (pc: 0x7fff67201260; seqNum: 476)
+77981299000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981303000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cmp_eq_u32 s0, 0 (pc: 0x7fff67201264; seqNum: 477)
+77981303000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981304000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: v_and_b32 v1, 1, v1 (pc: 0x7fff67201268; seqNum: 478)
+77981304000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981307000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_cbranch_scc0 (pc: 0x7fff6720126c; seqNum: 479)
+77981307000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981307000: system.cpu3.CUs0.wavefronts00: IPT: CU[0] WF[0][0] wave:0 s_cbranch_scc0 @ OLDPC:0x7fff6720126c NEWPC:0x7fff6720126c BRANCH
+77981311000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] Executing inst: s_endpgm (pc: 0x7fff67201270; seqNum: 480)
+77981311000: system.cpu3.CUs0.wavefronts00: execMask 0000000000000000000000000000000000000000000000001111111111111111.
+77981311000: global: IPT: CU[0] WF[0][0] wave:0 PC:0x7fff67201270 END
+77981311000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77981311000: system.cpu0.workload.drivers0.device.dispatcher:      | START_PC     | END_PC       | LATENCY      |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff6720126c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff67201260 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201124 | 7fff6720112c | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201038 | 7fff67201044 | 000000227000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201118 | 7fff67201124 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f4 | 7fff672010f8 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e0 | 7fff672010e8 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010d4 | 7fff672010e0 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c0 | 7fff672011c8 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010d4 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010c8 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011b4 | 7fff672011c0 | 000000223000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720109c | 7fff672010a0 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201104 | 7fff6720110c | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201090 | 7fff6720109c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720117c | 7fff67201184 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201088 | 7fff67201090 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff67201118 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff6720110c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201024 | 7fff6720102c | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201058 | 7fff6720105c | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e8 | 7fff672010f4 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d4 | 7fff672011d8 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff67201208 | 000000017000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff672011fc | 000000017000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201000 | 7fff67201010 | 000001208999 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d8 | 7fff672011e4 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201068 | 7fff67201070 | 000000215000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f8 | 7fff67201104 | 000000417000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e4 | 7fff672011f4 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 000000000000 | 7fff67201000 | 077977047001 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201010 | 7fff67201024 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201240 | 7fff6720124c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201044 | 7fff6720104c | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720121c | 7fff67201228 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010ac | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010ac | 7fff672010c0 | 000000223000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c0 | 7fff672010c8 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff67201058 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff6720104c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201138 | 7fff6720113c | 000000219000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201258 | 7fff67201260 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff67201068 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720126c | 7fff67201270 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff6720107c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff67201070 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720115c | 7fff67201164 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720107c | 7fff67201088 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff67201138 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff6720112c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720113c | 7fff67201140 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff67201038 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff6720102c | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201228 | 7fff6720122c | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201140 | 7fff6720114c | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720122c | 7fff67201238 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720114c | 7fff6720115c | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201238 | 7fff67201240 | 000000231000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201164 | 7fff67201170 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201170 | 7fff6720117c | 000000215000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201190 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201184 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201190 | 7fff67201194 | 000000004000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201194 | 7fff672011a0 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a0 | 7fff672011a8 | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011b4 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011a8 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011d4 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011c8 | 000000014000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011f4 | 7fff672011fc | 000000223000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201208 | 7fff67201214 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201214 | 7fff6720121c | 000000016000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720124c | 7fff67201258 | 000000012000 |
+77981311000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+77981311000: system.cpu0.workload.drivers0.device.dispatcher:      ~ 0 ~ Total Kernel Time ~ 4263999
+Ticks: 81263163500
+Exiting because  exiting with last active thread context
+
+real	1m17.272s
+user	1m16.545s
+sys	0m0.489s

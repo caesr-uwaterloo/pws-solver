@@ -30,7 +30,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     lines = []
-    with open(f"data/{args.input}.log") as f:
+    with open(f"data/{args.input}-64.log") as f:
         lines = f.readlines()
 
     insts = {}
@@ -51,7 +51,20 @@ if __name__ == '__main__':
             pc = pc - first_pc
             inst = line.partition("Executing inst: ")[2].partition(' ')[0]
             assert inst.startswith("s_") or inst.startswith("v_") or inst.startswith("flat_")
+            if pc in insts:
+                assert insts[pc] == inst
             insts[pc] = inst
+
+    with open(f"data/{args.input}-4096.log") as f:
+        lines = f.readlines()
+
+    for line in lines:
+        # Extract pc and inst from line, e.g.
+        # 
+        # 78278037000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0]
+        # Executing inst: s_and_b32 s0, s6, 1 (pc: 0x7fff5e780000; seqNum: 1)
+        # 
+        # Subtract starting PC to get relative address
         if "EDGE" in line:
             values = line.split('|')
             if int(values[1].strip(), 16) == 0:
@@ -78,8 +91,13 @@ if __name__ == '__main__':
     pcs = sorted(insts.keys())
     branch_insts = ["s_cbranch", "s_branch"]
     branch = False
+    iterations = {}
 
     for line in lines:
+        line = line.lstrip()
+        if line.startswith("; Iterations ("):
+            # get number between parentheses
+            iterations[block+1] = int(line[line.find("(")+1:line.find(")")])
         if "; %bb.0:" in line:
             bb[0] = []
             cfg[0] = []
@@ -149,10 +167,11 @@ if __name__ == '__main__':
     for u in sorted(edges.keys()):
         for v in sorted(edges[u].keys()):
             assert u in pc_bbs and v in pc_bbs
+            # pc might be last one in BB, so we advance to the next BB in that case
             bb_u = pc_bbs[u] if pc_bbs[next_pc(u, pcs)] == pc_bbs[u] else pc_bbs[next_pc(u, pcs)]
             bb_v = pc_bbs[v] if pc_bbs[next_pc(v, pcs)] == pc_bbs[v] else pc_bbs[next_pc(v, pcs)]
-            if bb_u == bb_v: # loop
-                weights[bb_u] += (edges[u][v] * 36)
+            if bb_u == bb_v and pc_bbs[next_pc(u, pcs)] == pc_bbs[u]: # loop
+                weights[bb_u] += (edges[u][v] * iterations[bb_u])
             else:
                 weights[bb_u] += edges[u][v]
 
