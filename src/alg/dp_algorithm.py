@@ -30,7 +30,7 @@ class DPAlgorithm(Algorithm):
                 if l in self.A.branch_vertices() and m[0] > 1:
                     stack.append((l, int(m[0])))
         
-        return splits
+        return sorted(splits)
     
     def alloc_tables(self) -> None:
         self.t = np.full(

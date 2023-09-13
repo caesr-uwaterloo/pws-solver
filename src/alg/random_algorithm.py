@@ -10,4 +10,8 @@ class RandomAlgorithm(Algorithm):
         return "Random Algorithm"
 
     def solve(self) -> List[int]:
-        return np.random.choice(self.A.branch_vertices(), size=self.s)
+        np.random.seed(0)
+        return sorted(np.random.choice(
+            self.A.branch_vertices(),
+            size=self.s-1
+        ).tolist())

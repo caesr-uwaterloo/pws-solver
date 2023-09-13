@@ -19,7 +19,7 @@ class Algorithm():
         while i < self.A.bsb[start]:
             assert i in self.A.cfg.keys()
             if i != start and i in self.A.branches:
-                left += self.wcet(i)
+                left += self.wcet(i, splits)
                 i = self.A.reconv[i] + 1
             else:
                 left += self.A.weight[i]
@@ -28,13 +28,13 @@ class Algorithm():
         while i < self.A.reconv[start]:
             assert i in self.A.cfg.keys()
             if i in self.A.branches:
-                right += self.wcet(i)
+                right += self.wcet(i, splits)
                 i = self.A.reconv[i] + 1
             else:
                 right += self.A.weight[i]
                 i += 1
         weight = self.A.weight[start] + self.A.weight[self.A.bsb[start]]
-        if splits[self.A.branches.index(start)]: # splitting at this branch
+        if start in splits: # splitting at this branch
             weight += max(left, right)
         else: # not splitting at this branch
             weight += left + right

@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 import argparse
+import timeit
 
 from graph import *
 from alg.algorithm import *
 from alg.brute_force_algorithm import *
 from alg.dp_algorithm import *
 from alg.naive_algorithm import *
+from alg.no_algorithm import *
 from alg.random_algorithm import *
 
 if __name__ == '__main__':
@@ -32,6 +34,7 @@ if __name__ == '__main__':
 
     g = Graph(cfg, weights)
     algs = [
+        NoSplitAlgorithm(g, 3),
         BruteForceAlgorithm(g, 3),
         NaiveAlgorithm(g, 3),
         RandomAlgorithm(g, 3),
@@ -40,6 +43,8 @@ if __name__ == '__main__':
 
     a: Algorithm
     for a in algs:
-    #   wcet = a.wcet(a.solve())
-        wcet = a.solve()
-        print(f"{a.name():<25}: {wcet}")
+        start = timeit.default_timer()
+        sp = a.solve()
+        end = timeit.default_timer()
+        wcet = a.wcet(splits=sp)
+        print(f"{a.name():<25}: {wcet:<25} {str(sp):<25} {end-start}")
