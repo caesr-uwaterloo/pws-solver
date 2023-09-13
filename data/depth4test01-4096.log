@@ -1,0 +1,908 @@
+Global frequency set at 1000000000000 ticks per second
+build/GCN3_X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.2.1.0
+gem5 compiled Sep 11 2023 12:28:27
+gem5 started Sep 13 2023 01:12:10
+gem5 executing on 39d8d5943bb7, pid 84619
+command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/synthetic/depth4/test01/synthetic.out -o '4096 4 1024'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: dir_cntrl0.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+build/GCN3_X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build/GCN3_X86/mem/ruby/system/Sequencer.cc:573: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:704: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+build/GCN3_X86/sim/syscall_emul.hh:1862: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:455: warn: Signal events are only supported currently
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:599: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:609: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+info: running on device 
+info: launch 'synthetic' kernel
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+PASSED!
+78728172000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78728172000: system.cpu0.workload.drivers0.device.dispatcher:      | START_PC     | END_PC       | LATENCY      |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201970 | 7fff6720197c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201968 | 7fff67201970 | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720195c | 7fff67201968 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201950 | 7fff6720195c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201950 | 7fff67201950 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201948 | 7fff67201950 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720192c | 7fff67201938 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720191c | 7fff67201928 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720191c | 7fff6720191c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018fc | 7fff67201908 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018fc | 7fff672018fc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018f4 | 7fff672018fc | 000000359000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018e8 | 7fff672018f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018e4 | 7fff672018e8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018d0 | 7fff672018d8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018a0 | 7fff672018b0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201884 | 7fff67201890 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201880 | 7fff67201884 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201868 | 7fff67201870 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720185c | 7fff67201868 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201850 | 7fff6720185c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201848 | 7fff67201850 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017e8 | 7fff672017f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017e4 | 7fff672017e8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017d8 | 7fff672017e4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017d8 | 7fff672017d8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017d0 | 7fff672017d8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017c4 | 7fff672017d0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017b0 | 7fff672017b8 | 000000332000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201790 | 7fff672017a0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201784 | 7fff67201790 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720177c | 7fff67201780 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201778 | 7fff6720177c | 000000219000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720176c | 7fff67201778 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720176c | 7fff6720176c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201758 | 7fff67201764 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720174c | 7fff67201758 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201738 | 7fff67201744 | 000000223000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201734 | 7fff67201738 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201720 | 7fff67201728 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201714 | 7fff67201720 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201708 | 7fff67201714 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201708 | 7fff67201708 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016e0 | 7fff672016ec | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016dc | 7fff672016e0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016d0 | 7fff672016dc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016d0 | 7fff672016d0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016bc | 7fff672016c8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016b0 | 7fff672016bc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201694 | 7fff672016a8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201688 | 7fff67201694 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201684 | 7fff67201688 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201680 | 7fff67201684 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201674 | 7fff67201680 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201674 | 7fff67201674 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201660 | 7fff6720166c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a94 | 7fff67200aa0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201308 | 7fff6720130c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a80 | 7fff67200a88 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012f4 | 7fff672012fc | 000000363000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a5c | 7fff67200a64 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a3c | 7fff67200a44 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012b0 | 7fff672012b4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a28 | 7fff67200a3c | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720129c | 7fff672012a4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a18 | 7fff67200a1c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001a4 | 7fff672001b0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a08 | 7fff67200a14 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720127c | 7fff67201284 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009e0 | 7fff672009e8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720016c | 7fff67200178 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009c0 | 7fff672009cc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009b0 | 7fff672009bc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201224 | 7fff67201238 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200990 | 7fff6720099c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200990 | 7fff67200990 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200940 | 7fff6720094c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200934 | 7fff67200938 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200930 | 7fff67200934 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008fc | 7fff67200904 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008d8 | 7fff672008dc | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200890 | 7fff672008a4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201104 | 7fff67201110 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201104 | 7fff67201104 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200884 | 7fff67200890 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200880 | 7fff67200884 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200870 | 7fff6720087c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200870 | 7fff67200870 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e4 | 7fff672010f0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200850 | 7fff6720085c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200850 | 7fff67200850 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200824 | 7fff67200828 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201098 | 7fff6720109c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200810 | 7fff67200818 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201084 | 7fff67201090 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200804 | 7fff67200810 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007f8 | 7fff67200804 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007f8 | 7fff672007f8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007f0 | 7fff672007f8 | 000000312000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201064 | 7fff67201070 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201064 | 7fff67201064 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201938 | 7fff67201948 | 000000290000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007e4 | 7fff672007f0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007e0 | 7fff672007e4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201928 | 7fff6720192c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007d4 | 7fff672007e0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201048 | 7fff6720105c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007cc | 7fff672007d4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201914 | 7fff6720191c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007c0 | 7fff672007cc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018d8 | 7fff672018e4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018d8 | 7fff672018d8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200784 | 7fff67200798 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200774 | 7fff67200778 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018c4 | 7fff672018d0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200770 | 7fff67200774 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018b8 | 7fff672018c4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200764 | 7fff67200770 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200764 | 7fff67200764 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200750 | 7fff6720075c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200744 | 7fff67200750 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720187c | 7fff67201880 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200728 | 7fff6720073c | 000000268000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f9c | 7fff67200fa8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201870 | 7fff6720187c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201870 | 7fff67201870 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720071c | 7fff67200728 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200718 | 7fff6720071c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720070c | 7fff67200718 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720070c | 7fff6720070c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f80 | 7fff67200f94 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006f8 | 7fff67200704 | 000000267000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006ec | 7fff672006f8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006ec | 7fff672006ec | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720182c | 7fff67201838 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006d8 | 7fff672006e4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201828 | 7fff6720182c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006d4 | 7fff672006d8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720181c | 7fff67201828 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720181c | 7fff6720181c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006c8 | 7fff672006d4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006c8 | 7fff672006c8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f3c | 7fff67200f44 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201808 | 7fff67201814 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006b4 | 7fff672006c0 | 000000219000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f28 | 7fff67200f3c | 000000260000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017fc | 7fff67201808 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006a8 | 7fff672006b4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720068c | 7fff672006a0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f00 | 7fff67200f04 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a70 | 7fff67200a74 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720066c | 7fff67200678 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200668 | 7fff6720066c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200edc | 7fff67200ee8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a64 | 7fff67200a70 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200660 | 7fff67200664 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200654 | 7fff67200660 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200654 | 7fff67200654 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ec8 | 7fff67200ed0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a50 | 7fff67200a5c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012c4 | 7fff672012d4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017a0 | 7fff672017b0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720064c | 7fff67200654 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a44 | 7fff67200a50 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a44 | 7fff67200a44 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001d0 | 7fff672001d4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012b8 | 7fff672012c4 | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200640 | 7fff6720064c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200eb4 | 7fff67200ec8 | 000000359000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200634 | 7fff67200640 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200634 | 7fff67200634 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ea8 | 7fff67200eb4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720061c | 7fff67200620 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e90 | 7fff67200e98 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a14 | 7fff67200a18 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201764 | 7fff6720176c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200610 | 7fff6720061c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200610 | 7fff67200610 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e84 | 7fff67200e90 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200608 | 7fff67200610 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a00 | 7fff67200a08 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720018c | 7fff67200190 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005fc | 7fff67200608 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e70 | 7fff67200e78 | 000000328000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009f4 | 7fff67200a00 | 000000219000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201744 | 7fff6720174c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005f0 | 7fff672005fc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005f0 | 7fff672005f0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005e8 | 7fff672005f0 | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e5c | 7fff67200e70 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005c4 | 7fff672005c8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009bc | 7fff672009c0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005b8 | 7fff672005c4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005b8 | 7fff672005b8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201704 | 7fff67201708 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005b0 | 7fff672005b8 | 000000312000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009a8 | 7fff672009b0 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005a4 | 7fff672005b0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720099c | 7fff672009a8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016ec | 7fff67201704 | 000000319000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200598 | 7fff672005a4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200580 | 7fff67200584 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016c8 | 7fff672016d0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200574 | 7fff67200580 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720056c | 7fff67200574 | 000000280000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201654 | 7fff67201660 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200560 | 7fff6720056c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672016a8 | 7fff672016b0 | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200554 | 7fff67200560 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200554 | 7fff67200554 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720054c | 7fff67200554 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017b8 | 7fff672017c4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017b8 | 7fff672017b8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200664 | 7fff67200668 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200260 | 7fff6720026c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ab4 | 7fff67200ab8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201780 | 7fff67201784 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720062c | 7fff67200634 | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200228 | 7fff6720022c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720197c | 7fff67201980 | 000000048000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200828 | 7fff67200834 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720109c | 7fff672010a0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a1c | 7fff67200a28 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201290 | 7fff6720129c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200214 | 7fff6720021c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a88 | 7fff67200a94 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a88 | 7fff67200a88 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012fc | 7fff67201308 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200410 | 7fff6720041c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009e8 | 7fff672009f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009e8 | 7fff672009e8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001e0 | 7fff672001f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201728 | 7fff67201734 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201728 | 7fff67201728 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005d4 | 7fff672005e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e48 | 7fff67200e4c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672009cc | 7fff672009e0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200158 | 7fff67200160 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201240 | 7fff6720124c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201240 | 7fff67201240 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672005c8 | 7fff672005d4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e3c | 7fff67200e48 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003c0 | 7fff672003d4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001bc | 7fff672001c4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012a4 | 7fff672012b0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200590 | 7fff67200598 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e04 | 7fff67200e08 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200a74 | 7fff67200a80 | 000000208000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012e8 | 7fff672012f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720026c | 7fff67200270 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ae0 | 7fff67200aec | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ae0 | 7fff67200ae0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200988 | 7fff67200990 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200584 | 7fff67200590 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200df8 | 7fff67200e04 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720037c | 7fff67200388 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200178 | 7fff67200180 | 000000347000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff6720126c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff67201260 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200778 | 7fff67200784 | 000000235000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200374 | 7fff6720037c | 000000355000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720145c | 7fff67201468 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720094c | 7fff67200960 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200144 | 7fff67200158 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200090 | 7fff67200098 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200904 | 7fff67200910 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200904 | 7fff67200904 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200084 | 7fff67200090 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200280 | 7fff67200294 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720084c | 7fff67200850 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200448 | 7fff67200454 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200448 | 7fff67200448 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200270 | 7fff67200274 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201320 | 7fff6720132c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201320 | 7fff67201320 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200434 | 7fff67200440 | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720151c | 7fff67201520 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200868 | 7fff67200870 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010dc | 7fff672010e4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200060 | 7fff6720006c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201148 | 7fff67201154 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201148 | 7fff67201148 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008dc | 7fff672008e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000d4 | 7fff672000e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011bc | 7fff672011cc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200aa0 | 7fff67200aa8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720085c | 7fff67200868 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011ac | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200054 | 7fff67200060 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200054 | 7fff67200054 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004cc | 7fff672004d0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 000000000000 | 7fff67200000 | 078580324501 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f04 | 7fff67200f08 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000c8 | 7fff672000d4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720093c | 7fff67200940 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011b0 | 7fff672011bc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008c4 | 7fff672008cc | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d34 | 7fff67200d3c | 000000364000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200960 | 7fff67200974 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720006c | 7fff67200074 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201470 | 7fff6720147c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201470 | 7fff67201470 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720031c | 7fff67200330 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201404 | 7fff67201410 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720091c | 7fff67200924 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720166c | 7fff67201674 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200518 | 7fff67200524 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d8c | 7fff67200d98 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200098 | 7fff672000a4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200098 | 7fff67200098 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200294 | 7fff6720029c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201340 | 7fff6720134c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200454 | 7fff67200460 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200974 | 7fff67200988 | 000000279000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e8 | 7fff672011f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e8 | 7fff672011e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200368 | 7fff67200374 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201450 | 7fff6720145c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720087c | 7fff67200880 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f0 | 7fff672010fc | 000000220000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200074 | 7fff67200080 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008e8 | 7fff672008fc | 000000268000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cec | 7fff67200cf8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201560 | 7fff67201568 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720004c | 7fff67200054 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201134 | 7fff67201140 | 000000251000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001d4 | 7fff672001e0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000e8 | 7fff672000f0 | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200190 | 7fff6720019c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008ac | 7fff672008b8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200038 | 7fff6720004c | 000000286000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201120 | 7fff67201128 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000a4 | 7fff672000b0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720019c | 7fff672001a4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008b8 | 7fff672008c4 | 000000295000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000b0 | 7fff672000b8 | 000000324000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200924 | 7fff67200930 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200924 | 7fff67200924 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200834 | 7fff6720084c | 000000354000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ca4 | 7fff67200cb0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200124 | 7fff67200130 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000b8 | 7fff672000c4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000b8 | 7fff672000b8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002b4 | 7fff672002bc | 000000291000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001b0 | 7fff672001bc | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003ac | 7fff672003b0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c20 | 7fff67200c24 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008cc | 7fff672008d8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008cc | 7fff672008cc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201140 | 7fff67201148 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200938 | 7fff6720093c | 000000107000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011ac | 7fff672011b0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000f0 | 7fff672000fc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000f0 | 7fff672000f0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002ec | 7fff672002f8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200818 | 7fff67200824 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000fc | 7fff67200108 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002f8 | 7fff67200300 | 000000355000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001f4 | 7fff672001fc | 000000359000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012dc | 7fff672012e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012dc | 7fff672012dc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200910 | 7fff6720091c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200108 | 7fff67200110 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200024 | 7fff67200038 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720041c | 7fff67200424 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720030c | 7fff67200310 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b80 | 7fff67200b8c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201154 | 7fff67201158 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200000 | 7fff67200010 | 000001416499 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200404 | 7fff67200410 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200110 | 7fff6720011c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200110 | 7fff67200110 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200514 | 7fff67200518 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015fc | 7fff67201608 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015fc | 7fff672015fc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200620 | 7fff6720062c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720021c | 7fff67200228 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201284 | 7fff67201290 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201284 | 7fff67201284 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200130 | 7fff67200144 | 000000355000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672000c4 | 7fff672000c8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201218 | 7fff67201224 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200678 | 7fff6720068c | 000000362000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200208 | 7fff67200214 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720135c | 7fff6720136c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672017f4 | 7fff672017fc | 000000323000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006a0 | 7fff672006a8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f14 | 7fff67200f28 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b10 | 7fff67200b14 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200498 | 7fff672004a0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d0c | 7fff67200d20 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002a8 | 7fff672002b4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201814 | 7fff6720181c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006c0 | 7fff672006c8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013a4 | 7fff672013a8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004b8 | 7fff672004c0 | 000000347000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002c8 | 7fff672002cc | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002cc | 7fff672002d8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002d8 | 7fff672002e0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201838 | 7fff67201848 | 000000290000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672006e4 | 7fff672006ec | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200274 | 7fff67200280 | 000000216000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013c8 | 7fff672013dc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004dc | 7fff672004e4 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200704 | 7fff6720070c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200300 | 7fff6720030c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200300 | 7fff67200300 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004fc | 7fff67200504 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200310 | 7fff6720031c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013f8 | 7fff67201404 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013f8 | 7fff672013f8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201418 | 7fff67201424 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201418 | 7fff67201418 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201890 | 7fff672018a0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720073c | 7fff67200744 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200338 | 7fff67200344 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200344 | 7fff67200350 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672018b0 | 7fff672018b8 | 000000312000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720075c | 7fff67200764 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fd0 | 7fff67200fdc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bd8 | 7fff67200be4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200798 | 7fff672007ac | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720100c | 7fff67201018 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720147c | 7fff67201480 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200330 | 7fff67200338 | 000000328000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201484 | 7fff67201490 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007ac | 7fff672007b4 | 000000280000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c1c | 7fff67200c20 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201490 | 7fff672014a4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201908 | 7fff67201914 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007b4 | 7fff672007c0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672007b4 | 7fff672007b4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003b0 | 7fff672003b4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c24 | 7fff67200c30 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003d4 | 7fff672003e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003e8 | 7fff672003fc | 000000224000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003fc | 7fff67200404 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200440 | 7fff67200448 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200460 | 7fff67200468 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201548 | 7fff67201554 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200474 | 7fff67200478 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200080 | 7fff67200084 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200484 | 7fff67200498 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cf8 | 7fff67200cfc | 000000215000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672008a4 | 7fff672008ac | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004ac | 7fff672004b8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d20 | 7fff67200d34 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004d0 | 7fff672004dc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015b8 | 7fff672015bc | 000000219000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200478 | 7fff67200484 | 000000287000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015cc | 7fff672015e0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004f0 | 7fff672004fc | 000000264000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200504 | 7fff67200510 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d78 | 7fff67200d80 | 000000433000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200510 | 7fff67200514 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200120 | 7fff67200124 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201208 | 7fff67201214 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200524 | 7fff67200538 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d98 | 7fff67200da0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200538 | 7fff6720054c | 000000358000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200dac | 7fff67200db0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200aa8 | 7fff67200ab4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ab8 | 7fff67200ac4 | 000000267000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720132c | 7fff67201338 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ac4 | 7fff67200ad8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201338 | 7fff67201340 | 000000347000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ad8 | 7fff67200ae0 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720134c | 7fff67201350 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200aec | 7fff67200af8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200af8 | 7fff67200b00 | 000000351000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720136c | 7fff67201374 | 000000280000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b00 | 7fff67200b0c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b00 | 7fff67200b00 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201374 | 7fff67201380 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201374 | 7fff67201374 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b0c | 7fff67200b10 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720022c | 7fff67200238 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201380 | 7fff6720138c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b14 | 7fff67200b20 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b20 | 7fff67200b34 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200240 | 7fff6720024c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200240 | 7fff67200240 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201394 | 7fff672013a0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201394 | 7fff67201394 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b34 | 7fff67200b48 | 000000291000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013a8 | 7fff672013ac | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b48 | 7fff67200b50 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b50 | 7fff67200b5c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b50 | 7fff67200b50 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b5c | 7fff67200b68 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b68 | 7fff67200b70 | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013dc | 7fff672013f0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b70 | 7fff67200b7c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b70 | 7fff67200b70 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b7c | 7fff67200b80 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720029c | 7fff672002a8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013f0 | 7fff672013f8 | 000000324000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200b8c | 7fff67200ba0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ba0 | 7fff67200ba8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ba8 | 7fff67200bb4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ba8 | 7fff67200ba8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bb4 | 7fff67200bc0 | 000000223000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201428 | 7fff67201434 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bc0 | 7fff67200bc8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002e0 | 7fff672002ec | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201434 | 7fff67201448 | 000000355000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bc8 | 7fff67200bd4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bc8 | 7fff67200bc8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bd4 | 7fff67200bd8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201448 | 7fff67201450 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200be4 | 7fff67200bec | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bec | 7fff67200bf8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bec | 7fff67200bec | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200bf8 | 7fff67200c04 | 000000271000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c04 | 7fff67200c0c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c0c | 7fff67200c18 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201480 | 7fff67201484 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c18 | 7fff67200c1c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c30 | 7fff67200c44 | 000000283000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200350 | 7fff67200358 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014a4 | 7fff672014ac | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c44 | 7fff67200c58 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200364 | 7fff67200368 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014b8 | 7fff672014c4 | 000000307000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c58 | 7fff67200c6c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014cc | 7fff672014d8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c6c | 7fff67200c74 | 000000280000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c74 | 7fff67200c80 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c74 | 7fff67200c74 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200394 | 7fff6720039c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014e8 | 7fff672014f0 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c80 | 7fff67200c8c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c8c | 7fff67200c94 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200c94 | 7fff67200ca0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003b4 | 7fff672003c0 | 000000244000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201508 | 7fff67201510 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ca0 | 7fff67200ca4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cb0 | 7fff67200cc4 | 000000319000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cc4 | 7fff67200ccc | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ccc | 7fff67200cd8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ccc | 7fff67200ccc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201540 | 7fff67201548 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cd8 | 7fff67200ce4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ce4 | 7fff67200cec | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200cfc | 7fff67200d00 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d00 | 7fff67200d0c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201574 | 7fff67201578 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d3c | 7fff67200d48 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d3c | 7fff67200d3c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d48 | 7fff67200d54 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200468 | 7fff67200474 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200468 | 7fff67200468 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015bc | 7fff672015c0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d54 | 7fff67200d5c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d5c | 7fff67200d68 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d68 | 7fff67200d6c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d6c | 7fff67200d78 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015e0 | 7fff672015f4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d80 | 7fff67200d8c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200d80 | 7fff67200d80 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004a0 | 7fff672004ac | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004a0 | 7fff672004a0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015f4 | 7fff672015fc | 000000364000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200da0 | 7fff67200dac | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004c0 | 7fff672004cc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004c0 | 7fff672004c0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201614 | 7fff6720161c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200db0 | 7fff67200dbc | 000000216000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200dbc | 7fff67200dd0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200dd0 | 7fff67200dd8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200dd8 | 7fff67200de4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200dd8 | 7fff67200dd8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720164c | 7fff67201654 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200de4 | 7fff67200df0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200df0 | 7fff67200df8 | 000000324000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e08 | 7fff67200e14 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e14 | 7fff67200e1c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e1c | 7fff67200e28 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e1c | 7fff67200e1c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e28 | 7fff67200e34 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e34 | 7fff67200e3c | 000000359000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e4c | 7fff67200e50 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e50 | 7fff67200e5c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e78 | 7fff67200e84 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e78 | 7fff67200e78 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e98 | 7fff67200ea4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200e98 | 7fff67200e98 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ea4 | 7fff67200ea8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ed0 | 7fff67200edc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ed0 | 7fff67200ed0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ee8 | 7fff67200ef0 | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ef0 | 7fff67200efc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200efc | 7fff67200f00 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f08 | 7fff67200f14 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f44 | 7fff67200f50 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f50 | 7fff67200f5c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f5c | 7fff67200f64 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f64 | 7fff67200f70 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f64 | 7fff67200f64 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f70 | 7fff67200f74 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f74 | 7fff67200f80 | 000000239000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200f94 | 7fff67200f9c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fa8 | 7fff67200fb4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fb4 | 7fff67200fbc | 000000340000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fbc | 7fff67200fc8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fbc | 7fff67200fbc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fc8 | 7fff67200fcc | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fcc | 7fff67200fd0 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200fdc | 7fff67200ff0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200ff0 | 7fff67201004 | 000001320000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201004 | 7fff6720100c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201018 | 7fff67201024 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201024 | 7fff6720102c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff67201038 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff6720102c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201038 | 7fff6720103c | 000000219000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720103c | 7fff67201048 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff67201064 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff6720107c | 000000272000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720107c | 7fff67201084 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201090 | 7fff67201094 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201094 | 7fff67201098 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010ac | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010ac | 7fff672010bc | 000000220000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010bc | 7fff672010cc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010cc | 7fff672010dc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010fc | 7fff67201104 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201110 | 7fff67201114 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201114 | 7fff67201120 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201128 | 7fff67201134 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201128 | 7fff67201128 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201158 | 7fff67201164 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200010 | 7fff67200024 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201164 | 7fff67201174 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201174 | 7fff6720117c | 000000368000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720117c | 7fff67201188 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720117c | 7fff6720117c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201188 | 7fff67201194 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201194 | 7fff6720119c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720119c | 7fff672011a8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011cc | 7fff672011e0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e0 | 7fff672011e8 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011f4 | 7fff67201200 | 000000299000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201200 | 7fff67201208 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201214 | 7fff67201218 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201238 | 7fff67201240 | 000000343000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720124c | 7fff67201258 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201258 | 7fff67201260 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720126c | 7fff67201270 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720011c | 7fff67200120 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201270 | 7fff6720127c | 000000216000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200160 | 7fff6720016c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200160 | 7fff67200160 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012b4 | 7fff672012b8 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200180 | 7fff6720018c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012d4 | 7fff672012dc | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720130c | 7fff67201318 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001c4 | 7fff672001d0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001c4 | 7fff672001c4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201318 | 7fff67201320 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001fc | 7fff67200208 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672001fc | 7fff672001fc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201350 | 7fff6720135c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200238 | 7fff67200240 | 000000351000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720138c | 7fff67201394 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720024c | 7fff67200258 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013a0 | 7fff672013a4 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200258 | 7fff67200260 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013ac | 7fff672013b8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013b8 | 7fff672013c8 | 000000314000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002bc | 7fff672002c8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672002bc | 7fff672002bc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201410 | 7fff67201418 | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201424 | 7fff67201428 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201468 | 7fff67201470 | 000000276000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200358 | 7fff67200364 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200358 | 7fff67200358 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014ac | 7fff672014b8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014ac | 7fff672014ac | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014c4 | 7fff672014cc | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014d8 | 7fff672014dc | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200388 | 7fff67200394 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014dc | 7fff672014e8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720039c | 7fff672003a8 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720039c | 7fff6720039c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014f0 | 7fff672014fc | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014f0 | 7fff672014f0 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672003a8 | 7fff672003ac | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014fc | 7fff67201508 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201510 | 7fff6720151c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201520 | 7fff6720152c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720152c | 7fff67201540 | 000000227000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201554 | 7fff67201560 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201568 | 7fff67201574 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201568 | 7fff67201568 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200424 | 7fff67200430 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200424 | 7fff67200424 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201578 | 7fff67201584 | 000000248000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67200430 | 7fff67200434 | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201584 | 7fff6720158c | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720158c | 7fff67201598 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720158c | 7fff6720158c | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201598 | 7fff672015a4 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015a4 | 7fff672015ac | 000000256000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015ac | 7fff672015b8 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015ac | 7fff672015ac | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015c0 | 7fff672015cc | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201608 | 7fff67201614 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720161c | 7fff67201628 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720161c | 7fff6720161c | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201628 | 7fff6720162c | 000000064000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720162c | 7fff67201638 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004e4 | 7fff672004f0 | 000000192000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672004e4 | 7fff672004e4 | 000000196000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201638 | 7fff6720164c | 000000362000 |
+78728172000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78728172000: system.cpu0.workload.drivers0.device.dispatcher:      ~ 0 ~ Total Kernel Time ~ 147847499
+Ticks: 81876887000
+Exiting because  exiting with last active thread context
+
+real	1m23.996s
+user	1m23.463s
+sys	0m0.460s

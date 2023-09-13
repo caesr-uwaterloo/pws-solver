@@ -10,7 +10,7 @@ class BruteForceAlgorithm(Algorithm):
         self.combo = ()
 
     def name(self) -> str:
-        return "Brute Force Algorithm"
+        return "BruteForce"
 
     def solve(self) -> List[int]:
         n = len(self.branches)

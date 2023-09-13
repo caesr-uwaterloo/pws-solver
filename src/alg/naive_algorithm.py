@@ -6,7 +6,7 @@ class NaiveAlgorithm(Algorithm):
         self.benefit = {}
 
     def name(self) -> str:
-        return "Naive Algorithm"
+        return "Naive"
 
     def solve(self) -> List[int]:
         self.compute_benefits(self.A.branch_vertices()[0])

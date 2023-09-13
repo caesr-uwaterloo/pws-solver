@@ -9,7 +9,7 @@ class DPAlgorithm(Algorithm):
         Algorithm.__init__(self, A, s)
 
     def name(self) -> str:
-        return "DP Algorithm"
+        return "DP"
 
     def solve(self) -> List[int]:
         self.alloc_tables()
@@ -18,6 +18,7 @@ class DPAlgorithm(Algorithm):
     
         splits = []
         stack = deque([(0, self.s)])
+        outer_branch = 0
         while len(stack):
             (u, j) = stack.pop()
             m = self.n[u][j]
@@ -29,6 +30,10 @@ class DPAlgorithm(Algorithm):
             for l in self.A.left_children(u):
                 if l in self.A.branch_vertices() and m[0] > 1:
                     stack.append((l, int(m[0])))
+            # TODO: Find a more elegant way to look at reuse in the outermost branch
+            if len(stack) == 0 and self.A.reconv[outer_branch] in self.A.branch_vertices():
+                outer_branch = self.A.reconv[outer_branch]
+                stack.append((outer_branch, self.s))
         
         return sorted(splits)
     

@@ -39,7 +39,9 @@ class Graph():
     def execution_time(self, node: int) -> int:
         w = self.weight[node]
         if node in self.branches:
-            w += self.weight[self.bsb[node]] #+ self.weight[self.reconv[node]]
+            w += self.weight[self.bsb[node]]
+            if self.reconv[node] not in self.branches:
+                w += self.weight[self.reconv[node]]
         return w
     
     def left_child(self, node: int) -> int:
@@ -60,7 +62,7 @@ class Graph():
         assert node in self.branches
         i = node + 1
         if i not in self.branches:
-            return [i]
+            return [i, i+1] # FIXME: make this more dynamic
         children = []
         while self.next_branch(i) and i < self.bsb[node]:
             children.append(i)
@@ -71,7 +73,7 @@ class Graph():
         assert node in self.branches
         i = self.bsb[node] + 1
         if i not in self.branches:
-            return [i]
+            return [i, i+1] # FIXME: make this more dynamic
         children = []
         while self.next_branch(i) and i < self.reconv[node]:
             children.append(i)

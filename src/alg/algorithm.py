@@ -6,11 +6,22 @@ class Algorithm():
         self.s = s
         return
 
+    def name(self) -> str:
+        return "Algorithm"
+
     def solve(self) -> List[int]:
         return [-1]
     
-    def name(self) -> str:
-        return "Algorithm"
+    # TODO: Find a more elegant way to look at reuse in the outermost branch
+    def wcet_outer(self, start: int = 0, splits: List[int] = []) -> int:
+        i = start
+        wcet_out = 0
+        while True:
+            wcet_out += self.wcet(i, splits)
+            i = self.A.next_branch(self.A.reconv[i])
+            if i == 0:
+                break
+        return wcet_out
 
     def wcet(self, start: int = 0, splits: List[int] = []) -> int:
         left = right = weight = 0
@@ -20,7 +31,7 @@ class Algorithm():
             assert i in self.A.cfg.keys()
             if i != start and i in self.A.branches:
                 left += self.wcet(i, splits)
-                i = self.A.reconv[i] + 1
+                i = self.A.reconv[i]
             else:
                 left += self.A.weight[i]
                 i += 1
@@ -29,7 +40,7 @@ class Algorithm():
             assert i in self.A.cfg.keys()
             if i in self.A.branches:
                 right += self.wcet(i, splits)
-                i = self.A.reconv[i] + 1
+                i = self.A.reconv[i]
             else:
                 right += self.A.weight[i]
                 i += 1
@@ -38,6 +49,7 @@ class Algorithm():
             weight += max(left, right)
         else: # not splitting at this branch
             weight += left + right
-        if self.A.parent[self.A.reconv[start]] == self.A.parent[start]:
+        if self.A.parent[self.A.reconv[start]] == self.A.parent[start] \
+            and self.A.reconv[start] not in self.A.branch_vertices():
             weight += self.A.weight[self.A.reconv[start]]
         return weight

@@ -35,16 +35,19 @@ if __name__ == '__main__':
     g = Graph(cfg, weights)
     algs = [
         NoSplitAlgorithm(g, 3),
-        BruteForceAlgorithm(g, 3),
         NaiveAlgorithm(g, 3),
         RandomAlgorithm(g, 3),
-        DPAlgorithm(g, 3)
+        DPAlgorithm(g, 3),
+        BruteForceAlgorithm(g, 3)
     ]
 
+    # print(f"{f'Algorithm':<25} {f'Analytical WCET':<25} {'Split Points':<40} {'Algorithm Runtime (s)'}")
+    print(f"{f'Algorithm':<25} {f'Analytical WCET':<25} {'Algorithm Runtime (s)'}")
     a: Algorithm
     for a in algs:
         start = timeit.default_timer()
         sp = a.solve()
         end = timeit.default_timer()
-        wcet = a.wcet(splits=sp)
-        print(f"{a.name():<25}: {wcet:<25} {str(sp):<25} {end-start}")
+        wcet = a.wcet_outer(splits=sp)
+        # print(f"{a.name():<25} {wcet:<25} {str(sp):<50} {end-start:0.9f}")
+        print(f"{a.name():<25} {wcet:<25} {end-start:0.9f}")

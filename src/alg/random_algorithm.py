@@ -7,7 +7,7 @@ class RandomAlgorithm(Algorithm):
         Algorithm.__init__(self, A, s)
 
     def name(self) -> str:
-        return "Random Algorithm"
+        return "Random"
 
     def solve(self) -> List[int]:
         np.random.seed(0)

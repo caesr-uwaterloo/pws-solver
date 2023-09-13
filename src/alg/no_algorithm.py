@@ -5,7 +5,7 @@ class NoSplitAlgorithm(Algorithm):
         Algorithm.__init__(self, A, s)
 
     def name(self) -> str:
-        return "No Splitting"
+        return "NoSplitting"
 
     def solve(self) -> List[int]:
         return []
