@@ -1,0 +1,383 @@
+Global frequency set at 1000000000000 ticks per second
+build/GCN3_X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+build/GCN3_X86/base/stats/storage.hh:279: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+build/GCN3_X86/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.2.1.0
+gem5 compiled Sep 11 2023 12:28:27
+gem5 started Sep 13 2023 14:41:55
+gem5 executing on 39d8d5943bb7, pid 69176
+command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/synthetic/depth3/test06/synthetic.out -o '4096 4 1024'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: dir_cntrl0.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+build/GCN3_X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build/GCN3_X86/mem/ruby/system/Sequencer.cc:573: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:704: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+build/GCN3_X86/sim/syscall_emul.hh:1862: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+build/GCN3_X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:455: warn: Signal events are only supported currently
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:599: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+build/GCN3_X86/gpu-compute/gpu_compute_driver.cc:609: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+info: running on device 
+info: launch 'synthetic' kernel
+build/GCN3_X86/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+PASSED!
+78131814000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78131814000: system.cpu0.workload.drivers0.device.dispatcher:      | START_PC     | END_PC       | LATENCY      |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720160c | 7fff67201610 | 000000048000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201600 | 7fff6720160c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201600 | 7fff67201600 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015f8 | 7fff67201600 | 000000415000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015c8 | 7fff672015cc | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015bc | 7fff672015c8 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015bc | 7fff672015bc | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015b4 | 7fff672015bc | 000000340000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201584 | 7fff67201588 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201578 | 7fff67201584 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201578 | 7fff67201578 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201570 | 7fff67201578 | 000000299000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201564 | 7fff67201570 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201558 | 7fff67201564 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201558 | 7fff67201558 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201534 | 7fff67201540 | 000000268000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201530 | 7fff67201534 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201524 | 7fff67201530 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201524 | 7fff67201524 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720151c | 7fff67201524 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201510 | 7fff6720151c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201230 | 7fff6720123c | 000000216000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201034 | 7fff6720103c | 000000340000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720142c | 7fff67201434 | 000000280000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201218 | 7fff67201220 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015d8 | 7fff672015e0 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d4 | 7fff672011dc | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011b4 | 7fff672011bc | 000000347000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015a8 | 7fff672015b4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a4 | 7fff672011a8 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201594 | 7fff6720159c | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201190 | 7fff67201198 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201170 | 7fff67201178 | 000000328000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720115c | 7fff67201170 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720123c | 7fff67201244 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201150 | 7fff6720115c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201550 | 7fff67201558 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720114c | 7fff67201150 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201540 | 7fff67201550 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720113c | 7fff67201148 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720113c | 7fff6720113c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201478 | 7fff67201484 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201478 | 7fff67201478 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f4 | 7fff67201100 | 000000268000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014ec | 7fff672014f0 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201244 | 7fff67201250 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201244 | 7fff67201244 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201048 | 7fff67201054 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201464 | 7fff67201470 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201148 | 7fff6720114c | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201344 | 7fff67201350 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201344 | 7fff67201344 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff67201068 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff6720105c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011bc | 7fff672011c8 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011bc | 7fff672011bc | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013b8 | 7fff672013c0 | 000000343000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010d0 | 7fff672010dc | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201220 | 7fff6720122c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201220 | 7fff67201220 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201134 | 7fff6720113c | 000000359000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201330 | 7fff6720133c | 000000268000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011b4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012b8 | 7fff672012c4 | 000000295000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010b0 | 7fff672010bc | 000000216000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014a8 | 7fff672014b8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720122c | 7fff67201230 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201250 | 7fff6720125c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011f8 | 7fff67201200 | 000000351000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201020 | 7fff67201034 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201078 | 7fff67201080 | 000000411000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201274 | 7fff67201280 | 000000268000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720106c | 7fff67201078 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201470 | 7fff67201478 | 000000328000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015ec | 7fff672015f8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e8 | 7fff672011ec | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201414 | 7fff67201420 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201414 | 7fff67201414 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201010 | 7fff67201020 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720120c | 7fff67201218 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 000000000000 | 7fff67201000 | 078071296001 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201068 | 7fff6720106c | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201264 | 7fff67201270 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201264 | 7fff67201264 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015cc | 7fff672015d8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011d4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012d8 | 7fff672012e0 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720111c | 7fff67201128 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720111c | 7fff6720111c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201000 | 7fff67201010 | 000001416999 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201178 | 7fff67201184 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201178 | 7fff67201178 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201374 | 7fff67201380 | 000000299000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720108c | 7fff67201098 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201288 | 7fff67201294 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201288 | 7fff67201288 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201080 | 7fff6720108c | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201484 | 7fff67201488 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011ec | 7fff672011f8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201504 | 7fff67201510 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201504 | 7fff67201504 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201100 | 7fff67201114 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201588 | 7fff67201594 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201190 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201380 | 7fff67201388 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201098 | 7fff672010a0 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201294 | 7fff672012a0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010ac | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010a0 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201498 | 7fff672014a8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201200 | 7fff6720120c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201200 | 7fff67201200 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013fc | 7fff6720140c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201114 | 7fff6720111c | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201310 | 7fff6720131c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720159c | 7fff672015a8 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201198 | 7fff672011a4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201198 | 7fff67201198 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201394 | 7fff67201398 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010ac | 7fff672010b0 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012a8 | 7fff672012b4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012a8 | 7fff672012a8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c4 | 7fff672010d0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c4 | 7fff672010c4 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e4 | 7fff672010f0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e4 | 7fff672010e4 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012e0 | 7fff672012ec | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012e0 | 7fff672012e0 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015e0 | 7fff672015ec | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672015e0 | 7fff672015e0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011dc | 7fff672011e8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011dc | 7fff672011dc | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013d8 | 7fff672013e0 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f0 | 7fff672010f4 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012ec | 7fff672012f8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201440 | 7fff67201444 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720103c | 7fff67201048 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201434 | 7fff67201440 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201434 | 7fff67201434 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201128 | 7fff67201134 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201324 | 7fff67201330 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201324 | 7fff67201324 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720125c | 7fff67201264 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201054 | 7fff6720105c | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201458 | 7fff67201464 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201458 | 7fff67201458 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201270 | 7fff67201274 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201280 | 7fff67201288 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012a0 | 7fff672012a8 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012b4 | 7fff672012b8 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012c4 | 7fff672012d8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010bc | 7fff672010c4 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014c0 | 7fff672014cc | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014c0 | 7fff672014c0 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672012f8 | 7fff67201300 | 000000347000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201300 | 7fff6720130c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201300 | 7fff67201300 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014fc | 7fff67201504 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720130c | 7fff67201310 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720131c | 7fff67201324 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720133c | 7fff67201344 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201350 | 7fff67201354 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201354 | 7fff67201360 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201360 | 7fff67201368 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201368 | 7fff67201374 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201388 | 7fff67201394 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201388 | 7fff67201388 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201398 | 7fff6720139c | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720139c | 7fff672013a8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013a8 | 7fff672013b8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013c0 | 7fff672013cc | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013c0 | 7fff672013c0 | 000000196000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013cc | 7fff672013d8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013e0 | 7fff672013ec | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013e0 | 7fff672013e0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013ec | 7fff672013f0 | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672013f0 | 7fff672013fc | 000000212000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720140c | 7fff67201414 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201420 | 7fff6720142c | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201444 | 7fff67201450 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201450 | 7fff67201458 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201488 | 7fff6720148c | 000000064000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720148c | 7fff67201498 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014b8 | 7fff672014c0 | 000000411000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014cc | 7fff672014d8 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014d8 | 7fff672014e0 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010dc | 7fff672010e4 | 000000256000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014e0 | 7fff672014ec | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014e0 | 7fff672014e0 | 000000192000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672014f0 | 7fff672014fc | 000000216000 |
+78131814000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
+78131814000: system.cpu0.workload.drivers0.device.dispatcher:      ~ 0 ~ Total Kernel Time ~ 60517999
+Ticks: 81354043500
+Exiting because  exiting with last active thread context
+
+real	1m20.074s
+user	1m19.445s
+sys	0m0.491s
