@@ -2,7 +2,7 @@ from collections import deque
 
 import numpy as np
 
-from alg.algorithm import *
+from src.alg.algorithm import *
 
 class DPAlgorithm(Algorithm):
     def __init__(self, A: Graph, s: int) -> None:

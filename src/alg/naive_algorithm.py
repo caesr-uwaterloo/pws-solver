@@ -1,4 +1,4 @@
-from alg.algorithm import *
+from src.alg.algorithm import *
 
 class NaiveAlgorithm(Algorithm):
     def __init__(self, A: Graph, s: int) -> None:
