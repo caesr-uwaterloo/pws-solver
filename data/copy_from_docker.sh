@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for i in {6..6}
+for i in {2..6}
 do
-    for j in {5..9}
+    for j in {0..9}
     do
         docker cp 39d8d5943bb7:/hip-benchmarks/synthetic/depth$i/test0$j/synthetic-hip-amdgcn-amd-amdhsa-gfx801.s data/depth${i}test0${j}.s
         docker cp 39d8d5943bb7:/gem5/logs/synthetic/depth$i/test0$j/64.log data/depth${i}test0${j}-64.log
