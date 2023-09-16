@@ -8,6 +8,7 @@ from src.alg.algorithm import *
 from src.alg.brute_force_algorithm import *
 from src.alg.dp_algorithm import *
 from src.alg.naive_algorithm import *
+from src.alg.dws_algorithm import *
 from src.alg.no_algorithm import *
 from src.alg.random_algorithm import *
 
@@ -37,18 +38,21 @@ if __name__ == '__main__':
         NoSplitAlgorithm(g, 3),
         NaiveAlgorithm(g, 3),
         RandomAlgorithm(g, 3),
+        DWSAlgorithm(g, 3),
         DPAlgorithm(g, 3),
         # BruteForceAlgorithm(g, 3)
     ]
 
-    print(f"{f'Algorithm':<25} {f'Analytical WCET':<25} {'Algorithm Runtime (s)'}")
+    # print(f"{f'Algorithm':<25} {f'Analytical WCET':<25} {'Algorithm Runtime (s)'}")
     wcets = []
+    runtimes = []
     a: Algorithm
     for a in algs:
         start = timeit.default_timer()
         sp = a.solve()
         end = timeit.default_timer()
         wcet = a.wcet_outer(splits=sp)
-        # wcets.append(str(wcet))
-        print(f"{a.name():<25} {wcet:<25} {end-start:0.9f}")
-    # print(f"{args.input},{','.join(wcets)}")
+        wcets.append(str(wcet))
+        runtimes.append(str(end-start))
+        # print(f"{a.name():<25} {wcet:<25} {end-start:0.9f}")
+    print(f"{args.input},{','.join(wcets)},{','.join(runtimes)}")
