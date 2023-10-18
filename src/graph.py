@@ -1,4 +1,6 @@
 from typing import Dict, List
+import matplotlib.pyplot as plt
+import networkx as nx
 
 class Graph():
     def __init__(self, cfg: Dict[int, List[int]], weights: Dict[int, int]) -> None:
@@ -79,3 +81,42 @@ class Graph():
             children.append(i)
             i = self.next_branch(self.reconv[i])
         return children
+    
+    def plot(self) -> None:
+        """
+        Plot the CFG using networkx and matplotlib libraries
+        """
+        nx_graph = nx.DiGraph(self.cfg)
+        
+        # Draw nodes and edges
+        nx_graph.graph['graph'] = {'rankdir': 'TB'}
+        pos = nx.nx_pydot.pydot_layout(nx_graph, prog='dot')
+        nx.draw(
+            nx_graph,
+            pos,
+            with_labels=True,
+            node_size=500,
+            node_color='skyblue',
+            font_size=10,
+            font_color='black',
+            font_weight='bold'
+        )
+
+        # Add weight labels
+        node_labels = {node: f"{self.weight[node]}" \
+                       for node in list(nx_graph.nodes())[:-1]}
+        label_positions = {}
+        for node, position in pos.items():
+            label_positions[node] = (position[0], position[1] - 50)
+        nx.draw_networkx_labels(
+            nx_graph,
+            label_positions,
+            labels=node_labels,
+            font_size=10,
+            font_color='green',
+            font_weight='bold'
+        )
+
+        # Display plot
+        plt.axis('off')
+        plt.show()
