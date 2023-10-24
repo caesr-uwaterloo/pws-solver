@@ -28,6 +28,9 @@ class Graph():
                 parent_stack.append(node)
                 self.bsb[node] = sorted(cfg[node])[-1]
                 self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
+                # Workaround for branches that don't have an else
+                if len(cfg[self.bsb[node]]) == 1:
+                    self.reconv[node] = self.bsb[node]
                 assert self.reconv[node] > node
                 assert self.bsb[node] > node
 
