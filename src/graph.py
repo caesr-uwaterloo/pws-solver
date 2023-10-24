@@ -84,7 +84,7 @@ class Graph():
             i = self.next_branch(self.reconv[i])
         return children
     
-    def plot(self) -> None:
+    def plot(self, file_name: str) -> None:
         """
         Plot the CFG using networkx and matplotlib libraries
         """
@@ -121,4 +121,4 @@ class Graph():
 
         # Display plot
         plt.axis('off')
-        plt.show()
+        plt.savefig(file_name)

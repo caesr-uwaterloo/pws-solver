@@ -186,3 +186,6 @@ if __name__ == '__main__':
             for target in sorted(cfgs[0][node]):
                 line += f" {target}"
             fo.write(f"{line}\n")
+
+    g = Graph(cfgs[0], weights)
+    g.plot(f"data/{args.input}.png")
