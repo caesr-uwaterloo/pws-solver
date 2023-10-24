@@ -34,6 +34,7 @@ if __name__ == '__main__':
             weights[data[0]] = data[1]
 
     g = Graph(cfg, weights)
+    g.plot()
     algs = [
         NoSplitAlgorithm(g, 3),
         NaiveAlgorithm(g, 3),

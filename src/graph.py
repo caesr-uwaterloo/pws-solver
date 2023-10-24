@@ -23,11 +23,13 @@ class Graph():
                 list(filter(lambda x: (x != node), cfg[node]))
             if len(non_loop_successors) > 1 \
                 and node not in self.bsb.values():
-                assert len(non_loop_successors) == 2
+                # assert len(non_loop_successors) == 2
                 self.branches.append(node)
                 parent_stack.append(node)
                 self.bsb[node] = sorted(cfg[node])[-1]
                 self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
+                assert self.reconv[node] > node
+                assert self.bsb[node] > node
 
     def number_of_vertices(self) -> int:
         return len(self.cfg)

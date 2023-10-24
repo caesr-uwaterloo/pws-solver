@@ -14,6 +14,7 @@ Output: <input>.graph
 """
 
 import argparse
+import glob
 import re
 
 from graph import *
@@ -29,53 +30,52 @@ if __name__ == '__main__':
         )
     args = parser.parse_args()
 
-    lines = []
-    with open(f"data/{args.input}.log") as f:
-        lines = f.readlines()
-
     insts = {}
     pcs = {}
     edges = {}
-    first_pc = -1
-    for line in lines:
-        # Extract pc and inst from line, e.g.
-        # 
-        # 78278037000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0]
-        # Executing inst: s_and_b32 s0, s6, 1 (pc: 0x7fff5e780000; seqNum: 1)
-        # 
-        # Subtract starting PC to get relative address
-        if "Executing inst" in line:
-            pc = int(line.partition("pc: 0x")[2].partition(';')[0], 16)
-            if first_pc == -1:
-                first_pc = pc
-            pc = pc - first_pc
-            inst = line.partition("Executing inst: ")[2].partition(' ')[0]
-            assert inst.startswith("s_") or inst.startswith("v_") or inst.startswith("flat_") or inst.startswith("ds_")
-            if pc in insts:
-                assert insts[pc] == inst
-            insts[pc] = inst
+    # If we want to process multiple log files, put them in input*.log
+    for log_file in glob.glob(f"data/{args.input}*.log"):
+        lines = []
+        with open(log_file) as f:
+            lines = f.readlines()
 
-    with open(f"data/{args.input}.log") as f:
-        lines = f.readlines()
+        first_pc = -1
+        for line in lines:
+            # Extract pc and inst from line, e.g.
+            #
+            # 78278037000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0]
+            # Executing inst: s_and_b32 s0, s6, 1 (pc: 0x7fff5e780000; seqNum: 1)
+            #
+            # Subtract starting PC to get relative address
+            if "Executing inst" in line:
+                pc = int(line.partition("pc: 0x")[2].partition(';')[0], 16)
+                if first_pc == -1:
+                    first_pc = pc
+                pc = pc - first_pc
+                inst = line.partition("Executing inst: ")[2].partition(' ')[0]
+                assert inst.startswith("s_") or inst.startswith("v_") or inst.startswith("flat_") or inst.startswith("ds_")
+                if pc in insts:
+                    assert insts[pc] == inst
+                insts[pc] = inst
 
-    for line in lines:
-        # Extract pc and inst from line, e.g.
-        # 
-        # 78278037000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0]
-        # Executing inst: s_and_b32 s0, s6, 1 (pc: 0x7fff5e780000; seqNum: 1)
-        # 
-        # Subtract starting PC to get relative address
-        if "EDGE" in line:
-            values = line.split('|')
-            if int(values[1].strip(), 16) == 0:
-                continue
-            start = int(values[1].strip(), 16) - first_pc
-            end = int(values[2].strip(), 16) - first_pc
-            latency = int(values[3].strip())
-            
-            if start not in edges:
-                edges[start] = {}
-            edges[start][end] = latency
+        with open(log_file) as f:
+            lines = f.readlines()
+
+        for line in lines:
+            if "EDGE" in line:
+                values = line.split('|')
+                if int(values[1].strip(), 16) == 0:
+                    continue
+                start = int(values[1].strip(), 16) - first_pc
+                end = int(values[2].strip(), 16) - first_pc
+                latency = int(values[3].strip())
+
+                if start not in edges:
+                    edges[start] = {}
+                if end not in edges[start]:
+                    edges[start][end] = latency
+                else:
+                    edges[start][end] = max(latency, edges[start][end])
 
     bb = {}
     pc_bbs = {}
@@ -150,14 +150,14 @@ if __name__ == '__main__':
             block = 0
             target = 0
             cfgs.append(cfg)
-            cfg = []
+            cfg = {}
             skip = True
 
     def next_pc(pc: int, pcs: List[int]) -> int:
         if pcs.index(pc) == len(pcs)-1:
             return 0
         return pcs[pcs.index(pc) + 1]
-    
+
     def prev_pc(pc: int, pcs: List[int]) -> int:
         if pcs.index(pc) == 0:
             return len(pcs)-1
