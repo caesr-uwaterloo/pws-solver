@@ -13,11 +13,23 @@ Dependencies:
 Output: <input>.graph
 """
 
+# TODO:
+#   - Allow runs without log file
+#   - Use full input file name
+#   - Determine instruction encoding length without log file
+
 import argparse
 import glob
 import re
 
 from graph import *
+
+class Extractor():
+    """
+    TODO: Implement a more organized version of the script below.
+    """
+    def __init__(self) -> None:
+        pass
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
