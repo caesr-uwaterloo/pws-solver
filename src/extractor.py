@@ -38,31 +38,83 @@ class Extractor():
     inst_pattern = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
     bb_label_pattern = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
     kernel_start_pattern = r"^\;\s*%bb\.0"
+    kernel_end_pattern = r"^s_endpgm"
 
     def __init__(self, input_file) -> None:
         self.input = input_file
+        self.kernels = []
         pass
+
+    def read_basic_block_number(self, line: str) -> int:
+        """
+        Extract the basic block number from the line that defines the basic
+        block label
+        """
+        assert re.search(self.bb_label_pattern, line)
+        numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
+        if line.startswith(';'):
+            return numbers_in_line[0]
+        else:
+            return numbers_in_line[1]
+
+    def read_branch_target(self, line: str) -> int:
+        """
+        Extract the basic block number from the branch instruction target
+        """
+        assert re.search(self.cond_branch_inst_pattern, line) or \
+            re.search(self.uncond_branch_inst_pattern, line)
+        numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
+        return numbers_in_line[1]
 
     def parse_asm(self) -> None:
         """
         Open the assembly file generated with the -save-temps flag and generate
         a CFG of the basic blocks and edges between them
         """
-        prog = []
+        basic_blocks = {} # TODO: Add a type hint
+        weights = {} # TODO: Add a type hint
+        starting_pc = {} # TODO: Add a type hint
+        insts = {}
+        current_bb_number = 0
+        pc = 0
         with open(self.input) as fi:
             for line in fi:
                 line = line.strip()
                 if re.search(self.bb_label_pattern, line):
                     if re.search(self.kernel_start_pattern, line):
                         # Start new kernel
-                        pass
-                    # Add edge to next block
+                        basic_blocks[0] = []
+                    else:
+                        # Add edge to next block
+                        if current_bb_number not in basic_blocks:
+                            basic_blocks[current_bb_number] = []
+                        basic_blocks[current_bb_number].append(
+                            self.read_basic_block_number(line)
+                        )
+                    current_bb_number = self.read_basic_block_number(line)
+                    starting_pc[current_bb_number] = pc
                 elif re.search(self.inst_pattern, line):
                     if re.search(self.cond_branch_inst_pattern, line):
                         # Add edge to branch target block
-                        pass
+                        if current_bb_number not in basic_blocks:
+                            basic_blocks[current_bb_number] = []
+                        basic_blocks[current_bb_number].append(
+                            self.read_branch_target(line)
+                        )
+                    insts[pc] = line
                     # Add PC to basic block
-                    # Add inst to basic block                
+                    # FIXME: Identify when using 64-bit vector ALU ops
+                    if re.search(self.smem_inst_pattern, line) or \
+                        re.search(self.ds_inst_pattern, line) or \
+                        re.search(self.vmem_inst_pattern, line):
+                        pc += 8
+                    else:
+                        pc += 4
+                # FIXME: Doesn't seem to work
+                elif re.search(self.kernel_end_pattern, line):
+                    self.kernels.append(basic_blocks)
+                    basic_blocks = {}
+        print("done")
 
 
     def parse_log(self) -> None:
@@ -80,6 +132,13 @@ if __name__ == '__main__':
             help="Input file name",
             type=str,
             required=True
+        )
+    parser.add_argument(
+            "-l",
+            "--log",
+            help="Log file name",
+            type=str,
+            default=''
         )
     args = parser.parse_args()
 
