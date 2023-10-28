@@ -4,111 +4,77 @@
 16: v_or_b32_e32 v0, s0, v0
 20: s_waitcnt lgkmcnt(0)
 24: v_cmp_le_i32_e64 s[0:1], s2, v0
-28: v_cmp_gt_i32_e32 vcc, s2, v0
-32: s_and_saveexec_b64 s[2:3], vcc
-36: s_cbranch_execz BB0_8
-40: s_load_dwordx8 s[8:15], s[4:5], 0x0
-48: v_ashrrev_i32_e32 v1, 31, v0
-52: s_waitcnt lgkmcnt(0)
-56: v_mov_b32_e32 v3, s13
-60: v_add_u32_e32 v2, vcc, s12, v0
-64: v_addc_u32_e32 v3, vcc, v3, v1, vcc
-68: flat_load_ubyte v4, v[2:3]
-76: s_waitcnt vmcnt(0) lgkmcnt(0)
-80: v_cmp_ne_u16_e32 vcc, 0, v4
-84: s_mov_b64 s[12:13], -1
-88: s_and_saveexec_b64 s[6:7], vcc
-92: s_cbranch_execz BB0_7
-96: v_mov_b32_e32 v4, 0
-100: flat_store_byte v[2:3], v4
-108: v_lshlrev_b64 v[2:3], 3, v[0:1]
-112: v_mov_b32_e32 v4, s9
-116: v_add_u32_e32 v2, vcc, s8, v2
-120: v_addc_u32_e32 v3, vcc, v4, v3, vcc
-124: flat_load_dword v2, v[2:3]
-132: v_mov_b32_e32 v4, s11
-136: s_waitcnt vmcnt(0) lgkmcnt(0)
-140: v_ashrrev_i32_e32 v3, 31, v2
-144: v_lshlrev_b64 v[2:3], 2, v[2:3]
-148: v_add_u32_e32 v2, vcc, s10, v2
-152: v_addc_u32_e32 v3, vcc, v4, v3, vcc
-156: flat_load_dword v2, v[2:3]
-164: s_load_dwordx4 s[8:11], s[4:5], 0x20
-172: s_waitcnt lgkmcnt(0)
-176: v_mov_b32_e32 v5, s9
-180: s_waitcnt vmcnt(0)
-184: v_ashrrev_i32_e32 v3, 31, v2
-188: v_add_u32_e32 v4, vcc, s8, v2
-192: v_addc_u32_e32 v5, vcc, v5, v3, vcc
-196: flat_load_ubyte v4, v[4:5]
-204: s_waitcnt vmcnt(0) lgkmcnt(0)
-208: v_cmp_ne_u16_e32 vcc, 0, v4
-212: s_and_saveexec_b64 s[4:5], vcc
-216: s_xor_b64 s[4:5], exec, s[4:5]
-220: s_cbranch_execz BB0_4
-224: s_nop 0
-228: s_or_saveexec_b64 s[4:5], s[4:5]
-232: s_xor_b64 exec, exec, s[4:5]
-236: s_cbranch_execz BB0_6
-240: v_lshlrev_b64 v[0:1], 2, v[0:1]
-244: v_mov_b32_e32 v4, s11
-248: v_add_u32_e32 v0, vcc, s10, v0
-252: v_addc_u32_e32 v1, vcc, v4, v1, vcc
-256: flat_load_dword v4, v[0:1]
-264: v_lshlrev_b64 v[0:1], 2, v[2:3]
-268: v_mov_b32_e32 v5, s11
-272: v_mov_b32_e32 v6, s15
-276: v_mov_b32_e32 v7, 1
-280: v_add_u32_e32 v2, vcc, s14, v2
-284: v_addc_u32_e32 v3, vcc, v6, v3, vcc
-288: v_add_u32_e32 v0, vcc, s10, v0
-292: v_addc_u32_e32 v1, vcc, v5, v1, vcc
-296: s_waitcnt vmcnt(0) lgkmcnt(0)
-300: v_add_u32_e32 v4, vcc, 1, v4
-304: flat_store_dword v[0:1], v4
-312: flat_store_byte v[2:3], v7
-320: s_or_b64 exec, exec, s[4:5]
-324: s_xor_b64 s[12:13], exec, -1
-328: s_or_b64 exec, exec, s[6:7]
-332: s_andn2_b64 s[0:1], s[0:1], exec
-336: s_and_b64 s[4:5], s[12:13], exec
-340: s_or_b64 s[0:1], s[0:1], s[4:5]
-344: s_or_b64 exec, exec, s[2:3]
-348: s_and_saveexec_b64 s[2:3], s[0:1]
-352: s_cbranch_execz BB0_10
-356: s_nop 0
-360: s_endpgm
-364: s_load_dword s2, s[4:5], 0x20
-372: s_mov_b32 s7, 0
-376: s_lshl_b64 s[0:1], s[6:7], 9
-380: v_or_b32_e32 v0, s0, v0
-384: s_waitcnt lgkmcnt(0)
-388: v_cmp_gt_i32_e32 vcc, s2, v0
-392: s_and_saveexec_b64 s[0:1], vcc
-396: s_cbranch_execz BB1_3
-400: s_load_dwordx8 s[0:7], s[4:5], 0x0
-408: v_ashrrev_i32_e32 v3, 31, v0
-412: s_waitcnt lgkmcnt(0)
-416: v_mov_b32_e32 v2, s3
-420: v_add_u32_e32 v1, vcc, s2, v0
-424: v_addc_u32_e32 v2, vcc, v2, v3, vcc
-428: flat_load_ubyte v4, v[1:2]
-436: s_waitcnt vmcnt(0) lgkmcnt(0)
-440: v_cmp_ne_u16_e32 vcc, 0, v4
-444: s_and_b64 exec, exec, vcc
-448: s_cbranch_execz BB1_3
-452: v_mov_b32_e32 v4, s6
-456: v_mov_b32_e32 v5, s7
-460: v_mov_b32_e32 v7, s1
-464: v_add_u32_e32 v6, vcc, s0, v0
-468: v_addc_u32_e32 v7, vcc, v7, v3, vcc
-472: v_mov_b32_e32 v9, s5
-476: v_add_u32_e32 v8, vcc, s4, v0
-480: v_addc_u32_e32 v9, vcc, v9, v3, vcc
-484: v_mov_b32_e32 v0, 1
-488: flat_store_byte v[6:7], v0
-496: flat_store_byte v[8:9], v0
-504: flat_store_byte v[4:5], v0
-512: v_mov_b32_e32 v0, 0
-516: flat_store_byte v[1:2], v0
-524: s_endpgm
+32: v_cmp_gt_i32_e32 vcc, s2, v0
+36: s_and_saveexec_b64 s[2:3], vcc
+40: s_cbranch_execz BB0_8
+44: s_load_dwordx8 s[8:15], s[4:5], 0x0
+52: v_ashrrev_i32_e32 v1, 31, v0
+56: s_waitcnt lgkmcnt(0)
+60: v_mov_b32_e32 v3, s13
+64: v_add_u32_e32 v2, vcc, s12, v0
+68: v_addc_u32_e32 v3, vcc, v3, v1, vcc
+72: flat_load_ubyte v4, v[2:3]
+80: s_waitcnt vmcnt(0) lgkmcnt(0)
+84: v_cmp_ne_u16_e32 vcc, 0, v4
+88: s_mov_b64 s[12:13], -1
+92: s_and_saveexec_b64 s[6:7], vcc
+96: s_cbranch_execz BB0_7
+100: v_mov_b32_e32 v4, 0
+104: flat_store_byte v[2:3], v4
+112: v_lshlrev_b64 v[2:3], 3, v[0:1]
+120: v_mov_b32_e32 v4, s9
+124: v_add_u32_e32 v2, vcc, s8, v2
+128: v_addc_u32_e32 v3, vcc, v4, v3, vcc
+132: flat_load_dword v2, v[2:3]
+140: v_mov_b32_e32 v4, s11
+144: s_waitcnt vmcnt(0) lgkmcnt(0)
+148: v_ashrrev_i32_e32 v3, 31, v2
+152: v_lshlrev_b64 v[2:3], 2, v[2:3]
+160: v_add_u32_e32 v2, vcc, s10, v2
+164: v_addc_u32_e32 v3, vcc, v4, v3, vcc
+168: flat_load_dword v2, v[2:3]
+176: s_load_dwordx4 s[8:11], s[4:5], 0x20
+184: s_waitcnt lgkmcnt(0)
+188: v_mov_b32_e32 v5, s9
+192: s_waitcnt vmcnt(0)
+196: v_ashrrev_i32_e32 v3, 31, v2
+200: v_add_u32_e32 v4, vcc, s8, v2
+204: v_addc_u32_e32 v5, vcc, v5, v3, vcc
+208: flat_load_ubyte v4, v[4:5]
+216: s_waitcnt vmcnt(0) lgkmcnt(0)
+220: v_cmp_ne_u16_e32 vcc, 0, v4
+224: s_and_saveexec_b64 s[4:5], vcc
+228: s_xor_b64 s[4:5], exec, s[4:5]
+232: s_cbranch_execz BB0_4
+236: s_nop 0
+240: s_or_saveexec_b64 s[4:5], s[4:5]
+244: s_xor_b64 exec, exec, s[4:5]
+248: s_cbranch_execz BB0_6
+252: v_lshlrev_b64 v[0:1], 2, v[0:1]
+260: v_mov_b32_e32 v4, s11
+264: v_add_u32_e32 v0, vcc, s10, v0
+268: v_addc_u32_e32 v1, vcc, v4, v1, vcc
+272: flat_load_dword v4, v[0:1]
+280: v_lshlrev_b64 v[0:1], 2, v[2:3]
+288: v_mov_b32_e32 v5, s11
+292: v_mov_b32_e32 v6, s15
+296: v_mov_b32_e32 v7, 1
+300: v_add_u32_e32 v2, vcc, s14, v2
+304: v_addc_u32_e32 v3, vcc, v6, v3, vcc
+308: v_add_u32_e32 v0, vcc, s10, v0
+312: v_addc_u32_e32 v1, vcc, v5, v1, vcc
+316: s_waitcnt vmcnt(0) lgkmcnt(0)
+320: v_add_u32_e32 v4, vcc, 1, v4
+324: flat_store_dword v[0:1], v4
+332: flat_store_byte v[2:3], v7
+340: s_or_b64 exec, exec, s[4:5]
+344: s_xor_b64 s[12:13], exec, -1
+348: s_or_b64 exec, exec, s[6:7]
+352: s_andn2_b64 s[0:1], s[0:1], exec
+356: s_and_b64 s[4:5], s[12:13], exec
+360: s_or_b64 s[0:1], s[0:1], s[4:5]
+364: s_or_b64 exec, exec, s[2:3]
+368: s_and_saveexec_b64 s[2:3], s[0:1]
+372: s_cbranch_execz BB0_10
+376: s_nop 0
+380: s_endpgm

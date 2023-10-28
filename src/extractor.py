@@ -13,44 +13,27 @@ Dependencies:
 Output: <input>.graph
 """
 
-# TODO:
-#   - Allow runs without log file
-#   - Use full input file name
-#   - Determine instruction encoding length without log file
-
 import argparse
-import glob
 import re
 
-from graph import *
+import pattern
 
 class Extractor():
     """
-    TODO: Implement a more organized version of the script below.
+    This class extracts control-flow information from the source assembly file
+    and optionally from the gem5 log file to extract the execution times for
+    each basic block
     """
-
-    smem_inst_pattern = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
-        r"atc_probe(_buffer)?|dcache_(inv|wb)(_vol)?|mem(real)?time)"
-    ds_inst_pattern = r"^ds_.*"
-    vmem_inst_pattern = r"^((t?buffer|image|flat)_.*|export)"
-    cond_branch_inst_pattern = r"^s_cbranch_.*"
-    uncond_branch_inst_pattern = r"^s_branch.*"
-    inst_pattern = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
-    bb_label_pattern = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
-    kernel_start_pattern = r"^\;\s*%bb\.0"
-    kernel_end_pattern = r"^s_endpgm.*"
-
     def __init__(self, input_file) -> None:
         self.input = input_file
         self.kernels = []
-        pass
 
     def read_basic_block_number(self, line: str) -> int:
         """
         Extract the basic block number from the line that defines the basic
         block label
         """
-        assert re.search(self.bb_label_pattern, line)
+        assert re.search(pattern.BB_LABEL, line)
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
         if line.startswith(';'):
             return numbers_in_line[0]
@@ -61,35 +44,36 @@ class Extractor():
         """
         Extract the basic block number from the branch instruction target
         """
-        assert re.search(self.cond_branch_inst_pattern, line) or \
-            re.search(self.uncond_branch_inst_pattern, line)
+        assert re.search(pattern.COND_BRANCH_INST, line) or \
+            re.search(pattern.UNCOND_BRANCH_INST, line)
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
         return numbers_in_line[1]
 
     def is_double_word_inst(self, line: str) -> bool:
-        # FIXME: Identify when using 64-bit vector ALU ops
-        # VOP3 arithmetic instructions are listed in section 6.3
-        # VOPC compare instructions write to an SGPR instead of VCC
-        return re.search(self.smem_inst_pattern, line) or \
-            re.search(self.ds_inst_pattern, line) or \
-            re.search(self.vmem_inst_pattern, line)
+        """
+        Determine whether an instruction should be 64 bits
+        """
+        return re.search(pattern.SMEM_INST, line) or \
+            re.search(pattern.DS_INST, line) or \
+            re.search(pattern.VMEM_INST, line) or \
+            re.search(pattern.DOUBLE_WORD_ALU, line) or \
+            re.search(pattern.DOUBLE_WORD_COMPARE, line)
 
     def parse_asm(self) -> None:
         """
         Open the assembly file generated with the -save-temps flag and generate
         a CFG of the basic blocks and edges between them
         """
-        basic_blocks = {} # TODO: Add a type hint
-        weights = {} # TODO: Add a type hint
-        starting_pc = {} # TODO: Add a type hint
-        insts = {}
-        current_bb_number = 0
-        pc = 0
-        with open(self.input) as fi:
+        basic_blocks: dict[int, set[int]] = {}
+        starting_pc: dict[int, int] = {}
+        insts: dict[int, str] = {}
+        current_bb_number: int = 0
+        pc: int = 0
+        with open(self.input, encoding="utf-8") as fi:
             for line in fi:
                 line = line.strip()
-                if re.search(self.bb_label_pattern, line):
-                    if re.search(self.kernel_start_pattern, line):
+                if re.search(pattern.BB_LABEL, line):
+                    if re.search(pattern.KERNEL_START, line):
                         # Start new kernel
                         basic_blocks[0] = set()
                     else:
@@ -101,8 +85,8 @@ class Extractor():
                         )
                     current_bb_number = self.read_basic_block_number(line)
                     starting_pc[current_bb_number] = pc
-                elif re.search(self.inst_pattern, line):
-                    if re.search(self.cond_branch_inst_pattern, line):
+                elif re.search(pattern.INST, line):
+                    if re.search(pattern.COND_BRANCH_INST, line):
                         # Add edge to branch target block
                         if current_bb_number not in basic_blocks:
                             basic_blocks[current_bb_number] = set()
@@ -114,13 +98,11 @@ class Extractor():
                         pc += 8
                     else:
                         pc += 4
-                # FIXME: Doesn't seem to work
-                elif re.search(self.kernel_end_pattern, line):
-                    self.kernels.append(basic_blocks)
-                    basic_blocks = {}
-        print("done")
+                    if re.search(pattern.KERNEL_END, line):
+                        self.kernels.append(basic_blocks)
+                        basic_blocks = {}
 
-        with open("extractor.txt", 'w+') as fo:
+        with open("extractor.txt", 'w+', encoding="utf-8") as fo:
             for pc in sorted(insts):
                 fo.write(f"{pc}: {insts[pc]}\n")
 
@@ -129,7 +111,6 @@ class Extractor():
         Get execution times from gem5 log file and incorporate them as weights
         into the CFG
         """
-        pass
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
