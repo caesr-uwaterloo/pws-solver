@@ -68,6 +68,8 @@ class Extractor():
 
     def is_double_word_inst(self, line: str) -> bool:
         # FIXME: Identify when using 64-bit vector ALU ops
+        # VOP3 arithmetic instructions are listed in section 6.3
+        # VOPC compare instructions write to an SGPR instead of VCC
         return re.search(self.smem_inst_pattern, line) or \
             re.search(self.ds_inst_pattern, line) or \
             re.search(self.vmem_inst_pattern, line)
