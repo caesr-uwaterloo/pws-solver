@@ -201,3 +201,7 @@ if __name__ == '__main__':
 
     g = Graph(cfgs[0], weights)
     g.plot(f"data/{args.input}.png")
+
+    with open("extract.txt", 'w+') as fo:
+        for pc in sorted(insts):
+            fo.write(f"{pc}: {insts[pc]}\n")

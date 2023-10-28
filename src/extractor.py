@@ -38,7 +38,7 @@ class Extractor():
     inst_pattern = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
     bb_label_pattern = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
     kernel_start_pattern = r"^\;\s*%bb\.0"
-    kernel_end_pattern = r"^s_endpgm"
+    kernel_end_pattern = r"^s_endpgm.*"
 
     def __init__(self, input_file) -> None:
         self.input = input_file
@@ -66,6 +66,12 @@ class Extractor():
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
         return numbers_in_line[1]
 
+    def is_double_word_inst(self, line: str) -> bool:
+        # FIXME: Identify when using 64-bit vector ALU ops
+        return re.search(self.smem_inst_pattern, line) or \
+            re.search(self.ds_inst_pattern, line) or \
+            re.search(self.vmem_inst_pattern, line)
+
     def parse_asm(self) -> None:
         """
         Open the assembly file generated with the -save-temps flag and generate
@@ -83,12 +89,12 @@ class Extractor():
                 if re.search(self.bb_label_pattern, line):
                     if re.search(self.kernel_start_pattern, line):
                         # Start new kernel
-                        basic_blocks[0] = []
+                        basic_blocks[0] = set()
                     else:
                         # Add edge to next block
                         if current_bb_number not in basic_blocks:
-                            basic_blocks[current_bb_number] = []
-                        basic_blocks[current_bb_number].append(
+                            basic_blocks[current_bb_number] = set()
+                        basic_blocks[current_bb_number].add(
                             self.read_basic_block_number(line)
                         )
                     current_bb_number = self.read_basic_block_number(line)
@@ -97,16 +103,12 @@ class Extractor():
                     if re.search(self.cond_branch_inst_pattern, line):
                         # Add edge to branch target block
                         if current_bb_number not in basic_blocks:
-                            basic_blocks[current_bb_number] = []
-                        basic_blocks[current_bb_number].append(
+                            basic_blocks[current_bb_number] = set()
+                        basic_blocks[current_bb_number].add(
                             self.read_branch_target(line)
                         )
                     insts[pc] = line
-                    # Add PC to basic block
-                    # FIXME: Identify when using 64-bit vector ALU ops
-                    if re.search(self.smem_inst_pattern, line) or \
-                        re.search(self.ds_inst_pattern, line) or \
-                        re.search(self.vmem_inst_pattern, line):
+                    if self.is_double_word_inst(line):
                         pc += 8
                     else:
                         pc += 4
@@ -116,6 +118,9 @@ class Extractor():
                     basic_blocks = {}
         print("done")
 
+        with open("extractor.txt", 'w+') as fo:
+            for pc in sorted(insts):
+                fo.write(f"{pc}: {insts[pc]}\n")
 
     def parse_log(self) -> None:
         """
