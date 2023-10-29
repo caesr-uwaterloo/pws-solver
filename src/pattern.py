@@ -49,3 +49,4 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_interp_p2_f16"
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
+IPT_EDGE = r"EDGE"

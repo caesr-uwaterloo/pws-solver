@@ -15,8 +15,10 @@ Output: <input>.graph
 
 import argparse
 import re
+from pathlib import Path
 
 import pattern
+from graph import Graph
 
 class Extractor():
     """
@@ -24,9 +26,10 @@ class Extractor():
     and optionally from the gem5 log file to extract the execution times for
     each basic block
     """
-    def __init__(self, input_file) -> None:
-        self.input = input_file
-        self.kernels = []
+    def __init__(self, input_file: str) -> None:
+        self.input: str = input_file
+        self.kernels: list[dict[int, str]] = []
+        self.graphs: list[Graph] = []
 
     def read_basic_block_number(self, line: str) -> int:
         """
@@ -37,8 +40,7 @@ class Extractor():
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
         if line.startswith(';'):
             return numbers_in_line[0]
-        else:
-            return numbers_in_line[1]
+        return numbers_in_line[1]
 
     def read_branch_target(self, line: str) -> int:
         """
@@ -99,18 +101,40 @@ class Extractor():
                     else:
                         pc += 4
                     if re.search(pattern.KERNEL_END, line):
-                        self.kernels.append(basic_blocks)
+                        self.kernels.append(insts)
+                        self.graphs.append(Graph(basic_blocks))
+                        insts = {}
                         basic_blocks = {}
+                        pc = 0
 
-        with open("extractor.txt", 'w+', encoding="utf-8") as fo:
-            for pc in sorted(insts):
-                fo.write(f"{pc}: {insts[pc]}\n")
-
-    def parse_log(self) -> None:
+    def parse_log(self, log_file: str) -> None:
         """
         Get execution times from gem5 log file and incorporate them as weights
         into the CFG
         """
+        edges = {}
+        first_pc = 0
+        with open(log_file, encoding="utf-8") as fi:
+            for line in fi:
+                if re.search(pattern.IPT_EDGE, line):
+                    values = line.split('|')
+                    if int(values[1].strip(), 16) == 0:
+                        continue
+                    start = int(values[1].strip(), 16) - first_pc
+                    end = int(values[2].strip(), 16) - first_pc
+                    latency = int(values[3].strip())
+
+                    if start not in edges:
+                        edges[start] = {}
+                    if end not in edges[start]:
+                        edges[start][end] = latency
+                    else:
+                        edges[start][end] = max(latency, edges[start][end])
+
+        # Next steps:
+        #  Group the IPTs in the log file by kernel start address
+        #    e.g. task->codeAddress
+        #    Print kernel index in the log file
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -132,3 +156,8 @@ if __name__ == '__main__':
 
     e = Extractor(args.input)
     e.parse_asm()
+    path = Path(args.input)
+    for i, graph in enumerate(e.graphs):
+        file_name = f"{path.parent}/{path.stem}{i:02}"
+        graph.write_to_file(file_name=f"{file_name}.graph")
+        graph.plot(file_name=f"{file_name}.png")
