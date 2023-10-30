@@ -59,11 +59,11 @@ class Extractor():
         """
         Determine whether an instruction should be 64 bits
         """
-        return re.search(pattern.SMEM_INST, line) or \
+        return bool(re.search(pattern.SMEM_INST, line) or \
             re.search(pattern.DS_INST, line) or \
             re.search(pattern.VMEM_INST, line) or \
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
-            re.search(pattern.DOUBLE_WORD_COMPARE, line)
+            re.search(pattern.DOUBLE_WORD_COMPARE, line))
 
     def pc_basic_block(self, kernel_id: int, pc: int) -> int:
         """
@@ -146,6 +146,10 @@ class Extractor():
                         # TODO: Add handling logic for other cases:
                         #   - Branches are taken
                         #   - Loops
+                        # FIXME: This actually doesn't cover all cases that we
+                        # want, need to find a way to capture everything
+                        # (inserting raw assembly generates a new basic block
+                        # that is undetected by IPTs)
                         if bb_end == bb_start + 1 and \
                             latency > self.graphs[kernel_id].weight[bb_start]:
                             self.graphs[kernel_id].weight[bb_start] = latency

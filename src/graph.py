@@ -1,14 +1,13 @@
-from typing import Dict, List
-import matplotlib.pyplot as plt
-import networkx as nx
+import matplotlib.pyplot as plt # type: ignore
+import networkx as nx # type: ignore
 
 class Graph():
-    def __init__(self, cfg: Dict[int, List[int]], weights: Dict[int, int] = {}) -> None:
+    def __init__(self, cfg: dict[int, set[int]], weights: dict[int, int] = {}) -> None:
         self.cfg = cfg
-        self.branches = []
-        self.bsb = {}
-        self.reconv = {}
-        self.parent = {}
+        self.branches: list[int] = []
+        self.bsb: dict[int, int] = {}
+        self.reconv: dict[int, int] = {}
+        self.parent: dict[int, int] = {}
         parent_stack = [-1]
         if len(weights) == 0:
             self.weight = {key: 0 for key in self.cfg.keys()}
@@ -16,26 +15,26 @@ class Graph():
             assert len(weights) == len(cfg)
             self.weight = weights
 
-        for node in sorted(self.cfg):
-            while len(parent_stack) > 1 \
-                and node == self.reconv[parent_stack[-1]]:
-                parent_stack.pop()
-            self.parent[node] = parent_stack[-1]
+        # for node in sorted(self.cfg):
+        #     while len(parent_stack) > 1 \
+        #         and node == self.reconv[parent_stack[-1]]:
+        #         parent_stack.pop()
+        #     self.parent[node] = parent_stack[-1]
 
-            non_loop_successors = \
-                list(filter(lambda x: (x != node), cfg[node]))
-            if len(non_loop_successors) > 1 \
-                and node not in self.bsb.values():
-                # assert len(non_loop_successors) == 2
-                self.branches.append(node)
-                parent_stack.append(node)
-                self.bsb[node] = sorted(cfg[node])[-1]
-                self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
-                # Workaround for branches that don't have an else
-                if len(cfg[self.bsb[node]]) == 1:
-                    self.reconv[node] = self.bsb[node]
-                assert self.reconv[node] > node
-                assert self.bsb[node] > node
+        #     non_loop_successors = \
+        #         list(filter(lambda x: (x != node), cfg[node]))
+        #     if len(non_loop_successors) > 1 \
+        #         and node not in self.bsb.values():
+        #         # assert len(non_loop_successors) == 2
+        #         self.branches.append(node)
+        #         parent_stack.append(node)
+        #         self.bsb[node] = sorted(cfg[node])[-1]
+        #         self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
+        #         # Workaround for branches that don't have an else
+        #         if len(cfg[self.bsb[node]]) == 1:
+        #             self.reconv[node] = self.bsb[node]
+        #         assert self.reconv[node] > node
+        #         assert self.bsb[node] > node
 
     def write_to_file(self, file_name: str) -> None:
         """
@@ -52,10 +51,10 @@ class Graph():
     def number_of_vertices(self) -> int:
         return len(self.cfg)
     
-    def non_branch_vertices(self) -> List[int]:
+    def non_branch_vertices(self) -> list[int]:
         return [v for v in self.cfg if v not in self.branches]
     
-    def branch_vertices(self) -> List[int]:
+    def branch_vertices(self) -> list[int]:
         return self.branches
     
     def execution_time(self, node: int) -> int:
@@ -80,7 +79,7 @@ class Graph():
                 return b_i
         return 0
 
-    def left_children(self, node: int) -> List[int]:
+    def left_children(self, node: int) -> list[int]:
         assert node in self.branches
         i = node + 1
         if i not in self.branches:
@@ -91,7 +90,7 @@ class Graph():
             i = self.next_branch(self.reconv[i])
         return children
     
-    def right_children(self, node: int) -> List[int]:
+    def right_children(self, node: int) -> list[int]:
         assert node in self.branches
         i = self.bsb[node] + 1
         if i not in self.branches:

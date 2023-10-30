@@ -102,9 +102,9 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 21.2.1.0
-gem5 compiled Oct 29 2023 23:36:49
-gem5 started Oct 29 2023 23:38:41
-gem5 executing on 39d8d5943bb7, pid 286204
+gem5 compiled Oct 30 2023 04:37:22
+gem5 started Oct 30 2023 04:41:56
+gem5 executing on 39d8d5943bb7, pid 447256
 command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/rodinia_3.0/hip/bfs/bfs -o /hip-benchmarks/rodinia_3.0/data/bfs/graph4096.txt
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -184,16 +184,14 @@ Start traversing the tree
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff5e75b000
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 340  | 348  | 8000         |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 240  | 248  | 14000        |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 240  | 4035000      |
+153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 232  | 248  | 14000        |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 372  | 380  | 1122000      |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 372  | 0    | 236000       |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 360  | 364  | 32000        |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 360  | 96000        |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 348  | 224000       |
+153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 364  | 128000       |
+153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 232  | 4035000      |
+153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 348  | 224000       |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 248  | 340  | 1488000      |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 348  | 1729000      |
-153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 96   | 1492000      |
+153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 96   | 1729000      |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 364  | 372  | 64000        |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 40   | 2465999      |
 153399985000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
@@ -202,11 +200,9 @@ Start traversing the tree
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 1 start address 7fff5e75b200
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 160  | 160  | 153000       |
-153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 160  | 0    | 241000       |
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 84   | 160  | 1197000      |
-153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 84   | 391000       |
-153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 160  | 789000       |
+153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 84   | 0    | 241000       |
+153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 84   | 789000       |
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 0    | 32   | 511999       |
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153409433000: system.cpu0.workload.drivers0.device.dispatcher: ~ 1 ~ Total Kernel Time ~ 3152999
@@ -214,22 +210,18 @@ Start traversing the tree
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff5e75b000
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 232  | 340  | 16000        |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 380  | 0    | 97982000     |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 340  | 340  | 6000         |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 672  | 0    | 84682000     |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 340  | 348  | 8000         |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 240  | 248  | 14000        |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 232  | 2914000      |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 240  | 4035000      |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 596  | 0    | 84830001     |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 232  | 248  | 16000        |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 372  | 380  | 1122000      |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 372  | 0    | 98166000     |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 672  | 0    | 84830001     |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 360  | 364  | 32000        |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 360  | 96000        |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 348  | 224000       |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 364  | 128000       |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 232  | 4035000      |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 96   | 348  | 224000       |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 248  | 340  | 1488000      |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 348  | 1729000      |
-153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 96   | 1492000      |
+153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 96   | 1729000      |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 364  | 372  | 64000        |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 40   | 2465999      |
 153496223000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
@@ -238,11 +230,9 @@ Start traversing the tree
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 1 start address 7fff5e75b200
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 160  | 160  | 153000       |
-153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 160  | 0    | 241000       |
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 84   | 160  | 1197000      |
-153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 84   | 391000       |
-153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 160  | 789000       |
+153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 84   | 0    | 241000       |
+153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 32   | 84   | 789000       |
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 0    | 32   | 511999       |
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 153502918000: system.cpu0.workload.drivers0.device.dispatcher: ~ 3 ~ Total Kernel Time ~ 794999
@@ -253,4 +243,4 @@ PASSED!
 Ticks: 164725317000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 3m25.962s
+Time elapsed: 3m31.708s

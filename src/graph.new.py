@@ -6,9 +6,8 @@ This module consists of the Graph class to represent the CFG of a GPU kernel
 
 from __future__ import annotations
 
-from typing import Dict, List
-import matplotlib.pyplot as plt
-import networkx as nx
+import matplotlib.pyplot as plt # type: ignore
+import networkx as nx # type: ignore
 
 class BasicBlock():
     """
@@ -17,7 +16,11 @@ class BasicBlock():
     def __init__(self, num: int, wcet: int = 0) -> None:
         self.num: int = num
         self.wcet: int = wcet
-        self.__successors: set[BasicBlock] = set()
+        # TODO: Add logic to set parent, bsb, and reconv
+        self.parent: int = -1
+        self.bsb: int = -1
+        self.reconv: int = -1
+        self.__successors: set[int] = set()
         self.__insts: dict[int, str] = {}
 
     def add_instruction(self, pc: int, inst: str) -> None:
@@ -26,142 +29,68 @@ class BasicBlock():
         """
         self.__insts[pc] = inst
 
-    def add_successor(self, bb: BasicBlock) -> None:
+    def add_successor(self, bb: int) -> None:
         """
         Map a successor node to this basic block
         """
         self.__successors.add(bb)
+
+    def successors(self) -> list[int]:
+        """
+        Returns the basic block successor set
+        """
+        return sorted(self.__successors)
+
+    def is_branch(self) -> bool:
+        """
+        Determine if control-flow can branch out to multiple basic blocks from
+        this basic block
+        """
+        # TODO: Might want to have a more elegant check here
+        return self.reconv != -1
 
 class Graph():
     """
     This class represents the control-flow graph of a GPU kernel, including
     information about the connections between basic blocks and their WCETs.
     """
-    # def __init__(
-    #         self,
-    #         cfg: Dict[int, set[int]],
-    #         wcets: Dict[int, int]
-    #     ) -> None:
-    #     self.wcet: dict[int, int] = {}
-    #     self.__cfg: dict[int, set[int]] = {}
-    #     self.cfg = cfg
-    #     self.branches = []
-    #     self.bsb = {}
-    #     self.reconv = {}
-    #     self.parent = {}
-    #     self.kernel: dict[int, str] = {}
-    #     assert len(wcets) == len(cfg)
-    #     self.weight = wcets
-
     def __init__(self) -> None:
-        self.wcet: dict[int, int] = {}
-        self.__cfg: dict[int, set[int]] = {}
-        self.kernel: dict[int, str] = {}
+        self.cfg: dict[int, BasicBlock] = {}
+        self.pc_map: dict[int, int] = {}
 
     def insert_basic_block(self, num: int, wcet: int = 0) -> None:
         """
         Add a new basic block to the control-flow graph or update its weight if
         it already exists
         """
-        assert num not in self.__cfg
-        self.__cfg[num] = set()
-        self.wcet[num] = wcet
+        if num not in self.cfg:
+            self.cfg[num] = BasicBlock(num, wcet)
+        else:
+            # Silently update the WCET if already exists
+            self.cfg[num].wcet = wcet
 
     def insert_edge(self, src: int, dst: int) -> None:
         """
         Add a new edge to the control-flow graph from basic block src to dst
         """
-        assert src in self.__cfg
-        assert dst in self.__cfg
-        self.cfg[src].add(dst)
+        assert src in self.cfg
+        if dst not in self.cfg:
+            self.insert_basic_block(dst)
+        self.cfg[src].add_successor(dst)
 
-    def insert_instruction(self, inst: str, pc: int) -> None:
+    def insert_instruction(self, inst: str, pc: int, bb: int) -> None:
         """
         Add an instruction to the graph
         """
-        if pc not in self.kernel:
-            self.kernel[pc] = inst
-
-    # def find_branches(self) -> None:
-    #     parent_stack = [-1]
-    #     for node in sorted(self.cfg):
-    #         while len(parent_stack) > 1 \
-    #             and node == self.reconv[parent_stack[-1]]:
-    #             parent_stack.pop()
-    #         self.parent[node] = parent_stack[-1]
-
-    #         non_loop_successors = \
-    #             list(filter(lambda x: (x != node), self.cfg[node]))
-    #         if len(non_loop_successors) > 1 \
-    #             and node not in self.bsb.values():
-    #             # assert len(non_loop_successors) == 2
-    #             self.branches.append(node)
-    #             parent_stack.append(node)
-    #             self.bsb[node] = sorted(self.cfg[node])[-1]
-    #             self.reconv[node] = sorted(self.cfg[self.bsb[node]])[-1]
-    #             # Workaround for branches that don't have an else
-    #             if len(self.cfg[self.bsb[node]]) == 1:
-    #                 self.reconv[node] = self.bsb[node]
-    #             assert self.reconv[node] > node
-    #             assert self.bsb[node] > node
-
-    # def number_of_vertices(self) -> int:
-    #     return len(self.cfg)
-
-    # def non_branch_vertices(self) -> List[int]:
-    #     return [v for v in self.cfg if v not in self.branches]
-
-    # def branch_vertices(self) -> List[int]:
-    #     return self.branches
-
-    # def execution_time(self, node: int) -> int:
-    #     w = self.weight[node]
-    #     if node in self.branches:
-    #         w += self.weight[self.bsb[node]]
-    #         if self.reconv[node] not in self.branches:
-    #             w += self.weight[self.reconv[node]]
-    #     return w
-
-    # def left_child(self, node: int) -> int:
-    #     assert node in self.branches
-    #     return node + 1
-
-    # def right_child(self, node: int) -> int:
-    #     assert node in self.branches
-    #     return self.bsb[node] + 1
-
-    # def next_branch(self, node: int) -> int:
-    #     for b_i in sorted(self.branches):
-    #         if b_i >= node:
-    #             return b_i
-    #     return 0
-
-    # def left_children(self, node: int) -> List[int]:
-    #     assert node in self.branches
-    #     i = node + 1
-    #     if i not in self.branches:
-    #         return [i, i+1] # FIXME: make this more dynamic
-    #     children = []
-    #     while self.next_branch(i) and i < self.bsb[node]:
-    #         children.append(i)
-    #         i = self.next_branch(self.reconv[i])
-    #     return children
-
-    # def right_children(self, node: int) -> List[int]:
-    #     assert node in self.branches
-    #     i = self.bsb[node] + 1
-    #     if i not in self.branches:
-    #         return [i, i+1] # FIXME: make this more dynamic
-    #     children = []
-    #     while self.next_branch(i) and i < self.reconv[node]:
-    #         children.append(i)
-    #         i = self.next_branch(self.reconv[i])
-    #     return children
+        if pc not in self.pc_map:
+            self.pc_map[pc] = bb
+        self.cfg[bb].add_instruction(pc, inst)
 
     def plot(self, file_name: str) -> None:
         """
         Plot the CFG using networkx and matplotlib libraries
         """
+        plt.close()
         nx_graph = nx.DiGraph(self.cfg)
 
         # Draw nodes and edges
@@ -179,7 +108,7 @@ class Graph():
         )
 
         # Add weight labels
-        node_labels = {node: f"{self.weight[node]}" \
+        node_labels = {node: f"{self.cfg[node].wcet}" \
                        for node in list(nx_graph.nodes())[:-1]}
         label_positions = {}
         for node, position in pos.items():
@@ -196,3 +125,18 @@ class Graph():
         # Display plot
         plt.axis('off')
         plt.savefig(file_name)
+
+    def write_to_file(self, file_name: str) -> None:
+        """
+        Output the contents of the CFG and the WCETs of each basic block to a
+        given file
+        """
+        with open(file_name, 'w', encoding="utf-8") as fo:
+            for node in sorted(self.cfg):
+                line = f"{node} {self.cfg[node].wcet}"
+                for target in self.cfg[node].successors():
+                    line += f" {target}"
+                fo.write(f"{line}\n")
+
+    # TODO: Add the rest of the helper methods
+    # TODO: Write a "read_from_file" method
