@@ -1,5 +1,7 @@
 # Split Point Solver
 
+TODO: Fix this outdated README.
+
 ## Extract CFG from Benchmark
 
 One way to generate inputs for the solver is by using the script `src/extract.py`.

@@ -1,82 +1,13 @@
 #!/usr/bin/python3
 
 """\
-This module consists of the Graph class to represent the CFG of a GPU kernel
+This module consists of the Graph class to represent the CFG of a GPU kernel.
 """
-
-from __future__ import annotations
-
-import re
 
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
 
-from src import pattern
-
-class BasicBlock():
-    """
-    A class that represents a basic block in the CFG
-    """
-    def __init__(self, num: int, wcet: int = 0) -> None:
-        self.num: int = num
-        self.wcet: int = wcet
-        self.parent: int = -1
-        self.bsb: int = -1
-        self.reconv: int = -1
-        self.__successors: set[int] = set()
-        self.__insts: dict[int, str] = {}
-
-    def add_instruction(self, pc: int, inst: str) -> None:
-        """
-        Map an instruction to this basic block
-        """
-        self.__insts[pc] = inst
-
-    def add_successor(self, bb: int) -> None:
-        """
-        Map a successor node to this basic block
-        """
-        self.__successors.add(bb)
-
-    def successors(self) -> list[int]:
-        """
-        Returns the basic block successor set
-        """
-        return sorted(self.__successors)
-
-    def instructions(self) -> dict[int, str]:
-        """
-        Returns the basic block instructions and their PCs
-        """
-        return self.__insts
-
-    def is_branch(self) -> bool:
-        """
-        Determine if control-flow can branch out to multiple basic blocks from
-        this basic block
-        """
-        return self.reconv != -1
-
-    def is_bsb(self) -> bool:
-        """
-        Determine if the basic block is a branch serialization block
-        """
-        first_inst = list(self.__insts.values())[0]
-        return bool(re.search(
-            pattern.BSB_START_INST,
-            first_inst
-        ))
-
-    def is_reconv(self) -> bool:
-        """
-        Determine if the basic block contains a reconvergence point for a
-        prior branch
-        """
-        first_inst = list(self.__insts.values())[0]
-        return bool(re.search(
-            pattern.RECONV_START_INST,
-            first_inst
-        ))
+from src.block import BasicBlock
 
 class Graph():
     """
@@ -162,6 +93,84 @@ class Graph():
                             self.cfg[bb.parent].reconv = v
                         self.cfg[u].reconv = v
 
+    def number_of_vertices(self) -> int:
+        """
+        Returns the number of basic blocks in the kernel
+        """
+        return len(self.cfg)
+
+    def non_branch_vertices(self) -> list[int]:
+        """
+        Returns all basic blocks that are not branches
+        """
+        return [bb for bb in self.cfg.values() if not bb.is_branch()]
+
+    def branch_vertices(self) -> list[int]:
+        """
+        Returns all basic blocks that are branches
+        """
+        return [bb for bb in self.cfg.values() if bb.is_branch()]
+
+    def execution_time(self, node: int) -> int:
+        """
+        Get total WCET of the basic block and its corresponding branch
+        serialization and reconvergence blocks, if applicable
+        """
+        bb = self.cfg[node]
+        w = bb.wcet
+        if bb.is_branch():
+            if bb.bsb != -1:
+                w += self.cfg[bb.bsb].wcet
+            if not self.cfg[bb.reconv].is_branch():
+                w += self.cfg[bb.reconv].wcet
+        return w
+
+    def next_block_in_sequence(self, node: int) -> int:
+        """
+        Return the next basic block that shares a parent with the given
+        basic block
+        """
+        bb = self.cfg[node]
+        if bb.is_branch():
+            reconv_block = self.cfg[bb.reconv]
+            if reconv_block.is_branch():
+                return reconv_block.num
+            bb = reconv_block
+        return min(i for i in sorted(bb.successors) \
+                   if i > bb.num)
+
+    def left_children(self, node: int) -> list[int]:
+        """
+        Return all nodes between the given basic block and its branch
+        serialization block. If it doesn't have an else path, all children
+        should be absorbed into the left path
+        """
+        bb = self.cfg[node]
+        assert bb.is_branch()
+        children = []
+        idx = min(i for i in sorted(bb.successors()) if i > bb.num)
+        endpoint = bb.bsb if bb.has_else_path() else bb.reconv
+        while idx < endpoint:
+            children.append(idx)
+            idx = self.next_block_in_sequence(idx)
+        return children
+
+    def right_children(self, node: int) -> list[int]:
+        """
+        Return all nodes between the branch serialization block of a given
+        basic block and its reconvergence block. If it doesn't have an else
+        path, then the right path is empty and we return an empty list
+        """
+        bb = self.cfg[node]
+        assert bb.is_branch()
+        children = []
+        if bb.has_else_path():
+            bsb_block = self.cfg[bb.bsb]
+            idx = min(i for i in sorted(bsb_block.successors()) if i > bb.num)
+            while idx < bb.reconv:
+                children.append(idx)
+                idx = self.next_block_in_sequence(idx)
+        return children
 
     def plot(self, file_name: str) -> None:
         """
@@ -229,5 +238,3 @@ class Graph():
                 self.insert_basic_block(num=data[0], wcet=data[1])
                 for dst in data[2:]:
                     self.insert_edge(data[0], dst)
-
-    # TODO: Add the rest of the helper methods
