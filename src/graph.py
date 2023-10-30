@@ -7,7 +7,7 @@ This module consists of the Graph class to represent the CFG of a GPU kernel.
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
 
-from src.block import BasicBlock
+from src.block import BasicBlock # type: ignore
 
 class Graph():
     """
@@ -23,7 +23,7 @@ class Graph():
         Get a map of all PCs and their instructions in this kernel. Only really
         needed for debugging purposes
         """
-        insts = {}
+        insts: dict[int, str] = {}
         for bb in self.cfg.values():
             insts |= bb.instructions()
         return insts
@@ -72,7 +72,7 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
-        parent_stack = []
+        parent_stack: list[int] = []
         for u in sorted(self.cfg.keys()):
             bb = self.cfg[u]
             while len(parent_stack) > 0 \
@@ -136,8 +136,7 @@ class Graph():
             if reconv_block.is_branch():
                 return reconv_block.num
             bb = reconv_block
-        return min(i for i in sorted(bb.successors) \
-                   if i > bb.num)
+        return bb.immediate_successor()
 
     def left_children(self, node: int) -> list[int]:
         """
@@ -148,7 +147,7 @@ class Graph():
         bb = self.cfg[node]
         assert bb.is_branch()
         children = []
-        idx = min(i for i in sorted(bb.successors()) if i > bb.num)
+        idx = bb.immediate_successor()
         endpoint = bb.bsb if bb.has_else_path() else bb.reconv
         while idx < endpoint:
             children.append(idx)
@@ -166,7 +165,7 @@ class Graph():
         children = []
         if bb.has_else_path():
             bsb_block = self.cfg[bb.bsb]
-            idx = min(i for i in sorted(bsb_block.successors()) if i > bb.num)
+            idx = bsb_block.immediate_successor()
             while idx < bb.reconv:
                 children.append(idx)
                 idx = self.next_block_in_sequence(idx)

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import re
 
-from src import pattern
+from src import pattern # type: ignore
 
 class BasicBlock():
     """
@@ -41,6 +41,13 @@ class BasicBlock():
         Returns the basic block successor set
         """
         return sorted(self.__successors)
+
+    def immediate_successor(self) -> int:
+        """
+        Returns the immediate successor to a node, correponding to the next
+        basic block that appears in program sequence
+        """
+        return min(i for i in sorted(self.__successors) if i > self.num)
 
     def instructions(self) -> dict[int, str]:
         """

@@ -19,8 +19,8 @@ from pathlib import Path
 import argparse
 import re
 
-from src import pattern
-from src.graph import Graph
+from src import pattern # type: ignore
+from src.graph import Graph # type: ignore
 
 class Extractor():
     """

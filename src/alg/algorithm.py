@@ -1,55 +1,76 @@
-from src.graph import *
+"""
+This module defines the parent Algorithm class to represent all split
+selection algorithms.
+"""
+
+from src.graph import Graph # type: ignore
 
 class Algorithm():
-    def __init__(self, A: Graph, s: int) -> None:
-        self.A = A
+    """
+    Baseline parent algorithm class. All other split selection algorithms may
+    inherit from this
+    """
+    def __init__(self, graph: Graph, s: int) -> None:
+        self.graph = graph
         self.s = s
-        return
 
     def name(self) -> str:
+        """
+        Returns the name of the algorithm
+        """
         return "Algorithm"
 
-    def solve(self) -> List[int]:
+    def solve(self) -> list[int]:
+        """
+        Return a vector of basic block indices selected as split points
+        """
         return [-1]
-    
-    # TODO: Find a more elegant way to look at reuse in the outermost branch
-    def wcet_outer(self, start: int = 0, splits: List[int] = []) -> int:
-        i = start
-        wcet_out = 0
-        while True:
-            wcet_out += self.wcet(i, splits)
-            i = self.A.next_branch(self.A.reconv[i])
-            if i == 0:
-                break
-        return wcet_out
 
-    def wcet(self, start: int = 0, splits: List[int] = []) -> int:
+    def wcet(self, splits: list[int], start: int = 0) -> int:
+        """
+        Returns the WCET of a kernel given a starting point and a set of
+        split points
+        """
+        idx = start
+        w = 0
+        while idx < len(self.graph.cfg):
+            w += self.wcet_branch(splits, idx)
+            idx = self.graph.next_block_in_sequence(self.graph.cfg[idx])
+        return w
+
+    def wcet_branch(self, splits: list[int], start: int = 0) -> int:
+        """
+        Returns the WCET between a given basic block and its reconvergence
+        point basic block
+        """
         left = right = weight = 0
-        assert start in self.A.branches
-        i = start + 1
-        while i < self.A.bsb[start]:
-            assert i in self.A.cfg.keys()
-            if i != start and i in self.A.branches:
-                left += self.wcet(i, splits)
-                i = self.A.reconv[i]
+        cfg = self.graph.cfg
+        bb = cfg[start]
+        if not bb.is_branch():
+            return bb.wcet
+        idx = bb.immediate_successor()
+        while idx < bb.bsb:
+            assert idx in cfg.keys()
+            if cfg[idx].is_branch():
+                left += self.wcet_branch(splits, idx)
             else:
-                left += self.A.weight[i]
-                i += 1
-        i += 1
-        while i < self.A.reconv[start]:
-            assert i in self.A.cfg.keys()
-            if i in self.A.branches:
-                right += self.wcet(i, splits)
-                i = self.A.reconv[i]
+                left += cfg[idx].wcet
+            idx = self.graph.next_block_in_sequence(idx)
+        while idx < bb.reconv:
+            assert idx in cfg.keys()
+            if cfg[idx].is_branch():
+                right += self.wcet_branch(splits, idx)
             else:
-                right += self.A.weight[i]
-                i += 1
-        weight = self.A.weight[start] + self.A.weight[self.A.bsb[start]]
+                right += cfg[idx].wcet
+            idx = self.graph.next_block_in_sequence(idx)
+
+        weight = bb.wcet + cfg[bb.bsb].wcet
         if start in splits: # splitting at this branch
             weight += max(left, right)
-        else: # not splitting at this branch
+        else:
             weight += left + right
-        if self.A.parent[self.A.reconv[start]] == self.A.parent[start] \
-            and self.A.reconv[start] not in self.A.branch_vertices():
-            weight += self.A.weight[self.A.reconv[start]]
+
+        if cfg[bb.reconv].parent == bb.parent \
+            and not cfg[bb.reconv].is_branch():
+            weight += cfg[bb.reconv].wcet
         return weight
