@@ -11,31 +11,31 @@ class Graph():
         self.parent = {}
         parent_stack = [-1]
         if len(weights) == 0:
-            self.weight = [0] * len(cfg)
+            self.weight = {key: 0 for key in self.cfg.keys()}
         else:
             assert len(weights) == len(cfg)
             self.weight = weights
 
-        # for node in sorted(self.cfg):
-        #     while len(parent_stack) > 1 \
-        #         and node == self.reconv[parent_stack[-1]]:
-        #         parent_stack.pop()
-        #     self.parent[node] = parent_stack[-1]
+        for node in sorted(self.cfg):
+            while len(parent_stack) > 1 \
+                and node == self.reconv[parent_stack[-1]]:
+                parent_stack.pop()
+            self.parent[node] = parent_stack[-1]
 
-        #     non_loop_successors = \
-        #         list(filter(lambda x: (x != node), cfg[node]))
-        #     if len(non_loop_successors) > 1 \
-        #         and node not in self.bsb.values():
-        #         # assert len(non_loop_successors) == 2
-        #         self.branches.append(node)
-        #         parent_stack.append(node)
-        #         self.bsb[node] = sorted(cfg[node])[-1]
-        #         self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
-        #         # Workaround for branches that don't have an else
-        #         if len(cfg[self.bsb[node]]) == 1:
-        #             self.reconv[node] = self.bsb[node]
-        #         assert self.reconv[node] > node
-        #         assert self.bsb[node] > node
+            non_loop_successors = \
+                list(filter(lambda x: (x != node), cfg[node]))
+            if len(non_loop_successors) > 1 \
+                and node not in self.bsb.values():
+                # assert len(non_loop_successors) == 2
+                self.branches.append(node)
+                parent_stack.append(node)
+                self.bsb[node] = sorted(cfg[node])[-1]
+                self.reconv[node] = sorted(cfg[self.bsb[node]])[-1]
+                # Workaround for branches that don't have an else
+                if len(cfg[self.bsb[node]]) == 1:
+                    self.reconv[node] = self.bsb[node]
+                assert self.reconv[node] > node
+                assert self.bsb[node] > node
 
     def write_to_file(self, file_name: str) -> None:
         """
@@ -45,7 +45,7 @@ class Graph():
         with open(file_name, 'w', encoding="utf-8") as fo:
             for node in sorted(self.cfg):
                 line = f"{node} {self.weight[node]}"
-                for target in self.cfg[node]:
+                for target in sorted(self.cfg[node]):
                     line += f" {target}"
                 fo.write(f"{line}\n")
 

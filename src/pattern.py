@@ -9,6 +9,7 @@ SMEM_INST = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
 DS_INST = r"^ds_.*"
 VMEM_INST = r"^((t?buffer|image|flat)_.*|export)"
 COND_BRANCH_INST = r"^s_cbranch_.*"
+COND_BRANCH_SCC_INST = r"^s_cbranch_scc[0|1].*"
 UNCOND_BRANCH_INST = r"^s_branch.*"
 INST = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
 BB_LABEL = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
@@ -49,4 +50,4 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_interp_p2_f16"
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
-IPT_EDGE = r"EDGE"
+IPT_EDGE = r"Kernel [0-9]*.*\|$"

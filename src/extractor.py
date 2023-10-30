@@ -28,8 +28,10 @@ class Extractor():
     """
     def __init__(self, input_file: str) -> None:
         self.input: str = input_file
-        self.kernels: list[dict[int, str]] = []
         self.graphs: list[Graph] = []
+        # TODO: Move these to the graph structure itself
+        self.kernels: list[dict[int, str]] = []
+        self.pc_map: dict[int, dict[int, int]] = {}
 
     def read_basic_block_number(self, line: str) -> int:
         """
@@ -49,6 +51,8 @@ class Extractor():
         assert re.search(pattern.COND_BRANCH_INST, line) or \
             re.search(pattern.UNCOND_BRANCH_INST, line)
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
+        if re.search(pattern.COND_BRANCH_SCC_INST, line):
+            return numbers_in_line[2]
         return numbers_in_line[1]
 
     def is_double_word_inst(self, line: str) -> bool:
@@ -61,23 +65,36 @@ class Extractor():
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
             re.search(pattern.DOUBLE_WORD_COMPARE, line)
 
+    def pc_basic_block(self, kernel_id: int, pc: int) -> int:
+        """
+        Determine the nearest basic block boundary given a PC
+        """
+        pcs = sorted(self.pc_map[kernel_id].keys())
+        idx = pcs.index(pc)
+        if idx < len(self.pc_map[kernel_id]) - 1:
+            return self.pc_map[kernel_id][pcs[idx + 1]]
+        return self.pc_map[kernel_id][pc]
+
     def parse_asm(self) -> None:
         """
         Open the assembly file generated with the -save-temps flag and generate
         a CFG of the basic blocks and edges between them
         """
+        # TODO: Offload some of this logic to method calls in Graph
         basic_blocks: dict[int, set[int]] = {}
-        starting_pc: dict[int, int] = {}
         insts: dict[int, str] = {}
         current_bb_number: int = 0
         pc: int = 0
         with open(self.input, encoding="utf-8") as fi:
             for line in fi:
                 line = line.strip()
+                # TODO: Parse iterations directive comment from disassembly and
+                # use it to compute basic block WCET with loops
                 if re.search(pattern.BB_LABEL, line):
                     if re.search(pattern.KERNEL_START, line):
                         # Start new kernel
                         basic_blocks[0] = set()
+                        self.pc_map[len(self.graphs)] = {}
                     else:
                         # Add edge to next block
                         if current_bb_number not in basic_blocks:
@@ -86,7 +103,6 @@ class Extractor():
                             self.read_basic_block_number(line)
                         )
                     current_bb_number = self.read_basic_block_number(line)
-                    starting_pc[current_bb_number] = pc
                 elif re.search(pattern.INST, line):
                     if re.search(pattern.COND_BRANCH_INST, line):
                         # Add edge to branch target block
@@ -96,11 +112,13 @@ class Extractor():
                             self.read_branch_target(line)
                         )
                     insts[pc] = line
+                    self.pc_map[len(self.graphs)][pc] = current_bb_number
                     if self.is_double_word_inst(line):
                         pc += 8
                     else:
                         pc += 4
                     if re.search(pattern.KERNEL_END, line):
+                        # TODO: Add a zero-weight sink at the end of the CFG
                         self.kernels.append(insts)
                         self.graphs.append(Graph(basic_blocks))
                         insts = {}
@@ -112,29 +130,25 @@ class Extractor():
         Get execution times from gem5 log file and incorporate them as weights
         into the CFG
         """
-        edges = {}
-        first_pc = 0
         with open(log_file, encoding="utf-8") as fi:
             for line in fi:
                 if re.search(pattern.IPT_EDGE, line):
-                    values = line.split('|')
-                    if int(values[1].strip(), 16) == 0:
-                        continue
-                    start = int(values[1].strip(), 16) - first_pc
-                    end = int(values[2].strip(), 16) - first_pc
-                    latency = int(values[3].strip())
+                    last_four_numbers = re.findall(r'\d+', line)[-4:]
+                    kernel_id = int(last_four_numbers[0])
+                    start = int(last_four_numbers[1])
+                    end = int(last_four_numbers[2])
+                    latency = int(last_four_numbers[3])
 
-                    if start not in edges:
-                        edges[start] = {}
-                    if end not in edges[start]:
-                        edges[start][end] = latency
-                    else:
-                        edges[start][end] = max(latency, edges[start][end])
-
-        # Next steps:
-        #  Group the IPTs in the log file by kernel start address
-        #    e.g. task->codeAddress
-        #    Print kernel index in the log file
+                    if start in self.pc_map[kernel_id] and \
+                        end in self.pc_map[kernel_id]:
+                        bb_start = self.pc_basic_block(kernel_id, start)
+                        bb_end = self.pc_basic_block(kernel_id, end)
+                        # TODO: Add handling logic for other cases:
+                        #   - Branches are taken
+                        #   - Loops
+                        if bb_end == bb_start + 1 and \
+                            latency > self.graphs[kernel_id].weight[bb_start]:
+                            self.graphs[kernel_id].weight[bb_start] = latency
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -156,8 +170,10 @@ if __name__ == '__main__':
 
     e = Extractor(args.input)
     e.parse_asm()
+    if len(args.log):
+        e.parse_log(args.log)
     path = Path(args.input)
     for i, graph in enumerate(e.graphs):
-        file_name = f"{path.parent}/{path.stem}{i:02}"
+        file_name = f"{path.parent}/{path.stem}-{i:02}"
         graph.write_to_file(file_name=f"{file_name}.graph")
         graph.plot(file_name=f"{file_name}.png")
