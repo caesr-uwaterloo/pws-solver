@@ -51,3 +51,5 @@ DOUBLE_WORD_ALU_INSTS = [
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
 IPT_EDGE = r"Kernel [0-9]*.*\|$"
+BSB_START_INST = "^s_or_saveexec_b64.*"
+RECONV_START_INST = "^s_or_b64 exec.*|^s_endpgm.*"

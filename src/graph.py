@@ -6,8 +6,12 @@ This module consists of the Graph class to represent the CFG of a GPU kernel
 
 from __future__ import annotations
 
+import re
+
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
+
+from src import pattern
 
 class BasicBlock():
     """
@@ -16,7 +20,6 @@ class BasicBlock():
     def __init__(self, num: int, wcet: int = 0) -> None:
         self.num: int = num
         self.wcet: int = wcet
-        # TODO: Add logic to set parent, bsb, and reconv
         self.parent: int = -1
         self.bsb: int = -1
         self.reconv: int = -1
@@ -52,8 +55,28 @@ class BasicBlock():
         Determine if control-flow can branch out to multiple basic blocks from
         this basic block
         """
-        # TODO: Might want to have a more elegant check here
         return self.reconv != -1
+
+    def is_bsb(self) -> bool:
+        """
+        Determine if the basic block is a branch serialization block
+        """
+        first_inst = list(self.__insts.values())[0]
+        return bool(re.search(
+            pattern.BSB_START_INST,
+            first_inst
+        ))
+
+    def is_reconv(self) -> bool:
+        """
+        Determine if the basic block contains a reconvergence point for a
+        prior branch
+        """
+        first_inst = list(self.__insts.values())[0]
+        return bool(re.search(
+            pattern.RECONV_START_INST,
+            first_inst
+        ))
 
 class Graph():
     """
@@ -112,6 +135,33 @@ class Graph():
         if idx < len(self.pc_map) - 1:
             return self.pc_map[pcs[idx + 1]]
         return self.pc_map[pc]
+
+    def find_branches(self) -> None:
+        """
+        Set properties of each branching block for use by the split point
+        selection algorithms
+        """
+        parent_stack = []
+        for u in sorted(self.cfg.keys()):
+            bb = self.cfg[u]
+            while len(parent_stack) > 0 \
+                and u == self.cfg[parent_stack[-1]].reconv:
+                parent_stack.pop()
+            if len(parent_stack) > 0:
+                bb.parent = parent_stack[-1]
+            if len(bb.successors()) > 1:
+                if not bb.is_bsb():
+                    parent_stack.append(u)
+                forward_branch_targets = \
+                    [v for v in bb.successors() if v > u + 1]
+                for v in forward_branch_targets:
+                    if self.cfg[v].is_bsb():
+                        self.cfg[u].bsb = v
+                    if self.cfg[v].is_reconv():
+                        if bb.is_bsb():
+                            self.cfg[bb.parent].reconv = v
+                        self.cfg[u].reconv = v
+
 
     def plot(self, file_name: str) -> None:
         """
