@@ -102,9 +102,9 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 21.2.1.0
-gem5 compiled Sep 11 2023 12:28:27
-gem5 started Sep 12 2023 03:15:31
-gem5 executing on 39d8d5943bb7, pid 484220
+gem5 compiled Oct 30 2023 04:37:22
+gem5 started Oct 30 2023 22:10:12
+gem5 executing on 39d8d5943bb7, pid 240048
 command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/synthetic/depth2/test00/synthetic.out -o '4096 4 1024'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -180,87 +180,72 @@ build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 PASSED!
-77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
-77993401000: system.cpu0.workload.drivers0.device.dispatcher:      | START_PC     | END_PC       | LATENCY      |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff6720126c | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201260 | 7fff67201260 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201124 | 7fff6720112c | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201038 | 7fff67201044 | 000000419000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201118 | 7fff67201124 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f4 | 7fff672010f8 | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e0 | 7fff672010e8 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010d4 | 7fff672010e0 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c0 | 7fff672011c8 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010d4 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c8 | 7fff672010c8 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011b4 | 7fff672011c0 | 000000263000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720109c | 7fff672010a0 | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201104 | 7fff6720110c | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201090 | 7fff6720109c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720117c | 7fff67201184 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201088 | 7fff67201090 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff67201118 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720110c | 7fff6720110c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201024 | 7fff6720102c | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201058 | 7fff6720105c | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010e8 | 7fff672010f4 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d4 | 7fff672011d8 | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff67201208 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011fc | 7fff672011fc | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201000 | 7fff67201010 | 000001416999 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011d8 | 7fff672011e4 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201068 | 7fff67201070 | 000000276000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010f8 | 7fff67201104 | 000000223000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011e4 | 7fff672011f4 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 000000000000 | 7fff67201000 | 077977050001 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201010 | 7fff67201024 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201240 | 7fff6720124c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201044 | 7fff6720104c | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720121c | 7fff67201228 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010a0 | 7fff672010ac | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010ac | 7fff672010c0 | 000000231000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672010c0 | 7fff672010c8 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff67201058 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720104c | 7fff6720104c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201138 | 7fff6720113c | 000000219000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201258 | 7fff67201260 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720105c | 7fff67201068 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720126c | 7fff67201270 | 000000048000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff6720107c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201070 | 7fff67201070 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720115c | 7fff67201164 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720107c | 7fff67201088 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff67201138 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720112c | 7fff6720112c | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720113c | 7fff67201140 | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff67201038 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720102c | 7fff6720102c | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201228 | 7fff6720122c | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201140 | 7fff6720114c | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720122c | 7fff67201238 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720114c | 7fff6720115c | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201238 | 7fff67201240 | 000000427000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201164 | 7fff67201170 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201170 | 7fff6720117c | 000000272000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201190 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201184 | 7fff67201184 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201190 | 7fff67201194 | 000000064000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201194 | 7fff672011a0 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a0 | 7fff672011a8 | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011b4 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011a8 | 7fff672011a8 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011d4 | 000000196000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011c8 | 7fff672011c8 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff672011f4 | 7fff672011fc | 000000368000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201208 | 7fff67201214 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff67201214 | 7fff6720121c | 000000256000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher: EDGE | 7fff6720124c | 7fff67201258 | 000000192000 |
-77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ----------------------------------------------
-77993401000: system.cpu0.workload.drivers0.device.dispatcher:      ~ 0 ~ Total Kernel Time ~ 16350999
-Ticks: 81264178000
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff67201000
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 624  | 48000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 620  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 600  | 620  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 600  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 588  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 532  | 552  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 532  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 520  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 500  | 520  | 368000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 472  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 468  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 448  | 267000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 436  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 416  | 436  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 404  | 416  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 136  | 156  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 380  | 272000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 368  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 136  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 124  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 92   | 104  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 160  | 172  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 172  | 192  | 231000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 92   | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 88   | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 556  | 568  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 320  | 332  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 36   | 56   | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 68   | 88   | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 16   | 36   | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 484  | 500  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 248  | 260  | 219000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 160  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 156  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 104  | 124  | 272000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 472  | 484  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 16   | 1416999      |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 368  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 192  | 212  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 448  | 468  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 224  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 212  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 224  | 244  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 248  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 244  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 260  | 280  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 292  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 280  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 68   | 287000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 56   | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 292  | 312  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 316  | 215000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 312  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 556  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 552  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 316  | 320  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 568  | 588  | 427000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 332  | 348  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 380  | 400  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 404  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 400  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: ~ 0 ~ Total Kernel Time ~ 16210999
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+Ticks: 81256179500
 Exiting because  exiting with last active thread context
-
-real	1m18.542s
-user	1m17.869s
-sys	0m0.551s
