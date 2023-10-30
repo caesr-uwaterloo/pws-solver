@@ -52,7 +52,7 @@ if __name__ == '__main__':
         start = timeit.default_timer()
         sp = a.solve()
         end = timeit.default_timer()
-        wcet = a.wcet_outer(splits=sp)
+        wcet = a.wcet(splits=sp)
         wcets.append(str(wcet))
         runtimes.append(str(end-start))
         print(f"{a.name():<25} {wcet:<25} {end-start:0.9f}")
