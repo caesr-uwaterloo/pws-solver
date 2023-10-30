@@ -29,9 +29,6 @@ class Extractor():
     def __init__(self, input_file: str) -> None:
         self.input: str = input_file
         self.graphs: list[Graph] = []
-        # TODO: Move these to the graph structure itself
-        self.kernels: list[dict[int, str]] = []
-        self.pc_map: dict[int, dict[int, int]] = {}
 
     def read_basic_block_number(self, line: str) -> int:
         """
@@ -65,26 +62,14 @@ class Extractor():
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
             re.search(pattern.DOUBLE_WORD_COMPARE, line))
 
-    def pc_basic_block(self, kernel_id: int, pc: int) -> int:
-        """
-        Determine the nearest basic block boundary given a PC
-        """
-        pcs = sorted(self.pc_map[kernel_id].keys())
-        idx = pcs.index(pc)
-        if idx < len(self.pc_map[kernel_id]) - 1:
-            return self.pc_map[kernel_id][pcs[idx + 1]]
-        return self.pc_map[kernel_id][pc]
-
     def parse_asm(self) -> None:
         """
         Open the assembly file generated with the -save-temps flag and generate
         a CFG of the basic blocks and edges between them
         """
-        # TODO: Offload some of this logic to method calls in Graph
-        basic_blocks: dict[int, set[int]] = {}
-        insts: dict[int, str] = {}
         current_bb_number: int = 0
         pc: int = 0
+        g = Graph()
         with open(self.input, encoding="utf-8") as fi:
             for line in fi:
                 line = line.strip()
@@ -93,37 +78,34 @@ class Extractor():
                 if re.search(pattern.BB_LABEL, line):
                     if re.search(pattern.KERNEL_START, line):
                         # Start new kernel
-                        basic_blocks[0] = set()
-                        self.pc_map[len(self.graphs)] = {}
+                        g.insert_basic_block(0)
                     else:
                         # Add edge to next block
-                        if current_bb_number not in basic_blocks:
-                            basic_blocks[current_bb_number] = set()
-                        basic_blocks[current_bb_number].add(
-                            self.read_basic_block_number(line)
+                        g.insert_edge(
+                            src=current_bb_number,
+                            dst=self.read_basic_block_number(line)
                         )
                     current_bb_number = self.read_basic_block_number(line)
                 elif re.search(pattern.INST, line):
                     if re.search(pattern.COND_BRANCH_INST, line):
                         # Add edge to branch target block
-                        if current_bb_number not in basic_blocks:
-                            basic_blocks[current_bb_number] = set()
-                        basic_blocks[current_bb_number].add(
-                            self.read_branch_target(line)
+                        g.insert_edge(
+                            src=current_bb_number,
+                            dst=self.read_branch_target(line)
                         )
-                    insts[pc] = line
-                    self.pc_map[len(self.graphs)][pc] = current_bb_number
+                    g.insert_instruction(
+                        inst=line,
+                        pc=pc,
+                        bb=current_bb_number
+                    )
                     if self.is_double_word_inst(line):
                         pc += 8
                     else:
                         pc += 4
                     if re.search(pattern.KERNEL_END, line):
-                        # TODO: Add a zero-weight sink at the end of the CFG
-                        self.kernels.append(insts)
-                        self.graphs.append(Graph(basic_blocks))
-                        insts = {}
-                        basic_blocks = {}
                         pc = 0
+                        self.graphs.append(g)
+                        g = Graph()
 
     def parse_log(self, log_file: str) -> None:
         """
@@ -139,10 +121,11 @@ class Extractor():
                     end = int(last_four_numbers[2])
                     latency = int(last_four_numbers[3])
 
-                    if start in self.pc_map[kernel_id] and \
-                        end in self.pc_map[kernel_id]:
-                        bb_start = self.pc_basic_block(kernel_id, start)
-                        bb_end = self.pc_basic_block(kernel_id, end)
+                    g = self.graphs[kernel_id]
+                    if start in g.pc_map and \
+                        end in g.pc_map:
+                        bb_start = g.pc_basic_block(start)
+                        bb_end = g.pc_basic_block(end)
                         # TODO: Add handling logic for other cases:
                         #   - Branches are taken
                         #   - Loops
@@ -151,8 +134,8 @@ class Extractor():
                         # (inserting raw assembly generates a new basic block
                         # that is undetected by IPTs)
                         if bb_end == bb_start + 1 and \
-                            latency > self.graphs[kernel_id].weight[bb_start]:
-                            self.graphs[kernel_id].weight[bb_start] = latency
+                            latency > g.cfg[bb_start].wcet:
+                            g.cfg[bb_start].wcet = latency
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
