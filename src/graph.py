@@ -91,7 +91,8 @@ class Graph():
                     if self.cfg[v].is_reconv():
                         if bb.is_bsb():
                             self.cfg[bb.parent].reconv = v
-                        self.cfg[u].reconv = v
+                        else:
+                            self.cfg[u].reconv = v
 
     def number_of_vertices(self) -> int:
         """
@@ -103,13 +104,13 @@ class Graph():
         """
         Returns all basic blocks that are not branches
         """
-        return [bb for bb in self.cfg.values() if not bb.is_branch()]
+        return [bb.num for bb in self.cfg.values() if not bb.is_branch()]
 
     def branch_vertices(self) -> list[int]:
         """
         Returns all basic blocks that are branches
         """
-        return [bb for bb in self.cfg.values() if bb.is_branch()]
+        return [bb.num for bb in self.cfg.values() if bb.is_branch()]
 
     def execution_time(self, node: int) -> int:
         """
@@ -220,10 +221,13 @@ class Graph():
         Output the contents of the CFG and the WCETs of each basic block to a
         given file
         """
+        # TODO: Consider a CSV file instead of a custom file structure
         with open(file_name, 'w', encoding="utf-8") as fo:
             for node in sorted(self.cfg):
-                line = f"{node} {self.cfg[node].wcet}"
-                for target in self.cfg[node].successors():
+                bb = self.cfg[node]
+                line = f"{node} {bb.wcet} " \
+                    f"{int(bb.is_bsb())} {int(bb.is_reconv())}"
+                for target in bb.successors():
                     line += f" {target}"
                 fo.write(f"{line}\n")
 
@@ -235,5 +239,8 @@ class Graph():
             for line in fi:
                 data = [int(i) for i in line.split()]
                 self.insert_basic_block(num=data[0], wcet=data[1])
-                for dst in data[2:]:
+                bb = self.cfg[data[0]]
+                bb.is_a_bsb = bool(data[2])
+                bb.is_a_reconv = bool(data[3])
+                for dst in data[4:]:
                     self.insert_edge(data[0], dst)

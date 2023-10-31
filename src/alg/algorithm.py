@@ -33,9 +33,9 @@ class Algorithm():
         """
         idx = start
         w = 0
-        while idx < len(self.graph.cfg):
+        while idx < len(self.graph.cfg) - 1:
             w += self.wcet_branch(splits, idx)
-            idx = self.graph.next_block_in_sequence(self.graph.cfg[idx])
+            idx = self.graph.next_block_in_sequence(idx)
         return w
 
     def wcet_branch(self, splits: list[int], start: int = 0) -> int:
@@ -49,14 +49,16 @@ class Algorithm():
         if not bb.is_branch():
             return bb.wcet
         idx = bb.immediate_successor()
-        while idx < bb.bsb:
+        while idx < bb.bsb \
+            and idx != self.graph.next_block_in_sequence(idx):
             assert idx in cfg.keys()
             if cfg[idx].is_branch():
                 left += self.wcet_branch(splits, idx)
             else:
                 left += cfg[idx].wcet
             idx = self.graph.next_block_in_sequence(idx)
-        while idx < bb.reconv:
+        while idx < bb.reconv \
+            and idx != self.graph.next_block_in_sequence(idx):
             assert idx in cfg.keys()
             if cfg[idx].is_branch():
                 right += self.wcet_branch(splits, idx)

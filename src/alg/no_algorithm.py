@@ -10,8 +10,8 @@ class NoSplitAlgorithm(Algorithm):
     """
     Selection algorithm that does not select any split points
     """
-    def __init__(self, A: Graph, s: int) -> None:
-        Algorithm.__init__(self, A, s)
+    def __init__(self, graph: Graph, s: int) -> None:
+        Algorithm.__init__(self, graph, s)
 
     def name(self) -> str:
         return "No Splitting"

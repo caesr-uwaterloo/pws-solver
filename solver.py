@@ -19,7 +19,7 @@ from src.alg.algorithm import Algorithm
 # from src.alg.dws_algorithm import DWSAlgorithm
 # from src.alg.naive_algorithm import NaiveAlgorithm
 from src.alg.no_algorithm import NoSplitAlgorithm
-# from src.alg.random_algorithm import RandomAlgorithm
+from src.alg.random_algorithm import RandomAlgorithm
 from src.graph import Graph
 
 if __name__ == '__main__':
@@ -35,10 +35,11 @@ if __name__ == '__main__':
 
     g = Graph()
     g.read_from_file(args.input)
+    g.find_branches()
     algs = [
         NoSplitAlgorithm(g, 3),
         # NaiveAlgorithm(g, 3),
-        # RandomAlgorithm(g, 3),
+        RandomAlgorithm(g, 3),
         # DWSAlgorithm(g, 3),
         # DPAlgorithm(g, 3),
         # BruteForceAlgorithm(g, 3)
