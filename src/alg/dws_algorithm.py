@@ -2,8 +2,8 @@
 This module contains the DWS algorithm, which selects split points greedily
 """
 
-from src.alg.algorithm import Algorithm
-from src.graph import Graph
+from src.alg.algorithm import Algorithm # type: ignore
+from src.graph import Graph # type: ignore
 
 class DWSAlgorithm(Algorithm):
     """

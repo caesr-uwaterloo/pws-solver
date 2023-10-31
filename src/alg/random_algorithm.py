@@ -2,7 +2,7 @@
 This module contains the random algorithm, which selects split points randomly
 """
 
-import numpy as np
+import random
 
 from src.alg.algorithm import Algorithm # type: ignore
 from src.graph import Graph # type: ignore
@@ -18,8 +18,8 @@ class RandomAlgorithm(Algorithm):
         return "Random"
 
     def solve(self) -> list[int]:
-        np.random.seed(0)
-        return sorted(np.random.choice(
-            self.graph.branch_vertices(),
-            size=self.s-1
-        ).tolist())
+        random.seed(0)
+        return sorted(random.choices(
+            population=self.graph.branch_vertices(),
+            k=self.s-1
+        ))

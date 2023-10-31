@@ -13,6 +13,7 @@ class Algorithm():
     def __init__(self, graph: Graph, s: int) -> None:
         self.graph = graph
         self.s = s
+        self.benefit: dict[int, int] = {}
 
     def name(self) -> str:
         """
@@ -66,6 +67,7 @@ class Algorithm():
                 right += cfg[idx].wcet
             idx = self.graph.next_block_in_sequence(idx)
 
+        self.benefit[start] = min(left, right)
         weight = bb.wcet + cfg[bb.bsb].wcet
         if start in splits: # splitting at this branch
             weight += max(left, right)

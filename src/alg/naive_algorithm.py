@@ -1,44 +1,26 @@
-from src.alg.algorithm import *
+"""
+This module contains the naive algorithm which ranks each branch individually
+by the benefit they receive from splitting
+"""
+
+from src.alg.algorithm import Algorithm # type: ignore
+from src.graph import Graph # type: ignore
 
 class NaiveAlgorithm(Algorithm):
-    def __init__(self, A: Graph, s: int) -> None:
-        Algorithm.__init__(self, A, s)
-        self.benefit = {}
+    """
+    This naive algorithm computes the benefit of splitting at each branch and
+    returns the best choices, not accounting for any hardware reuse
+    """
+    def __init__(self, graph: Graph, s: int) -> None:
+        Algorithm.__init__(self, graph, s)
 
     def name(self) -> str:
         return "Naive"
 
-    def solve(self) -> List[int]:
-        self.compute_benefits(self.A.branch_vertices()[0])
+    def solve(self) -> list[int]:
+        start = self.graph.branch_vertices()[0]
+        self.wcet(splits=[], start=start)
         splits = [m[0] for m in sorted(self.benefit.items(),
                                        key=lambda item: item[1],
                                        reverse=True)]
         return splits[0:self.s-1]
-
-    def compute_benefits(self, start: int = 0) -> int:
-        left = right = weight = 0
-        assert start in self.A.branches
-        i = start + 1
-        while i < self.A.bsb[start]:
-            assert i in self.A.cfg.keys()
-            if i != start and i in self.A.branches:
-                left += self.compute_benefits(i)
-                i = self.A.reconv[i] + 1
-            else:
-                left += self.A.weight[i]
-                i += 1
-        i += 1
-        while i < self.A.reconv[start]:
-            assert i in self.A.cfg.keys()
-            if i in self.A.branches:
-                right += self.compute_benefits(i)
-                i = self.A.reconv[i] + 1
-            else:
-                right += self.A.weight[i]
-                i += 1
-        self.benefit[start] = min(left, right)
-        weight = self.A.weight[start] + self.A.weight[self.A.bsb[start]] \
-            + left + right
-        if self.A.parent[self.A.reconv[start]] == self.A.parent[start]:
-            weight += self.A.weight[self.A.reconv[start]]
-        return weight
