@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module defines the parent Algorithm class to represent all split
 selection algorithms.

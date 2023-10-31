@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module contains the no splitting algorithm, or a representation of the
 behaviour of existing COTS GPUs

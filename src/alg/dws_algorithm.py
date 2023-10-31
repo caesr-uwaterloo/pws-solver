@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module contains the DWS algorithm, which selects split points greedily
 """

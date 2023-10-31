@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module contains the brute force algorithm which computes the WCET for
 each combination of split points and selects the lowest one

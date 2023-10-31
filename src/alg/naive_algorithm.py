@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module contains the naive algorithm which ranks each branch individually
 by the benefit they receive from splitting
