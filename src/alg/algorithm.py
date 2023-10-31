@@ -70,7 +70,9 @@ class Algorithm():
             idx = self.graph.next_block_in_sequence(idx)
 
         self.benefit[start] = min(left, right)
-        weight = bb.wcet + cfg[bb.bsb].wcet
+        weight = bb.wcet
+        if bb.has_else_path():
+            weight += cfg[bb.bsb].wcet
         if start in splits: # splitting at this branch
             weight += max(left, right)
         else:
