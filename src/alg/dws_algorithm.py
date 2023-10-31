@@ -1,11 +1,20 @@
-from src.alg.algorithm import *
+"""
+This module contains the DWS algorithm, which selects split points greedily
+"""
+
+from src.alg.algorithm import Algorithm
+from src.graph import Graph
 
 class DWSAlgorithm(Algorithm):
-    def __init__(self, A: Graph, s: int) -> None:
-        Algorithm.__init__(self, A, s)
+    """
+    This algorithm greedily selects the first s branches as split points, which
+    we use as an approximate DWS implementation
+    """
+    def __init__(self, graph: Graph, s: int) -> None:
+        Algorithm.__init__(self, graph, s)
 
     def name(self) -> str:
         return "DWS"
 
-    def solve(self) -> List[int]:
-        return sorted(self.A.branch_vertices())[:self.s-1]
+    def solve(self) -> list[int]:
+        return sorted(self.graph.branch_vertices())[:self.s-1]

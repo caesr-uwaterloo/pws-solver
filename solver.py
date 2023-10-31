@@ -16,7 +16,7 @@ import timeit
 from src.alg.algorithm import Algorithm
 # from src.alg.brute_force_algorithm import BruteForceAlgorithm
 # from src.alg.dp_algorithm import DPAlgorithm
-# from src.alg.dws_algorithm import DWSAlgorithm
+from src.alg.dws_algorithm import DWSAlgorithm
 # from src.alg.naive_algorithm import NaiveAlgorithm
 from src.alg.no_algorithm import NoSplitAlgorithm
 from src.alg.random_algorithm import RandomAlgorithm
@@ -40,7 +40,7 @@ if __name__ == '__main__':
         NoSplitAlgorithm(g, 3),
         # NaiveAlgorithm(g, 3),
         RandomAlgorithm(g, 3),
-        # DWSAlgorithm(g, 3),
+        DWSAlgorithm(g, 3),
         # DPAlgorithm(g, 3),
         # BruteForceAlgorithm(g, 3)
     ]
