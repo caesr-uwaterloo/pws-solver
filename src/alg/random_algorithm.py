@@ -4,8 +4,8 @@ This module contains the random algorithm, which selects split points randomly
 
 import random
 
-from src.alg.algorithm import Algorithm # type: ignore
-from src.graph import Graph # type: ignore
+from src.alg.algorithm import Algorithm
+from src.graph import Graph
 
 class RandomAlgorithm(Algorithm):
     """

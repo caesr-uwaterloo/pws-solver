@@ -3,8 +3,8 @@ This module contains the naive algorithm which ranks each branch individually
 by the benefit they receive from splitting
 """
 
-from src.alg.algorithm import Algorithm # type: ignore
-from src.graph import Graph # type: ignore
+from src.alg.algorithm import Algorithm
+from src.graph import Graph
 
 class NaiveAlgorithm(Algorithm):
     """

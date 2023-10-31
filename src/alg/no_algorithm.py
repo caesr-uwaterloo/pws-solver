@@ -3,8 +3,8 @@ This module contains the no splitting algorithm, or a representation of the
 behaviour of existing COTS GPUs
 """
 
-from src.alg.algorithm import Algorithm # type: ignore
-from src.graph import Graph # type: ignore
+from src.alg.algorithm import Algorithm
+from src.graph import Graph
 
 class NoSplitAlgorithm(Algorithm):
     """

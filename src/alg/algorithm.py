@@ -3,7 +3,7 @@ This module defines the parent Algorithm class to represent all split
 selection algorithms.
 """
 
-from src.graph import Graph # type: ignore
+from src.graph import Graph
 
 class Algorithm():
     """

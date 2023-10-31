@@ -7,7 +7,7 @@ This module consists of the Graph class to represent the CFG of a GPU kernel.
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
 
-from src.block import BasicBlock # type: ignore
+from src.block import BasicBlock
 
 class Graph():
     """

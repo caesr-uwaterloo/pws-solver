@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import re
 
-from src import pattern # type: ignore
+from src import pattern
 
 class BasicBlock():
     """
