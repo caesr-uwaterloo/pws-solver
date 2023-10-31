@@ -1,0 +1,67 @@
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff67201000
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 624  | 48000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 620  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 600  | 620  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 600  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 588  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 532  | 552  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 532  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 520  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 500  | 520  | 368000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 472  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 468  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 448  | 267000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 436  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 416  | 436  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 404  | 416  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 136  | 156  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 380  | 272000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 368  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 136  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 124  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 92   | 104  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 160  | 172  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 172  | 192  | 231000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 92   | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 88   | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 556  | 568  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 320  | 332  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 36   | 56   | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 68   | 88   | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 16   | 36   | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 484  | 500  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 248  | 260  | 219000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 160  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 156  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 104  | 124  | 272000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 472  | 484  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 16   | 1416999      |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 368  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 192  | 212  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 448  | 468  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 224  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 212  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 224  | 244  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 248  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 244  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 260  | 280  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 292  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 280  | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 68   | 287000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 56   | 196000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 292  | 312  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 316  | 215000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 312  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 556  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 552  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 316  | 320  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 568  | 588  | 427000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 332  | 348  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 380  | 400  | 256000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 404  | 64000        |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 400  | 192000       |
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: ~ 0 ~ Total Kernel Time ~ 16210999
+77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
