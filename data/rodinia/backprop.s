@@ -126,6 +126,7 @@ BB0_10:
 	s_barrier
 	s_waitcnt lgkmcnt(0)
 	s_and_saveexec_b64 s[0:1], vcc
+	s_xor_b64 s[0:1], exec, s[0:1]
 	s_cbranch_execz BB0_12
 ; %bb.11:
 	v_lshlrev_b32_e32 v2, 2, v1
@@ -184,7 +185,7 @@ BB0_12:
                                         ; -- End function
 	.section	.AMDGPU.csdata
 ; Kernel info:
-; codeLenInByte = 656
+; codeLenInByte = 660
 ; NumSgprs: 18
 ; NumVgprs: 9
 ; ScratchSize: 0

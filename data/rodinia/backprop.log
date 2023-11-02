@@ -103,8 +103,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 21.2.1.0
 gem5 compiled Oct 30 2023 04:37:22
-gem5 started Oct 31 2023 02:18:20
-gem5 executing on 39d8d5943bb7, pid 370207
+gem5 started Nov  2 2023 01:50:39
+gem5 executing on 39d8d5943bb7, pid 7420
 command line: /gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /gem5/configs/example/apu_se.py --simds-per-cu 4 --lds-size 65536 -n 3 -c /hip-benchmarks/rodinia_3.0/hip/backprop/backprop -o 16
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -180,35 +180,35 @@ build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 build/GCN3_X86/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff5e77f000
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 504  | 532  | 251000       |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 472  | 504  | 88000        |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 444  | 472  | 40000        |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 412  | 444  | 183000       |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 384  | 412  | 40000        |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 584  | 652  | 1769000      |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 532  | 584  | 480000       |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 324  | 352  | 44000        |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 116  | 324  | 1862000      |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 352  | 384  | 199000       |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 116  | 1495000      |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 40   | 2391999      |
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: ~ 0 ~ Total Kernel Time ~ 8750999
-79023204000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 1 start address 7fff5e77f300
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 392  | 572  | 1201000      |
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 0    | 392  | 4154499      |
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: ~ 1 ~ Total Kernel Time ~ 5343499
-79218332000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff5e77f000
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 656  | 1626000      |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 504  | 532  | 255000       |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 472  | 504  | 88000        |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 444  | 472  | 40000        |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 412  | 444  | 183000       |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 384  | 412  | 40000        |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 532  | 588  | 493000       |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 324  | 352  | 44000        |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 116  | 324  | 1862000      |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 352  | 384  | 199000       |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 40   | 116  | 1495000      |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 40   | 2395999      |
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: ~ 0 ~ Total Kernel Time ~ 8628999
+79059744000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 1 start address 7fff5e77f300
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 392  | 572  | 1202000      |
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 1   | 0    | 392  | 4152499      |
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: ~ 1 ~ Total Kernel Time ~ 5342499
+79255447000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
 Training done
 PASSED!
-Ticks: 82854628500
+Ticks: 82876747500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m18.887s
+Time elapsed: 1m20.164s
