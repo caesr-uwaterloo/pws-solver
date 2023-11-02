@@ -62,7 +62,8 @@ class Extractor():
             re.search(pattern.DS_INST, line) or \
             re.search(pattern.VMEM_INST, line) or \
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
-            re.search(pattern.DOUBLE_WORD_COMPARE, line))
+            re.search(pattern.DOUBLE_WORD_COMPARE, line) or \
+            re.search(pattern.DOUBLE_WORD_INST, line))
 
     def parse_asm(self) -> None:
         """

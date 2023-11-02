@@ -16,6 +16,7 @@ BB_LABEL = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
 KERNEL_START = r"^\;\s*%bb\.0"
 KERNEL_END = r"^s_endpgm.*"
 DOUBLE_WORD_COMPARE = r"^v_[^\s]*\ss.*"
+DOUBLE_WORD_INST = r"v_.*_e64.*"
 DOUBLE_WORD_ALU_INSTS = [
     "v_add_f64",
     "v_mul_f64",
