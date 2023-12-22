@@ -43,6 +43,8 @@ class Graph():
         """
         Add a new edge to the control-flow graph from basic block src to dst
         """
+        # We assume all loops are unrolled
+        assert src < dst
         if src not in self.cfg:
             self.insert_basic_block(src)
         if dst not in self.cfg:
