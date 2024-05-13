@@ -5,8 +5,9 @@ This module formulates the objective as an integer linear programming (ILP)
 problem and passes the formulation through an ILP solver
 """
 
-import subprocess
 from shutil import which
+import re
+import subprocess
 
 from src.alg.algorithm import Algorithm
 from src.graph import Graph
@@ -24,6 +25,7 @@ class ILPAlgorithm(Algorithm):
         return "ILP"
     
     def solve(self) -> list[int]:
+        ret = []
         if self.has_gurobi:
             subprocess.call([
                 "gurobi_cl",
@@ -33,7 +35,14 @@ class ILPAlgorithm(Algorithm):
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.STDOUT
             )
-        return []
+            lines = []
+            with open("data/temp.sol", "r", encoding="utf-8") as fi:
+                lines = fi.readlines()
+            for line in lines:
+                match = re.search(r"$b([0-9]+) (0|1)", line)
+                if match and match.group(2) == '1':
+                    ret.append(match.group(1))
+        return ret
     
     def generate_ilp(self) -> str:
         ilp_str = \
