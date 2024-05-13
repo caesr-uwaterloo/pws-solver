@@ -24,11 +24,14 @@ class ILPAlgorithm(Algorithm):
     
     def solve(self) -> list[int]:
         if which("gurobi_cl"):
-            subprocess.run([
+            subprocess.call([
                 "gurobi_cl",
                 "ResultFile=data/temp.sol",
                 "data/temp.lp"
-            ])
+            ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.STDOUT
+            )
         return super().solve()
     
     def generate_ilp(self) -> str:

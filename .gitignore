@@ -1,3 +1,6 @@
+*.lp
+*.sol
 .vscode/
 __pycache__/
 env/
+gurobi.log
