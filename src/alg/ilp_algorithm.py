@@ -18,12 +18,13 @@ class ILPAlgorithm(Algorithm):
         # TODO: Make the benchmark name a parameter
         with open("data/temp.lp", 'w+', encoding="utf-8") as fo:
             fo.write(self.ilp)
+        self.has_gurobi = which("gurobi_cl")
 
     def name(self) -> str:
         return "ILP"
     
     def solve(self) -> list[int]:
-        if which("gurobi_cl"):
+        if self.has_gurobi:
             subprocess.call([
                 "gurobi_cl",
                 "ResultFile=data/temp.sol",
