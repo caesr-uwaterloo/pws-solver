@@ -39,9 +39,9 @@ class ILPAlgorithm(Algorithm):
             with open("data/temp.sol", "r", encoding="utf-8") as fi:
                 lines = fi.readlines()
             for line in lines:
-                match = re.search(r"$b([0-9]+) (0|1)", line)
+                match = re.search(r"^b([0-9]+) (0|1)", line)
                 if match and match.group(2) == '1':
-                    ret.append(match.group(1))
+                    ret.append(int(match.group(1)))
         return ret
     
     def generate_ilp(self) -> str:
