@@ -94,6 +94,7 @@ class Graph():
                     if self.cfg[v].is_reconv():
                         if bb.is_bsb():
                             self.cfg[bb.parent].reconv = v
+                            self.cfg[v].parent = bb.parent
                         else:
                             self.cfg[v].parent = u
                             self.cfg[u].reconv = v
