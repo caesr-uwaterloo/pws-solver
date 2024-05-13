@@ -34,7 +34,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     g = Graph()
-    g.read_from_file(args.input)
+    g.read_from_csv(args.input)
     g.find_branches()
     algs = [
         NoSplitAlgorithm(g, 3),

@@ -6,6 +6,7 @@ This module consists of the Graph class to represent the CFG of a GPU kernel.
 
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
+import pandas as pd # type: ignore
 
 from src.block import BasicBlock
 
@@ -246,3 +247,34 @@ class Graph():
                 bb.is_a_reconv = bool(data[3])
                 for dst in data[4:]:
                     self.insert_edge(data[0], dst)
+
+    def read_from_csv(self, file_name: str) -> None:
+        """
+        Read the contents of a CSV file to construct the CFG
+        """
+        df = pd.read_csv(file_name)
+        for idx, row in df.iterrows():
+            self.insert_basic_block(num=idx, wcet=row["wcet"])
+            bb = self.cfg[idx]
+            bb.is_a_bsb = bool(row['is_bsb_node'])
+            bb.is_a_reconv = bool(row['is_reconv_node'])
+
+            # filter out nodes with no successors; pandas reads them as NaN
+            successors = []
+            if not pd.isna(row['successors']):
+                successors = row['successors'].split(';')
+
+            for dst in successors:
+                self.insert_edge(idx, int(dst))
+
+    def write_to_csv(self, file_name: str = "") -> str:
+        """
+        Write the CFG properties to a given CSV file
+        """
+        csv_str = "wcet,is_bsb_node,is_reconv_node,successors\n"
+        for idx, bb in self.cfg.items():
+            successors = ';'.join(str(j) for j in bb.successors())
+            csv_str += f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
+
+        with open(file_name, 'w+', encoding="utf-8") as fo:
+            fo.write(csv_str)
