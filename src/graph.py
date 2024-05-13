@@ -95,6 +95,7 @@ class Graph():
                         if bb.is_bsb():
                             self.cfg[bb.parent].reconv = v
                         else:
+                            self.cfg[v].parent = u
                             self.cfg[u].reconv = v
 
     def number_of_vertices(self) -> int:
