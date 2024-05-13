@@ -32,7 +32,7 @@ class ILPAlgorithm(Algorithm):
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.STDOUT
             )
-        return super().solve()
+        return []
     
     def generate_ilp(self) -> str:
         ilp_str = \
