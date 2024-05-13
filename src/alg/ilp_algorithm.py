@@ -6,6 +6,7 @@ problem and passes the formulation through an ILP solver
 """
 
 import subprocess
+from shutil import which
 
 from src.alg.algorithm import Algorithm
 from src.graph import Graph
@@ -15,18 +16,19 @@ class ILPAlgorithm(Algorithm):
         super().__init__(graph, s)
         self.ilp = self.generate_ilp()
         # TODO: Make the benchmark name a parameter
-        with open("data/fig2.lp", 'w+', encoding="utf-8") as fo:
+        with open("data/temp.lp", 'w+', encoding="utf-8") as fo:
             fo.write(self.ilp)
 
     def name(self) -> str:
         return "ILP"
     
     def solve(self) -> list[int]:
-        # subprocess.run([
-        #     "gurobi_cl",
-        #     'ResultFile="data/fig2.sol"',
-        #     "data/fig2.lp"
-        # ])
+        if which("gurobi_cl"):
+            subprocess.run([
+                "gurobi_cl",
+                "ResultFile=data/temp.sol",
+                "data/temp.lp"
+            ])
         return super().solve()
     
     def generate_ilp(self) -> str:
