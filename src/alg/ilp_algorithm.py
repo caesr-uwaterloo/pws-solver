@@ -16,7 +16,6 @@ class ILPAlgorithm(Algorithm):
     def __init__(self, graph: Graph, s: int) -> None:
         super().__init__(graph, s)
         self.ilp = self.generate_ilp()
-        # TODO: Make the benchmark name a parameter
         with open("data/temp.lp", 'w+', encoding="utf-8") as fo:
             fo.write(self.ilp)
         self.has_gurobi = which("gurobi_cl")
