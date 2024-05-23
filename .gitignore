@@ -1,6 +1,8 @@
+*.csv
 *.lp
+*.png
 *.sol
-.vscode/
-__pycache__/
-env/
 gurobi.log
+__pycache__/
+.vscode/
+env/

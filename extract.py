@@ -163,5 +163,5 @@ if __name__ == '__main__':
     for i, graph in enumerate(e.graphs):
         file_name = f"{path.parent}/{path.stem}-{i:02}"
         graph.find_branches()
-        graph.write_to_file(file_name=f"{file_name}.graph")
+        graph.write_to_csv(file_name=f"{file_name}.csv")
         graph.plot(file_name=f"{file_name}.png")

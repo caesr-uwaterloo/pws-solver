@@ -274,7 +274,8 @@ class Graph():
         Write the CFG properties to a given CSV file
         """
         csv_str = "wcet,is_bsb_node,is_reconv_node,successors\n"
-        for idx, bb in self.cfg.items():
+        for idx in sorted(self.cfg.keys()):
+            bb = self.cfg[idx]
             successors = ';'.join(str(j) for j in bb.successors())
             csv_str += f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
 
