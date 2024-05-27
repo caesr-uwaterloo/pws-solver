@@ -72,15 +72,20 @@ class Extractor():
         """
         current_bb_number: int = 0
         pc: int = 0
+        # If we encounter an unconditional branch instruction at the end of a
+        # basic block, then we shouldn't insert an edge to the next basic block
+        previous_inst_uncond_branch: bool = False
         g = Graph()
         with open(self.input, encoding="utf-8") as fi:
             for line in fi:
                 line = line.strip()
-                # TODO: Parse iterations directive comment from disassembly and
-                # use it to compute basic block WCET with loops
                 if re.search(pattern.BB_LABEL, line):
                     if re.search(pattern.KERNEL_START, line):
                         g.insert_basic_block(0)
+                    elif previous_inst_uncond_branch:
+                        g.insert_basic_block(
+                            self.read_basic_block_number(line)
+                        )
                     else:
                         g.insert_edge(
                             src=current_bb_number,
@@ -88,11 +93,18 @@ class Extractor():
                         )
                     current_bb_number = self.read_basic_block_number(line)
                 elif re.search(pattern.INST, line):
+                    previous_inst_uncond_branch = False
                     if re.search(pattern.COND_BRANCH_INST, line):
                         g.insert_edge(
                             src=current_bb_number,
                             dst=self.read_branch_target(line)
                         )
+                    elif re.search(pattern.UNCOND_BRANCH_INST, line):
+                        g.insert_edge(
+                            src=current_bb_number,
+                            dst=self.read_branch_target(line)
+                        )
+                        previous_inst_uncond_branch = True
                     g.insert_instruction(
                         inst=line,
                         pc=pc,
@@ -163,5 +175,6 @@ if __name__ == '__main__':
     for i, graph in enumerate(e.graphs):
         file_name = f"{path.parent}/{path.stem}-{i:02}"
         graph.find_branches()
+        graph.write_disassembly(file_name=f"{file_name}-anno.s")
         graph.write_to_csv(file_name=f"{file_name}.csv")
         graph.plot(file_name=f"{file_name}.png")

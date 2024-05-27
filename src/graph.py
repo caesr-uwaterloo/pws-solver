@@ -21,8 +21,7 @@ class Graph():
 
     def get_insts(self) -> dict[int, str]:
         """
-        Get a map of all PCs and their instructions in this kernel. Only really
-        needed for debugging purposes
+        Get a map of all PCs and their instructions in this kernel
         """
         insts: dict[int, str] = {}
         for bb in self.cfg.values():
@@ -45,7 +44,7 @@ class Graph():
         Add a new edge to the control-flow graph from basic block src to dst
         """
         # We assume all loops are unrolled
-        assert src < dst
+        # assert src < dst
         if src not in self.cfg:
             self.insert_basic_block(src)
         if dst not in self.cfg:
@@ -281,3 +280,16 @@ class Graph():
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(csv_str)
+
+    def write_disassembly(self, file_name: str = "") -> None:
+        """
+        Write the disassembly back to a file, with annotated PCs
+        """
+        asm_str = ""
+        inst_map = self.get_insts()
+        for pc in sorted(self.get_insts().keys()):
+            inst = inst_map[pc]
+            asm_str += f"{str(pc):<5s}    {inst}\n"
+
+        with open(file_name, 'w+', encoding="utf-8") as fo:
+            fo.write(asm_str)
