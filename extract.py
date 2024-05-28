@@ -141,6 +141,7 @@ class Extractor():
                         end_pc=end,
                         latency=latency
                     )
+                # TODO: Check for loop bounds and unroll all loops
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

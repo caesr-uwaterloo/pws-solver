@@ -21,6 +21,10 @@ class Graph():
     def __init__(self) -> None:
         self.cfg: dict[int, BasicBlock] = {}
         self.pc_map: dict[int, int] = {}
+        # TODO: Add a loop bound map
+
+    # TODO: Add a loop unroll utility
+    # TODO: Add a utility to check for cycles
 
     def get_insts(self) -> dict[int, str]:
         """
@@ -56,7 +60,6 @@ class Graph():
         """
         Add a new edge to the control-flow graph from basic block src to dst
         """
-        # We assume all loops are unrolled
         # assert src < dst
         if src not in self.cfg:
             self.insert_basic_block(src)
@@ -86,8 +89,6 @@ class Graph():
         assert start_pc in self.pc_map
         assert end_pc in self.pc_map
 
-        # TODO: Add handling logic for other cases:
-        #   - Loops
         # FIXME: This actually doesn't cover all cases that we
         # want, need to find a way to capture everything
         # (inserting raw assembly generates a new basic block
@@ -177,6 +178,7 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
+        # TODO: Check that all loops have been unrolled
         parent_stack: list[int] = []
         for u in sorted(self.cfg.keys()):
             bb = self.cfg[u]
@@ -323,35 +325,6 @@ class Graph():
         plt.axis('off')
         plt.savefig(file_name)
 
-    def write_to_file(self, file_name: str) -> None:
-        """
-        Output the contents of the CFG and the WCETs of each basic block to a
-        given file
-        """
-        # TODO: Consider a CSV file instead of a custom file structure
-        with open(file_name, 'w', encoding="utf-8") as fo:
-            for node in sorted(self.cfg):
-                bb = self.cfg[node]
-                line = f"{node} {bb.wcet} " \
-                    f"{int(bb.is_bsb())} {int(bb.is_reconv())}"
-                for target in bb.successors():
-                    line += f" {target}"
-                fo.write(f"{line}\n")
-
-    def read_from_file(self, file_name: str) -> None:
-        """
-        Read the contents of a graph file to construct the CFG
-        """
-        with open(file_name, encoding="utf-8") as fi:
-            for line in fi:
-                data = [int(i) for i in line.split()]
-                self.insert_basic_block(num=data[0], wcet=data[1])
-                bb = self.cfg[data[0]]
-                bb.is_a_bsb = bool(data[2])
-                bb.is_a_reconv = bool(data[3])
-                for dst in data[4:]:
-                    self.insert_edge(data[0], dst)
-
     def read_from_csv(self, file_name: str) -> None:
         """
         Read the contents of a CSV file to construct the CFG
@@ -370,6 +343,7 @@ class Graph():
 
             for dst in successors:
                 self.insert_edge(idx, int(dst))
+        # TODO: Check that there are no cycles
 
     def write_to_csv(self, file_name: str = "") -> str:
         """
@@ -380,6 +354,7 @@ class Graph():
             bb = self.cfg[idx]
             successors = ';'.join(str(j) for j in bb.successors())
             csv_str += f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
+        # TODO: Check that there are no cycles
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(csv_str)
