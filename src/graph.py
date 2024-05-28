@@ -4,11 +4,14 @@
 This module consists of the Graph class to represent the CFG of a GPU kernel.
 """
 
+import re
+
 import matplotlib.pyplot as plt # type: ignore
 import networkx as nx # type: ignore
 import pandas as pd # type: ignore
 
 from src.block import BasicBlock
+from src import pattern
 
 class Graph():
     """
@@ -27,6 +30,16 @@ class Graph():
         for bb in self.cfg.values():
             insts |= bb.instructions()
         return insts
+
+    def get_instruction(self, pc: int) -> str:
+        """
+        Given a PC, returns the instruction string
+        """
+        bb_idx = self.pc_map[pc]
+        bb = self.cfg[bb_idx]
+        insts = bb.instructions()
+        return insts[pc]
+
 
     def insert_basic_block(self, num: int, wcet: int = 0) -> None:
         """
@@ -59,9 +72,99 @@ class Graph():
             self.pc_map[pc] = bb
         self.cfg[bb].add_instruction(pc, inst)
 
-    def pc_basic_block(self, pc: int) -> int:
+    def update_latency(
+        self,
+        start_pc: int,
+        end_pc: int,
+        latency: int
+    ) -> None:
         """
-        Determine the nearest basic block boundary given a PC
+        Given a start PC, end PC, and latency between the two PCs, determines
+        an appropriate basic block between these two points and updates the
+        latency for the basic block if it is the largest seen so far.
+        """
+        assert start_pc in self.pc_map
+        assert end_pc in self.pc_map
+
+        # TODO: Add handling logic for other cases:
+        #   - Loops
+        # FIXME: This actually doesn't cover all cases that we
+        # want, need to find a way to capture everything
+        # (inserting raw assembly generates a new basic block
+        # that is undetected by IPTs)
+        bb_idx = self.choose_basic_block(start_pc=start_pc, end_pc=end_pc)
+        if bb_idx >= 0:
+            self.cfg[bb_idx].wcet = max(latency, self.cfg[bb_idx].wcet)
+
+    def choose_basic_block(
+        self,
+        start_pc: int,
+        end_pc: int
+    ) -> int:
+        """
+        Determine the basic block between given start and end PCs, if one
+        exists.
+
+        The log files from gem5 contain instrumentation points (IPTs):
+          1. At the start of the kernel
+          2. At each branch instruction
+          3. At the end of the kernel
+        The IPT logic in gem5 computes the largest observed latency between
+        each of these IPTs and reports it with the IPT debug flag
+        """
+        # First, we get the basic block corresponding to the start PC. Since
+        # the PC could correspond to an instruction at the very end of a basic
+        # block, the measurement could be for the next block or the target of
+        # the branch if it is taken.
+        start_candidates = []
+        inst = self.get_instruction(start_pc)
+
+        # If the instruction is a branch, we consider the case where the branch
+        # is taken and add the target basic block index as a candidate.
+        if re.search(pattern.UNCOND_BRANCH_INST, inst) or \
+            re.search(pattern.COND_BRANCH_INST, inst):
+            target = inst.split()[-1]
+            assert re.search(pattern.BB_LABEL, target)
+            start_candidates.append(int(re.findall(r'\d+', target)[-1]))
+
+        # If the instruction is a conditional branch or a non-branch
+        # instruction, execution may proceed to the next PC. In this case,
+        # the start PC is either at the start or the end of a basic block. If
+        # it is at the end of the block, we choose the next basic block as the
+        # candidate. Otherwise, we choose the basic block containing the start
+        # PC. In either case, getting the basic block index of the next PC
+        # gives the candidate.
+        if not re.search(pattern.UNCOND_BRANCH_INST, inst):
+            start_candidates.append(
+                self.next_instruction_basic_block(start_pc)
+            )
+
+        # At this point we should have at least one candidate for unconditional
+        # branches or non-branches and at most two candidates for conditional
+        # branches
+        assert len(start_candidates) >= 1 and len(start_candidates) <= 2
+
+        # The end PC can also be at the beginning or end of a basic block.
+        # Again, we get the block index of the next instruction.
+        bb_end = self.next_instruction_basic_block(end_pc)
+
+        # If any of the candidates is exactly one block index less than the end
+        # basic block, this means the start and end PCs bound a single basic
+        # block and we return the candidate
+        for bb_idx in start_candidates:
+            if bb_end == bb_idx + 1:
+                return bb_idx
+
+        # If we reach here, then the start and end PCs bound multiple basic
+        # blocks, so we return a dummy value
+        return -1
+
+    def next_instruction_basic_block(
+        self,
+        pc: int
+    ) -> int:
+        """
+        Return the basic block index of the next instruction given a PC
         """
         pcs = sorted(self.pc_map.keys())
         idx = pcs.index(pc)
@@ -203,7 +306,7 @@ class Graph():
 
         # Add weight labels
         node_labels = {node: f"{self.cfg[node].wcet}" \
-                       for node in list(nx_graph.nodes())[:-1]}
+                       for node in list(nx_graph.nodes())}
         label_positions = {}
         for node, position in pos.items():
             label_positions[node] = (position[0], position[1] - 50)
@@ -289,7 +392,7 @@ class Graph():
         inst_map = self.get_insts()
         for pc in sorted(self.get_insts().keys()):
             inst = inst_map[pc]
-            asm_str += f"{str(pc):<5s}    {inst}\n"
+            asm_str += f"{str(pc)} {inst}\n"
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(asm_str)

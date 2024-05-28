@@ -61,6 +61,7 @@ class Extractor():
         return bool(re.search(pattern.SMEM_INST, line) or \
             re.search(pattern.DS_INST, line) or \
             re.search(pattern.VMEM_INST, line) or \
+            re.search(pattern.DOUBLE_WORD_LONG_IMM, line) or \
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
             re.search(pattern.DOUBLE_WORD_COMPARE, line) or \
             re.search(pattern.DOUBLE_WORD_INST, line))
@@ -133,21 +134,13 @@ class Extractor():
                     end = int(last_four_numbers[2])
                     latency = int(last_four_numbers[3])
 
+                    assert kernel_id < len(self.graphs)
                     g = self.graphs[kernel_id]
-                    if start in g.pc_map and \
-                        end in g.pc_map:
-                        bb_start = g.pc_basic_block(start)
-                        bb_end = g.pc_basic_block(end)
-                        # TODO: Add handling logic for other cases:
-                        #   - Branches are taken
-                        #   - Loops
-                        # FIXME: This actually doesn't cover all cases that we
-                        # want, need to find a way to capture everything
-                        # (inserting raw assembly generates a new basic block
-                        # that is undetected by IPTs)
-                        if bb_end == bb_start + 1 and \
-                            latency > g.cfg[bb_start].wcet:
-                            g.cfg[bb_start].wcet = latency
+                    g.update_latency(
+                        start_pc=start,
+                        end_pc=end,
+                        latency=latency
+                    )
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
