@@ -2,7 +2,8 @@
 *.lp
 *.png
 *.sol
-gurobi.log
-__pycache__/
+*anno.s
 .vscode/
+__pycache__/
 env/
+gurobi.log
