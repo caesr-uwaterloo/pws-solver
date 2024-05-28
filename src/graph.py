@@ -33,14 +33,13 @@ class Graph():
         executions
         """
 
-    # TODO: Add a utility to check for cycles
     def loopback_edges(
         self
-    ) -> list[int]:
+    ) -> list[tuple[int, int]]:
         """
         Returns a list of loopback edges in the graph
         """
-        dag = self
+        ret = []
         S = [0]
         visited: deque[str] = deque()
         in_progress: set[str] = set()
@@ -54,44 +53,12 @@ class Graph():
             else:
                 in_progress.add(u)
                 for v in self.cfg[u].successors():
-                    # if v in in_progress:
-                        # remove u->v
+                    if v in in_progress:
+                        ret.append((u, v))
                     if v not in visited and v not in S:
                         assert v not in in_progress
                         S.append(v)
-        pass
-
-    #     def build_dag(
-    #     self
-    # ) -> None:
-    #     """
-    #     Detects cycles and removes any feedback or back edges in the DFG
-    #     """
-    #     # Perform DFS, find and remove any back edges, and return visited
-    #     # vertices which corresponds to a list in topological order for the
-    #     # resulting DAG
-    #     dag = self
-    #     S = list(sorted(self.get_input_nodes()))
-    #     visited: deque[str] = deque()
-    #     in_progress: set[str] = set()
-    #     while len(S) > 0:
-    #         u = S[-1]
-    #         assert u not in visited
-    #         if u in in_progress:
-    #             S.pop()
-    #             in_progress.remove(u)
-    #             visited.appendleft(u)
-    #         else:
-    #             in_progress.add(u)
-    #             # Sorting successor nodes for determinism in node ordering
-    #             for v in sorted(self.get_successor_nodes(u)):
-    #                 if v in in_progress:
-    #                     dag.remove_edge(u, v)
-    #                 if v not in visited and v not in S:
-    #                     assert v not in in_progress
-    #                     S.append(v)
-    #     self.__topological_ordering = list(visited)
-
+        return ret
 
     # TODO: Add a loop unroll utility
 
@@ -412,7 +379,7 @@ class Graph():
 
             for dst in successors:
                 self.insert_edge(idx, int(dst))
-        # TODO: Check that there are no cycles
+        assert len(self.loopback_edges()) == 0
 
     def write_to_csv(self, file_name: str = "") -> str:
         """
