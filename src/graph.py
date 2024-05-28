@@ -4,6 +4,7 @@
 This module consists of the Graph class to represent the CFG of a GPU kernel.
 """
 
+from collections import deque
 import re
 
 import matplotlib.pyplot as plt # type: ignore
@@ -20,11 +21,79 @@ class Graph():
     """
     def __init__(self) -> None:
         self.cfg: dict[int, BasicBlock] = {}
+
         self.pc_map: dict[int, int] = {}
-        # TODO: Add a loop bound map
+        """
+        Maps each PC to a basic block index
+        """
+
+        self.loop_bounds: dict[int, dict[int, int]] = {}
+        """
+        Maps a source and target basic block index to a number of edge
+        executions
+        """
+
+    # TODO: Add a utility to check for cycles
+    def loopback_edges(
+        self
+    ) -> list[int]:
+        """
+        Returns a list of loopback edges in the graph
+        """
+        dag = self
+        S = [0]
+        visited: deque[str] = deque()
+        in_progress: set[str] = set()
+        while len(S) > 0:
+            u = S[-1]
+            assert u not in visited
+            if u in in_progress:
+                S.pop()
+                in_progress.remove(u)
+                visited.appendleft(u)
+            else:
+                in_progress.add(u)
+                for v in self.cfg[u].successors():
+                    # if v in in_progress:
+                        # remove u->v
+                    if v not in visited and v not in S:
+                        assert v not in in_progress
+                        S.append(v)
+        pass
+
+    #     def build_dag(
+    #     self
+    # ) -> None:
+    #     """
+    #     Detects cycles and removes any feedback or back edges in the DFG
+    #     """
+    #     # Perform DFS, find and remove any back edges, and return visited
+    #     # vertices which corresponds to a list in topological order for the
+    #     # resulting DAG
+    #     dag = self
+    #     S = list(sorted(self.get_input_nodes()))
+    #     visited: deque[str] = deque()
+    #     in_progress: set[str] = set()
+    #     while len(S) > 0:
+    #         u = S[-1]
+    #         assert u not in visited
+    #         if u in in_progress:
+    #             S.pop()
+    #             in_progress.remove(u)
+    #             visited.appendleft(u)
+    #         else:
+    #             in_progress.add(u)
+    #             # Sorting successor nodes for determinism in node ordering
+    #             for v in sorted(self.get_successor_nodes(u)):
+    #                 if v in in_progress:
+    #                     dag.remove_edge(u, v)
+    #                 if v not in visited and v not in S:
+    #                     assert v not in in_progress
+    #                     S.append(v)
+    #     self.__topological_ordering = list(visited)
+
 
     # TODO: Add a loop unroll utility
-    # TODO: Add a utility to check for cycles
 
     def get_insts(self) -> dict[int, str]:
         """
