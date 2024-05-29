@@ -27,7 +27,7 @@ class Graph():
         Maps each PC to a basic block index
         """
 
-        self.loop_bounds: dict[int, dict[int, int]] = {}
+        self.loop_bounds: dict[tuple[int, int], int] = {}
         """
         Maps a source and target basic block index to a number of edge
         executions

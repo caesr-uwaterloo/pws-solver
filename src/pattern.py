@@ -63,6 +63,6 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_writelane_b32",
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
-IPT_EDGE = r"Kernel [0-9]*.*\|$"
+IPT_EDGE = r"\| Measure \|"
 BSB_START_INST = "^s_or_saveexec_b64.*"
 RECONV_START_INST = "^s_or_b64 exec.*|^s_endpgm.*"

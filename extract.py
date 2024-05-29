@@ -128,11 +128,8 @@ class Extractor():
         with open(log_file, encoding="utf-8") as fi:
             for line in fi:
                 if re.search(pattern.IPT_EDGE, line):
-                    last_four_numbers = re.findall(r'\d+', line)[-4:]
-                    kernel_id = int(last_four_numbers[0])
-                    start = int(last_four_numbers[1])
-                    end = int(last_four_numbers[2])
-                    latency = int(last_four_numbers[3])
+                    kernel_id, start, end, count, latency = \
+                        [int(x) for x in re.findall(r'\d+', line)[-5:]]
 
                     assert kernel_id < len(self.graphs)
                     g = self.graphs[kernel_id]
@@ -141,7 +138,13 @@ class Extractor():
                         end_pc=end,
                         latency=latency
                     )
-                # TODO: Check for loop bounds and unroll all loops
+                    edge = (
+                        g.next_instruction_basic_block(start),
+                        g.next_instruction_basic_block(end)
+                    )
+                    if edge in g.loopback_edges():
+                        g.loop_bounds[edge] = count
+                # TODO: Unroll all loops
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
