@@ -33,12 +33,20 @@ class Graph():
         executions
         """
 
+        self.__loopbacks: list[tuple[int, int]] = []
+        self.__topological_ordering: list[int] = []
+        self.__loopbacks_found: bool = False
+
     def loopback_edges(
-        self
+        self,
+        recheck: bool = False
     ) -> list[tuple[int, int]]:
         """
         Returns a list of loopback edges in the graph
         """
+        dag = self.cfg
+        if self.__loopbacks_found and not recheck:
+            return self.__loopbacks
         ret = []
         S = [0]
         visited: deque[str] = deque()
@@ -55,12 +63,59 @@ class Graph():
                 for v in self.cfg[u].successors():
                     if v in in_progress:
                         ret.append((u, v))
-                    if v not in visited and v not in S:
-                        assert v not in in_progress
+                        dag[u].remove_successor(v)
+                    elif v not in visited:
+                        if v in S:
+                            S.remove(v)
                         S.append(v)
+        self.cfg = dag
+        self.__loopbacks = ret
+        self.__topological_ordering = list(visited)
+        self.__loopbacks_found = True
         return ret
 
-    # TODO: Add a loop unroll utility
+    # TODO: Clean this up
+    # TODO: Renumber the BBs in topological order after unrolling
+    def unroll_loops(
+        self
+    ) -> None:
+        for lb in self.loopback_edges():
+            # Assert that lb[0] only has one non-loopback successor
+            # TODO: Consider case when loop is at the end of the CFG
+            assert len(self.cfg[lb[0]].successors()) == 1
+            end_succ = self.cfg[lb[0]].successors()
+            self.cfg[lb[0]].remove_successor(end_succ[0])
+            # Get all vertices between lb[1] and lb[0] in topological ordering
+            start = self.__topological_ordering.index(lb[1])
+            end = self.__topological_ordering.index(lb[0])
+            end_node_prev_block = lb[0]
+            assert start < end
+            # Iterate for number of loop iterations in CFG
+            if lb not in self.loop_bounds:
+                self.loop_bounds[lb] = 1
+            for _ in range(self.loop_bounds[lb]-1):
+                mp = {}
+                mp2 = {}
+                for bb_idx in self.__topological_ordering[start:end+1]:
+                    # Map each node back to one in the original CFG
+                    mp[len(self.cfg)] = bb_idx
+                    mp2[bb_idx] = len(self.cfg)
+                    # Copy each vertex
+                    self.cfg[len(self.cfg)] = \
+                        BasicBlock(len(self.cfg), other=self.cfg[bb_idx])
+                # Add edges based on original nodes
+                for bb_idx, og in mp.items():
+                    for succ in self.cfg[og].successors():
+                        if succ in mp2:
+                            self.cfg[bb_idx].add_successor(mp2[succ])
+                # Add them after lb[0] and successor to lb[0]
+                # import pdb; pdb.set_trace()
+                # print(end_node, mp2[start_node])
+                start_node_new_block = mp2[lb[1]]
+                self.cfg[end_node_prev_block].add_successor(start_node_new_block)
+                end_node_prev_block = mp2[lb[0]]
+
+            self.cfg[end_node_prev_block].add_successor(end_succ[0])
 
     def get_insts(self) -> dict[int, str]:
         """
@@ -317,7 +372,12 @@ class Graph():
                 idx = self.next_block_in_sequence(idx)
         return children
 
-    def plot(self, file_name: str) -> None:
+    def plot(
+        self,
+        file_name: str,
+        x: int = 10,
+        y: int = 10
+    ) -> None:
         """
         Plot the CFG using networkx and matplotlib libraries
         """
@@ -331,6 +391,8 @@ class Graph():
         # Draw nodes and edges
         nx_graph.graph['graph'] = {'rankdir': 'TB'}
         pos = nx.nx_pydot.pydot_layout(nx_graph, prog='dot')
+
+        plt.figure(figsize=(x, y))
         nx.draw(
             nx_graph,
             pos,
@@ -403,7 +465,7 @@ class Graph():
         inst_map = self.get_insts()
         for pc in sorted(self.get_insts().keys()):
             inst = inst_map[pc]
-            asm_str += f"{str(pc)} {inst}\n"
+            asm_str += f"{pc:0>5d} {inst}\n"
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(asm_str)

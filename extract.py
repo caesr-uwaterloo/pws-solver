@@ -144,7 +144,9 @@ class Extractor():
                     )
                     if edge in g.loopback_edges():
                         g.loop_bounds[edge] = count
-                # TODO: Unroll all loops
+            for g in self.graphs:
+                g.unroll_loops()
+                assert len(g.loopback_edges(recheck=True)) == 0
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

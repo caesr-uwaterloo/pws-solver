@@ -15,7 +15,12 @@ class BasicBlock():
     """
     A class that represents a basic block in the CFG
     """
-    def __init__(self, num: int, wcet: int = 0) -> None:
+    def __init__(
+        self,
+        num: int,
+        wcet: int = 0,
+        other: BasicBlock = None
+    ) -> None:
         self.num: int = num
         self.wcet: int = wcet
         self.parent: int = -1
@@ -25,6 +30,10 @@ class BasicBlock():
         self.is_a_reconv: bool = False
         self.__successors: set[int] = set()
         self.__insts: dict[int, str] = {}
+
+        if other:
+            self.wcet = other.wcet
+            self.__insts = other.instructions()
 
     def __lt__(self, other: BasicBlock):
         return self.num < other.num
@@ -40,6 +49,13 @@ class BasicBlock():
         Map a successor node to this basic block
         """
         self.__successors.add(bb)
+
+    def remove_successor(self, bb: int) -> None:
+        """
+        Remove a successor node of this basic block
+        """
+        assert bb in self.__successors
+        self.__successors.remove(bb)
 
     def successors(self) -> list[int]:
         """
