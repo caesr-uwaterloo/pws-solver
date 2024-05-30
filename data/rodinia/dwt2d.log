@@ -1,0 +1,645 @@
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.1.0.0
+gem5 compiled May 29 2024 00:25:59
+gem5 started May 29 2024 01:08:52
+gem5 executing on 908dcad321bf, pid 87317
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/dwt2d/dwt2d -o '/hip-benchmarks/rodinia_3.0/data/dwt2d/4.bmp -d 4x4 -f -5'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:668: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_compute_driver.cc:710: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.hh:1890: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/gpu-compute/gpu_compute_driver.cc:460: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:604: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:614: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+Using device 0: 
+Source file:		/hip-benchmarks/rodinia_3.0/data/dwt2d/4.bmp
+ Dimensions:		4x4
+ Components count:	3
+ Bit depth:		8
+ DWT levels:		3
+ Forward transform:	1
+ 9/7 transform:		0
+Loading ipnput: /hip-benchmarks/rodinia_3.0/data/dwt2d/4.bmp
+precteno 48, inputsize 48
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77a300             |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 148   | 276   | 1     | 1605000      |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 120   | 148   | 1     | 1472000      |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 56    | 120   | 1     | 1731000      |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 56    | 1     | 3691999      |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 7084999                       |
+81334033000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+
+*** 3 stages of 2D forward DWT:
+
+ sliding steps = 1 , gx = 1 , gy = 1 
+src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4516  | 11360 | 1     | 1301000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1644  | 4516  | 1     | 336000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1608  | 1644  | 1     | 85000        |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1604  | 1608  | 1     | 4000         |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1600  | 1604  | 1     | 4000         |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1000  | 1252  | 1     | 1312000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 912   | 1000  | 1     | 357000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1576  | 2540  | 1     | 4935000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1304  | 1432  | 1     | 748000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 264   | 344   | 1     | 349000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 344   | 620   | 1     | 1325000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 84    | 264   | 1     | 329000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1432  | 1488  | 1     | 320000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4028  | 4052  | 1     | 18000        |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 52    | 84    | 1     | 341000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 52    | 1     | 1384999      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4176  | 4236  | 1     | 337000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4292  | 1592  | 1     | 7000         |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 26900 | 0     | 1     | 3676307001   |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1252  | 1304  | 1     | 1297000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1488  | 1528  | 1     | 28000        |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 620   | 648   | 1     | 339000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 3452  | 3652  | 1     | 988000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1528  | 1576  | 1     | 321000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 3652  | 3716  | 1     | 329000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4116  | 4176  | 1     | 1228000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 648   | 912   | 1     | 328000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1592  | 1596  | 1     | 4000         |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 3716  | 3956  | 1     | 1033000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 2540  | 3452  | 1     | 5107000      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 1596  | 1600  | 1     | 4000         |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 3956  | 4028  | 1     | 653000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4052  | 4116  | 1     | 341000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 4236  | 4292  | 1     | 333000       |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 25825999                      |
+85036166000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 11360 | 0     | 1     | 51450001     |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4516  | 11360 | 2     | 1301000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1644  | 4516  | 2     | 336000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1608  | 1644  | 2     | 230000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1604  | 1608  | 2     | 4000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1600  | 1604  | 2     | 4000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1000  | 1252  | 2     | 1312000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 912   | 1000  | 2     | 541000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1576  | 2540  | 2     | 4935000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1304  | 1432  | 2     | 748000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 264   | 344   | 2     | 349000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 344   | 620   | 2     | 1325000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 84    | 264   | 2     | 329000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1432  | 1488  | 2     | 320000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4028  | 4052  | 2     | 33000        |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 52    | 84    | 2     | 341000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 52    | 2     | 1384999      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4176  | 1600  | 1     | 7000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4176  | 4236  | 1     | 337000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4292  | 1592  | 1     | 7000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 26900 | 0     | 1     | 3676307001   |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1252  | 1304  | 2     | 1297000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1488  | 1528  | 2     | 28000        |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 620   | 648   | 2     | 339000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3452  | 3652  | 2     | 988000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1528  | 1576  | 2     | 321000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3652  | 3716  | 2     | 329000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4116  | 4176  | 2     | 1228000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 648   | 912   | 2     | 328000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1592  | 1596  | 1     | 4000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3716  | 3956  | 2     | 1033000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2540  | 3452  | 2     | 5107000      |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1596  | 1600  | 1     | 4000         |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3956  | 4028  | 2     | 653000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4052  | 4116  | 2     | 341000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4236  | 4292  | 1     | 333000       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 4754999                       |
+85092371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+fdwt53Kernel in launchFDWT53Kernel has finished
+*** 3 stages of 2D forward DWT:
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 11360 | 0     | 2     | 51450001     |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4516  | 11360 | 3     | 1301000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1644  | 4516  | 3     | 336000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1608  | 1644  | 3     | 239000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1604  | 1608  | 3     | 4000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1600  | 1604  | 2     | 4000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1000  | 1252  | 3     | 1312000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 912   | 1000  | 3     | 541000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1576  | 2540  | 3     | 4935000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1304  | 1432  | 3     | 748000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 264   | 344   | 3     | 349000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 344   | 620   | 3     | 1325000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 84    | 264   | 3     | 329000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1432  | 1488  | 3     | 320000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4028  | 4052  | 3     | 33000        |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 52    | 84    | 3     | 341000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 52    | 3     | 1384999      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4176  | 1600  | 1     | 7000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4176  | 4236  | 1     | 337000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4292  | 1592  | 1     | 7000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 26900 | 0     | 1     | 3676307001   |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1252  | 1304  | 3     | 1297000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1488  | 1528  | 3     | 28000        |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 620   | 648   | 3     | 339000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 3452  | 3652  | 3     | 988000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1528  | 1576  | 3     | 321000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 3652  | 3716  | 3     | 329000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4116  | 1604  | 1     | 7000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4116  | 4176  | 2     | 1228000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 648   | 912   | 3     | 328000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1592  | 1596  | 1     | 4000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 3716  | 3956  | 3     | 1033000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 2540  | 3452  | 3     | 5107000      |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 1596  | 1600  | 1     | 4000         |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 3956  | 4028  | 3     | 653000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4052  | 4116  | 3     | 341000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 4236  | 4292  | 1     | 333000       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 4248999                       |
+85146870000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+
+ sliding steps = 1 , gx = 1 , gy = 1 
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 11360 | 0     | 3     | 52058001     |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4516  | 11360 | 4     | 1301000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1644  | 4516  | 4     | 336000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1608  | 1644  | 4     | 239000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1604  | 1608  | 4     | 4000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1600  | 1604  | 3     | 4000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1000  | 1252  | 4     | 1312000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 912   | 1000  | 4     | 541000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1576  | 2540  | 4     | 4935000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1304  | 1432  | 4     | 748000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 264   | 344   | 4     | 349000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 344   | 620   | 4     | 1325000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 84    | 264   | 4     | 329000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1432  | 1488  | 4     | 320000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4028  | 4052  | 4     | 33000        |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 52    | 84    | 4     | 341000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 0     | 52    | 4     | 1384999      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4176  | 1600  | 1     | 7000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4176  | 4236  | 2     | 337000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4292  | 1592  | 2     | 7000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 26900 | 0     | 1     | 3676307001   |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1252  | 1304  | 4     | 1297000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1488  | 1528  | 4     | 28000        |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 620   | 648   | 4     | 339000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 3452  | 3652  | 4     | 988000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1528  | 1576  | 4     | 321000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 3652  | 3716  | 4     | 329000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4116  | 1604  | 1     | 7000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4116  | 4176  | 3     | 1229000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 648   | 912   | 4     | 328000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1592  | 1596  | 2     | 4000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 3716  | 3956  | 4     | 1033000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 2540  | 3452  | 4     | 5107000      |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1596  | 1600  | 2     | 4000         |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 3956  | 4028  | 4     | 653000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4052  | 4116  | 4     | 341000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4236  | 4292  | 2     | 333000       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 6231999                       |
+85205160000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 11360 | 0     | 4     | 52058001     |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4516  | 11360 | 5     | 1301000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1644  | 4516  | 5     | 336000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1608  | 1644  | 5     | 239000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1604  | 1608  | 5     | 4000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1600  | 1604  | 4     | 4000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1000  | 1252  | 5     | 1312000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 912   | 1000  | 5     | 541000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1576  | 2540  | 5     | 4935000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1304  | 1432  | 5     | 748000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 264   | 344   | 5     | 349000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 344   | 620   | 5     | 1325000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 84    | 264   | 5     | 329000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1432  | 1488  | 5     | 320000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4028  | 4052  | 5     | 33000        |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 52    | 84    | 5     | 341000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 0     | 52    | 5     | 1384999      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4176  | 1600  | 2     | 7000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4176  | 4236  | 2     | 337000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4292  | 1592  | 2     | 7000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 26900 | 0     | 1     | 3676307001   |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1252  | 1304  | 5     | 1297000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1488  | 1528  | 5     | 28000        |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 620   | 648   | 5     | 339000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 3452  | 3652  | 5     | 988000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1528  | 1576  | 5     | 321000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 3652  | 3716  | 5     | 329000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4116  | 1604  | 1     | 7000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4116  | 4176  | 4     | 1229000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 648   | 912   | 5     | 328000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1592  | 1596  | 2     | 4000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 3716  | 3956  | 5     | 1033000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 2540  | 3452  | 5     | 5107000      |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 1596  | 1600  | 2     | 4000         |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 3956  | 4028  | 5     | 653000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4052  | 4116  | 5     | 341000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 4236  | 4292  | 2     | 333000       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 5 ~ Total Kernel Time ~ 4518999                       |
+85260145000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+fdwt53Kernel in launchFDWT53Kernel has finished
+*** 3 stages of 2D forward DWT:
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 11360 | 0     | 5     | 52058001     |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4516  | 11360 | 6     | 1301000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1644  | 4516  | 6     | 336000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1608  | 1644  | 6     | 239000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1604  | 1608  | 6     | 4000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1600  | 1604  | 4     | 4000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1000  | 1252  | 6     | 1312000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 912   | 1000  | 6     | 541000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1576  | 2540  | 6     | 4935000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1304  | 1432  | 6     | 748000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 264   | 344   | 6     | 349000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 344   | 620   | 6     | 1325000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 84    | 264   | 6     | 329000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1432  | 1488  | 6     | 320000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4028  | 4052  | 6     | 33000        |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 52    | 84    | 6     | 341000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 0     | 52    | 6     | 1384999      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4176  | 1600  | 2     | 7000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4176  | 4236  | 2     | 337000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4292  | 1592  | 2     | 7000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 26900 | 0     | 1     | 3676307001   |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1252  | 1304  | 6     | 1297000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1488  | 1528  | 6     | 28000        |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 620   | 648   | 6     | 339000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 3452  | 3652  | 6     | 988000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1528  | 1576  | 6     | 321000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 3652  | 3716  | 6     | 329000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4116  | 1604  | 2     | 7000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4116  | 4176  | 4     | 1229000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 648   | 912   | 6     | 328000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1592  | 1596  | 2     | 4000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 3716  | 3956  | 6     | 1033000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 2540  | 3452  | 6     | 5107000      |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1596  | 1600  | 2     | 4000         |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 3956  | 4028  | 6     | 653000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4052  | 4116  | 6     | 341000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4236  | 4292  | 2     | 333000       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 6 ~ Total Kernel Time ~ 4248999                       |
+85314188000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+
+ sliding steps = 1 , gx = 1 , gy = 1 
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 11360 | 0     | 6     | 52058001     |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4516  | 11360 | 7     | 1301000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1644  | 4516  | 7     | 336000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1608  | 1644  | 7     | 239000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1604  | 1608  | 7     | 4000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1600  | 1604  | 5     | 4000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1000  | 1252  | 7     | 1312000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 912   | 1000  | 7     | 541000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1576  | 2540  | 7     | 4935000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1304  | 1432  | 7     | 748000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 264   | 344   | 7     | 349000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 344   | 620   | 7     | 1325000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 84    | 264   | 7     | 329000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1432  | 1488  | 7     | 320000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4028  | 4052  | 7     | 33000        |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 52    | 84    | 7     | 341000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 0     | 52    | 7     | 1384999      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4176  | 1600  | 2     | 7000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4176  | 4236  | 3     | 337000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4292  | 1592  | 3     | 7000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 26900 | 0     | 1     | 3676307001   |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1252  | 1304  | 7     | 1297000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1488  | 1528  | 7     | 28000        |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 620   | 648   | 7     | 339000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 3452  | 3652  | 7     | 988000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1528  | 1576  | 7     | 321000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 3652  | 3716  | 7     | 329000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4116  | 1604  | 2     | 7000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4116  | 4176  | 5     | 1229000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 648   | 912   | 7     | 328000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1592  | 1596  | 3     | 4000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 3716  | 3956  | 7     | 1033000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 2540  | 3452  | 7     | 5107000      |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 1596  | 1600  | 3     | 4000         |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 3956  | 4028  | 7     | 653000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4052  | 4116  | 7     | 341000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 4236  | 4292  | 3     | 333000       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 7 ~ Total Kernel Time ~ 6231999                       |
+85369184000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 11360 | 0     | 7     | 54281001     |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4516  | 11360 | 8     | 1301000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1644  | 4516  | 8     | 336000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1608  | 1644  | 8     | 239000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1604  | 1608  | 8     | 4000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1600  | 1604  | 6     | 4000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1000  | 1252  | 8     | 1312000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 912   | 1000  | 8     | 541000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1576  | 2540  | 8     | 4935000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1304  | 1432  | 8     | 748000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 264   | 344   | 8     | 349000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 344   | 620   | 8     | 1325000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 84    | 264   | 8     | 329000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1432  | 1488  | 8     | 320000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4028  | 4052  | 8     | 33000        |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 52    | 84    | 8     | 341000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 0     | 52    | 8     | 1384999      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4176  | 1600  | 3     | 7000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4176  | 4236  | 3     | 337000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4292  | 1592  | 3     | 7000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 26900 | 0     | 1     | 3676307001   |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1252  | 1304  | 8     | 1297000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1488  | 1528  | 8     | 28000        |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 620   | 648   | 8     | 339000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 3452  | 3652  | 8     | 988000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1528  | 1576  | 8     | 321000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 3652  | 3716  | 8     | 329000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4116  | 1604  | 2     | 7000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4116  | 4176  | 6     | 1229000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 648   | 912   | 8     | 328000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1592  | 1596  | 3     | 4000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 3716  | 3956  | 8     | 1033000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 2540  | 3452  | 8     | 5107000      |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1596  | 1600  | 3     | 4000         |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 3956  | 4028  | 8     | 653000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4052  | 4116  | 8     | 341000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4236  | 4292  | 3     | 333000       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 8 ~ Total Kernel Time ~ 4518999                       |
+85427984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finished
+ sliding steps = 1 , gx = 1 , gy = 1 
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e773b00             |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 11360 | 0     | 8     | 55159001     |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4516  | 11360 | 9     | 1301000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1644  | 4516  | 9     | 336000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1608  | 1644  | 9     | 239000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1604  | 1608  | 9     | 4000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1600  | 1604  | 6     | 4000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1000  | 1252  | 9     | 1312000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 912   | 1000  | 9     | 541000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1576  | 2540  | 9     | 4935000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1304  | 1432  | 9     | 748000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 264   | 344   | 9     | 349000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 344   | 620   | 9     | 1325000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 84    | 264   | 9     | 329000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1432  | 1488  | 9     | 320000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4028  | 4052  | 9     | 33000        |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 52    | 84    | 9     | 341000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 0     | 52    | 9     | 1384999      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4176  | 1600  | 3     | 7000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4176  | 4236  | 3     | 337000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4292  | 1592  | 3     | 7000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 26900 | 0     | 1     | 3676307001   |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1252  | 1304  | 9     | 1297000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1488  | 1528  | 9     | 28000        |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 620   | 648   | 9     | 339000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 3452  | 3652  | 9     | 988000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1528  | 1576  | 9     | 321000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 3652  | 3716  | 9     | 329000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4116  | 1604  | 3     | 7000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4116  | 4176  | 6     | 1229000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 648   | 912   | 9     | 328000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1592  | 1596  | 3     | 4000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 3716  | 3956  | 9     | 1033000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 2540  | 3452  | 9     | 5107000      |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 1596  | 1600  | 3     | 4000         |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 3956  | 4028  | 9     | 653000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4052  | 4116  | 9     | 341000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 4236  | 4292  | 3     | 333000       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 9 ~ Total Kernel Time ~ 4248999                       |
+85487392000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+fdwt53Kernel in launchFDWT53Kernel has finishedPASSED!
+Ticks: 89253686000
+Exiting because  exiting with last active thread context
+
+Time elapsed: 1m40.382s

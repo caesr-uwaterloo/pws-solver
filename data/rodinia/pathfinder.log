@@ -104,9 +104,9 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
 gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:20:48
-gem5 executing on 908dcad321bf, pid 93651
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/hotspot/hotspot -o '64 2 2 /hip-benchmarks/rodinia_3.0/data/hotspot/temp_64 /hip-benchmarks/rodinia_3.0/data/hotspot/power_64 output.out'
+gem5 started May 29 2024 01:43:10
+gem5 executing on 908dcad321bf, pid 105426
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/pathfinder/pathfinder -o '1000 10 2'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -157,16 +157,9 @@ src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
       (further warnings will be suppressed)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
 build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-WG size of kernel = 16 X 16
-pyramidHeight: 2
-gridSize: [64, 64]
-border:[2, 2]
-blockGrid:[6, 6]
-targetBlock:[12, 12]
 src/gpu-compute/gpu_compute_driver.cc:710: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
 src/sim/syscall_emul.hh:1890: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/gpu-compute/gpu_compute_driver.cc:460: warn: Signal events are only supported currently
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
@@ -174,6 +167,12 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/gpu-compute/gpu_compute_driver.cc:604: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
 src/gpu-compute/gpu_compute_driver.cc:614: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+pyramidHeight: 2
+gridSize: [1000]
+border:[2]
+blockSize: 256
+blockGrid:[4]
+targetBlock:[252]
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
@@ -195,37 +194,127 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-Start computing the transient temperature
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-Ending simulation
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e777000             |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1188  | 1248  | 1     | 3673000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 864   | 1188  | 1     | 284000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 864   | 880   | 1     | 432000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 128   | 1     | 4583999      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 208   | 228   | 1     | 9939000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 936   | 1104  | 2     | 1231000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1144  | 864   | 1     | 540000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1144  | 1152  | 1     | 484000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 832   | 864   | 1     | 1428000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 128   | 208   | 1     | 9347000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 228   | 828   | 1     | 8077000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 880   | 936   | 2     | 1632000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1104  | 1120  | 2     | 576000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1120  | 1144  | 2     | 2752000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1152  | 832   | 0     | 148000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1152  | 1176  | 1     | 840000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 828   | 880   | 1     | 440000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1176  | 832   | 1     | 148000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 30826999                      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 484   | 508   | 1     | 328000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 476   | 516   | 1     | 40000        |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 476   | 484   | 1     | 32000        |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 524   | 576   | 1     | 1772000      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 368   | 456   | 2     | 2097000      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 516   | 524   | 1     | 32000        |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 368   | 1     | 395000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 768000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 508   | 312   | 1     | 20000        |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 456   | 476   | 2     | 416000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 446000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 96    | 144   | 1     | 2058000      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 368   | 1     | 160000       |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 96    | 1     | 2840999      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 12362999                      |
+80916527000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 576   | 0     | 1     | 1278001      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 96    | 2     | 2840999      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 312   | 368   | 2     | 186000       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 96    | 144   | 2     | 2058000      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 144   | 168   | 2     | 446000       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 456   | 476   | 4     | 1078000      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 508   | 312   | 2     | 20000        |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 308   | 368   | 2     | 395000       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 168   | 308   | 2     | 768000       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 516   | 524   | 2     | 32000        |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 524   | 0     | 0     | 2661001      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 524   | 576   | 2     | 1772000      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 476   | 516   | 2     | 40000        |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 476   | 484   | 2     | 32000        |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 368   | 456   | 4     | 2097000      |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 508   | 2     | 328000       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 6159999                       |
+80923520000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 576   | 0     | 2     | 1679001      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 96    | 3     | 2840999      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 312   | 368   | 3     | 186000       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 96    | 144   | 3     | 2058000      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 144   | 168   | 3     | 446000       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 456   | 476   | 6     | 1409000      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 508   | 312   | 3     | 20000        |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 308   | 368   | 3     | 395000       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 168   | 308   | 3     | 768000       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 516   | 524   | 3     | 32000        |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 524   | 0     | 0     | 2661001      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 524   | 576   | 3     | 1772000      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 476   | 516   | 3     | 40000        |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 476   | 484   | 3     | 32000        |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 368   | 456   | 6     | 2097000      |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 484   | 508   | 3     | 328000       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 5372999                       |
+80929984000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 576   | 0     | 3     | 3174001      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 96    | 4     | 2840999      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 312   | 368   | 4     | 186000       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 96    | 144   | 4     | 2058000      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 144   | 168   | 4     | 446000       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 456   | 476   | 8     | 1409000      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 508   | 312   | 4     | 20000        |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 308   | 368   | 4     | 395000       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 168   | 308   | 4     | 768000       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 516   | 524   | 4     | 32000        |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 524   | 0     | 0     | 3623001      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 524   | 576   | 4     | 1772000      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 476   | 516   | 4     | 40000        |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 476   | 484   | 4     | 32000        |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 368   | 456   | 8     | 2097000      |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 484   | 508   | 4     | 328000       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 5799999                       |
+80938524000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 576   | 0     | 4     | 3174001      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 0     | 96    | 5     | 2840999      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 312   | 368   | 4     | 186000       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 96    | 144   | 5     | 2058000      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 144   | 168   | 5     | 446000       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 456   | 476   | 9     | 1409000      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 508   | 312   | 4     | 20000        |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 308   | 368   | 5     | 395000       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 168   | 308   | 5     | 768000       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 516   | 524   | 5     | 32000        |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 524   | 0     | 0     | 3623001      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 524   | 576   | 5     | 1772000      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 476   | 516   | 5     | 40000        |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 476   | 484   | 4     | 32000        |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 368   | 456   | 9     | 2097000      |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 484   | 508   | 4     | 328000       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 3735999                       |
+80944155000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 PASSED!
-Ticks: 136739245500
+Ticks: 84660420500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 3m3.615s
+Time elapsed: 1m30.792s

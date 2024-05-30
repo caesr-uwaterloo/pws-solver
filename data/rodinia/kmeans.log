@@ -1,0 +1,384 @@
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.1.0.0
+gem5 compiled May 29 2024 00:25:59
+gem5 started May 29 2024 01:25:19
+gem5 executing on 908dcad321bf, pid 96034
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/kmeans/kmeans -o ' -o -i /hip-benchmarks/rodinia_3.0/data/kmeans/100'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:668: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_compute_driver.cc:710: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.hh:1890: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/gpu-compute/gpu_compute_driver.cc:460: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:604: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:614: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+
+I/O completed
+
+Number of objects: 100
+Number of features: 34
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77b000             |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 172   | 1     | 258000       |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 168   | 33    | 1322000      |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 56    | 168   | 1     | 2277000      |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 56    | 1     | 2733999      |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 20536999                      |
+82833291000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 464   | 504   | 1     | 1258000      |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 464   | 428   | 4     | 155000       |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 428   | 464   | 5     | 48000        |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 428   | 428   | 165   | 519000       |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 292   | 428   | 1     | 2009000      |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 292   | 1     | 328000       |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 228   | 240   | 1     | 24000        |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 208   | 228   | 1     | 28000        |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 208   | 1     | 1489999      |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 39165999                      |
+82955337000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 504   | 0     | 1     | 137926001    |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 464   | 0     | 0     | 139196001    |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 464   | 504   | 2     | 1258000      |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 464   | 428   | 8     | 163000       |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 428   | 464   | 10    | 48000        |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 428   | 428   | 330   | 519000       |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 292   | 428   | 2     | 2009000      |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 240   | 292   | 2     | 328000       |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 228   | 240   | 2     | 36000        |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 208   | 0     | 0     | 175610001    |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 208   | 228   | 2     | 32000        |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 208   | 2     | 1489999      |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 25702999                      |
+83118966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 504   | 0     | 2     | 137926001    |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 464   | 0     | 0     | 139196001    |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 464   | 504   | 3     | 1258000      |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 464   | 428   | 12    | 163000       |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 428   | 464   | 15    | 48000        |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 428   | 428   | 495   | 519000       |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 292   | 428   | 3     | 2009000      |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 240   | 292   | 3     | 328000       |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 228   | 240   | 3     | 36000        |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 208   | 0     | 0     | 175610001    |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 208   | 228   | 3     | 32000        |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 208   | 3     | 1489999      |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 25702999                      |
+83273702000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 504   | 0     | 3     | 137926001    |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 464   | 0     | 0     | 139196001    |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 464   | 504   | 4     | 1258000      |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 464   | 428   | 16    | 163000       |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 428   | 464   | 20    | 48000        |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 428   | 428   | 660   | 519000       |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 292   | 428   | 4     | 2009000      |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 240   | 292   | 4     | 328000       |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 228   | 240   | 4     | 36000        |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 208   | 0     | 0     | 175610001    |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 208   | 228   | 4     | 32000        |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 0     | 208   | 4     | 1489999      |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 25702999                      |
+83429121000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 504   | 0     | 4     | 137926001    |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 464   | 0     | 0     | 139196001    |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 464   | 504   | 5     | 1258000      |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 464   | 428   | 20    | 163000       |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 428   | 464   | 25    | 48000        |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 428   | 428   | 825   | 519000       |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 292   | 428   | 5     | 2009000      |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 240   | 292   | 5     | 328000       |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 228   | 240   | 5     | 36000        |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 208   | 0     | 0     | 175610001    |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 208   | 228   | 5     | 32000        |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 0     | 208   | 5     | 1489999      |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 5 ~ Total Kernel Time ~ 25702999                      |
+83585480000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 504   | 0     | 5     | 137926001    |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 464   | 0     | 0     | 139196001    |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 464   | 504   | 6     | 1258000      |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 464   | 428   | 24    | 163000       |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 428   | 464   | 30    | 48000        |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 428   | 428   | 990   | 519000       |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 292   | 428   | 6     | 2009000      |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 240   | 292   | 6     | 328000       |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 228   | 240   | 6     | 36000        |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 208   | 0     | 0     | 175610001    |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 208   | 228   | 6     | 32000        |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 0     | 208   | 6     | 1489999      |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 6 ~ Total Kernel Time ~ 25702999                      |
+83741862000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 504   | 0     | 6     | 137926001    |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 464   | 0     | 0     | 139196001    |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 464   | 504   | 7     | 1258000      |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 464   | 428   | 28    | 163000       |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 428   | 464   | 35    | 48000        |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 428   | 428   | 1155  | 519000       |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 292   | 428   | 7     | 2009000      |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 240   | 292   | 7     | 328000       |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 228   | 240   | 7     | 36000        |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 208   | 0     | 0     | 175610001    |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 208   | 228   | 7     | 32000        |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 0     | 208   | 7     | 1489999      |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 7 ~ Total Kernel Time ~ 25702999                      |
+83898741000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e77b100             |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 504   | 0     | 7     | 140444001    |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 464   | 0     | 0     | 140746001    |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 464   | 504   | 8     | 1258000      |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 464   | 428   | 32    | 163000       |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 428   | 464   | 40    | 48000        |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 428   | 428   | 1320  | 519000       |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 292   | 428   | 8     | 2009000      |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 240   | 292   | 8     | 328000       |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 228   | 240   | 8     | 36000        |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 208   | 0     | 0     | 175610001    |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 208   | 228   | 8     | 32000        |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 0     | 208   | 8     | 1489999      |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 8 ~ Total Kernel Time ~ 25702999                      |
+84064888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+iterated 8 times
+
+================= Centroid Coordinates =================
+0: 0.00 303.00 150638.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.50 28.00 0.00 0.00 0.00 0.00 1.00 0.00 0.15 25.00 255.00 1.00 0.00 0.06 0.10 0.00 0.00 0.00 0.00
+
+1: 2.00 273.50 1038.77 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 12.18 14.95 0.01 0.00 0.00 0.00 1.00 0.00 0.09 32.52 255.00 1.00 0.00 0.14 0.06 0.00 0.00 0.00 0.00
+
+2: 0.00 273.50 36084.67 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 11.17 11.50 0.00 0.00 0.00 0.00 1.00 0.00 0.08 22.00 255.00 1.00 0.00 0.09 0.09 0.00 0.00 0.00 0.00
+
+3: 0.00 259.00 4245.14 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 6.14 8.91 0.00 0.00 0.00 0.00 1.00 0.00 0.09 25.14 255.00 1.00 0.00 0.12 0.06 0.00 0.00 0.01 0.00
+
+4: 0.00 271.20 12500.50 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 4.80 5.30 0.03 0.01 0.03 0.05 1.00 0.00 0.06 26.80 255.00 1.00 0.00 0.13 0.05 0.00 0.00 0.00 0.00
+
+Number of Iteration: 1
+PASSED!
+Ticks: 88110782500
+Exiting because  exiting with last active thread context
+
+Time elapsed: 1m42.170s

@@ -104,9 +104,9 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
 gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:20:48
-gem5 executing on 908dcad321bf, pid 93651
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/hotspot/hotspot -o '64 2 2 /hip-benchmarks/rodinia_3.0/data/hotspot/temp_64 /hip-benchmarks/rodinia_3.0/data/hotspot/power_64 output.out'
+gem5 started May 29 2024 01:29:10
+gem5 executing on 908dcad321bf, pid 98056
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/leukocyte/leukocyte -o '/hip-benchmarks/rodinia_3.0/data/leukocyte/testfile.avi 5'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -157,16 +157,10 @@ src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
       (further warnings will be suppressed)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
 build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-WG size of kernel = 16 X 16
-pyramidHeight: 2
-gridSize: [64, 64]
-border:[2, 2]
-blockGrid:[6, 6]
-targetBlock:[12, 12]
 src/gpu-compute/gpu_compute_driver.cc:710: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
 src/sim/syscall_emul.hh:1890: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/gpu-compute/gpu_compute_driver.cc:460: warn: Signal events are only supported currently
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
@@ -174,6 +168,7 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/gpu-compute/gpu_compute_driver.cc:604: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
 src/gpu-compute/gpu_compute_driver.cc:614: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+Detecting cells in frame 0
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
@@ -195,37 +190,45 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-Start computing the transient temperature
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-Ending simulation
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e777000             |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1188  | 1248  | 1     | 3673000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 864   | 1188  | 1     | 284000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 864   | 880   | 1     | 432000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 128   | 1     | 4583999      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 208   | 228   | 1     | 9939000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 936   | 1104  | 2     | 1231000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1144  | 864   | 1     | 540000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1144  | 1152  | 1     | 484000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 832   | 864   | 1     | 1428000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 128   | 208   | 1     | 9347000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 228   | 828   | 1     | 8077000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 880   | 936   | 2     | 1632000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1104  | 1120  | 2     | 576000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1120  | 1144  | 2     | 2752000      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1152  | 832   | 0     | 148000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1152  | 1176  | 1     | 840000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 828   | 880   | 1     | 440000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1176  | 832   | 1     | 148000       |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 30826999                      |
-110192969000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-PASSED!
-Ticks: 136739245500
-Exiting because  exiting with last active thread context
+gem5.opt: src/arch/amdgpu/common/tlb.cc:815: void gem5::X86ISA::GpuTLB::handleTranslationReturn(gem5::Addr, gem5::X86ISA::GpuTLB::tlbOutcome, gem5::PacketPtr): Assertion `new_entry' failed.
+Program aborted at tick 161874988000
+--- BEGIN LIBC BACKTRACE ---
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x577671cae2c0]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x577671cd4b1e]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7ea621816420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7ea6209e000b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7ea6209bf859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7ea6209bf729]
+/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7ea6209d0fd6]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB23handleTranslationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0x668)[0x5776714d94f8]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB17translationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0xd7)[0x5776714d9ec7]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0x165)[0x577671cc3785]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x577671cf05a0]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x577671cf0c2b]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x186e092)[0x577671f56092]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc1fe36)[0x577671307e36]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7ea621acd748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7ea6218a2f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7ea6219efe4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7ea621acd124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7ea621899d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7ea6218a1ef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7ea6219efe4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7ea6219f01d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7ea6219f05bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7ea6219f4c01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7ea621a84547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7ea621899d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7ea62189b46d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x7ea6218a506b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x7ea621acd840]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x15ed314)[0x577671cd5314]
+/pws-gem5/build/GCN3_X86/gem5.opt(main+0x21b)[0x57767129023b]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7ea6209c1083]
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
 
-Time elapsed: 3m3.615s
+Aborted (core dumped)
+
+Time elapsed: 3m23.284s
