@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:05:46
-gem5 executing on 908dcad321bf, pid 84830
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 00:56:47
+gem5 executing on 908dcad321bf, pid 103628
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/cfd/cfd -o /hip-benchmarks/rodinia_3.0/data/cfd/fvcorr.domn.16
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -206,9 +206,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 348   | 0     | 1     | 11220001     |
-82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 0     | 0     | 19206000     |
-82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 348   | 2     | 7985999      |
+82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 0     | 1     | 11220001     |
+82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 0     | 0     | 19206000     |
+82829999000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 348   | 2     | 7985999      |
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 3453999                       |
 82829999000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -217,9 +217,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 348   | 0     | 2     | 11220001     |
-82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 0     | 0     | 19206000     |
-82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 348   | 3     | 7985999      |
+82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 0     | 2     | 11220001     |
+82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 0     | 0     | 19206000     |
+82838444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 348   | 3     | 7985999      |
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 3468999                       |
 82838444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -229,7 +229,7 @@ Starting...
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83024736000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 1056  | 1     | 7095999      |
+83024736000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 1056  | 1     | 7095999      |
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 7095999                       |
 83024736000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -238,24 +238,24 @@ Starting...
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 7988  | 8116  | 1     | 1106000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 6336  | 6792  | 1     | 1325000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 6192  | 6336  | 1     | 1053000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4992  | 6192  | 1     | 5924000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 0     | 744   | 1     | 5785999      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 744   | 760   | 1     | 12000        |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4384  | 4536  | 1     | 806000       |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 6792  | 7988  | 1     | 6021000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1108  | 1408  | 1     | 1625000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 760   | 808   | 1     | 348000       |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 808   | 852   | 1     | 353000       |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 852   | 1104  | 1     | 3035000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 3184  | 4384  | 1     | 6517000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 4536  | 4992  | 1     | 736000       |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1408  | 2588  | 1     | 6629000      |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 2588  | 2728  | 1     | 751000       |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 1104  | 1108  | 1     | 12000        |
-83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 4      | 2728  | 3184  | 1     | 402000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 1     | 1106000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 1     | 1325000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 1     | 1053000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 1     | 5924000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 1     | 5785999      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 1     | 12000        |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 1     | 806000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 1     | 6021000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 1     | 1625000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 1     | 348000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 1     | 353000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 1     | 3035000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 1     | 6517000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 1     | 736000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 1     | 6629000      |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 1     | 751000       |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 1     | 12000        |
+83078234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 1     | 402000       |
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 36954999                      |
 83078234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -264,7 +264,7 @@ Starting...
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83088116000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 5      | 0     | 620   | 1     | 4697999      |
+83088116000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 1     | 4697999      |
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 5 ~ Total Kernel Time ~ 4697999                       |
 83088116000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -273,26 +273,26 @@ Starting...
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 7988  | 8116  | 1     | 1106000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 8192  | 0     | 1     | 9882000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 6336  | 6792  | 2     | 1325000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 6192  | 6336  | 2     | 1053000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4992  | 6192  | 2     | 5924000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 0     | 744   | 2     | 5785999      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 744   | 760   | 2     | 16000        |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4384  | 4536  | 2     | 806000       |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 6792  | 7988  | 2     | 6021000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1108  | 1408  | 2     | 1625000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 760   | 808   | 2     | 348000       |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 8812  | 0     | 0     | 5184001      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 808   | 852   | 2     | 353000       |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 852   | 1104  | 2     | 3035000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 3184  | 4384  | 2     | 6517000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 4536  | 4992  | 2     | 736000       |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1408  | 2588  | 2     | 6629000      |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 2588  | 2728  | 2     | 751000       |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 1104  | 1108  | 2     | 12000        |
-83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 6      | 2728  | 3184  | 2     | 402000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 1     | 1106000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 1     | 9882000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 2     | 1325000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 2     | 1053000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 2     | 5924000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 2     | 5785999      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 2     | 16000        |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 2     | 806000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 2     | 6021000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 2     | 1625000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 2     | 348000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 5184001      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 2     | 353000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 2     | 3035000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 2     | 6517000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 2     | 736000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 2     | 6629000      |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 2     | 751000       |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 2     | 12000        |
+83099123000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 2     | 402000       |
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 6 ~ Total Kernel Time ~ 5822999                       |
 83099123000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -301,7 +301,7 @@ Starting...
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83106746000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 7      | 0     | 620   | 2     | 4697999      |
+83106746000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 2     | 4697999      |
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 7 ~ Total Kernel Time ~ 2438999                       |
 83106746000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -310,26 +310,26 @@ Starting...
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 7988  | 8116  | 2     | 1106000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 8192  | 0     | 2     | 9882000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 6336  | 6792  | 3     | 1325000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 6192  | 6336  | 3     | 1053000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4992  | 6192  | 3     | 5924000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 0     | 744   | 3     | 5785999      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 744   | 760   | 3     | 16000        |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4384  | 4536  | 3     | 806000       |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 6792  | 7988  | 3     | 6021000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1108  | 1408  | 3     | 1625000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 760   | 808   | 3     | 348000       |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 8812  | 0     | 0     | 5184001      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 808   | 852   | 3     | 353000       |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 852   | 1104  | 3     | 3035000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 3184  | 4384  | 3     | 6517000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 4536  | 4992  | 3     | 736000       |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1408  | 2588  | 3     | 6629000      |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 2588  | 2728  | 3     | 751000       |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 1104  | 1108  | 3     | 12000        |
-83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 8      | 2728  | 3184  | 3     | 402000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 2     | 1106000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 2     | 9882000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 3     | 1325000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 3     | 1053000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 3     | 5924000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 3     | 5785999      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 3     | 16000        |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 3     | 806000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 3     | 6021000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 3     | 1625000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 3     | 348000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 5184001      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 3     | 353000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 3     | 3035000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 3     | 6517000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 3     | 736000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 3     | 6629000      |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 3     | 751000       |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 3     | 12000        |
+83114530000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 3     | 402000       |
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 8 ~ Total Kernel Time ~ 5822999                       |
 83114530000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -338,7 +338,7 @@ Starting...
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83122149000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 9      | 0     | 620   | 3     | 4697999      |
+83122149000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 3     | 4697999      |
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 9 ~ Total Kernel Time ~ 2434999                       |
 83122149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -347,9 +347,9 @@ Starting...
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 10     | 10092 | 0     | 1     | 81904001     |
-83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 10     | 9472  | 0     | 0     | 84339000     |
-83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 10     | 0     | 1056  | 2     | 7095999      |
+83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 10092 | 0     | 1     | 81904001     |
+83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 9472  | 0     | 0     | 84339000     |
+83205782000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 1056  | 2     | 7095999      |
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 10 ~ Total Kernel Time ~ 1728999                       |
 83205782000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -358,26 +358,26 @@ Starting...
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 7988  | 8116  | 3     | 1106000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 8192  | 0     | 2     | 9882000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 6336  | 6792  | 4     | 1325000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 6192  | 6336  | 4     | 1053000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 4992  | 6192  | 4     | 5924000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 0     | 744   | 4     | 5785999      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 744   | 760   | 4     | 16000        |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 4384  | 4536  | 4     | 806000       |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 6792  | 7988  | 4     | 6021000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 1108  | 1408  | 4     | 1625000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 760   | 808   | 4     | 348000       |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 8812  | 0     | 0     | 5184001      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 808   | 852   | 4     | 353000       |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 852   | 1104  | 4     | 3035000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 3184  | 4384  | 4     | 6517000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 4536  | 4992  | 4     | 736000       |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 1408  | 2588  | 4     | 6629000      |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 2588  | 2728  | 4     | 751000       |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 1104  | 1108  | 4     | 12000        |
-83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 11     | 2728  | 3184  | 4     | 402000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 3     | 1106000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 2     | 9882000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 4     | 1325000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 4     | 1053000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 4     | 5924000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 4     | 5785999      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 4     | 16000        |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 4     | 806000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 4     | 6021000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 4     | 1625000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 4     | 348000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 5184001      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 4     | 353000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 4     | 3035000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 4     | 6517000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 4     | 736000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 4     | 6629000      |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 4     | 751000       |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 4     | 12000        |
+83230964000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 4     | 402000       |
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 11 ~ Total Kernel Time ~ 5826999                       |
 83230964000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -386,7 +386,7 @@ Starting...
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83238065000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 12     | 0     | 620   | 4     | 4697999      |
+83238065000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 4     | 4697999      |
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 12 ~ Total Kernel Time ~ 3407999                       |
 83238065000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -395,26 +395,26 @@ Starting...
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 7988  | 8116  | 4     | 1106000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 8192  | 0     | 3     | 21660000     |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 6336  | 6792  | 5     | 1325000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 6192  | 6336  | 5     | 1053000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 4992  | 6192  | 5     | 5924000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 0     | 744   | 5     | 5785999      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 744   | 760   | 5     | 16000        |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 4384  | 4536  | 5     | 806000       |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 6792  | 7988  | 5     | 6021000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 1108  | 1408  | 5     | 1625000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 760   | 808   | 5     | 348000       |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 8812  | 0     | 0     | 18252001     |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 808   | 852   | 5     | 353000       |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 852   | 1104  | 5     | 3035000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 3184  | 4384  | 5     | 6517000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 4536  | 4992  | 5     | 736000       |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 1408  | 2588  | 5     | 6629000      |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 2588  | 2728  | 5     | 751000       |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 1104  | 1108  | 5     | 12000        |
-83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 13     | 2728  | 3184  | 5     | 402000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 4     | 1106000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 3     | 21660000     |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 5     | 1325000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 5     | 1053000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 5     | 5924000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 5     | 5785999      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 5     | 16000        |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 5     | 806000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 5     | 6021000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 5     | 1625000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 5     | 348000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 18252001     |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 5     | 353000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 5     | 3035000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 5     | 6517000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 5     | 736000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 5     | 6629000      |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 5     | 751000       |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 5     | 12000        |
+83262138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 5     | 402000       |
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 13 ~ Total Kernel Time ~ 5820999                       |
 83262138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -423,7 +423,7 @@ Starting...
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83268147000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 14     | 0     | 620   | 5     | 4697999      |
+83268147000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 5     | 4697999      |
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 14 ~ Total Kernel Time ~ 2423999                       |
 83268147000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -432,26 +432,26 @@ Starting...
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 7988  | 8116  | 5     | 1106000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 8192  | 0     | 4     | 21660000     |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 6336  | 6792  | 6     | 1325000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 6192  | 6336  | 6     | 1053000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 4992  | 6192  | 6     | 5924000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 0     | 744   | 6     | 5785999      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 744   | 760   | 6     | 16000        |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 4384  | 4536  | 6     | 806000       |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 6792  | 7988  | 6     | 6021000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 1108  | 1408  | 6     | 1625000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 760   | 808   | 6     | 348000       |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 8812  | 0     | 0     | 18252001     |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 808   | 852   | 6     | 353000       |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 852   | 1104  | 6     | 3035000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 3184  | 4384  | 6     | 6517000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 4536  | 4992  | 6     | 736000       |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 1408  | 2588  | 6     | 6629000      |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 2588  | 2728  | 6     | 751000       |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 1104  | 1108  | 6     | 12000        |
-83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 15     | 2728  | 3184  | 6     | 402000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 5     | 1106000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 4     | 21660000     |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 6     | 1325000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 6     | 1053000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 6     | 5924000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 6     | 5785999      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 6     | 16000        |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 6     | 806000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 6     | 6021000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 6     | 1625000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 6     | 348000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 18252001     |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 6     | 353000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 6     | 3035000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 6     | 6517000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 6     | 736000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 6     | 6629000      |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 6     | 751000       |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 6     | 12000        |
+83290852000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 6     | 402000       |
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 15 ~ Total Kernel Time ~ 5820999                       |
 83290852000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -460,7 +460,7 @@ Starting...
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83297654000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 16     | 0     | 620   | 6     | 4697999      |
+83297654000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 6     | 4697999      |
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 16 ~ Total Kernel Time ~ 2423999                       |
 83297654000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -469,9 +469,9 @@ Starting...
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 17     | 10092 | 0     | 2     | 87531001     |
-83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 17     | 9472  | 0     | 0     | 89955000     |
-83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 17     | 0     | 1056  | 3     | 7095999      |
+83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 10092 | 0     | 2     | 87531001     |
+83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 9472  | 0     | 0     | 89955000     |
+83386915000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 1056  | 3     | 7095999      |
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 17 ~ Total Kernel Time ~ 1729999                       |
 83386915000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -480,26 +480,26 @@ Starting...
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 7988  | 8116  | 6     | 1106000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 8192  | 0     | 4     | 21660000     |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 6336  | 6792  | 7     | 1325000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 6192  | 6336  | 7     | 1053000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 4992  | 6192  | 7     | 5924000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 0     | 744   | 7     | 5785999      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 744   | 760   | 7     | 16000        |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 4384  | 4536  | 7     | 806000       |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 6792  | 7988  | 7     | 6021000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 1108  | 1408  | 7     | 1625000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 760   | 808   | 7     | 348000       |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 8812  | 0     | 0     | 18252001     |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 808   | 852   | 7     | 353000       |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 852   | 1104  | 7     | 3035000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 3184  | 4384  | 7     | 6517000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 4536  | 4992  | 7     | 736000       |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 1408  | 2588  | 7     | 6629000      |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 2588  | 2728  | 7     | 751000       |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 1104  | 1108  | 7     | 12000        |
-83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 18     | 2728  | 3184  | 7     | 402000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 6     | 1106000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 4     | 21660000     |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 7     | 1325000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 7     | 1053000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 7     | 5924000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 7     | 5785999      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 7     | 16000        |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 7     | 806000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 7     | 6021000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 7     | 1625000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 7     | 348000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 18252001     |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 7     | 353000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 7     | 3035000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 7     | 6517000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 7     | 736000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 7     | 6629000      |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 7     | 751000       |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 7     | 12000        |
+83412241000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 7     | 402000       |
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 18 ~ Total Kernel Time ~ 5822999                       |
 83412241000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -508,7 +508,7 @@ Starting...
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83419444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 19     | 0     | 620   | 7     | 4697999      |
+83419444000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 7     | 4697999      |
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 19 ~ Total Kernel Time ~ 3416999                       |
 83419444000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -517,26 +517,26 @@ Starting...
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 7988  | 8116  | 7     | 1106000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 8192  | 0     | 5     | 21660000     |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 6336  | 6792  | 8     | 1325000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 6192  | 6336  | 8     | 1053000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 4992  | 6192  | 8     | 5924000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 0     | 744   | 8     | 5785999      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 744   | 760   | 8     | 16000        |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 4384  | 4536  | 8     | 806000       |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 6792  | 7988  | 8     | 6021000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 1108  | 1408  | 8     | 1625000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 760   | 808   | 8     | 348000       |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 8812  | 0     | 0     | 18252001     |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 808   | 852   | 8     | 353000       |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 852   | 1104  | 8     | 3035000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 3184  | 4384  | 8     | 6517000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 4536  | 4992  | 8     | 736000       |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 1408  | 2588  | 8     | 6629000      |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 2588  | 2728  | 8     | 751000       |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 1104  | 1108  | 8     | 12000        |
-83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 20     | 2728  | 3184  | 8     | 402000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 7     | 1106000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 5     | 21660000     |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 8     | 1325000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 8     | 1053000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 8     | 5924000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 8     | 5785999      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 8     | 16000        |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 8     | 806000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 8     | 6021000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 8     | 1625000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 8     | 348000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 18252001     |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 8     | 353000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 8     | 3035000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 8     | 6517000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 8     | 736000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 8     | 6629000      |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 8     | 751000       |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 8     | 12000        |
+83443442000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 8     | 402000       |
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 20 ~ Total Kernel Time ~ 5821999                       |
 83443442000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -545,7 +545,7 @@ Starting...
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83449289000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 21     | 0     | 620   | 8     | 4697999      |
+83449289000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 8     | 4697999      |
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 21 ~ Total Kernel Time ~ 2423999                       |
 83449289000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -554,26 +554,26 @@ Starting...
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 7988  | 8116  | 8     | 1106000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 8192  | 0     | 6     | 21660000     |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 6336  | 6792  | 9     | 1325000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 6192  | 6336  | 9     | 1053000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 4992  | 6192  | 9     | 5924000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 0     | 744   | 9     | 5785999      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 744   | 760   | 9     | 16000        |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 4384  | 4536  | 9     | 806000       |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 6792  | 7988  | 9     | 6021000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 1108  | 1408  | 9     | 1625000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 760   | 808   | 9     | 348000       |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 8812  | 0     | 0     | 19176001     |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 808   | 852   | 9     | 353000       |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 852   | 1104  | 9     | 3035000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 3184  | 4384  | 9     | 6517000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 4536  | 4992  | 9     | 736000       |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 1408  | 2588  | 9     | 6629000      |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 2588  | 2728  | 9     | 751000       |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 1104  | 1108  | 9     | 12000        |
-83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 22     | 2728  | 3184  | 9     | 402000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 8     | 1106000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 6     | 21660000     |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 9     | 1325000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 9     | 1053000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 9     | 5924000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 9     | 5785999      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 9     | 16000        |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 9     | 806000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 9     | 6021000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 9     | 1625000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 9     | 348000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19176001     |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 9     | 353000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 9     | 3035000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 9     | 6517000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 9     | 736000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 9     | 6629000      |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 9     | 751000       |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 9     | 12000        |
+83474414000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 9     | 402000       |
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 22 ~ Total Kernel Time ~ 5948999                       |
 83474414000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -582,7 +582,7 @@ Starting...
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83480703000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 23     | 0     | 620   | 9     | 4697999      |
+83480703000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 9     | 4697999      |
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 23 ~ Total Kernel Time ~ 2423999                       |
 83480703000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -591,9 +591,9 @@ Starting...
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 24     | 10092 | 0     | 3     | 91880001     |
-83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 24     | 9472  | 0     | 0     | 94304000     |
-83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 24     | 0     | 1056  | 4     | 7095999      |
+83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 10092 | 0     | 3     | 91880001     |
+83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 9472  | 0     | 0     | 94304000     |
+83574312000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 1056  | 4     | 7095999      |
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 24 ~ Total Kernel Time ~ 1728999                       |
 83574312000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -602,26 +602,26 @@ Starting...
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 7988  | 8116  | 9     | 1106000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 8192  | 0     | 6     | 21660000     |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 6336  | 6792  | 10    | 1325000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 6192  | 6336  | 10    | 1053000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 4992  | 6192  | 10    | 5924000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 0     | 744   | 10    | 5785999      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 744   | 760   | 10    | 16000        |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 4384  | 4536  | 10    | 806000       |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 6792  | 7988  | 10    | 6021000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 1108  | 1408  | 10    | 1625000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 760   | 808   | 10    | 348000       |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 8812  | 0     | 0     | 19176001     |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 808   | 852   | 10    | 353000       |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 852   | 1104  | 10    | 3035000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 3184  | 4384  | 10    | 6517000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 4536  | 4992  | 10    | 736000       |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 1408  | 2588  | 10    | 6629000      |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 2588  | 2728  | 10    | 751000       |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 1104  | 1108  | 10    | 12000        |
-83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 25     | 2728  | 3184  | 10    | 402000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 9     | 1106000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 6     | 21660000     |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 10    | 1325000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 10    | 1053000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 10    | 5924000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 10    | 5785999      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 10    | 16000        |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 10    | 806000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 10    | 6021000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 10    | 1625000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 10    | 348000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19176001     |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 10    | 353000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 10    | 3035000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 10    | 6517000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 10    | 736000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 10    | 6629000      |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 10    | 751000       |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 10    | 12000        |
+83600717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 10    | 402000       |
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 25 ~ Total Kernel Time ~ 5827999                       |
 83600717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -630,7 +630,7 @@ Starting...
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83608139000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 26     | 0     | 620   | 10    | 4697999      |
+83608139000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 10    | 4697999      |
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 26 ~ Total Kernel Time ~ 3417999                       |
 83608139000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -639,26 +639,26 @@ Starting...
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 7988  | 8116  | 10    | 1106000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 8192  | 0     | 7     | 23038000     |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 6336  | 6792  | 11    | 1325000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 6192  | 6336  | 11    | 1053000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 4992  | 6192  | 11    | 5924000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 0     | 744   | 11    | 5785999      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 744   | 760   | 11    | 16000        |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 4384  | 4536  | 11    | 806000       |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 6792  | 7988  | 11    | 6021000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 1108  | 1408  | 11    | 1625000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 760   | 808   | 11    | 348000       |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 8812  | 0     | 0     | 19620001     |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 808   | 852   | 11    | 353000       |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 852   | 1104  | 11    | 3035000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 3184  | 4384  | 11    | 6517000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 4536  | 4992  | 11    | 736000       |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 1408  | 2588  | 11    | 6629000      |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 2588  | 2728  | 11    | 751000       |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 1104  | 1108  | 11    | 12000        |
-83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 27     | 2728  | 3184  | 11    | 402000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 10    | 1106000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 7     | 23038000     |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 11    | 1325000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 11    | 1053000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 11    | 5924000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 11    | 5785999      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 11    | 16000        |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 11    | 806000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 11    | 6021000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 11    | 1625000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 11    | 348000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19620001     |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 11    | 353000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 11    | 3035000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 11    | 6517000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 11    | 736000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 11    | 6629000      |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 11    | 751000       |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 11    | 12000        |
+83633581000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 11    | 402000       |
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 27 ~ Total Kernel Time ~ 5821999                       |
 83633581000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -667,7 +667,7 @@ Starting...
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83639625000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 28     | 0     | 620   | 11    | 4697999      |
+83639625000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 11    | 4697999      |
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 28 ~ Total Kernel Time ~ 2423999                       |
 83639625000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -676,26 +676,26 @@ Starting...
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 7988  | 8116  | 11    | 1106000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 8192  | 0     | 8     | 23038000     |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 6336  | 6792  | 12    | 1325000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 6192  | 6336  | 12    | 1053000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 4992  | 6192  | 12    | 5924000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 0     | 744   | 12    | 5785999      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 744   | 760   | 12    | 16000        |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 4384  | 4536  | 12    | 806000       |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 6792  | 7988  | 12    | 6021000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 1108  | 1408  | 12    | 1625000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 760   | 808   | 12    | 348000       |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 8812  | 0     | 0     | 19620001     |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 808   | 852   | 12    | 353000       |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 852   | 1104  | 12    | 3035000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 3184  | 4384  | 12    | 6517000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 4536  | 4992  | 12    | 736000       |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 1408  | 2588  | 12    | 6629000      |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 2588  | 2728  | 12    | 751000       |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 1104  | 1108  | 12    | 12000        |
-83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 29     | 2728  | 3184  | 12    | 402000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 11    | 1106000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 8     | 23038000     |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 12    | 1325000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 12    | 1053000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 12    | 5924000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 12    | 5785999      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 12    | 16000        |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 12    | 806000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 12    | 6021000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 12    | 1625000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 12    | 348000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19620001     |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 12    | 353000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 12    | 3035000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 12    | 6517000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 12    | 736000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 12    | 6629000      |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 12    | 751000       |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 12    | 12000        |
+83664799000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 12    | 402000       |
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 29 ~ Total Kernel Time ~ 5822999                       |
 83664799000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -704,7 +704,7 @@ Starting...
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83671296000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 30     | 0     | 620   | 12    | 4697999      |
+83671296000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 12    | 4697999      |
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 30 ~ Total Kernel Time ~ 2423999                       |
 83671296000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -713,9 +713,9 @@ Starting...
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 31     | 10092 | 0     | 4     | 94379001     |
-83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 31     | 9472  | 0     | 0     | 96803000     |
-83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 31     | 0     | 1056  | 5     | 7095999      |
+83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 10092 | 0     | 4     | 94379001     |
+83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 9472  | 0     | 0     | 96803000     |
+83767404000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 1056  | 5     | 7095999      |
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 31 ~ Total Kernel Time ~ 1728999                       |
 83767404000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -724,26 +724,26 @@ Starting...
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 7988  | 8116  | 12    | 1106000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 8192  | 0     | 8     | 23038000     |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 6336  | 6792  | 13    | 1325000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 6192  | 6336  | 13    | 1053000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 4992  | 6192  | 13    | 5924000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 0     | 744   | 13    | 5785999      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 744   | 760   | 13    | 16000        |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 4384  | 4536  | 13    | 806000       |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 6792  | 7988  | 13    | 6021000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 1108  | 1408  | 13    | 1625000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 760   | 808   | 13    | 348000       |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 8812  | 0     | 0     | 19620001     |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 808   | 852   | 13    | 353000       |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 852   | 1104  | 13    | 3035000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 3184  | 4384  | 13    | 6517000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 4536  | 4992  | 13    | 736000       |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 1408  | 2588  | 13    | 6629000      |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 2588  | 2728  | 13    | 751000       |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 1104  | 1108  | 13    | 12000        |
-83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 32     | 2728  | 3184  | 13    | 402000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 12    | 1106000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 8     | 23038000     |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 13    | 1325000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 13    | 1053000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 13    | 5924000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 13    | 5785999      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 13    | 16000        |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 13    | 806000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 13    | 6021000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 13    | 1625000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 13    | 348000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19620001     |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 13    | 353000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 13    | 3035000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 13    | 6517000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 13    | 736000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 13    | 6629000      |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 13    | 751000       |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 13    | 12000        |
+83793359000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 13    | 402000       |
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 32 ~ Total Kernel Time ~ 5823999                       |
 83793359000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -752,7 +752,7 @@ Starting...
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83800663000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 33     | 0     | 620   | 13    | 4697999      |
+83800663000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 13    | 4697999      |
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 33 ~ Total Kernel Time ~ 3422999                       |
 83800663000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -761,26 +761,26 @@ Starting...
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 7988  | 8116  | 13    | 1106000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 8192  | 0     | 9     | 23038000     |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 6336  | 6792  | 14    | 1325000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 6192  | 6336  | 14    | 1053000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 4992  | 6192  | 14    | 5924000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 0     | 744   | 14    | 5785999      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 744   | 760   | 14    | 16000        |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 4384  | 4536  | 14    | 806000       |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 6792  | 7988  | 14    | 6021000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 1108  | 1408  | 14    | 1625000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 760   | 808   | 14    | 348000       |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 8812  | 0     | 0     | 19620001     |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 808   | 852   | 14    | 353000       |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 852   | 1104  | 14    | 3035000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 3184  | 4384  | 14    | 6517000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 4536  | 4992  | 14    | 736000       |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 1408  | 2588  | 14    | 6629000      |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 2588  | 2728  | 14    | 751000       |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 1104  | 1108  | 14    | 12000        |
-83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 34     | 2728  | 3184  | 14    | 402000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 13    | 1106000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 9     | 23038000     |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 14    | 1325000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 14    | 1053000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 14    | 5924000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 14    | 5785999      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 14    | 16000        |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 14    | 806000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 14    | 6021000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 14    | 1625000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 14    | 348000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19620001     |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 14    | 353000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 14    | 3035000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 14    | 6517000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 14    | 736000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 14    | 6629000      |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 14    | 751000       |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 14    | 12000        |
+83825972000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 14    | 402000       |
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 34 ~ Total Kernel Time ~ 5826999                       |
 83825972000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -789,7 +789,7 @@ Starting...
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83832138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 35     | 0     | 620   | 14    | 4697999      |
+83832138000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 14    | 4697999      |
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 35 ~ Total Kernel Time ~ 2460999                       |
 83832138000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -798,26 +798,26 @@ Starting...
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 7988  | 8116  | 14    | 1106000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 8192  | 0     | 10    | 23038000     |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 6336  | 6792  | 15    | 1325000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 6192  | 6336  | 15    | 1053000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 4992  | 6192  | 15    | 5924000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 0     | 744   | 15    | 5785999      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 744   | 760   | 15    | 16000        |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 4384  | 4536  | 15    | 806000       |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 6792  | 7988  | 15    | 6021000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 1108  | 1408  | 15    | 1625000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 760   | 808   | 15    | 348000       |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 8812  | 0     | 0     | 19918001     |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 808   | 852   | 15    | 353000       |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 852   | 1104  | 15    | 3035000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 3184  | 4384  | 15    | 6517000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 4536  | 4992  | 15    | 736000       |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 1408  | 2588  | 15    | 6629000      |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 2588  | 2728  | 15    | 751000       |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 1104  | 1108  | 15    | 12000        |
-83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 36     | 2728  | 3184  | 15    | 402000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 7988  | 8116  | 14    | 1106000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8192  | 0     | 10    | 23038000     |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6336  | 6792  | 15    | 1325000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6192  | 6336  | 15    | 1053000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4992  | 6192  | 15    | 5924000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 0     | 744   | 15    | 5785999      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 744   | 760   | 15    | 16000        |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4384  | 4536  | 15    | 806000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 6792  | 7988  | 15    | 6021000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1108  | 1408  | 15    | 1625000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 760   | 808   | 15    | 348000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 8812  | 0     | 0     | 19918001     |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 808   | 852   | 15    | 353000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 852   | 1104  | 15    | 3035000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 3184  | 4384  | 15    | 6517000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 4536  | 4992  | 15    | 736000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1408  | 2588  | 15    | 6629000      |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2588  | 2728  | 15    | 751000       |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 1104  | 1108  | 15    | 12000        |
+83857884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 2      | 2728  | 3184  | 15    | 402000       |
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 36 ~ Total Kernel Time ~ 5827999                       |
 83857884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -826,7 +826,7 @@ Starting...
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-83863884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 37     | 0     | 620   | 15    | 4697999      |
+83863884000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 3      | 0     | 620   | 15    | 4697999      |
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 37 ~ Total Kernel Time ~ 2423999                       |
 83863884000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
@@ -837,4 +837,4 @@ PASSED!
 Ticks: 88085371000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m38.210s
+Time elapsed: 1m43.268s

@@ -2,12 +2,12 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:35:33
-gem5 executing on 908dcad321bf, pid 101404
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 01:27:01
+gem5 executing on 908dcad321bf, pid 120955
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/maxdiv/maxdiv -o '4096 4 1024 16'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 fatal: /hip-benchmarks/rodinia_3.0/hip/maxdiv/maxdiv not found in ['.']
 
-Time elapsed: 0m0.320s
+Time elapsed: 0m0.321s

@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 00:56:59
-gem5 executing on 908dcad321bf, pid 80046
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 00:47:59
+gem5 executing on 908dcad321bf, pid 98954
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/b+tree/b+tree -o 'file /hip-benchmarks/rodinia_3.0/data/b+tree/hundred.txt command /hip-benchmarks/rodinia_3.0/data/b+tree/command-small.txt'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -178,7 +178,7 @@ k 1
 
 Getting input from file /hip-benchmarks/rodinia_3.0/data/b+tree/hundred.txt...
 Transforming data to a GPU suitable structure...
-Tree transformation took 0.000024
+Tree transformation took 0.000025
 Waiting for command
 > In main loop, instruction is j
 ******command: j count=1, rSize=1 
@@ -206,19 +206,19 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 # of blocks = 1, # of threads/block = 256 (ensure that device can handle)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77a000             |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1220  | 1352  | 1     | 2183000      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1068  | 1220  | 1     | 4287000      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 972   | 1068  | 1     | 674000       |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 48    | 972   | 1     | 4164000      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 48    | 1     | 2687999      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13563999                      |
-80020944000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77a000             |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1220  | 1352  | 1     | 1933000      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1068  | 1220  | 1     | 4565000      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 972   | 1068  | 1     | 900000       |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 44    | 972   | 1     | 4410000      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 44    | 1     | 2688999      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13850999                      |
+80087904000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 > In main loop, instruction is  > In main loop, instruction is 1> In main loop, instruction is  > In main loop, instruction is 2> In main loop, instruction is 
 > In main loop, instruction is k
  ******command: k count=1 
@@ -226,25 +226,25 @@ records_elem=100, records_unit_mem=4, records_mem=400
 knodes_elem=1, knodes_unit_mem=2068, knodes_mem=2068
 # of blocks = 1, # of threads/block = 256 (ensure that device can handle)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e771000             |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 640   | 780   | 1     | 3239000      |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 32    | 640   | 1     | 3655000      |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 32    | 1     | 1391999      |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 38216 | 0     | 0     | 1815721001   |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 38084 | 0     | 1     | 1817920001   |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 7989999                       |
-81844655000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e771000             |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 640   | 780   | 1     | 3439000      |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 28    | 640   | 1     | 3439000      |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 28    | 1     | 1393999      |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 38216 | 0     | 0     | 1855759001   |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 38084 | 0     | 1     | 1857708001   |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 8243999                       |
+81951907000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 > In main loop, instruction is  > In main loop, instruction is 1> In main loop, instruction is 
 > In main loop, instruction is 
 > In main loop, instruction is 
 > 
 PASSED!
-Ticks: 85285736500
+Ticks: 85411563500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m35.112s
+Time elapsed: 1m33.730s

@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:46:08
-gem5 executing on 908dcad321bf, pid 106983
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 01:37:32
+gem5 executing on 908dcad321bf, pid 126506
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/srad_v1/srad_v1 -o '1 0.5 10 10 /hip-benchmarks/rodinia_3.0/data/srad/image.pgm'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -290,4 +290,4 @@ PASSED!
 Ticks: 391257998500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 10m21.077s
+Time elapsed: 10m36.257s

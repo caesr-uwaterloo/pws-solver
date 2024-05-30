@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:57:59
-gem5 executing on 908dcad321bf, pid 113173
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 01:49:41
+gem5 executing on 908dcad321bf, pid 132865
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/streamcluster/streamcluster -o '10 20 256 65536 65536 1000 none output.txt 1'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4

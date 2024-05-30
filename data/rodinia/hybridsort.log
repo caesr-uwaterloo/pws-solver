@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 29 2024 00:25:59
-gem5 started May 29 2024 01:23:51
-gem5 executing on 908dcad321bf, pid 95264
+gem5 compiled May 30 2024 00:44:11
+gem5 started May 30 2024 01:15:17
+gem5 executing on 908dcad321bf, pid 114805
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/hybridsort/hybridsort -o r
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -191,6 +191,6 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 src/gpu-compute/gpu_dyn_inst.cc:787: fatal: flat access at addr 0x2000000000000000 has a memory violation
-Memory Usage: 2685588 KBytes
+Memory Usage: 2684052 KBytes
 
-Time elapsed: 1m27.676s
+Time elapsed: 1m25.937s
