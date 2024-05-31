@@ -147,6 +147,7 @@ class Extractor():
             for g in self.graphs:
                 g.unroll_loops()
                 assert len(g.loopback_edges(recheck=True)) == 0
+                g.renumber_basic_blocks()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

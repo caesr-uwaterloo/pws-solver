@@ -76,7 +76,35 @@ class Graph():
         self.__loopbacks_found = True
         return ret
 
-    # TODO: Renumber the BBs in topological order after unrolling
+    def renumber_basic_blocks(
+        self
+    ) -> None:
+        """
+        Renumbers the basic blocks in the CFG based on their topological order
+        because loop unrolling may have disordered them
+        """
+        new_cfg: dict[int, BasicBlock] = {}
+        new_pc_map: dict[int, int] = {}
+
+        # Since we may have just unrolled the loops we neeed to update the
+        # topological ordering
+        self.loopback_edges(recheck=True)
+
+        # Copy all vertices and edges from the old CFG, but update the basic
+        # block indices based on the topological ordering
+        for idx, bb_idx in enumerate(self.__topological_ordering):
+            new_cfg[idx] = BasicBlock(idx, other=self.cfg[bb_idx])
+            for succ in self.cfg[bb_idx].successors():
+                new_cfg[idx].add_successor(self.__topological_ordering.index(succ))
+
+        # Update the map from PC to basic block based on the new indices
+        for pc, bb_idx in self.pc_map.items():
+            new_bb_idx = self.__topological_ordering.index(bb_idx)
+            new_pc_map[pc] = new_bb_idx
+
+        self.cfg = new_cfg
+        self.pc_map = new_pc_map
+
     def unroll_loops(
         self
     ) -> None:
