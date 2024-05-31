@@ -42,7 +42,9 @@ class Graph():
         recheck: bool = False
     ) -> list[tuple[int, int]]:
         """
-        Returns a list of loopback edges in the graph
+        Finds and removes any loopback edges in the graph. Returns a list of
+        the removed loopback edges encoded as source and sink basic block
+        pairs.
         """
         dag = self.cfg
         if self.__loopbacks_found and not recheck:
@@ -74,48 +76,65 @@ class Graph():
         self.__loopbacks_found = True
         return ret
 
-    # TODO: Clean this up
     # TODO: Renumber the BBs in topological order after unrolling
     def unroll_loops(
         self
     ) -> None:
-        for lb in self.loopback_edges():
-            # Assert that lb[0] only has one non-loopback successor
-            # TODO: Consider case when loop is at the end of the CFG
-            assert len(self.cfg[lb[0]].successors()) == 1
-            end_succ = self.cfg[lb[0]].successors()
-            self.cfg[lb[0]].remove_successor(end_succ[0])
-            # Get all vertices between lb[1] and lb[0] in topological ordering
-            start = self.__topological_ordering.index(lb[1])
-            end = self.__topological_ordering.index(lb[0])
-            end_node_prev_block = lb[0]
+        """
+        Finds all loopback edges in the graph and unrolls them based on the
+        loop bounds set in the gem5 log file
+        """
+        for tail, head in self.loopback_edges():
+            # The basic block at the end of the loop should only have a single
+            # successor out of the loop at this point since we removed all
+            # loopback edges
+            tail_successors = self.cfg[tail].successors()
+            assert len(tail_successors) <= 1
+
+            # If there are basic blocks after the loop, detach them from the
+            # CFG until unrolling is complete
+            if len(tail_successors) == 1:
+                self.cfg[tail].remove_successor(tail_successors[0])
+
+            # Get the subgraph induced by the head and tail of the loopback
+            # edge and every edge between them in topological order
+            start = self.__topological_ordering.index(head)
+            end   = self.__topological_ordering.index(tail)
             assert start < end
-            # Iterate for number of loop iterations in CFG
-            if lb not in self.loop_bounds:
-                self.loop_bounds[lb] = 1
-            for _ in range(self.loop_bounds[lb]-1):
-                mp = {}
-                mp2 = {}
+
+            # If a loop bound is missing from the log file or no log file is
+            # provided, assume only one loop iteration
+            if (tail, head) not in self.loop_bounds:
+                self.loop_bounds[(tail, head)] = 1
+
+            # Next, we duplicate the subgraph based on the loop bound and
+            # insert into the graph. We copy the vertices of the subgraph
+            # followed by all edges. To do so, we maintain a map from the
+            # original subgraph to the new vertices as we insert them.
+            last_node_in_previous_subgraph = self.cfg[tail]
+            for _ in range(self.loop_bounds[(tail, head)]):
+                bb_map: dict[int, int] = {}
+                # Copy all vertices in original subgraph
                 for bb_idx in self.__topological_ordering[start:end+1]:
-                    # Map each node back to one in the original CFG
-                    mp[len(self.cfg)] = bb_idx
-                    mp2[bb_idx] = len(self.cfg)
-                    # Copy each vertex
+                    bb_map[bb_idx] = len(self.cfg)
                     self.cfg[len(self.cfg)] = \
                         BasicBlock(len(self.cfg), other=self.cfg[bb_idx])
-                # Add edges based on original nodes
-                for bb_idx, og in mp.items():
-                    for succ in self.cfg[og].successors():
-                        if succ in mp2:
-                            self.cfg[bb_idx].add_successor(mp2[succ])
-                # Add them after lb[0] and successor to lb[0]
-                # import pdb; pdb.set_trace()
-                # print(end_node, mp2[start_node])
-                start_node_new_block = mp2[lb[1]]
-                self.cfg[end_node_prev_block].add_successor(start_node_new_block)
-                end_node_prev_block = mp2[lb[0]]
+                # Copy all edges from original subgraph to new subgraph
+                for old_idx, new_idx in bb_map.items():
+                    for succ in self.cfg[old_idx].successors():
+                        if succ in bb_map:
+                            self.cfg[new_idx].add_successor(bb_map[succ])
+                # Append the new subgraph after the previously inserted
+                # subgraph
+                last_node_in_previous_subgraph.add_successor(bb_map[head])
+                last_node_in_previous_subgraph = self.cfg[bb_map[tail]]
 
-            self.cfg[end_node_prev_block].add_successor(end_succ[0])
+            # If there were more nodes after the loop, reattach them to the
+            # unrolled loop subgraph
+            if len(tail_successors) == 1:
+                last_node_in_previous_subgraph.add_successor(
+                    tail_successors[0]
+                )
 
     def get_insts(self) -> dict[int, str]:
         """
@@ -269,7 +288,7 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
-        # TODO: Check that all loops have been unrolled
+        assert len(self.loopback_edges(recheck=True)) == 0
         parent_stack: list[int] = []
         for u in sorted(self.cfg.keys()):
             bb = self.cfg[u]
@@ -447,12 +466,12 @@ class Graph():
         """
         Write the CFG properties to a given CSV file
         """
+        assert len(self.loopback_edges(recheck=True)) == 0
         csv_str = "wcet,is_bsb_node,is_reconv_node,successors\n"
         for idx in sorted(self.cfg.keys()):
             bb = self.cfg[idx]
             successors = ';'.join(str(j) for j in bb.successors())
             csv_str += f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
-        # TODO: Check that there are no cycles
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(csv_str)
