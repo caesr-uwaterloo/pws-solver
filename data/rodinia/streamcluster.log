@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 30 2024 00:44:11
-gem5 started May 30 2024 01:49:41
-gem5 executing on 908dcad321bf, pid 132865
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/streamcluster/streamcluster -o '10 20 256 65536 65536 1000 none output.txt 1'
+gem5 compiled May 31 2024 18:48:04
+gem5 started May 31 2024 20:41:50
+gem5 executing on 908dcad321bf, pid 747
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/streamcluster/streamcluster -o '10 20 256 65536 65536 1000 none output.txt 1'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -158,6 +158,3 @@ src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
 build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
 PARSEC Benchmark Suite
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-src/sim/mem_state.cc:448: info: Increasing stack size by one page.
-read 65536 points

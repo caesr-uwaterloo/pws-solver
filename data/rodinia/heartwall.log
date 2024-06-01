@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 30 2024 00:44:11
-gem5 started May 30 2024 01:06:55
-gem5 executing on 908dcad321bf, pid 110274
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/heartwall/heartwall -o '/hip-benchmarks/rodinia_3.0/data/heartwall/test.avi 1'
+gem5 compiled May 31 2024 18:48:04
+gem5 started May 31 2024 19:59:13
+gem5 executing on 908dcad321bf, pid 637
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/heartwall/heartwall -o '/hip-benchmarks/rodinia_3.0/data/heartwall/test.avi 1'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -193,45 +193,112 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 frame progress: src/arch/generic/debugfaults.hh:145: warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 0 
+176478817000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dword s59, s[4:5], 0x154
+176478821000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dword s55, s[4:5], 0x15c
+176478837000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_load_dword s56, s[4:5], 0x164
+176478901000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_load_dword s57, s[4:5], 0x16c
+176478981000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_load_dword s58, s[4:5], 0x174
+176479061000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_load_dword s50, s[4:5], 0x14c
+176480231000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 s_load_dword s62, s[4:5], 0x144
+176480311000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 s_load_dword s61, s[4:5], 0x13c
+176480391000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 s_load_dword s66, s[4:5], 0x134
+176480471000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 s_load_dword s65, s[4:5], 0x12c
+176480551000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 s_load_dword s63, s[4:5], 0x124
+176480631000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 s_load_dword s64, s[4:5], 0x11c
+176480713000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 s_load_dword s68, s[4:5], 0x114
+176480793000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 s_load_dword s67, s[4:5], 0x110
+176480873000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 s_load_dword s60, s[4:5], 0x10c
+176480953000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00120 s_load_dword s69, s[4:5], 0x108
+176481033000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 s_load_dword s70, s[4:5], 0x104
+176481113000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 s_load_dword s8, s[4:5], 0x100
+176481193000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 s_load_dword s9, s[4:5], 0xfc
+176481273000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 s_load_dword s46, s[4:5], 0xf4
+176481353000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_load_dword s12, s[4:5], 0xec
+176481433000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_load_dword s2, s[4:5], 0xe4
+176481654000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00176 s_load_dword s11, s[4:5], 0xe0
+176481674000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00184 s_load_dword s10, s[4:5], 0xdc
+176481682000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00192 s_load_dword s31, s[4:5], 0x00
+176481694000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00200 s_load_dword s27, s[4:5], 0x04
+176481710000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00208 s_load_dword s20, s[4:5], 0x0c
+176481738000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00216 s_load_dword s26, s[4:5], 0x10
+176481818000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00224 s_load_dword s7, s[4:5], 0xd4
+176481898000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00232 s_load_dword s30, s[4:5], 0xd0
+176482083000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00240 s_load_dword s21, s[4:5], 0xcc
+176482163000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00248 s_load_dword s24, s[4:5], 0x14
+176482243000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00256 s_load_dword s25, s[4:5], 0x210
+176482323000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00264 s_load_dwordx2 s[22:23], s[4:5], 0x208
+176482403000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00272 s_load_dword s37, s[4:5], 0x200
+176482483000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00280 s_load_dword s38, s[4:5], 0x1fc
+176482563000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00288 s_load_dword s39, s[4:5], 0x1f4
+176482643000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00296 s_load_dword s36, s[4:5], 0x1f0
+176482723000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00304 s_load_dword s33, s[4:5], 0x1ec
+176482803000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00312 s_load_dword s40, s[4:5], 0x1e0
+176482883000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00320 s_load_dword s41, s[4:5], 0x1dc
+176483011000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00328 s_load_dword s44, s[4:5], 0x1d4
+176483091000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00336 s_load_dword s42, s[4:5], 0x1d0
+176483171000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00344 s_load_dword s43, s[4:5], 0x1cc
+176483251000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00352 s_load_dword s49, s[4:5], 0x1c4
+176483331000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00360 s_load_dword s47, s[4:5], 0x1c0
+176483411000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 s_load_dword s53, s[4:5], 0x17c
+176483491000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 s_load_dword s48, s[4:5], 0x1bc
+176483571000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 s_load_dword s73, s[4:5], 0x1a4
+176483651000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 s_load_dword s72, s[4:5], 0x1a0
+176483731000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00400 s_load_dword s71, s[4:5], 0x19c
+176483811000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 s_load_dword s45, s[4:5], 0x194
+176483891000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00416 s_load_dword s52, s[4:5], 0x18c
+176483971000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 s_load_dword s54, s[4:5], 0x184
+176484051000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 s_load_dwordx2 s[28:29], s[4:5], 0x218
+176484052000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 s_waitcnt lgkmcnt(0)
+176484108000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 s_cmp_lg_u32 s25, 0
+176484109000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00448 v_cmp_eq_u32 s[34:35], s25, 0
+176484112000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 s_cbranch_scc1
+176484113000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 v_mov_b32 v3, 0x000000a0
+176484117000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00468 v_mov_b32 v1, s28
+176484121000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 v_mov_b32 v2, s29
+176484125000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 v_mad_i64_i32 v1, s[0:1], s6, v3, v1
+176484129000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 v_readfirstlane_b32 v14, v1
+176484133000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00488 v_readfirstlane_b32 v15, v2
+176484211000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00492 s_load_dwordx2 s[0:1], s[14:15], 0x20
+176484287000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00500 s_load_dword s4, s[14:15], 0x2c
 src/gpu-compute/static_register_manager_policy.cc:58: panic: panic condition (vgprIndex >= w->reservedVectorRegs) || (w->reservedVectorRegs < 0) occurred: VGPR index 74 is out of range: VGPR range=[0,32]
-Memory Usage: 2807524 KBytes
+Memory Usage: 2815464 KBytes
 Program aborted at tick 176484438000
 --- BEGIN LIBC BACKTRACE ---
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x5a8511ca92c0]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x5a8511ccfb1e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x798ac0f4f420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x798ac011900b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x798ac00f8859]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0xc2f325)[0x5a8511312325]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem527StaticRegisterManagerPolicy7mapVgprEPNS_9WavefrontEi+0xf0)[0x5a8511c3e2e0]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x1523ef0)[0x5a8511c06ef0]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem513GPUStaticInst18initDynOperandInfoEPNS_9WavefrontEPNS_11ComputeUnitE+0xff)[0x5a8511c0792f]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510GPUDynInstC1EPNS_11ComputeUnitEPNS_9WavefrontEPNS_13GPUStaticInstEm+0x3eb)[0x5a8511c00cbb]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit12FetchBufDesc11decodeInstsEv+0x194)[0x5a8511bd82e4]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit4execEv+0x6c)[0x5a8511bdb0fc]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510FetchStage4execEv+0x2c)[0x5a8511bd449c]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem511ComputeUnit4execEv+0xd9)[0x5a8511ba1729]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x5a8511cbe6e2]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x5a8511ceb5a0]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x5a8511cebc2b]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x186e092)[0x5a8511f51092]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0xc1fe36)[0x5a8511302e36]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x798ac1206748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x798ac0fdbf48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x798ac1128e4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x798ac1206124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x798ac0fd2d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x798ac0fdaef6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x798ac1128e4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x798ac11291d2]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x798ac11295bf]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x798ac112dc01]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x798ac11bd547]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x798ac0fd2d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x798ac0fd446d]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x5ba16ca0b420]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x5ba16ca31c7e]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x78fe05711420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x78fe048db00b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x78fe048ba859]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc302a5)[0x5ba16c0742a5]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem527StaticRegisterManagerPolicy7mapVgprEPNS_9WavefrontEi+0xf0)[0x5ba16c9a0350]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x1524f60)[0x5ba16c968f60]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem513GPUStaticInst18initDynOperandInfoEPNS_9WavefrontEPNS_11ComputeUnitE+0xff)[0x5ba16c96999f]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510GPUDynInstC1EPNS_11ComputeUnitEPNS_9WavefrontEPNS_13GPUStaticInstEm+0x3eb)[0x5ba16c962d2b]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit12FetchBufDesc11decodeInstsEv+0x194)[0x5ba16c93a354]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit4execEv+0x6c)[0x5ba16c93d16c]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510FetchStage4execEv+0x2c)[0x5ba16c93650c]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem511ComputeUnit4execEv+0xd9)[0x5ba16c9036a9]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x5ba16ca20842]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x5ba16ca4d700]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x5ba16ca4dd8b]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x186f1f2)[0x5ba16ccb31f2]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc20db6)[0x5ba16c064db6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x78fe059c8748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x78fe0579df48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x78fe058eae4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x78fe059c8124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x78fe05794d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x78fe0579cef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x78fe058eae4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x78fe058eb1d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x78fe058eb5bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x78fe058efc01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x78fe0597f547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x78fe05794d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x78fe0579646d]
 --- END LIBC BACKTRACE ---
 For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
 
 Aborted (core dumped)
 
-Time elapsed: 3m52.094s
+Time elapsed: 3m47.704s
