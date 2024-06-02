@@ -173,7 +173,7 @@ if __name__ == '__main__':
         e.parse_log(args.log)
     path = Path(args.input)
     for i, graph in enumerate(e.graphs):
-        file_name = f"{path.parent}/{path.stem}-{i:02}"
+        file_name = f"{path.parent}/{path.stem}-{i:03}"
         graph.find_branches()
         graph.write_disassembly(file_name=f"{file_name}-anno.s")
         graph.write_to_csv(file_name=f"{file_name}.csv")
