@@ -287,97 +287,265 @@ BB2_2:
 	v_sub_u32_e32 v1, vcc, s2, v1
 	v_cmp_ne_u32_e32 vcc, 0, v1
 	s_and_b64 vcc, exec, vcc
-	s_cbranch_vccz BB2_27
-; %bb.3:
+	s_cbranch_vccnz BB2_5
+; %bb.3:                                ; %Flow186
+	s_andn2_b64 vcc, exec, s[0:1]
+	s_cbranch_vccz BB2_41
+BB2_4:
+	s_endpgm
+BB2_5:
 	v_add_u32_e32 v2, vcc, -1, v2
 	v_addc_u32_e64 v3, s[0:1], 0, -1, vcc
 	s_ashr_i32 s9, s8, 31
 	v_cmp_ne_u64_e32 vcc, s[8:9], v[2:3]
 	s_mov_b64 s[0:1], -1
 	s_and_b64 vcc, exec, vcc
-	s_cbranch_vccz BB2_9
-; %bb.4:                                ; %.preheader135
-	v_lshlrev_b32_e32 v3, 2, v0
-	v_add_u32_e32 v2, vcc, 1, v0
-	s_mov_b32 s0, 2
-	v_or_b32_e32 v4, 0x800, v3
-	s_branch BB2_6
-BB2_5:                                  ;   in Loop: Header=BB2_6 Depth=1
-	s_or_b64 exec, exec, s[4:5]
-	s_lshl_b32 s1, s0, 1
-	s_cmpk_lt_u32 s0, 0x101
-	s_mov_b32 s0, s1
+	s_cbranch_vccz BB2_25
+; %bb.6:                                ; %.preheader135
+	v_add_u32_e32 v4, vcc, 1, v0
+	v_lshlrev_b32_e32 v2, 2, v0
+	v_and_b32_e32 v5, 1, v4
+	v_or_b32_e32 v3, 0x800, v2
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_8
+; %bb.7:
+	v_add_u32_e32 v5, vcc, -4, v3
+	ds_read2_b32 v[5:6], v5 offset1:1
+	v_add_u32_e32 v7, vcc, -4, v2
+	ds_read2_b32 v[7:8], v7 offset1:1
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v5, v6, v5
+	ds_write_b32 v3, v5
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v5, v8, v7
+	ds_write_b32 v2, v5
+BB2_8:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 3, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
 	s_waitcnt lgkmcnt(0)
 	s_barrier
 	s_waitcnt lgkmcnt(0)
-	s_cbranch_scc0 BB2_8
-BB2_6:                                  ; =>This Inner Loop Header: Depth=1
-	s_ashr_i32 s1, s0, 31
-	s_add_i32 s2, s0, s1
-	s_xor_b32 s1, s2, s1
-	v_cvt_f32_u32_e32 v5, s1
-	s_sub_i32 s2, 0, s1
-	v_rcp_iflag_f32_e32 v5, v5
-	v_mul_f32_e32 v5, 0x4f7ffffe, v5
-	v_cvt_u32_f32_e32 v5, v5
-	v_mul_lo_u32 v6, s2, v5
-	v_mul_hi_u32 v6, v5, v6
-	v_add_u32_e32 v5, vcc, v6, v5
-	v_mul_hi_u32 v5, v2, v5
-	v_mul_lo_u32 v5, v5, s1
-	v_sub_u32_e32 v5, vcc, v2, v5
-	v_subrev_u32_e32 v6, vcc, s1, v5
-	v_cmp_le_u32_e32 vcc, s1, v5
-	v_cndmask_b32_e32 v5, v5, v6, vcc
-	v_subrev_u32_e32 v6, vcc, s1, v5
-	v_cmp_le_u32_e32 vcc, s1, v5
-	v_cndmask_b32_e32 v5, v5, v6, vcc
-	v_cmp_eq_u32_e32 vcc, 0, v5
-	s_and_saveexec_b64 s[4:5], vcc
-	s_cbranch_execz BB2_5
-; %bb.7:                                ;   in Loop: Header=BB2_6 Depth=1
-	s_bfe_u32 s1, s0, 0xf0001
-	v_subrev_u32_e32 v5, vcc, s1, v0
-	v_lshlrev_b32_e32 v5, 2, v5
-	ds_read_b32 v7, v4
-	ds_read_b32 v8, v3
-	ds_read2st64_b32 v[5:6], v5 offset1:8
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_10
+; %bb.9:
+	v_add_u32_e32 v6, vcc, -8, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
 	s_waitcnt lgkmcnt(0)
-	v_add_f32_e32 v6, v7, v6
-	v_add_f32_e32 v5, v8, v5
-	ds_write_b32 v4, v6
+	v_add_f32_e32 v5, v5, v6
 	ds_write_b32 v3, v5
-	s_branch BB2_5
-BB2_8:
+	v_add_u32_e32 v5, vcc, -8, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_10:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 7, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_12
+; %bb.11:
+	v_add_u32_e32 v6, vcc, -16, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_add_u32_e32 v5, vcc, -16, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_12:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 15, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_14
+; %bb.13:
+	v_subrev_u32_e32 v6, vcc, 32, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_subrev_u32_e32 v5, vcc, 32, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_14:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 31, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_16
+; %bb.15:
+	v_subrev_u32_e32 v6, vcc, 64, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_subrev_u32_e32 v5, vcc, 64, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_16:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 63, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_18
+; %bb.17:
+	s_movk_i32 s2, 0xff80
+	v_add_u32_e32 v6, vcc, s2, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_add_u32_e32 v5, vcc, s2, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_18:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 0x7f, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_20
+; %bb.19:
+	s_movk_i32 s2, 0xff00
+	v_add_u32_e32 v6, vcc, s2, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_add_u32_e32 v5, vcc, s2, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_20:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v5, 0xff, v4
+	v_cmp_eq_u32_e32 vcc, 0, v5
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_22
+; %bb.21:
+	s_movk_i32 s2, 0xfe00
+	v_add_u32_e32 v6, vcc, s2, v3
+	ds_read_b32 v5, v3
+	ds_read_b32 v7, v2
+	ds_read_b32 v6, v6
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v5, v6
+	ds_write_b32 v3, v5
+	v_add_u32_e32 v5, vcc, s2, v2
+	ds_read_b32 v5, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v5, v7, v5
+	ds_write_b32 v2, v5
+BB2_22:
+	s_or_b64 exec, exec, s[0:1]
+	v_cmp_eq_u32_e32 vcc, 0, v4
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_24
+; %bb.23:
+	s_movk_i32 s2, 0xfc00
+	v_add_u32_e32 v5, vcc, s2, v3
+	ds_read_b32 v4, v3
+	ds_read_b32 v5, v5
+	v_or_b32_e32 v7, s2, v2
+	ds_read_b32 v6, v2
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v4, v4, v5
+	ds_write_b32 v3, v4
+	ds_read_b32 v3, v7
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v6, v3
+	ds_write_b32 v2, v3
+BB2_24:
+	s_or_b64 exec, exec, s[0:1]
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
 	s_mov_b64 s[0:1], 0
-BB2_9:                                  ; %Flow185
+BB2_25:                                 ; %Flow183
 	s_and_b64 vcc, exec, s[0:1]
-	s_cbranch_vccz BB2_26
-; %bb.10:                               ; %.preheader134.preheader
-	v_add_u32_e32 v1, vcc, 0x200, v1
-	s_mov_b32 s0, 2
-	v_mov_b32_e32 v2, 0
-BB2_11:                                 ; %.preheader134
-                                        ; =>This Inner Loop Header: Depth=1
-	s_lshl_b32 s1, s0, 1
+	s_cbranch_vccz BB2_40
+; %bb.26:                               ; %.preheader134.preheader
+	s_movk_i32 s0, 0x200
+	v_add_u32_e32 v1, vcc, s0, v1
+	v_cmp_lt_i32_e32 vcc, 1, v1
+	v_cndmask_b32_e64 v2, 0, 1, vcc
+	v_lshlrev_b32_e32 v2, 1, v2
+	v_cmp_gt_i32_e32 vcc, 4, v1
+	v_cndmask_b32_e32 v2, 4, v2, vcc
+	v_cmp_gt_i32_e32 vcc, 8, v1
+	v_cndmask_b32_e32 v2, 8, v2, vcc
+	v_cmp_gt_i32_e32 vcc, 16, v1
+	v_cndmask_b32_e32 v2, 16, v2, vcc
+	v_cmp_gt_i32_e32 vcc, 32, v1
+	v_cndmask_b32_e32 v2, 32, v2, vcc
+	v_cmp_gt_i32_e32 vcc, 64, v1
+	s_movk_i32 s1, 0x80
+	v_cndmask_b32_e32 v2, 64, v2, vcc
+	v_cmp_gt_i32_e32 vcc, s1, v1
+	v_mov_b32_e32 v3, s1
+	s_movk_i32 s1, 0x100
+	v_cndmask_b32_e32 v2, v3, v2, vcc
+	v_cmp_gt_i32_e32 vcc, s1, v1
+	v_mov_b32_e32 v3, s1
+	v_cndmask_b32_e32 v2, v3, v2, vcc
 	v_cmp_gt_i32_e32 vcc, s0, v1
 	v_mov_b32_e32 v3, s0
-	s_cmpk_gt_u32 s0, 0x100
 	v_cndmask_b32_e32 v2, v3, v2, vcc
-	s_mov_b32 s0, s1
-	s_cbranch_scc0 BB2_11
-; %bb.12:                               ; %.preheader133
-	v_cmp_gt_i32_e32 vcc, 2, v2
+	v_cmp_lt_i32_e32 vcc, 1, v2
 	s_and_b64 vcc, exec, vcc
-	s_mov_b32 s2, 2
-	s_cbranch_vccnz BB2_17
-; %bb.13:                               ; %.lr.ph142
+	s_cbranch_vccz BB2_31
+; %bb.27:                               ; %.lr.ph142
 	v_lshlrev_b32_e32 v4, 2, v0
 	v_add_u32_e32 v3, vcc, 1, v0
 	v_cmp_gt_i32_e64 s[0:1], v2, v0
+	s_mov_b32 s2, 2
 	v_or_b32_e32 v5, 0x800, v4
-	s_branch BB2_15
-BB2_14:                                 ;   in Loop: Header=BB2_15 Depth=1
+	s_branch BB2_29
+BB2_28:                                 ;   in Loop: Header=BB2_29 Depth=1
 	s_or_b64 exec, exec, s[4:5]
 	s_lshl_b32 s2, s2, 1
 	v_cmp_le_i32_e32 vcc, s2, v2
@@ -385,8 +553,8 @@ BB2_14:                                 ;   in Loop: Header=BB2_15 Depth=1
 	s_waitcnt lgkmcnt(0)
 	s_barrier
 	s_waitcnt lgkmcnt(0)
-	s_cbranch_vccz BB2_17
-BB2_15:                                 ; =>This Inner Loop Header: Depth=1
+	s_cbranch_vccz BB2_31
+BB2_29:                                 ; =>This Inner Loop Header: Depth=1
 	s_ashr_i32 s4, s2, 31
 	s_add_i32 s5, s2, s4
 	s_xor_b32 s4, s5, s4
@@ -410,8 +578,8 @@ BB2_15:                                 ; =>This Inner Loop Header: Depth=1
 	v_cmp_eq_u32_e32 vcc, 0, v6
 	s_and_b64 s[10:11], s[0:1], vcc
 	s_and_saveexec_b64 s[4:5], s[10:11]
-	s_cbranch_execz BB2_14
-; %bb.16:                               ;   in Loop: Header=BB2_15 Depth=1
+	s_cbranch_execz BB2_28
+; %bb.30:                               ;   in Loop: Header=BB2_29 Depth=1
 	s_lshr_b32 s7, s2, 31
 	s_add_i32 s7, s2, s7
 	s_lshr_b32 s7, s7, 1
@@ -428,25 +596,25 @@ BB2_15:                                 ; =>This Inner Loop Header: Depth=1
 	s_waitcnt lgkmcnt(0)
 	v_add_f32_e32 v6, v8, v6
 	ds_write_b32 v4, v6
-	s_branch BB2_14
-BB2_17:                                 ; %._crit_edge143
+	s_branch BB2_28
+BB2_31:                                 ; %._crit_edge143
 	v_add_u32_e32 v3, vcc, -1, v2
 	v_cmp_eq_u32_e32 vcc, v3, v0
 	s_and_saveexec_b64 s[0:1], vcc
-	s_cbranch_execz BB2_25
-; %bb.18:
+	s_cbranch_execz BB2_39
+; %bb.32:
 	v_cmp_lt_i32_e32 vcc, v2, v1
 	s_and_b64 vcc, exec, vcc
-	s_cbranch_vccnz BB2_20
-; %bb.19:                               ; %._crit_edge151
+	s_cbranch_vccnz BB2_34
+; %bb.33:                               ; %._crit_edge151
 	v_lshlrev_b32_e32 v3, 2, v0
 	ds_read2st64_b32 v[3:4], v3 offset1:8
-	s_cbranch_execz BB2_21
-	s_branch BB2_24
-BB2_20:
+	s_cbranch_execz BB2_35
+	s_branch BB2_38
+BB2_34:
                                         ; implicit-def: $vgpr4
                                         ; implicit-def: $vgpr3
-BB2_21:                                 ; %.lr.ph
+BB2_35:                                 ; %.lr.ph
 	v_add_u32_e32 v6, vcc, s6, v2
 	v_ashrrev_i32_e32 v7, 31, v6
 	v_add_u32_e32 v5, vcc, s6, v1
@@ -461,7 +629,7 @@ BB2_21:                                 ; %.lr.ph
 	v_add_u32_e32 v9, vcc, s12, v9
 	v_or_b32_e32 v2, 0x800, v1
 	v_addc_u32_e32 v10, vcc, v11, v10, vcc
-BB2_22:                                 ; =>This Inner Loop Header: Depth=1
+BB2_36:                                 ; =>This Inner Loop Header: Depth=1
 	flat_load_dword v11, v[9:10]
 	flat_load_dword v12, v[7:8]
 	v_add_u32_e32 v6, vcc, 1, v6
@@ -475,11 +643,11 @@ BB2_22:                                 ; =>This Inner Loop Header: Depth=1
 	v_add_f32_e32 v4, v4, v11
 	s_waitcnt vmcnt(0) lgkmcnt(0)
 	v_add_f32_e32 v3, v3, v12
-	s_cbranch_vccnz BB2_22
-; %bb.23:                               ; %._crit_edge
+	s_cbranch_vccnz BB2_36
+; %bb.37:                               ; %._crit_edge
 	ds_write_b32 v2, v4
 	ds_write_b32 v1, v3
-BB2_24:
+BB2_38:
 	s_mul_i32 s2, s8, s3
 	s_lshl_b32 s2, s2, 9
 	s_ashr_i32 s3, s2, 31
@@ -495,66 +663,213 @@ BB2_24:
 	v_mov_b32_e32 v1, s2
 	v_mov_b32_e32 v2, s3
 	flat_store_dword v[1:2], v3
-BB2_25:                                 ; %Flow181
+BB2_39:                                 ; %Flow180
 	s_or_b64 exec, exec, s[0:1]
-BB2_26:                                 ; %Flow186
-	s_mov_b64 s[0:1], 0
-BB2_27:                                 ; %Flow189
-	s_andn2_b64 vcc, exec, s[0:1]
-	s_cbranch_vccnz BB2_32
-; %bb.28:                               ; %.preheader
-	v_lshlrev_b32_e32 v2, 2, v0
-	v_add_u32_e32 v1, vcc, 1, v0
-	s_mov_b32 s0, 2
-	v_or_b32_e32 v3, 0x800, v2
-	s_branch BB2_30
-BB2_29:                                 ;   in Loop: Header=BB2_30 Depth=1
-	s_or_b64 exec, exec, s[2:3]
-	s_lshl_b32 s1, s0, 1
-	s_cmpk_lt_u32 s0, 0x101
-	s_mov_b32 s0, s1
+BB2_40:                                 ; %Flow184
+	s_cbranch_execnz BB2_4
+BB2_41:                                 ; %.preheader
+	v_add_u32_e32 v2, vcc, 1, v0
+	v_lshlrev_b32_e32 v0, 2, v0
+	v_and_b32_e32 v3, 1, v2
+	v_or_b32_e32 v1, 0x800, v0
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_43
+; %bb.42:
+	v_add_u32_e32 v3, vcc, -4, v1
+	ds_read2_b32 v[3:4], v3 offset1:1
+	v_add_u32_e32 v5, vcc, -4, v0
+	ds_read2_b32 v[5:6], v5 offset1:1
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v3, v4, v3
+	ds_write_b32 v1, v3
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v3, v6, v5
+	ds_write_b32 v0, v3
+BB2_43:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 3, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
 	s_waitcnt vmcnt(0) lgkmcnt(0)
 	s_barrier
 	s_waitcnt lgkmcnt(0)
-	s_cbranch_scc0 BB2_32
-BB2_30:                                 ; =>This Inner Loop Header: Depth=1
-	s_ashr_i32 s1, s0, 31
-	s_add_i32 s2, s0, s1
-	s_xor_b32 s1, s2, s1
-	v_cvt_f32_u32_e32 v4, s1
-	s_sub_i32 s2, 0, s1
-	v_rcp_iflag_f32_e32 v4, v4
-	v_mul_f32_e32 v4, 0x4f7ffffe, v4
-	v_cvt_u32_f32_e32 v4, v4
-	v_mul_lo_u32 v5, s2, v4
-	v_mul_hi_u32 v5, v4, v5
-	v_add_u32_e32 v4, vcc, v5, v4
-	v_mul_hi_u32 v4, v1, v4
-	v_mul_lo_u32 v4, v4, s1
-	v_sub_u32_e32 v4, vcc, v1, v4
-	v_subrev_u32_e32 v5, vcc, s1, v4
-	v_cmp_le_u32_e32 vcc, s1, v4
-	v_cndmask_b32_e32 v4, v4, v5, vcc
-	v_subrev_u32_e32 v5, vcc, s1, v4
-	v_cmp_le_u32_e32 vcc, s1, v4
-	v_cndmask_b32_e32 v4, v4, v5, vcc
-	v_cmp_eq_u32_e32 vcc, 0, v4
-	s_and_saveexec_b64 s[2:3], vcc
-	s_cbranch_execz BB2_29
-; %bb.31:                               ;   in Loop: Header=BB2_30 Depth=1
-	s_bfe_u32 s1, s0, 0xf0001
-	v_subrev_u32_e32 v4, vcc, s1, v0
-	v_lshlrev_b32_e32 v4, 2, v4
-	ds_read_b32 v6, v3
-	ds_read_b32 v7, v2
-	ds_read2st64_b32 v[4:5], v4 offset1:8
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_45
+; %bb.44:
+	v_add_u32_e32 v4, vcc, -8, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
 	s_waitcnt lgkmcnt(0)
-	v_add_f32_e32 v5, v6, v5
-	v_add_f32_e32 v4, v7, v4
-	ds_write_b32 v3, v5
-	ds_write_b32 v2, v4
-	s_branch BB2_29
-BB2_32:
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_add_u32_e32 v3, vcc, -8, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_45:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 7, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_47
+; %bb.46:
+	v_add_u32_e32 v4, vcc, -16, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_add_u32_e32 v3, vcc, -16, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_47:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 15, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_49
+; %bb.48:
+	v_subrev_u32_e32 v4, vcc, 32, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_subrev_u32_e32 v3, vcc, 32, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_49:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 31, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_51
+; %bb.50:
+	v_subrev_u32_e32 v4, vcc, 64, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_subrev_u32_e32 v3, vcc, 64, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_51:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 63, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_53
+; %bb.52:
+	s_movk_i32 s2, 0xff80
+	v_add_u32_e32 v4, vcc, s2, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_add_u32_e32 v3, vcc, s2, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_53:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 0x7f, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_55
+; %bb.54:
+	s_movk_i32 s2, 0xff00
+	v_add_u32_e32 v4, vcc, s2, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_add_u32_e32 v3, vcc, s2, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_55:
+	s_or_b64 exec, exec, s[0:1]
+	v_and_b32_e32 v3, 0xff, v2
+	v_cmp_eq_u32_e32 vcc, 0, v3
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_57
+; %bb.56:
+	s_movk_i32 s2, 0xfe00
+	v_add_u32_e32 v4, vcc, s2, v1
+	ds_read_b32 v3, v1
+	ds_read_b32 v5, v0
+	ds_read_b32 v4, v4
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v3, v4
+	ds_write_b32 v1, v3
+	v_add_u32_e32 v3, vcc, s2, v0
+	ds_read_b32 v3, v3
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v3, v5, v3
+	ds_write_b32 v0, v3
+BB2_57:
+	s_or_b64 exec, exec, s[0:1]
+	v_cmp_eq_u32_e32 vcc, 0, v2
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB2_59
+; %bb.58:
+	s_movk_i32 s2, 0xfc00
+	v_add_u32_e32 v3, vcc, s2, v1
+	ds_read_b32 v2, v1
+	ds_read_b32 v3, v3
+	v_or_b32_e32 v5, s2, v0
+	ds_read_b32 v4, v0
+	s_waitcnt lgkmcnt(1)
+	v_add_f32_e32 v2, v2, v3
+	ds_write_b32 v1, v2
+	ds_read_b32 v1, v5
+	s_waitcnt lgkmcnt(0)
+	v_add_f32_e32 v1, v4, v1
+	ds_write_b32 v0, v1
+BB2_59:
+	s_or_b64 exec, exec, s[0:1]
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
 	s_endpgm
 	.section	.rodata,#alloc
 	.p2align	6
@@ -597,7 +912,7 @@ BB2_32:
                                         ; -- End function
 	.section	.AMDGPU.csdata
 ; Kernel info:
-; codeLenInByte = 1436
+; codeLenInByte = 2936
 ; NumSgprs: 20
 ; NumVgprs: 13
 ; ScratchSize: 0
