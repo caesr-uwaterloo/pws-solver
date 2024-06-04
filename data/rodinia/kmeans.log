@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 31 2024 18:48:04
-gem5 started May 31 2024 20:08:49
-gem5 executing on 908dcad321bf, pid 661
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  3 2024 20:02:58
+gem5 executing on 908dcad321bf, pid 56321
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/kmeans/kmeans -o ' -o -i /hip-benchmarks/rodinia_3.0/data/kmeans/100'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -3776,11 +3776,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 10    | 44000        |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 10    | 1437000      |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 2     | 350000       |
-83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 1     | 155597001    |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 10    | 8000         |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 330   | 648000       |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 2     | 333000       |
-83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 2     | 1257000      |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 83162495000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 2     | 341000       |
@@ -3798,11 +3796,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 15    | 44000        |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 15    | 1437000      |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 3     | 350000       |
-83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 2     | 155597001    |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 15    | 8000         |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 495   | 648000       |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 3     | 333000       |
-83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 3     | 1257000      |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 83336517000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 3     | 341000       |
@@ -3820,11 +3816,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 20    | 44000        |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 20    | 1437000      |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 4     | 350000       |
-83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 3     | 155597001    |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 20    | 8000         |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 660   | 648000       |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 4     | 333000       |
-83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 4     | 1257000      |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 83510980000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 4     | 341000       |
@@ -3842,11 +3836,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 25    | 44000        |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 25    | 1437000      |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 5     | 350000       |
-83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 4     | 155597001    |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 25    | 8000         |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 825   | 648000       |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 5     | 333000       |
-83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 5     | 1257000      |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 83685929000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 5     | 341000       |
@@ -3864,11 +3856,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 30    | 44000        |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 30    | 1437000      |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 6     | 350000       |
-83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 5     | 155597001    |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 30    | 8000         |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 990   | 648000       |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 6     | 333000       |
-83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 6     | 1257000      |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 83860947000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 6     | 341000       |
@@ -3886,11 +3876,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 35    | 44000        |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 35    | 1437000      |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 7     | 350000       |
-84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 6     | 155597001    |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 35    | 8000         |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 1155  | 648000       |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 7     | 333000       |
-84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 7     | 1257000      |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 84036664000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 7     | 341000       |
@@ -3908,11 +3896,9 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 436   | 308   | 40    | 44000        |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 320   | 432   | 40    | 1437000      |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 440   | 448   | 8     | 350000       |
-84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 484   | 0     | 7     | 159512001    |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 436   | 40    | 8000         |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 432   | 432   | 1320  | 648000       |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 276   | 320   | 8     | 333000       |
-84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 0     | 0     | 192781001    |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 448   | 484   | 8     | 1257000      |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 440   | 0     | 328000       |
 84222076000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 240   | 276   | 8     | 341000       |
@@ -3938,4 +3924,4 @@ PASSED!
 Ticks: 88286690500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m40.881s
+Time elapsed: 1m39.897s

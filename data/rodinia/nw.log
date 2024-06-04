@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 31 2024 18:48:04
-gem5 started May 31 2024 20:22:10
-gem5 executing on 908dcad321bf, pid 705
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  3 2024 20:16:16
+gem5 executing on 908dcad321bf, pid 63510
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/nw/nw -o '32 1'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -1315,7 +1315,6 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4104  | 4212  | 2     | 372000       |
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4340  | 4360  | 2     | 293000       |
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4212  | 4232  | 2     | 293000       |
-80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 5380  | 0     | 1     | 5184001      |
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2332  | 2424  | 2     | 392000       |
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1824  | 1852  | 2     | 312000       |
 80194040000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2212  | 2304  | 2     | 656000       |
@@ -2506,4 +2505,4 @@ PASSED!
 Ticks: 83718149500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m32.189s
+Time elapsed: 1m29.676s

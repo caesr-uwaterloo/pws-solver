@@ -3,7 +3,7 @@
 rm sim.txt 2> /dev/null
 rm ext.txt 2> /dev/null
 
-for benchmark in `ls data/rodinia/*backprop.log | cut -d"/" -f3 | cut -d"." -f1`;
+for benchmark in `ls data/rodinia/*bfs.log | cut -d"/" -f3 | cut -d"." -f1`;
 do
     num_unique_kernels=`grep "Kernel [0-9]* inst" data/rodinia/$benchmark.log | cut -d" " -f"4" | sort -u | wc -l`
     for i in $(seq -f "%03g" 0 $(expr $num_unique_kernels - 1));

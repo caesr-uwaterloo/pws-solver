@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 31 2024 18:48:04
-gem5 started May 31 2024 20:28:24
-gem5 executing on 908dcad321bf, pid 729
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  3 2024 20:22:22
+gem5 executing on 908dcad321bf, pid 66798
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /rocm-examples/Applications/prefix_sum/applications_prefix_sum -o ' -n 64'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -589,4 +589,4 @@ PASSED!
 Ticks: 83118097500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m28.416s
+Time elapsed: 1m26.923s

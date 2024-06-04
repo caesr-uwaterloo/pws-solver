@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 31 2024 18:48:04
-gem5 started May 31 2024 19:43:38
-gem5 executing on 908dcad321bf, pid 595
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  3 2024 19:37:13
+gem5 executing on 908dcad321bf, pid 42597
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/bfs/bfs -o /hip-benchmarks/rodinia_3.0/data/bfs/graph4096.txt
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -660,9 +660,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 1     | 76329001     |
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 11    | 1232000      |
-154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 1     | 76845001     |
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 1     | 7000         |
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 10    | 804000       |
 154438721000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 1     | 12000        |
@@ -693,9 +691,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 1     | 76329001     |
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 13    | 1372000      |
-154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 2     | 76845001     |
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 1     | 7000         |
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 12    | 1600000      |
 154533171000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 1     | 32000        |
@@ -726,9 +722,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 2     | 76329001     |
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 31    | 3788000      |
-154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 3     | 76845001     |
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 2     | 7000         |
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 28    | 4891000      |
 154653576000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 2     | 36000        |
@@ -759,9 +753,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 4     | 76329001     |
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 38    | 8978000      |
-154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 4     | 79320001     |
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 2     | 8000         |
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 35    | 9549000      |
 154819019000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 6     | 48000        |
@@ -792,9 +784,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 4     | 76329001     |
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 56    | 8978000      |
-154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 5     | 79320001     |
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 3     | 16000        |
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 51    | 9549000      |
 154922797000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 15    | 52000        |
@@ -825,9 +815,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 6     | 76329001     |
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 56    | 8978000      |
-155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 6     | 79506001     |
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 3     | 16000        |
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 51    | 9549000      |
 155013836000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 16    | 52000        |
@@ -858,9 +846,7 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 672   | 0     | 6     | 76329001     |
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 248   | 284   | 56    | 8978000      |
-155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 596   | 0     | 6     | 79506001     |
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 420   | 3     | 16000        |
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 284   | 336   | 51    | 9549000      |
 155091018000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 336   | 248   | 17    | 52000        |
@@ -892,4 +878,4 @@ PASSED!
 Ticks: 166284693000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 4m4.384s
+Time elapsed: 4m12.285s

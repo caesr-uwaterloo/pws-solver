@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled May 31 2024 18:48:04
-gem5 started May 31 2024 20:12:41
-gem5 executing on 908dcad321bf, pid 673
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  3 2024 20:06:52
+gem5 executing on 908dcad321bf, pid 58412
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/leukocyte/leukocyte -o '/hip-benchmarks/rodinia_3.0/data/leukocyte/testfile.avi 5'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -238,41 +238,41 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 gem5.opt: src/arch/amdgpu/common/tlb.cc:815: void gem5::X86ISA::GpuTLB::handleTranslationReturn(gem5::Addr, gem5::X86ISA::GpuTLB::tlbOutcome, gem5::PacketPtr): Assertion `new_entry' failed.
 Program aborted at tick 161874988000
 --- BEGIN LIBC BACKTRACE ---
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x5d7c6dc00420]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x5d7c6dc26c7e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x77b5fe856420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x77b5fda2000b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x77b5fd9ff859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x77b5fd9ff729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x77b5fda10fd6]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB23handleTranslationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0x668)[0x5d7c6d42b478]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB17translationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0xd7)[0x5d7c6d42be47]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0x165)[0x5d7c6dc158e5]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x5d7c6dc42700]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x5d7c6dc42d8b]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x186f1f2)[0x5d7c6dea81f2]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0xc20db6)[0x5d7c6d259db6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x77b5feb0d748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x77b5fe8e2f48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x77b5fea2fe4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x77b5feb0d124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x77b5fe8d9d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x77b5fe8e1ef6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x77b5fea2fe4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x77b5fea301d2]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x77b5fea305bf]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x77b5fea34c01]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x77b5feac4547]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x77b5fe8d9d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x77b5fe8db46d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x77b5fe8e506b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x77b5feb0d840]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x15ee474)[0x5d7c6dc27474]
-/pws-gem5/build/GCN3_X86/gem5.opt(main+0x21b)[0x5d7c6d1e21bb]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x77b5fda01083]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x611711c14430]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x611711c3ac8e]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x79ff91fd5420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x79ff9119f00b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x79ff9117e859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x79ff9117e729]
+/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x79ff9118ffd6]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB23handleTranslationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0x668)[0x61171143f478]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem56X86ISA6GpuTLB17translationReturnEmNS1_10tlbOutcomeEPNS_6PacketE+0xd7)[0x61171143fe47]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0x165)[0x611711c298f5]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x611711c56710]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x611711c56d9b]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x186f202)[0x611711ebc202]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc20db6)[0x61171126ddb6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x79ff9228c748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x79ff92061f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x79ff921aee4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x79ff9228c124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x79ff92058d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x79ff92060ef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x79ff921aee4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x79ff921af1d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x79ff921af5bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x79ff921b3c01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x79ff92243547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x79ff92058d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x79ff9205a46d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x79ff9206406b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x79ff9228c840]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x15ee484)[0x611711c3b484]
+/pws-gem5/build/GCN3_X86/gem5.opt(main+0x21b)[0x6117111f61bb]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x79ff91180083]
 --- END LIBC BACKTRACE ---
 For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
 
 Aborted (core dumped)
 
-Time elapsed: 3m28.213s
+Time elapsed: 3m24.844s
