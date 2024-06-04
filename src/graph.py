@@ -65,7 +65,6 @@ class Graph():
                 for v in self.cfg[u].successors():
                     if v in in_progress:
                         ret.append((u, v))
-                        dag[u].remove_successor(v)
                     elif v not in visited:
                         if v in S:
                             S.remove(v)
@@ -113,6 +112,9 @@ class Graph():
         loop bounds set in the gem5 log file
         """
         for tail, head in self.loopback_edges():
+            # First, we remove the loopback edge that will be unrolled
+            self.cfg[tail].remove_successor(head)
+
             # The basic block at the end of the loop should only have a single
             # successor out of the loop at this point since we removed all
             # loopback edges
@@ -488,13 +490,11 @@ class Graph():
 
             for dst in successors:
                 self.insert_edge(idx, int(dst))
-        assert len(self.loopback_edges()) == 0
 
     def write_to_csv(self, file_name: str = "") -> str:
         """
         Write the CFG properties to a given CSV file
         """
-        assert len(self.loopback_edges(recheck=True)) == 0
         csv_str = "wcet,is_bsb_node,is_reconv_node,successors\n"
         for idx in sorted(self.cfg.keys()):
             bb = self.cfg[idx]

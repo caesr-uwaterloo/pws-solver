@@ -120,7 +120,12 @@ class Extractor():
                         self.graphs.append(g)
                         g = Graph()
 
-    def parse_log(self, log_file: str) -> None:
+    def parse_log(
+        self,
+        log_file: str,
+        unroll: bool = True,
+        renumber: bool = True
+    ) -> None:
         """
         Get execution times from gem5 log file and incorporate them as weights
         into the CFG
@@ -145,36 +150,51 @@ class Extractor():
                     if edge in g.loopback_edges():
                         g.loop_bounds[edge] = count
             for g in self.graphs:
-                g.unroll_loops()
-                assert len(g.loopback_edges(recheck=True)) == 0
-                g.renumber_basic_blocks()
+                if unroll:
+                    g.unroll_loops()
+                    assert len(g.loopback_edges(recheck=True)) == 0
+                if renumber:
+                    g.renumber_basic_blocks()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
-            "-i",
-            "--input",
-            help="Input file name",
-            type=str,
-            required=True
-        )
+        "-i",
+        "--input",
+        help="Input file name",
+        type=str,
+        required=True
+    )
     parser.add_argument(
-            "-l",
-            "--log",
-            help="Log file name",
-            type=str,
-            default=''
-        )
+        "-l",
+        "--log",
+        help="Log file name",
+        type=str,
+        default=''
+    )
+    parser.add_argument(
+        "-u",
+        "--unroll",
+        help="Unroll any loops in the graph",
+        action="store_true"
+    )
+    parser.add_argument(
+        "-r",
+        "--renumber",
+        help="Renumber basic blocks in topological order",
+        action="store_true"
+    )
     args = parser.parse_args()
 
     e = Extractor(args.input)
     e.parse_asm()
     if len(args.log):
-        e.parse_log(args.log)
+        e.parse_log(args.log, args.unroll, args.renumber)
     path = Path(args.input)
     for i, graph in enumerate(e.graphs):
         file_name = f"{path.parent}/{path.stem}-{i:03}"
-        graph.find_branches()
+        if args.unroll:
+            graph.find_branches()
         graph.write_disassembly(file_name=f"{file_name}-anno.s")
         graph.write_to_csv(file_name=f"{file_name}.csv")
         graph.plot(file_name=f"{file_name}.png")
