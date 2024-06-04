@@ -145,6 +145,12 @@ class Extractor():
                         g.next_instruction_basic_block(start),
                         g.next_instruction_basic_block(end)
                     )
+                    # TODO: Find a better way to account for self-loops
+                    if start == end: # self-loop
+                        edge = (
+                            g.pc_map[start],
+                            g.pc_map[end]
+                        )
                     if edge in g.loopback_edges():
                         g.loop_bounds[edge] = count
 

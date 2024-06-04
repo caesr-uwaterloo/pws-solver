@@ -130,7 +130,7 @@ class Graph():
             # edge and every edge between them in topological order
             start = self.__topological_ordering.index(head)
             end   = self.__topological_ordering.index(tail)
-            assert start < end
+            assert start <= end
 
             # If a loop bound is missing from the log file or no log file is
             # provided, assume only one loop iteration
