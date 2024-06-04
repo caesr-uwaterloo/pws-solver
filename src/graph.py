@@ -226,7 +226,11 @@ class Graph():
         an appropriate basic block between these two points and updates the
         latency for the basic block if it is the largest seen so far.
         """
-        assert start_pc in self.pc_map
+        # if start_pc not in self.pc_map:
+        #     import pdb; pdb.set_trace()
+        # if end_pc not in self.pc_map:
+        #     import pdb; pdb.set_trace()
+        assert start_pc == 0 or start_pc in self.pc_map
         assert end_pc in self.pc_map
 
         # FIXME: This actually doesn't cover all cases that we
@@ -258,27 +262,32 @@ class Graph():
         # block, the measurement could be for the next block or the target of
         # the branch if it is taken.
         start_candidates = []
-        inst = self.get_instruction(start_pc)
+        if start_pc == 0:
+            first_pc = sorted(self.pc_map.keys())[0]
+            start_candidates = [self.pc_map[first_pc]]
+        else:
+            inst = self.get_instruction(start_pc)
 
-        # If the instruction is a branch, we consider the case where the branch
-        # is taken and add the target basic block index as a candidate.
-        if re.search(pattern.UNCOND_BRANCH_INST, inst) or \
-            re.search(pattern.COND_BRANCH_INST, inst):
-            target = inst.split()[-1]
-            assert re.search(pattern.BB_LABEL, target)
-            start_candidates.append(int(re.findall(r'\d+', target)[-1]))
+            # If the instruction is a branch, we consider the case where the
+            # branch is taken and add the target basic block index as a
+            # candidate.
+            if re.search(pattern.UNCOND_BRANCH_INST, inst) or \
+                re.search(pattern.COND_BRANCH_INST, inst):
+                target = inst.split()[-1]
+                assert re.search(pattern.BB_LABEL, target)
+                start_candidates.append(int(re.findall(r'\d+', target)[-1]))
 
-        # If the instruction is a conditional branch or a non-branch
-        # instruction, execution may proceed to the next PC. In this case,
-        # the start PC is either at the start or the end of a basic block. If
-        # it is at the end of the block, we choose the next basic block as the
-        # candidate. Otherwise, we choose the basic block containing the start
-        # PC. In either case, getting the basic block index of the next PC
-        # gives the candidate.
-        if not re.search(pattern.UNCOND_BRANCH_INST, inst):
-            start_candidates.append(
-                self.next_instruction_basic_block(start_pc)
-            )
+            # If the instruction is a conditional branch or a non-branch
+            # instruction, execution may proceed to the next PC. In this case,
+            # the start PC is either at the start or the end of a basic block.
+            # If it is at the end of the block, we choose the next basic block
+            # as the candidate. Otherwise, we choose the basic block containing
+            # the start PC. In either case, getting the basic block index of
+            # the next PC gives the candidate.
+            if not re.search(pattern.UNCOND_BRANCH_INST, inst):
+                start_candidates.append(
+                    self.next_instruction_basic_block(start_pc)
+                )
 
         # At this point we should have at least one candidate for unconditional
         # branches or non-branches and at most two candidates for conditional
@@ -295,6 +304,13 @@ class Graph():
         for bb_idx in start_candidates:
             if bb_end == bb_idx + 1:
                 return bb_idx
+
+        # There is an edge case where there is only one basic block. In that
+        # case, the start and end basic blocks are zero.
+        if len(start_candidates) == 1 \
+            and start_candidates[0] == 0 \
+            and bb_end == 0:
+            return 0
 
         # If we reach here, then the start and end PCs bound multiple basic
         # blocks, so we return a dummy value

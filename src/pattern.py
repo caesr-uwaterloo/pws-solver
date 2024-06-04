@@ -20,13 +20,14 @@ DOUBLE_WORD_INST = r"v_.*_e64.*"
 # These instructions are normally a single word long, but they may have 32-bit
 # immediates that make them double word instructions
 DOUBLE_WORD_LONG_IMM_INSTS = [
+    "s_and_b32",
     "s_mov_b32",
     "v_and_b32",
     "v_mov_b32",
     "v_mul_f32",
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
-    r").*0x[0-9a-fA-F]{8}.*"
+    r").*0x[0-9a-fA-F]{4}.*"
 DOUBLE_WORD_ALU_INSTS = [
     "v_add_f64",
     "v_ashrrev_i64",
@@ -38,6 +39,9 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_cvt_pkrtz_f16_f32",
     "v_cvtpk_i16_i32",
     "v_cvtpk_u16_u32",
+    "v_div_fixup_f32",
+    "v_div_fmas_f32",
+    "v_div_scale_f32",
     "v_fma_f32",
     "v_fma_f64",
     "v_interp_mov_f32",
@@ -51,6 +55,7 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_ldexp_f64",
     "v_lshlrev_b64",
     "v_lshrrev_b64",
+    "v_mad_u64_u32",
     "v_max_f64",
     "v_mbcnt_hi_u32_b32",
     "v_mbcnt_lo_u32_b32",

@@ -104,8 +104,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
 gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  3 2024 19:41:26
-gem5 executing on 908dcad321bf, pid 44797
+gem5 started Jun  4 2024 15:43:26
+gem5 executing on 908dcad321bf, pid 38394
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /rocm-examples/Applications/bitonic_sort/applications_bitonic_sort -o '-l 4'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -190,141 +190,141 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-79174723000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dwordx4 s[0:3], s[6:7], 0x08
-79176071000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dword s9, s[4:5], 0x04
-79176072000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_nop
-79176075000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00020 s_load_dwordx2 s[4:5], s[6:7], 0x00
-79176076000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00028 s_waitcnt lgkmcnt(0)
-79177418000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_sub_i32 s1, s0, s1
-79177422000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 s_and_b32 s3, s9, 0x0000ffff
-79177426000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_mul_i32 s8, s8, s3
-79177429000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_add_u32 v7, vcc, s8, v0
-79177430000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00052 s_lshl_b32 s3, 1, s1
-79177433000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 v_lshrrev_b32 v0, s1, v7
-79177437000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00060 v_mul_lo_u32 v0, s3, v0
-79177438000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 s_bfm_b32 s1, s1, 0
-79177441000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 v_and_b32 v1, s1, v7
-79177445000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00076 v_lshlrev_b32 v0, 1, v0
-79177449000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 v_add_u32 v0, vcc, v0, v1
-79177453000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 v_mov_b32 v1, 0
-79177457000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 v_lshlrev_b64 v[3:4], 2, v[0:1]
-79177461000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 v_add_u32 v2, vcc, s3, v0
-79177465000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 v_add_u32 v5, vcc, s4, v3
-79177469000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_mov_b32 v0, s5
-79177473000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00108 v_mov_b32 v3, v1
-79177477000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 v_addc_u32 v6, vcc, v0, v4, vcc
-79177481000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 v_lshlrev_b64 v[0:1], 2, v[2:3]
-79177769000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 v_mov_b32 v2, s5
-79177773000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 v_add_u32 v0, vcc, s4, v0
-79177777000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 v_addc_u32 v1, vcc, v2, v1, vcc
-79177778000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 flat_load_dword v2, v[5:6]
-79177782000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 flat_load_dword v3, v[0:1]
-79177783000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 v_lshrrev_b32 v4, s0, v7
-79177787000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 v_xor_b32 v4, s2, v4
-79177791000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 v_and_b32 v4, 1, v4
-79177795000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 v_cmp_eq_u32 vcc, 1, v4
-79177796000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_waitcnt vmcnt(0) & lgkmcnt(0)
-79179099000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 v_max_u32 v7, v2, v3
-79179103000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00176 v_min_u32 v2, v2, v3
-79179107000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00180 v_cndmask_b32 v3, v7, v2, vcc
-79179111000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00184 v_cndmask_b32 v2, v2, v7, vcc
-79179112000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00188 flat_store_dword v[5:6], v3
-79179116000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00196 flat_store_dword v[0:1], v2
-79179443000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00204 s_endpgm
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 1     | 6022999      |
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 6022999                       |
-79179443000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 2     | 6022999      |
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 1029999                       |
-79241066000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 3     | 6022999      |
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 989999                        |
-79284020000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 4     | 6022999      |
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 989999                        |
-79327476000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 5     | 6022999      |
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 989999                        |
-79370062000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 6     | 6022999      |
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 5 ~ Total Kernel Time ~ 989999                        |
-79413043000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 7     | 6022999      |
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 6 ~ Total Kernel Time ~ 989999                        |
-79456320000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 8     | 6022999      |
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 7 ~ Total Kernel Time ~ 989999                        |
-79499659000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 9     | 6022999      |
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 8 ~ Total Kernel Time ~ 989999                        |
-79546717000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 10    | 6022999      |
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 9 ~ Total Kernel Time ~ 989999                        |
-79617966000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-GPU bitonic sort took 2.25186 milliseconds to complete.
+79324674000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dwordx4 s[0:3], s[6:7], 0x08
+79326022000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dword s9, s[4:5], 0x04
+79326023000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_waitcnt lgkmcnt(0)
+79327370000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00020 s_and_b32 s3, s9, 0x0000ffff
+79327374000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00028 s_mul_i32 s8, s8, s3
+79327377000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 v_add_u32 v7, vcc, s8, v0
+79327378000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 s_sub_i32 s1, s0, s1
+79327382000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_lshl_b32 s3, 1, s1
+79327383000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 v_lshrrev_b32 v0, s1, v7
+79327387000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_mul_lo_u32 v0, s3, v0
+79327388000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 s_load_dwordx2 s[4:5], s[6:7], 0x00
+79327389000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 s_bfm_b32 s1, s1, 0
+79327392000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 v_and_b32 v1, s1, v7
+79327396000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 v_lshlrev_b32 v0, 1, v0
+79327400000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00076 v_add_u32 v0, vcc, v0, v1
+79327404000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 v_add_u32 v2, vcc, s3, v0
+79327408000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 v_mov_b32 v1, 0
+79327412000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 v_lshlrev_b64 v[3:4], 2, v[0:1]
+79327413000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 s_waitcnt lgkmcnt(0)
+79327446000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 v_mov_b32 v0, s5
+79327450000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_add_u32 v5, vcc, s4, v3
+79327454000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00108 v_addc_u32 v6, vcc, v0, v4, vcc
+79327458000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 v_mov_b32 v3, v1
+79327462000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 v_lshlrev_b64 v[0:1], 2, v[2:3]
+79327716000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 v_mov_b32 v2, s5
+79327720000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 v_add_u32 v0, vcc, s4, v0
+79327724000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 v_addc_u32 v1, vcc, v2, v1, vcc
+79327725000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 flat_load_dword v2, v[5:6]
+79327729000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 flat_load_dword v3, v[0:1]
+79327730000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 v_lshrrev_b32 v4, s0, v7
+79327734000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 v_xor_b32 v4, s2, v4
+79327738000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 v_and_b32 v4, 1, v4
+79327739000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 s_waitcnt vmcnt(0) & lgkmcnt(0)
+79329046000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 v_max_u32 v7, v2, v3
+79329050000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 v_min_u32 v2, v2, v3
+79329054000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00176 v_cmp_eq_u32 vcc, 1, v4
+79329058000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00180 v_cndmask_b32 v3, v7, v2, vcc
+79329062000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00184 v_cndmask_b32 v2, v2, v7, vcc
+79329063000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00188 flat_store_dword v[5:6], v3
+79329067000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00196 flat_store_dword v[0:1], v2
+79329394000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00204 s_endpgm
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 1     | 6022999      |
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 6022999                       |
+79329394000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 2     | 6022999      |
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 1023999                       |
+79387371000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 3     | 6022999      |
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 1023999                       |
+79429194000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 4     | 6022999      |
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 1023999                       |
+79471149000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 5     | 6022999      |
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 1215999                       |
+79514132000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 6     | 6022999      |
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 5 ~ Total Kernel Time ~ 1023999                       |
+79556537000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 7     | 6022999      |
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 6 ~ Total Kernel Time ~ 1128999                       |
+79599234000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 8     | 6022999      |
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 7 ~ Total Kernel Time ~ 1023999                       |
+79642190000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 9     | 6022999      |
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 8 ~ Total Kernel Time ~ 1023999                       |
+79688888000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e782000             |
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 204   | 10    | 6022999      |
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 9 ~ Total Kernel Time ~ 1023999                       |
+79756914000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+GPU bitonic sort took 2.25734 milliseconds to complete.
 Validating results with CPU implementation.
 PASSED!
-Ticks: 83005566000
+Ticks: 83146564000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m32.391s
+Time elapsed: 1m31.898s
