@@ -104,8 +104,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
 gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  3 2024 19:53:04
-gem5 executing on 908dcad321bf, pid 51036
+gem5 started Jun  4 2024 17:07:11
+gem5 executing on 908dcad321bf, pid 83064
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/heartwall/heartwall -o '/hip-benchmarks/rodinia_3.0/data/heartwall/test.avi 1'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -261,44 +261,44 @@ src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
 176484211000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00492 s_load_dwordx2 s[0:1], s[14:15], 0x20
 176484287000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00500 s_load_dword s4, s[14:15], 0x2c
 src/gpu-compute/static_register_manager_policy.cc:58: panic: panic condition (vgprIndex >= w->reservedVectorRegs) || (w->reservedVectorRegs < 0) occurred: VGPR index 74 is out of range: VGPR range=[0,32]
-Memory Usage: 2807016 KBytes
+Memory Usage: 2815208 KBytes
 Program aborted at tick 176484438000
 --- BEGIN LIBC BACKTRACE ---
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x5818b1815430]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x5818b183bc8e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x797c083cb420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x797c0759500b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x797c07574859]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0xc302a5)[0x5818b0e7e2a5]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem527StaticRegisterManagerPolicy7mapVgprEPNS_9WavefrontEi+0xf0)[0x5818b17aa350]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x1524f60)[0x5818b1772f60]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem513GPUStaticInst18initDynOperandInfoEPNS_9WavefrontEPNS_11ComputeUnitE+0xff)[0x5818b177399f]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510GPUDynInstC1EPNS_11ComputeUnitEPNS_9WavefrontEPNS_13GPUStaticInstEm+0x3eb)[0x5818b176cd2b]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit12FetchBufDesc11decodeInstsEv+0x194)[0x5818b1744354]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit4execEv+0x6c)[0x5818b174716c]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510FetchStage4execEv+0x2c)[0x5818b174050c]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem511ComputeUnit4execEv+0xd9)[0x5818b170d6a9]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x5818b182a852]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x5818b1857710]
-/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x5818b1857d9b]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0x186f202)[0x5818b1abd202]
-/pws-gem5/build/GCN3_X86/gem5.opt(+0xc20db6)[0x5818b0e6edb6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x797c08682748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x797c08457f48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x797c085a4e4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x797c08682124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x797c0844ed6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x797c08456ef6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x797c085a4e4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x797c085a51d2]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x797c085a55bf]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x797c085a9c01]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x797c08639547]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x797c0844ed6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x797c0845046d]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x6109cbeac430]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem512abortHandlerEi+0x4e)[0x6109cbed2c8e]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7241fba74420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7241fac3e00b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7241fac1d859]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc302a5)[0x6109cb5152a5]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem527StaticRegisterManagerPolicy7mapVgprEPNS_9WavefrontEi+0xf0)[0x6109cbe41350]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x1524f60)[0x6109cbe09f60]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem513GPUStaticInst18initDynOperandInfoEPNS_9WavefrontEPNS_11ComputeUnitE+0xff)[0x6109cbe0a99f]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510GPUDynInstC1EPNS_11ComputeUnitEPNS_9WavefrontEPNS_13GPUStaticInstEm+0x3eb)[0x6109cbe03d2b]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit12FetchBufDesc11decodeInstsEv+0x194)[0x6109cbddb354]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59FetchUnit4execEv+0x6c)[0x6109cbdde16c]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510FetchStage4execEv+0x2c)[0x6109cbdd750c]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem511ComputeUnit4execEv+0xd9)[0x6109cbda46a9]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x6109cbec1852]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x70)[0x6109cbeee710]
+/pws-gem5/build/GCN3_X86/gem5.opt(_ZN4gem58simulateEm+0x29b)[0x6109cbeeed9b]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0x186f202)[0x6109cc154202]
+/pws-gem5/build/GCN3_X86/gem5.opt(+0xc20db6)[0x6109cb505db6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7241fbd2b748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7241fbb00f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7241fbc4de4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7241fbd2b124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7241fbaf7d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7241fbaffef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7241fbc4de4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7241fbc4e1d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7241fbc4e5bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7241fbc52c01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7241fbce2547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7241fbaf7d6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7241fbaf946d]
 --- END LIBC BACKTRACE ---
 For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
 
 Aborted (core dumped)
 
-Time elapsed: 3m56.584s
+Time elapsed: 3m49.279s
