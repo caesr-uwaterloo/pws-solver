@@ -25,9 +25,10 @@ DOUBLE_WORD_LONG_IMM_INSTS = [
     "v_and_b32",
     "v_mov_b32",
     "v_mul_f32",
+    "v_mul_u32_u24_e32", # TODO: Check if all instances are double word
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
-    r").*0x[0-9a-fA-F]{4}.*"
+    r").*0x[0-9a-fA-F]{3}.*"
 DOUBLE_WORD_MISC_INSTS = [
     "s_add_u32",
     "s_addc_u32",
@@ -61,6 +62,8 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_ldexp_f64",
     "v_lshlrev_b64",
     "v_lshrrev_b64",
+    "v_mad_i32_i24",
+    "v_mad_u32_u24",
     "v_mad_u64_u32",
     "v_max_f64",
     "v_mbcnt_hi_u32_b32",

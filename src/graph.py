@@ -112,7 +112,10 @@ class Graph():
         loop bounds set in the gem5 log file
         """
         loopbacks = self.loopback_edges(recheck=True)
-        for tail, head in loopbacks:
+        # for tail, head in loopbacks:
+        while len(loopbacks) > 0:
+            tail, head = loopbacks[0]
+
             # First, we remove the loopback edge that will be unrolled
             self.cfg[tail].remove_successor(head)
 
@@ -168,6 +171,7 @@ class Graph():
                 last_node_in_previous_subgraph.add_successor(
                     tail_successors[0]
                 )
+            loopbacks = self.loopback_edges(recheck=True)
 
     def get_insts(self) -> dict[int, str]:
         """
