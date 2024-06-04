@@ -2,6 +2,14 @@ BENCHMARK=backprop
 KERNEL=000
 
 run:
+	# python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
+	# python extract.py -i data/rodinia/hotspot.s -l data/rodinia/hotspot.log -u -r
+	# python extract.py -i data/rodinia/lavaMD.s -l data/rodinia/lavaMD.log -u -r
+	# python extract.py -i data/rodinia/lud.s -l data/rodinia/lud.log -u -r
+	# python extract.py -i data/rodinia/nw.s -l data/rodinia/nw.log -u -r
+	# python extract.py -i data/rodinia/particlefilter_float.s -l data/rodinia/particlefilter_float.log -u -r
+	# python extract.py -i data/rodinia/pathfinder.s -l data/rodinia/pathfinder.log -u -r
+	# python extract.py -i data/rodinia/srad_v1.s -l data/rodinia/srad_v1.s -u -r
 	python extract.py -i data/rodinia/backprop.s -l data/rodinia/backprop.log -u -r
 	python extract.py -i data/rodinia/bfs.s -l data/rodinia/bfs.log -u -r
 	python extract.py -i data/rodinia/bitonic_sort.s -l data/rodinia/bitonic_sort.log -u -r
@@ -14,13 +22,12 @@ run:
 	python extract.py -i data/rodinia/hybridsort.s -l data/rodinia/hybridsort.log -u -r
 	python extract.py -i data/rodinia/kmeans.s -l data/rodinia/kmeans.log -u -r
 	python extract.py -i data/rodinia/loop.s -l data/rodinia/loop.log -u -r
+	python extract.py -i data/rodinia/myocyte.s -l data/rodinia/myocyte.log -u -r
 	python extract.py -i data/rodinia/nn.s -l data/rodinia/nn.log -u -r
 	python extract.py -i data/rodinia/particlefilter_naive.s -l data/rodinia/particlefilter_naive.log -u -r
 	python extract.py -i data/rodinia/prefix_sum.s -l data/rodinia/prefix_sum.s -u -r
+	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.s -u -r
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
-
-# all latencies 0:
-#   - prefix_sum
 
 comp:
 	rm -f ext.txt && cat data/rodinia/$(BENCHMARK)-$(KERNEL)-anno.s | cut -d" " -f"1-" | sort -u > ext.txt
