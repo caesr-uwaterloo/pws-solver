@@ -122,9 +122,7 @@ class Extractor():
 
     def parse_log(
         self,
-        log_file: str,
-        unroll: bool = True,
-        renumber: bool = True
+        log_file: str
     ) -> None:
         """
         Get execution times from gem5 log file and incorporate them as weights
@@ -149,12 +147,6 @@ class Extractor():
                     )
                     if edge in g.loopback_edges():
                         g.loop_bounds[edge] = count
-            for g in self.graphs:
-                if unroll:
-                    g.unroll_loops()
-                    assert len(g.loopback_edges(recheck=True)) == 0
-                if renumber:
-                    g.renumber_basic_blocks()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -189,7 +181,13 @@ if __name__ == '__main__':
     e = Extractor(args.input)
     e.parse_asm()
     if len(args.log):
-        e.parse_log(args.log, args.unroll, args.renumber)
+        e.parse_log(args.log)
+    for g in e.graphs:
+        if args.unroll:
+            g.unroll_loops()
+            assert len(g.loopback_edges(recheck=True)) == 0
+        if args.renumber:
+            g.renumber_basic_blocks()
     path = Path(args.input)
     for i, graph in enumerate(e.graphs):
         file_name = f"{path.parent}/{path.stem}-{i:03}"
