@@ -62,6 +62,7 @@ class Extractor():
             re.search(pattern.DS_INST, line) or \
             re.search(pattern.VMEM_INST, line) or \
             re.search(pattern.DOUBLE_WORD_LONG_IMM, line) or \
+            re.search(pattern.DOUBLE_WORD_MISC, line) or \
             re.search(pattern.DOUBLE_WORD_ALU, line) or \
             re.search(pattern.DOUBLE_WORD_COMPARE, line) or \
             re.search(pattern.DOUBLE_WORD_INST, line))

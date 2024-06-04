@@ -28,6 +28,12 @@ DOUBLE_WORD_LONG_IMM_INSTS = [
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
     r").*0x[0-9a-fA-F]{4}.*"
+DOUBLE_WORD_MISC_INSTS = [
+    "s_add_u32",
+    "s_addc_u32",
+]
+DOUBLE_WORD_MISC = "^(" + '|'.join(DOUBLE_WORD_MISC_INSTS) + \
+    r").*d_mask@rel32@(lo|hi)\+4.*"
 DOUBLE_WORD_ALU_INSTS = [
     "v_add_f64",
     "v_ashrrev_i64",

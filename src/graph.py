@@ -111,7 +111,8 @@ class Graph():
         Finds all loopback edges in the graph and unrolls them based on the
         loop bounds set in the gem5 log file
         """
-        for tail, head in self.loopback_edges():
+        loopbacks = self.loopback_edges(recheck=True)
+        for tail, head in loopbacks:
             # First, we remove the loopback edge that will be unrolled
             self.cfg[tail].remove_successor(head)
 
@@ -128,14 +129,16 @@ class Graph():
 
             # Get the subgraph induced by the head and tail of the loopback
             # edge and every edge between them in topological order
+            # TODO: Improve the way we update the topological ordering
+            self.loopback_edges(recheck=True)
             start = self.__topological_ordering.index(head)
             end   = self.__topological_ordering.index(tail)
             assert start <= end
 
             # If a loop bound is missing from the log file or no log file is
             # provided, assume only one loop iteration
-            if (tail, head) not in self.loop_bounds:
-                self.loop_bounds[(tail, head)] = 1
+            # if (tail, head) not in self.loop_bounds:
+            self.loop_bounds[(tail, head)] = 1
 
             # Next, we duplicate the subgraph based on the loop bound and
             # insert into the graph. We copy the vertices of the subgraph
