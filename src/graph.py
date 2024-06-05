@@ -35,21 +35,16 @@ class Graph():
 
         self.__loopbacks: list[tuple[int, int]] = []
         self.__topological_ordering: list[int] = []
-        self.__loopbacks_found: bool = False
 
-    def loopback_edges(
-        self,
-        recheck: bool = False
+    def get_loopback_edges(
+        self
     ) -> list[tuple[int, int]]:
         """
         Finds and removes any loopback edges in the graph. Returns a list of
         the removed loopback edges encoded as source and sink basic block
         pairs.
         """
-        dag = self.cfg
-        if self.__loopbacks_found and not recheck:
-            return self.__loopbacks
-        ret = []
+        self.__loopbacks = []
         S = [0]
         visited: deque[str] = deque()
         in_progress: set[str] = set()
@@ -64,37 +59,37 @@ class Graph():
                 in_progress.add(u)
                 for v in self.cfg[u].successors():
                     if v in in_progress:
-                        ret.append((u, v))
+                        self.__loopbacks.append((u, v))
                     elif v not in visited:
                         if v in S:
                             S.remove(v)
                         S.append(v)
-        self.cfg = dag
-        self.__loopbacks = ret
         self.__topological_ordering = list(visited)
-        self.__loopbacks_found = True
-        return ret
+        return self.__loopbacks
 
     def renumber_basic_blocks(
         self
     ) -> None:
         """
         Renumbers the basic blocks in the CFG based on their topological order
-        because loop unrolling may have disordered them
         """
         new_cfg: dict[int, BasicBlock] = {}
         new_pc_map: dict[int, int] = {}
 
-        # Since we may have just unrolled the loops we neeed to update the
-        # topological ordering
-        self.loopback_edges(recheck=True)
+        # The indices in the topological ordering should match the set of
+        # indices in the CFG. This does not check if the topological ordering
+        # is correct, but it does catch if the topological order has not been
+        # computed yet.
+        assert len(self.__topological_ordering) == len(self.cfg.keys())
+        assert set(self.__topological_ordering) == set(self.cfg.keys())
 
         # Copy all vertices and edges from the old CFG, but update the basic
         # block indices based on the topological ordering
         for idx, bb_idx in enumerate(self.__topological_ordering):
             new_cfg[idx] = BasicBlock(idx, other=self.cfg[bb_idx])
             for succ in self.cfg[bb_idx].successors():
-                new_cfg[idx].add_successor(self.__topological_ordering.index(succ))
+                succ_idx = self.__topological_ordering.index(succ)
+                new_cfg[idx].add_successor(succ_idx)
 
         # Update the map from PC to basic block based on the new indices
         for pc, bb_idx in self.pc_map.items():
@@ -108,16 +103,17 @@ class Graph():
         self
     ) -> None:
         """
-        Finds all loopback edges in the graph and unrolls them based on the
-        loop bounds set in the gem5 log file
+        Unrolls all loops found via loopback edges based on the loop bounds set
+        in the gem5 log file
         """
-        loopbacks = self.loopback_edges(recheck=True)
-        # for tail, head in loopbacks:
+        loopbacks = self.get_loopback_edges()
         while len(loopbacks) > 0:
             tail, head = loopbacks[0]
 
-            # First, we remove the loopback edge that will be unrolled
+            # First, we remove the loopback edge that will be unrolled from the
+            # CFG and from the list of loopback edges
             self.cfg[tail].remove_successor(head)
+            loopbacks.pop(0)
 
             # The basic block at the end of the loop should only have a single
             # successor out of the loop at this point since we removed all
@@ -132,16 +128,24 @@ class Graph():
 
             # Get the subgraph induced by the head and tail of the loopback
             # edge and every edge between them in topological order
-            # TODO: Improve the way we update the topological ordering
-            self.loopback_edges(recheck=True)
             start = self.__topological_ordering.index(head)
             end   = self.__topological_ordering.index(tail)
             assert start <= end
+            loop_body = self.__topological_ordering[start:end+1]
+
+            # Get an index to insert the new basic blocks at the appropriate of
+            # the topological ordering. If there is nothing after the loop, we
+            # can append at the end of the list. Otherwise, we need to insert
+            # at the index of the successor of the loop.
+            loop_successor_idx = len(self.__topological_ordering)
+            if len(tail_successors) == 1:
+                loop_successor_idx = \
+                    self.__topological_ordering.index(tail_successors[0])
 
             # If a loop bound is missing from the log file or no log file is
             # provided, assume only one loop iteration
-            # if (tail, head) not in self.loop_bounds:
-            self.loop_bounds[(tail, head)] = 1
+            if (tail, head) not in self.loop_bounds:
+                self.loop_bounds[(tail, head)] = 1
 
             # Next, we duplicate the subgraph based on the loop bound and
             # insert into the graph. We copy the vertices of the subgraph
@@ -151,15 +155,28 @@ class Graph():
             for _ in range(self.loop_bounds[(tail, head)]):
                 bb_map: dict[int, int] = {}
                 # Copy all vertices in original subgraph
-                for bb_idx in self.__topological_ordering[start:end+1]:
+                for bb_idx in loop_body:
                     bb_map[bb_idx] = len(self.cfg)
-                    self.cfg[len(self.cfg)] = \
+                    new_block = \
                         BasicBlock(len(self.cfg), other=self.cfg[bb_idx])
+                    self.cfg[len(self.cfg)] = new_block
+                    # Insert the index of the new block at the appropriate slot
+                    # in the topological ordering to preserve the order
+                    self.__topological_ordering.insert(
+                        loop_successor_idx,
+                        new_block.num
+                    )
+                    loop_successor_idx += 1
                 # Copy all edges from original subgraph to new subgraph
                 for old_idx, new_idx in bb_map.items():
                     for succ in self.cfg[old_idx].successors():
                         if succ in bb_map:
                             self.cfg[new_idx].add_successor(bb_map[succ])
+                            # If we add a loopback edge, we need to add it to
+                            # the list of loopback edges to unroll in a later
+                            # iteration
+                            if (old_idx, succ) in loopbacks:
+                                loopbacks.append((new_idx, bb_map[succ]))
                 # Append the new subgraph after the previously inserted
                 # subgraph
                 last_node_in_previous_subgraph.add_successor(bb_map[head])
@@ -171,7 +188,6 @@ class Graph():
                 last_node_in_previous_subgraph.add_successor(
                     tail_successors[0]
                 )
-            loopbacks = self.loopback_edges(recheck=True)
 
     def get_insts(self) -> dict[int, str]:
         """
@@ -207,7 +223,6 @@ class Graph():
         """
         Add a new edge to the control-flow graph from basic block src to dst
         """
-        # assert src < dst
         if src not in self.cfg:
             self.insert_basic_block(src)
         if dst not in self.cfg:
@@ -233,10 +248,6 @@ class Graph():
         an appropriate basic block between these two points and updates the
         latency for the basic block if it is the largest seen so far.
         """
-        # if start_pc not in self.pc_map:
-        #     import pdb; pdb.set_trace()
-        # if end_pc not in self.pc_map:
-        #     import pdb; pdb.set_trace()
         assert start_pc == 0 or start_pc in self.pc_map
         assert end_pc in self.pc_map
 
@@ -341,7 +352,7 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
-        assert len(self.loopback_edges(recheck=True)) == 0
+        assert len(self.__loopbacks) == 0
         parent_stack: list[int] = []
         for u in sorted(self.cfg.keys()):
             bb = self.cfg[u]
@@ -499,6 +510,9 @@ class Graph():
         """
         Read the contents of a CSV file to construct the CFG
         """
+        self.cfg = {}
+        self.pc_map = {}
+        self.loop_bounds = {}
         df = pd.read_csv(file_name)
         for idx, row in df.iterrows():
             self.insert_basic_block(num=idx, wcet=row["wcet"])
@@ -513,6 +527,7 @@ class Graph():
 
             for dst in successors:
                 self.insert_edge(idx, int(dst))
+        assert len(self.get_loopback_edges()) == 0
 
     def write_to_csv(self, file_name: str = "") -> str:
         """
