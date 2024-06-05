@@ -94,6 +94,7 @@ class Extractor():
                             dst=self.read_basic_block_number(line)
                         )
                     current_bb_number = self.read_basic_block_number(line)
+                    previous_inst_uncond_branch = False
                 elif re.search(pattern.INST, line):
                     previous_inst_uncond_branch = False
                     if re.search(pattern.COND_BRANCH_INST, line):

@@ -22,10 +22,12 @@ DOUBLE_WORD_INST = r"v_.*_e64.*"
 DOUBLE_WORD_LONG_IMM_INSTS = [
     "s_and_b32",
     "s_mov_b32",
+    "v_add_u32_e32",
     "v_and_b32",
     "v_mov_b32",
     "v_mul_f32",
     "v_mul_u32_u24_e32", # TODO: Check if all instances are double word
+    "v_sub_f32_e32",
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
     r").*0x[0-9a-fA-F]{3}.*"

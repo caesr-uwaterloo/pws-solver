@@ -3,7 +3,6 @@ KERNEL=000
 
 run:
 	# python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
-	# python extract.py -i data/rodinia/hotspot.s -l data/rodinia/hotspot.log -u -r
 	# python extract.py -i data/rodinia/lavaMD.s -l data/rodinia/lavaMD.log -u -r
 	# python extract.py -i data/rodinia/lud.s -l data/rodinia/lud.log -u -r
 	# python extract.py -i data/rodinia/nw.s -l data/rodinia/nw.log -u -r
@@ -19,6 +18,7 @@ run:
 	python extract.py -i data/rodinia/floyd_warshall.s -l data/rodinia/floyd_warshall.log -u -r
 	python extract.py -i data/rodinia/gaussian.s -l data/rodinia/gaussian.log -u -r
 	python extract.py -i data/rodinia/heartwall.s -l data/rodinia/heartwall.log -u -r
+	python extract.py -i data/rodinia/hotspot.s -l data/rodinia/hotspot.log -u -r
 	python extract.py -i data/rodinia/hybridsort.s -l data/rodinia/hybridsort.log -u -r
 	python extract.py -i data/rodinia/kmeans.s -l data/rodinia/kmeans.log -u -r
 	python extract.py -i data/rodinia/loop.s -l data/rodinia/loop.log -u -r
@@ -30,8 +30,8 @@ run:
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
 comp:
-	rm -f ext.txt && cat data/rodinia/$(BENCHMARK)-$(KERNEL)-anno.s | cut -d" " -f"1-" | sort -u > ext.txt
-	rm -f sim.txt && grep "Kernel $(KERNEL) inst" data/rodinia/$(BENCHMARK).log | cut -d" " -f"6-" | sort -u > sim.txt
+	rm -f pc.ext.txt && cat data/rodinia/$(BENCHMARK)-$(KERNEL)-anno.s | cut -d" " -f"1-" | sort -u > pc.ext.txt
+	rm -f pc.sim.txt && grep "Kernel $(KERNEL) inst" data/rodinia/$(BENCHMARK).log | cut -d" " -f"6-" | sort -u > pc.sim.txt
 
 clean:
-	rm -rf data/rodinia/*anno.s data/rodinia/*.csv data/rodinia/*.png
+	rm -rf data/rodinia/*anno.s data/rodinia/*.csv data/rodinia/*.png pc.ext.txt pc.sim.txt
