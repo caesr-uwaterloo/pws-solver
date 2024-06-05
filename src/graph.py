@@ -33,7 +33,7 @@ class Graph():
         executions
         """
 
-        self.__loopbacks: deque[tuple[int, int]] = []
+        self.__loopbacks: deque[tuple[int, int]] = deque()
         """
         A container of all loopback edges found in the CFG
         """
@@ -53,8 +53,8 @@ class Graph():
         """
         self.__loopbacks = deque()
         S = [0]
-        visited: deque[str] = deque()
-        in_progress: set[str] = set()
+        visited: deque[int] = deque()
+        in_progress: set[int] = set()
         while len(S) > 0:
             u = S[-1]
             assert u not in visited
@@ -548,6 +548,7 @@ class Graph():
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(csv_str)
+        return csv_str
 
     def write_disassembly(self, file_name: str = "") -> None:
         """

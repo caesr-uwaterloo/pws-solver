@@ -29,6 +29,9 @@ run:
 	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.s -u -r
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
+mypy:
+	mypy src/graph.py src/block.py src/pattern.py extract.py
+
 comp:
 	rm -f pc.ext.txt && cat data/rodinia/$(BENCHMARK)-$(KERNEL)-anno.s | cut -d" " -f"1-" | sort -u > pc.ext.txt
 	rm -f pc.sim.txt && grep "Kernel $(KERNEL) inst" data/rodinia/$(BENCHMARK).log | cut -d" " -f"6-" | sort -u > pc.sim.txt

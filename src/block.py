@@ -19,7 +19,7 @@ class BasicBlock():
         self,
         num: int,
         wcet: int = 0,
-        other: BasicBlock = None
+        other: BasicBlock | None = None
     ) -> None:
         self.num: int = num
         self.wcet: int = wcet
