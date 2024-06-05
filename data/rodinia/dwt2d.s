@@ -2114,7 +2114,7 @@ BB2_210:                                ;   Parent Loop BB2_188 Depth=1
 	s_cmp_eq_u32 s13, s14
 	s_waitcnt lgkmcnt(0)
 	s_cbranch_scc0 BB2_188
-	s_nop                               ; adding s_nop to align PC of s_endpgm with simulation
+	s_nop                               ; manually adding s_nop to align PC of s_endpgm with simulation
 BB2_212:                                ; %_ZN8dwt_cuda6FDWT53ILi64ELi8EE3runEPKiPiiii.exit
 	s_endpgm
 	.section	.rodata,#alloc

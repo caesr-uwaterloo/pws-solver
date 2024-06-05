@@ -31,6 +31,7 @@ DOUBLE_WORD_LONG_IMM_INSTS = [
     "v_mul_u32_u24_e32",
     "v_or_b32",
     "v_sub_f32_e32",
+    "v_xor_b32_e32",
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
     r").*0x[0-9a-fA-F]{3}.*"
@@ -52,8 +53,11 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_cvtpk_i16_i32",
     "v_cvtpk_u16_u32",
     "v_div_fixup_f32",
+    "v_div_fixup_f64",
     "v_div_fmas_f32",
+    "v_div_fmas_f64",
     "v_div_scale_f32",
+    "v_div_scale_f64",
     "v_fma_f32",
     "v_fma_f64",
     "v_interp_mov_f32",
@@ -82,6 +86,7 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_mul_hi_u32",
     "v_mul_lo_u32",
     "v_readlane_b32",
+    "v_trig_preop_f64",
     "v_writelane_b32",
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'

@@ -3,7 +3,6 @@ KERNEL=000
 
 run:
 	# python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
-	# python extract.py -i data/rodinia/particlefilter_float.s -l data/rodinia/particlefilter_float.log -u -r
 	# python extract.py -i data/rodinia/srad_v1.s -l data/rodinia/srad_v1.s -u -r
 	python extract.py -i data/rodinia/backprop.s -l data/rodinia/backprop.log -u -r
 	python extract.py -i data/rodinia/bfs.s -l data/rodinia/bfs.log -u -r
@@ -23,6 +22,7 @@ run:
 	python extract.py -i data/rodinia/myocyte.s -l data/rodinia/myocyte.log -u -r
 	python extract.py -i data/rodinia/nn.s -l data/rodinia/nn.log -u -r
 	python extract.py -i data/rodinia/nw.s -l data/rodinia/nw.log -u -r
+	python extract.py -i data/rodinia/particlefilter_float.s -l data/rodinia/particlefilter_float.log -u -r
 	python extract.py -i data/rodinia/particlefilter_naive.s -l data/rodinia/particlefilter_naive.log -u -r
 	python extract.py -i data/rodinia/pathfinder.s -l data/rodinia/pathfinder.log -u -r
 	python extract.py -i data/rodinia/prefix_sum.s -l data/rodinia/prefix_sum.s -u -r

@@ -1,544 +1,4 @@
 	.text
-	.amdgcn_target "amdgcn-amd-amdhsa--gfx801+xnack"
-	.protected	_Z17find_index_kernelPdS_S_S_S_S_S_i ; -- Begin function _Z17find_index_kernelPdS_S_S_S_S_S_i
-	.globl	_Z17find_index_kernelPdS_S_S_S_S_S_i
-	.p2align	8
-	.type	_Z17find_index_kernelPdS_S_S_S_S_S_i,@function
-_Z17find_index_kernelPdS_S_S_S_S_S_i:   ; @_Z17find_index_kernelPdS_S_S_S_S_S_i
-_Z17find_index_kernelPdS_S_S_S_S_S_i$local:
-; %bb.0:
-	v_mov_b32_e32 v1, 0
-	s_load_dword s0, s[4:5], 0x4
-	s_waitcnt lgkmcnt(0)
-	s_and_b32 s0, s0, 0xffff
-	v_mov_b32_e32 v2, s8
-	v_mad_u64_u32 v[0:1], s[0:1], s0, v2, v[0:1]
-	s_load_dword s2, s[6:7], 0x38
-	s_waitcnt lgkmcnt(0)
-	v_cmp_gt_i32_e32 vcc, s2, v0
-	s_and_saveexec_b64 s[0:1], vcc
-	s_cbranch_execz BB0_8
-; %bb.1:                                ; %.preheader
-	s_load_dwordx8 s[12:19], s[6:7], 0x0
-	s_load_dwordx4 s[8:11], s[6:7], 0x20
-	s_cmp_lt_i32 s2, 1
-	v_mov_b32_e32 v1, -1
-	s_cbranch_scc1 BB0_7
-; %bb.2:                                ; %.lr.ph
-	s_mov_b32 s3, 0
-	v_mov_b32_e32 v1, 0
-	v_mov_b32_e32 v2, v0
-	v_ashrrev_i64 v[1:2], 29, v[1:2]
-	s_waitcnt lgkmcnt(0)
-	v_mov_b32_e32 v3, s19
-	v_add_u32_e32 v1, vcc, s18, v1
-	v_addc_u32_e32 v2, vcc, v3, v2, vcc
-	flat_load_dwordx2 v[2:3], v[1:2]
-	s_mov_b64 s[4:5], 0
-                                        ; implicit-def: $sgpr6_sgpr7
-	s_branch BB0_4
-BB0_3:                                  ; %Flow
-                                        ;   in Loop: Header=BB0_4 Depth=1
-	s_or_b64 exec, exec, s[18:19]
-	s_and_b64 s[18:19], exec, s[6:7]
-	s_or_b64 s[4:5], s[18:19], s[4:5]
-	s_andn2_b64 exec, exec, s[4:5]
-	s_cbranch_execz BB0_6
-BB0_4:                                  ; =>This Inner Loop Header: Depth=1
-	s_load_dwordx2 s[18:19], s[16:17], 0x0
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	v_cmp_nge_f64_e32 vcc, s[18:19], v[2:3]
-	v_mov_b32_e32 v1, s3
-	s_or_b64 s[6:7], s[6:7], exec
-	s_and_saveexec_b64 s[18:19], vcc
-	s_cbranch_execz BB0_3
-; %bb.5:                                ;   in Loop: Header=BB0_4 Depth=1
-	s_add_i32 s3, s3, 1
-	s_add_u32 s16, s16, 8
-	s_addc_u32 s17, s17, 0
-	v_mov_b32_e32 v1, s3
-	v_cmp_eq_u32_e32 vcc, s2, v1
-	v_mov_b32_e32 v1, -1
-	s_andn2_b64 s[6:7], s[6:7], exec
-	s_and_b64 s[20:21], vcc, exec
-	s_or_b64 s[6:7], s[6:7], s[20:21]
-	s_branch BB0_3
-BB0_6:                                  ; %Flow61
-	s_or_b64 exec, exec, s[4:5]
-BB0_7:                                  ; %._crit_edge
-	s_add_i32 s2, s2, -1
-	v_mov_b32_e32 v2, s2
-	v_cmp_eq_u32_e32 vcc, -1, v1
-	v_cndmask_b32_e32 v1, v1, v2, vcc
-	v_ashrrev_i32_e32 v2, 31, v1
-	v_lshlrev_b64 v[1:2], 3, v[1:2]
-	s_waitcnt lgkmcnt(0)
-	v_mov_b32_e32 v4, s13
-	v_add_u32_e32 v3, vcc, s12, v1
-	v_addc_u32_e32 v4, vcc, v4, v2, vcc
-	flat_load_dwordx2 v[3:4], v[3:4]
-	v_mov_b32_e32 v5, 0
-	v_mov_b32_e32 v6, v0
-	v_mov_b32_e32 v0, s9
-	v_mov_b32_e32 v9, s15
-	v_ashrrev_i64 v[5:6], 29, v[5:6]
-	v_add_u32_e32 v7, vcc, s8, v5
-	v_addc_u32_e32 v8, vcc, v0, v6, vcc
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	flat_store_dwordx2 v[7:8], v[3:4]
-	v_add_u32_e32 v0, vcc, s14, v1
-	v_addc_u32_e32 v1, vcc, v9, v2, vcc
-	flat_load_dwordx2 v[0:1], v[0:1]
-	v_mov_b32_e32 v3, s11
-	v_add_u32_e32 v2, vcc, s10, v5
-	v_addc_u32_e32 v3, vcc, v3, v6, vcc
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	flat_store_dwordx2 v[2:3], v[0:1]
-BB0_8:                                  ; %Flow63
-	s_or_b64 exec, exec, s[0:1]
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	s_barrier
-	s_waitcnt lgkmcnt(0)
-	s_endpgm
-	.section	.rodata,#alloc
-	.p2align	6
-	.amdhsa_kernel _Z17find_index_kernelPdS_S_S_S_S_S_i
-		.amdhsa_group_segment_fixed_size 0
-		.amdhsa_private_segment_fixed_size 0
-		.amdhsa_user_sgpr_private_segment_buffer 1
-		.amdhsa_user_sgpr_dispatch_ptr 1
-		.amdhsa_user_sgpr_queue_ptr 0
-		.amdhsa_user_sgpr_kernarg_segment_ptr 1
-		.amdhsa_user_sgpr_dispatch_id 0
-		.amdhsa_user_sgpr_flat_scratch_init 0
-		.amdhsa_user_sgpr_private_segment_size 0
-		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
-		.amdhsa_system_sgpr_workgroup_id_x 1
-		.amdhsa_system_sgpr_workgroup_id_y 0
-		.amdhsa_system_sgpr_workgroup_id_z 0
-		.amdhsa_system_sgpr_workgroup_info 0
-		.amdhsa_system_vgpr_workitem_id 0
-		.amdhsa_next_free_vgpr 10
-		.amdhsa_next_free_sgpr 22
-		.amdhsa_reserve_flat_scratch 0
-		.amdhsa_float_round_mode_32 0
-		.amdhsa_float_round_mode_16_64 0
-		.amdhsa_float_denorm_mode_32 3
-		.amdhsa_float_denorm_mode_16_64 3
-		.amdhsa_dx10_clamp 1
-		.amdhsa_ieee_mode 1
-		.amdhsa_exception_fp_ieee_invalid_op 0
-		.amdhsa_exception_fp_denorm_src 0
-		.amdhsa_exception_fp_ieee_div_zero 0
-		.amdhsa_exception_fp_ieee_overflow 0
-		.amdhsa_exception_fp_ieee_underflow 0
-		.amdhsa_exception_fp_ieee_inexact 0
-		.amdhsa_exception_int_div_zero 0
-	.end_amdhsa_kernel
-	.text
-.Lfunc_end0:
-	.size	_Z17find_index_kernelPdS_S_S_S_S_S_i, .Lfunc_end0-_Z17find_index_kernelPdS_S_S_S_S_S_i
-                                        ; -- End function
-	.section	.AMDGPU.csdata
-; Kernel info:
-; codeLenInByte = 392
-; NumSgprs: 26
-; NumVgprs: 10
-; ScratchSize: 0
-; MemoryBound: 0
-; FloatMode: 240
-; IeeeMode: 1
-; LDSByteSize: 0 bytes/workgroup (compile time only)
-; SGPRBlocks: 3
-; VGPRBlocks: 2
-; NumSGPRsForWavesPerEU: 26
-; NumVGPRsForWavesPerEU: 10
-; Occupancy: 10
-; WaveLimiterHint : 1
-; COMPUTE_PGM_RSRC2:USER_SGPR: 8
-; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
-; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
-; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
-; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
-; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
-	.text
-	.protected	_Z24normalize_weights_kernelPdiS_S_S_Pi ; -- Begin function _Z24normalize_weights_kernelPdiS_S_S_Pi
-	.globl	_Z24normalize_weights_kernelPdiS_S_S_Pi
-	.p2align	8
-	.type	_Z24normalize_weights_kernelPdiS_S_S_Pi,@function
-_Z24normalize_weights_kernelPdiS_S_S_Pi: ; @_Z24normalize_weights_kernelPdiS_S_S_Pi
-_Z24normalize_weights_kernelPdiS_S_S_Pi$local:
-; %bb.0:
-	s_load_dwordx2 s[10:11], s[6:7], 0x0
-	s_load_dword s9, s[6:7], 0x8
-	s_load_dwordx8 s[12:19], s[6:7], 0x10
-	s_load_dword s2, s[4:5], 0x4
-	v_cmp_eq_u32_e64 s[0:1], 0, v0
-	s_mov_b32 m0, -1
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_cbranch_execz BB1_2
-; %bb.1:
-	s_waitcnt lgkmcnt(0)
-	s_load_dwordx2 s[6:7], s[12:13], 0x0
-	v_mov_b32_e32 v3, 0
-	s_waitcnt lgkmcnt(0)
-	v_mov_b32_e32 v1, s6
-	v_mov_b32_e32 v2, s7
-	ds_write_b64 v3, v[1:2]
-BB1_2:
-	s_or_b64 exec, exec, s[4:5]
-	v_mov_b32_e32 v1, 0
-	s_waitcnt lgkmcnt(0)
-	s_and_b32 s2, 0xffff, s2
-	v_mov_b32_e32 v2, s8
-	v_mad_u64_u32 v[2:3], s[2:3], s2, v2, v[0:1]
-	s_waitcnt lgkmcnt(0)
-	s_barrier
-	s_waitcnt lgkmcnt(0)
-	v_cmp_gt_i32_e64 s[2:3], s9, v2
-	v_ashrrev_i32_e32 v1, 31, v2
-	v_mov_b32_e32 v0, v2
-	s_and_saveexec_b64 s[4:5], s[2:3]
-	s_cbranch_execz BB1_4
-; %bb.3:
-	v_lshlrev_b64 v[3:4], 3, v[0:1]
-	v_mov_b32_e32 v5, s11
-	v_add_u32_e32 v3, vcc, s10, v3
-	v_addc_u32_e32 v4, vcc, v5, v4, vcc
-	flat_load_dwordx2 v[5:6], v[3:4]
-	v_mov_b32_e32 v7, 0
-	ds_read_b64 v[7:8], v7
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	v_div_scale_f64 v[9:10], s[6:7], v[7:8], v[7:8], v[5:6]
-	v_rcp_f64_e32 v[11:12], v[9:10]
-	v_fma_f64 v[13:14], -v[9:10], v[11:12], 1.0
-	v_fma_f64 v[11:12], v[11:12], v[13:14], v[11:12]
-	v_fma_f64 v[13:14], -v[9:10], v[11:12], 1.0
-	v_div_scale_f64 v[15:16], vcc, v[5:6], v[7:8], v[5:6]
-	v_fma_f64 v[11:12], v[11:12], v[13:14], v[11:12]
-	v_mul_f64 v[13:14], v[15:16], v[11:12]
-	v_fma_f64 v[9:10], -v[9:10], v[13:14], v[15:16]
-	s_nop 0
-	v_div_fmas_f64 v[9:10], v[9:10], v[11:12], v[13:14]
-	v_div_fixup_f64 v[5:6], v[9:10], v[7:8], v[5:6]
-	flat_store_dwordx2 v[3:4], v[5:6]
-BB1_4:
-	s_or_b64 exec, exec, s[4:5]
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	s_barrier
-	s_waitcnt lgkmcnt(0)
-	v_cmp_eq_u32_e32 vcc, 0, v2
-	s_and_saveexec_b64 s[4:5], vcc
-	s_cbranch_execz BB1_9
-; %bb.5:
-	v_mov_b32_e32 v3, s10
-	v_mov_b32_e32 v4, s11
-	flat_load_dwordx2 v[3:4], v[3:4]
-	v_mov_b32_e32 v5, s14
-	v_mov_b32_e32 v6, s15
-	s_cmp_lt_i32 s9, 2
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	flat_store_dwordx2 v[5:6], v[3:4]
-	s_cbranch_scc1 BB1_8
-; %bb.6:                                ; %.lr.ph.preheader
-	v_mov_b32_e32 v3, s14
-	v_mov_b32_e32 v4, s15
-	flat_load_dwordx2 v[3:4], v[3:4]
-	s_add_u32 s6, s10, 8
-	s_addc_u32 s7, s11, 0
-	s_add_u32 s10, s14, 8
-	s_addc_u32 s11, s15, 0
-	s_add_i32 s8, s9, -1
-BB1_7:                                  ; %.lr.ph
-                                        ; =>This Inner Loop Header: Depth=1
-	v_mov_b32_e32 v5, s6
-	v_mov_b32_e32 v6, s7
-	flat_load_dwordx2 v[5:6], v[5:6]
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	v_add_f64 v[3:4], v[5:6], v[3:4]
-	v_mov_b32_e32 v5, s10
-	v_mov_b32_e32 v6, s11
-	s_add_u32 s6, s6, 8
-	s_addc_u32 s7, s7, 0
-	s_add_u32 s10, s10, 8
-	s_addc_u32 s11, s11, 0
-	s_add_i32 s8, s8, -1
-	s_cmp_lg_u32 s8, 0
-	flat_store_dwordx2 v[5:6], v[3:4]
-	s_cbranch_scc1 BB1_7
-BB1_8:                                  ; %_Z7cdfCalcPdS_i.exit
-	v_cvt_f64_i32_e32 v[3:4], s9
-	v_div_scale_f64 v[5:6], s[6:7], v[3:4], v[3:4], 1.0
-	v_rcp_f64_e32 v[7:8], v[5:6]
-	v_fma_f64 v[9:10], -v[5:6], v[7:8], 1.0
-	v_fma_f64 v[7:8], v[7:8], v[9:10], v[7:8]
-	v_div_scale_f64 v[9:10], vcc, 1.0, v[3:4], 1.0
-	v_fma_f64 v[11:12], -v[5:6], v[7:8], 1.0
-	v_fma_f64 v[7:8], v[7:8], v[11:12], v[7:8]
-	v_mul_f64 v[11:12], v[9:10], v[7:8]
-	v_mov_b32_e32 v13, s18
-	v_mov_b32_e32 v14, s19
-	v_fma_f64 v[5:6], -v[5:6], v[11:12], v[9:10]
-	flat_load_dword v9, v[13:14]
-	s_mov_b32 s6, 0x41c64e6d
-	s_mov_b32 s7, 0x40000001
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	v_mul_lo_u32 v9, v9, s6
-	v_div_fmas_f64 v[5:6], v[5:6], v[7:8], v[11:12]
-	v_add_u32_e32 v7, vcc, 0x3039, v9
-	v_mul_hi_i32 v8, v7, s7
-	s_brev_b32 s6, -2
-	v_lshrrev_b32_e32 v9, 31, v8
-	v_ashrrev_i32_e32 v8, 29, v8
-	v_add_u32_e32 v8, vcc, v8, v9
-	v_mul_lo_u32 v8, v8, s6
-	v_subrev_u32_e32 v19, vcc, v8, v7
-	v_cvt_f64_i32_e32 v[7:8], v19
-	s_mov_b32 s7, 0x41dfffff
-	s_mov_b32 s6, 0xffc00000
-	v_div_scale_f64 v[9:10], s[10:11], s[6:7], s[6:7], v[7:8]
-	v_rcp_f64_e32 v[11:12], v[9:10]
-	v_fma_f64 v[15:16], -v[9:10], v[11:12], 1.0
-	v_fma_f64 v[11:12], v[11:12], v[15:16], v[11:12]
-	v_fma_f64 v[15:16], -v[9:10], v[11:12], 1.0
-	v_div_scale_f64 v[17:18], vcc, v[7:8], s[6:7], v[7:8]
-	v_fma_f64 v[11:12], v[11:12], v[15:16], v[11:12]
-	v_mul_f64 v[15:16], v[17:18], v[11:12]
-	v_fma_f64 v[9:10], -v[9:10], v[15:16], v[17:18]
-	s_nop 0
-	v_div_fmas_f64 v[9:10], v[9:10], v[11:12], v[15:16]
-	v_div_fixup_f64 v[3:4], v[5:6], v[3:4], 1.0
-	v_div_fixup_f64 v[5:6], v[9:10], s[6:7], v[7:8]
-	v_mul_f64 v[3:4], v[3:4], |v[5:6]|
-	flat_store_dword v[13:14], v19
-	v_mov_b32_e32 v5, s16
-	v_mov_b32_e32 v6, s17
-	flat_store_dwordx2 v[5:6], v[3:4]
-BB1_9:                                  ; %Flow55
-	s_or_b64 exec, exec, s[4:5]
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	s_barrier
-	s_waitcnt lgkmcnt(0)
-	s_mov_b32 m0, -1
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_cbranch_execz BB1_11
-; %bb.10:
-	v_mov_b32_e32 v3, s16
-	v_mov_b32_e32 v4, s17
-	flat_load_dwordx2 v[3:4], v[3:4]
-	v_mov_b32_e32 v5, 0
-	s_waitcnt vmcnt(0) lgkmcnt(0)
-	ds_write_b64 v5, v[3:4] offset:8
-BB1_11:
-	s_or_b64 exec, exec, s[4:5]
-	s_waitcnt lgkmcnt(0)
-	s_barrier
-	s_waitcnt lgkmcnt(0)
-	s_and_saveexec_b64 s[0:1], s[2:3]
-	s_cbranch_execz BB1_13
-; %bb.12:
-	v_cvt_f64_i32_e32 v[2:3], v2
-	v_cvt_f64_i32_e32 v[4:5], s9
-	v_div_scale_f64 v[6:7], s[0:1], v[4:5], v[4:5], v[2:3]
-	v_rcp_f64_e32 v[8:9], v[6:7]
-	v_fma_f64 v[10:11], -v[6:7], v[8:9], 1.0
-	v_fma_f64 v[8:9], v[8:9], v[10:11], v[8:9]
-	v_fma_f64 v[10:11], -v[6:7], v[8:9], 1.0
-	v_div_scale_f64 v[12:13], vcc, v[2:3], v[4:5], v[2:3]
-	v_fma_f64 v[8:9], v[8:9], v[10:11], v[8:9]
-	v_mul_f64 v[10:11], v[12:13], v[8:9]
-	v_fma_f64 v[6:7], -v[6:7], v[10:11], v[12:13]
-	s_nop 0
-	v_div_fmas_f64 v[6:7], v[6:7], v[8:9], v[10:11]
-	v_div_fixup_f64 v[2:3], v[6:7], v[4:5], v[2:3]
-	v_mov_b32_e32 v4, 0
-	ds_read_b64 v[4:5], v4 offset:8
-	s_waitcnt lgkmcnt(0)
-	v_add_f64 v[2:3], v[2:3], v[4:5]
-	v_lshlrev_b64 v[0:1], 3, v[0:1]
-	v_mov_b32_e32 v4, s17
-	v_add_u32_e32 v0, vcc, s16, v0
-	v_addc_u32_e32 v1, vcc, v4, v1, vcc
-	flat_store_dwordx2 v[0:1], v[2:3]
-BB1_13:
-	s_endpgm
-	.section	.rodata,#alloc
-	.p2align	6
-	.amdhsa_kernel _Z24normalize_weights_kernelPdiS_S_S_Pi
-		.amdhsa_group_segment_fixed_size 16
-		.amdhsa_private_segment_fixed_size 0
-		.amdhsa_user_sgpr_private_segment_buffer 1
-		.amdhsa_user_sgpr_dispatch_ptr 1
-		.amdhsa_user_sgpr_queue_ptr 0
-		.amdhsa_user_sgpr_kernarg_segment_ptr 1
-		.amdhsa_user_sgpr_dispatch_id 0
-		.amdhsa_user_sgpr_flat_scratch_init 0
-		.amdhsa_user_sgpr_private_segment_size 0
-		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
-		.amdhsa_system_sgpr_workgroup_id_x 1
-		.amdhsa_system_sgpr_workgroup_id_y 0
-		.amdhsa_system_sgpr_workgroup_id_z 0
-		.amdhsa_system_sgpr_workgroup_info 0
-		.amdhsa_system_vgpr_workitem_id 0
-		.amdhsa_next_free_vgpr 20
-		.amdhsa_next_free_sgpr 20
-		.amdhsa_reserve_flat_scratch 0
-		.amdhsa_float_round_mode_32 0
-		.amdhsa_float_round_mode_16_64 0
-		.amdhsa_float_denorm_mode_32 3
-		.amdhsa_float_denorm_mode_16_64 3
-		.amdhsa_dx10_clamp 1
-		.amdhsa_ieee_mode 1
-		.amdhsa_exception_fp_ieee_invalid_op 0
-		.amdhsa_exception_fp_denorm_src 0
-		.amdhsa_exception_fp_ieee_div_zero 0
-		.amdhsa_exception_fp_ieee_overflow 0
-		.amdhsa_exception_fp_ieee_underflow 0
-		.amdhsa_exception_fp_ieee_inexact 0
-		.amdhsa_exception_int_div_zero 0
-	.end_amdhsa_kernel
-	.text
-.Lfunc_end1:
-	.size	_Z24normalize_weights_kernelPdiS_S_S_Pi, .Lfunc_end1-_Z24normalize_weights_kernelPdiS_S_S_Pi
-                                        ; -- End function
-	.section	.AMDGPU.csdata
-; Kernel info:
-; codeLenInByte = 1028
-; NumSgprs: 24
-; NumVgprs: 20
-; ScratchSize: 0
-; MemoryBound: 0
-; FloatMode: 240
-; IeeeMode: 1
-; LDSByteSize: 16 bytes/workgroup (compile time only)
-; SGPRBlocks: 2
-; VGPRBlocks: 4
-; NumSGPRsForWavesPerEU: 24
-; NumVGPRsForWavesPerEU: 20
-; Occupancy: 10
-; WaveLimiterHint : 1
-; COMPUTE_PGM_RSRC2:USER_SGPR: 8
-; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
-; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
-; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
-; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
-; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
-	.text
-	.protected	_Z10sum_kernelPdi       ; -- Begin function _Z10sum_kernelPdi
-	.globl	_Z10sum_kernelPdi
-	.p2align	8
-	.type	_Z10sum_kernelPdi,@function
-_Z10sum_kernelPdi:                      ; @_Z10sum_kernelPdi
-_Z10sum_kernelPdi$local:
-; %bb.0:
-	s_load_dword s1, s[4:5], 0x4
-	s_mov_b32 s0, 0
-	s_waitcnt lgkmcnt(0)
-	s_and_b32 s1, s1, 0xffff
-	s_mul_i32 s8, s8, s1
-	v_sub_u32_e32 v0, vcc, 0, v0
-	v_cmp_eq_u32_e32 vcc, s8, v0
-	s_and_saveexec_b64 s[2:3], vcc
-	s_cbranch_execz BB2_5
-; %bb.1:
-	s_load_dword s1, s[6:7], 0x8
-	s_waitcnt lgkmcnt(0)
-	v_cvt_f64_i32_e32 v[0:1], s1
-	s_mov_b32 s1, 0x3f600000
-	v_mul_f64 v[0:1], v[0:1], s[0:1]
-	v_ceil_f64_e32 v[0:1], v[0:1]
-	v_cvt_i32_f64_e32 v2, v[0:1]
-	s_load_dwordx2 s[0:1], s[6:7], 0x0
-	v_cmp_gt_i32_e32 vcc, 1, v2
-	s_and_b64 vcc, exec, vcc
-	v_mov_b32_e32 v0, 0
-	v_mov_b32_e32 v1, 0
-	s_cbranch_vccnz BB2_4
-; %bb.2:                                ; %.lr.ph.preheader
-	v_mov_b32_e32 v0, 0
-	v_mov_b32_e32 v1, 0
-	s_waitcnt lgkmcnt(0)
-	s_mov_b64 s[2:3], s[0:1]
-BB2_3:                                  ; %.lr.ph
-                                        ; =>This Inner Loop Header: Depth=1
-	s_load_dwordx2 s[4:5], s[2:3], 0x0
-	s_waitcnt lgkmcnt(0)
-	v_add_f64 v[0:1], v[0:1], s[4:5]
-	v_add_u32_e32 v2, vcc, -1, v2
-	s_add_u32 s2, s2, 8
-	s_addc_u32 s3, s3, 0
-	v_cmp_ne_u32_e32 vcc, 0, v2
-	s_and_b64 vcc, exec, vcc
-	s_cbranch_vccnz BB2_3
-BB2_4:                                  ; %._crit_edge
-	s_waitcnt lgkmcnt(0)
-	v_mov_b32_e32 v3, s1
-	v_mov_b32_e32 v2, s0
-	flat_store_dwordx2 v[2:3], v[0:1]
-BB2_5:
-	s_endpgm
-	.section	.rodata,#alloc
-	.p2align	6
-	.amdhsa_kernel _Z10sum_kernelPdi
-		.amdhsa_group_segment_fixed_size 0
-		.amdhsa_private_segment_fixed_size 0
-		.amdhsa_user_sgpr_private_segment_buffer 1
-		.amdhsa_user_sgpr_dispatch_ptr 1
-		.amdhsa_user_sgpr_queue_ptr 0
-		.amdhsa_user_sgpr_kernarg_segment_ptr 1
-		.amdhsa_user_sgpr_dispatch_id 0
-		.amdhsa_user_sgpr_flat_scratch_init 0
-		.amdhsa_user_sgpr_private_segment_size 0
-		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
-		.amdhsa_system_sgpr_workgroup_id_x 1
-		.amdhsa_system_sgpr_workgroup_id_y 0
-		.amdhsa_system_sgpr_workgroup_id_z 0
-		.amdhsa_system_sgpr_workgroup_info 0
-		.amdhsa_system_vgpr_workitem_id 0
-		.amdhsa_next_free_vgpr 4
-		.amdhsa_next_free_sgpr 9
-		.amdhsa_reserve_flat_scratch 0
-		.amdhsa_float_round_mode_32 0
-		.amdhsa_float_round_mode_16_64 0
-		.amdhsa_float_denorm_mode_32 3
-		.amdhsa_float_denorm_mode_16_64 3
-		.amdhsa_dx10_clamp 1
-		.amdhsa_ieee_mode 1
-		.amdhsa_exception_fp_ieee_invalid_op 0
-		.amdhsa_exception_fp_denorm_src 0
-		.amdhsa_exception_fp_ieee_div_zero 0
-		.amdhsa_exception_fp_ieee_overflow 0
-		.amdhsa_exception_fp_ieee_underflow 0
-		.amdhsa_exception_fp_ieee_inexact 0
-		.amdhsa_exception_int_div_zero 0
-	.end_amdhsa_kernel
-	.text
-.Lfunc_end2:
-	.size	_Z10sum_kernelPdi, .Lfunc_end2-_Z10sum_kernelPdi
-                                        ; -- End function
-	.section	.AMDGPU.csdata
-; Kernel info:
-; codeLenInByte = 196
-; NumSgprs: 13
-; NumVgprs: 4
-; ScratchSize: 0
-; MemoryBound: 0
-; FloatMode: 240
-; IeeeMode: 1
-; LDSByteSize: 0 bytes/workgroup (compile time only)
-; SGPRBlocks: 1
-; VGPRBlocks: 0
-; NumSGPRsForWavesPerEU: 13
-; NumVGPRsForWavesPerEU: 4
-; Occupancy: 10
-; WaveLimiterHint : 1
-; COMPUTE_PGM_RSRC2:USER_SGPR: 8
-; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
-; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
-; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
-; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
-; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
-	.text
 	.protected	_Z17likelihood_kernelPdS_S_S_S_PiS0_S_PhS_S_iiiiiiS0_S_ ; -- Begin function _Z17likelihood_kernelPdS_S_S_S_PiS0_S_PhS_S_iiiiiiS0_S_
 	.globl	_Z17likelihood_kernelPdS_S_S_S_PiS0_S_PhS_S_iiiiiiS0_S_
 	.p2align	8
@@ -2165,7 +1625,7 @@ BB3_23:
 	s_waitcnt vmcnt(0) lgkmcnt(0)
 	s_barrier
 	s_waitcnt lgkmcnt(0)
-	s_endpgm
+	s_branch BB3_27                     ; manually moving s_endpgm to last instruction
 BB3_24:                                 ;   in Loop: Header=BB3_25 Depth=1
 	s_or_b64 exec, exec, s[2:3]
 	s_waitcnt lgkmcnt(0)
@@ -2188,6 +1648,8 @@ BB3_25:                                 ; %.lr.ph
 	v_add_f64 v[3:4], v[3:4], v[5:6]
 	ds_write_b64 v2, v[3:4]
 	s_branch BB3_24
+BB3_27:
+	s_endpgm
 	.section	.rodata,#alloc
 	.p2align	6
 	.amdhsa_kernel _Z17likelihood_kernelPdS_S_S_S_PiS0_S_PhS_S_iiiiiiS0_S_
@@ -2560,3 +2022,543 @@ amdhsa.version:
 ...
 
 	.end_amdgpu_metadata
+	.text
+	.protected	_Z10sum_kernelPdi       ; -- Begin function _Z10sum_kernelPdi
+	.globl	_Z10sum_kernelPdi
+	.p2align	8
+	.type	_Z10sum_kernelPdi,@function
+_Z10sum_kernelPdi:                      ; @_Z10sum_kernelPdi
+_Z10sum_kernelPdi$local:
+; %bb.0:
+	s_load_dword s1, s[4:5], 0x4
+	s_mov_b32 s0, 0
+	s_waitcnt lgkmcnt(0)
+	s_and_b32 s1, s1, 0xffff
+	s_mul_i32 s8, s8, s1
+	v_sub_u32_e32 v0, vcc, 0, v0
+	v_cmp_eq_u32_e32 vcc, s8, v0
+	s_and_saveexec_b64 s[2:3], vcc
+	s_cbranch_execz BB2_5
+; %bb.1:
+	s_load_dword s1, s[6:7], 0x8
+	s_waitcnt lgkmcnt(0)
+	v_cvt_f64_i32_e32 v[0:1], s1
+	s_mov_b32 s1, 0x3f600000
+	v_mul_f64 v[0:1], v[0:1], s[0:1]
+	v_ceil_f64_e32 v[0:1], v[0:1]
+	v_cvt_i32_f64_e32 v2, v[0:1]
+	s_load_dwordx2 s[0:1], s[6:7], 0x0
+	v_cmp_gt_i32_e32 vcc, 1, v2
+	s_and_b64 vcc, exec, vcc
+	v_mov_b32_e32 v0, 0
+	v_mov_b32_e32 v1, 0
+	s_cbranch_vccnz BB2_4
+; %bb.2:                                ; %.lr.ph.preheader
+	v_mov_b32_e32 v0, 0
+	v_mov_b32_e32 v1, 0
+	s_waitcnt lgkmcnt(0)
+	s_mov_b64 s[2:3], s[0:1]
+BB2_3:                                  ; %.lr.ph
+                                        ; =>This Inner Loop Header: Depth=1
+	s_load_dwordx2 s[4:5], s[2:3], 0x0
+	s_waitcnt lgkmcnt(0)
+	v_add_f64 v[0:1], v[0:1], s[4:5]
+	v_add_u32_e32 v2, vcc, -1, v2
+	s_add_u32 s2, s2, 8
+	s_addc_u32 s3, s3, 0
+	v_cmp_ne_u32_e32 vcc, 0, v2
+	s_and_b64 vcc, exec, vcc
+	s_cbranch_vccnz BB2_3
+BB2_4:                                  ; %._crit_edge
+	s_waitcnt lgkmcnt(0)
+	v_mov_b32_e32 v3, s1
+	v_mov_b32_e32 v2, s0
+	flat_store_dwordx2 v[2:3], v[0:1]
+BB2_5:
+	s_endpgm
+	.section	.rodata,#alloc
+	.p2align	6
+	.amdhsa_kernel _Z10sum_kernelPdi
+		.amdhsa_group_segment_fixed_size 0
+		.amdhsa_private_segment_fixed_size 0
+		.amdhsa_user_sgpr_private_segment_buffer 1
+		.amdhsa_user_sgpr_dispatch_ptr 1
+		.amdhsa_user_sgpr_queue_ptr 0
+		.amdhsa_user_sgpr_kernarg_segment_ptr 1
+		.amdhsa_user_sgpr_dispatch_id 0
+		.amdhsa_user_sgpr_flat_scratch_init 0
+		.amdhsa_user_sgpr_private_segment_size 0
+		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
+		.amdhsa_system_sgpr_workgroup_id_x 1
+		.amdhsa_system_sgpr_workgroup_id_y 0
+		.amdhsa_system_sgpr_workgroup_id_z 0
+		.amdhsa_system_sgpr_workgroup_info 0
+		.amdhsa_system_vgpr_workitem_id 0
+		.amdhsa_next_free_vgpr 4
+		.amdhsa_next_free_sgpr 9
+		.amdhsa_reserve_flat_scratch 0
+		.amdhsa_float_round_mode_32 0
+		.amdhsa_float_round_mode_16_64 0
+		.amdhsa_float_denorm_mode_32 3
+		.amdhsa_float_denorm_mode_16_64 3
+		.amdhsa_dx10_clamp 1
+		.amdhsa_ieee_mode 1
+		.amdhsa_exception_fp_ieee_invalid_op 0
+		.amdhsa_exception_fp_denorm_src 0
+		.amdhsa_exception_fp_ieee_div_zero 0
+		.amdhsa_exception_fp_ieee_overflow 0
+		.amdhsa_exception_fp_ieee_underflow 0
+		.amdhsa_exception_fp_ieee_inexact 0
+		.amdhsa_exception_int_div_zero 0
+	.end_amdhsa_kernel
+	.text
+.Lfunc_end2:
+	.size	_Z10sum_kernelPdi, .Lfunc_end2-_Z10sum_kernelPdi
+                                        ; -- End function
+	.section	.AMDGPU.csdata
+; Kernel info:
+; codeLenInByte = 196
+; NumSgprs: 13
+; NumVgprs: 4
+; ScratchSize: 0
+; MemoryBound: 0
+; FloatMode: 240
+; IeeeMode: 1
+; LDSByteSize: 0 bytes/workgroup (compile time only)
+; SGPRBlocks: 1
+; VGPRBlocks: 0
+; NumSGPRsForWavesPerEU: 13
+; NumVGPRsForWavesPerEU: 4
+; Occupancy: 10
+; WaveLimiterHint : 1
+; COMPUTE_PGM_RSRC2:USER_SGPR: 8
+; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
+; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
+; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
+; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
+; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
+	.text
+	.protected	_Z24normalize_weights_kernelPdiS_S_S_Pi ; -- Begin function _Z24normalize_weights_kernelPdiS_S_S_Pi
+	.globl	_Z24normalize_weights_kernelPdiS_S_S_Pi
+	.p2align	8
+	.type	_Z24normalize_weights_kernelPdiS_S_S_Pi,@function
+_Z24normalize_weights_kernelPdiS_S_S_Pi: ; @_Z24normalize_weights_kernelPdiS_S_S_Pi
+_Z24normalize_weights_kernelPdiS_S_S_Pi$local:
+; %bb.0:
+	s_load_dwordx2 s[10:11], s[6:7], 0x0
+	s_load_dword s9, s[6:7], 0x8
+	s_load_dwordx8 s[12:19], s[6:7], 0x10
+	s_load_dword s2, s[4:5], 0x4
+	v_cmp_eq_u32_e64 s[0:1], 0, v0
+	s_mov_b32 m0, -1
+	s_and_saveexec_b64 s[4:5], s[0:1]
+	s_cbranch_execz BB1_2
+; %bb.1:
+	s_waitcnt lgkmcnt(0)
+	s_load_dwordx2 s[6:7], s[12:13], 0x0
+	v_mov_b32_e32 v3, 0
+	s_waitcnt lgkmcnt(0)
+	v_mov_b32_e32 v1, s6
+	v_mov_b32_e32 v2, s7
+	ds_write_b64 v3, v[1:2]
+BB1_2:
+	s_or_b64 exec, exec, s[4:5]
+	v_mov_b32_e32 v1, 0
+	s_waitcnt lgkmcnt(0)
+	s_and_b32 s2, 0xffff, s2
+	v_mov_b32_e32 v2, s8
+	v_mad_u64_u32 v[2:3], s[2:3], s2, v2, v[0:1]
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	v_cmp_gt_i32_e64 s[2:3], s9, v2
+	v_ashrrev_i32_e32 v1, 31, v2
+	v_mov_b32_e32 v0, v2
+	s_and_saveexec_b64 s[4:5], s[2:3]
+	s_cbranch_execz BB1_4
+; %bb.3:
+	v_lshlrev_b64 v[3:4], 3, v[0:1]
+	v_mov_b32_e32 v5, s11
+	v_add_u32_e32 v3, vcc, s10, v3
+	v_addc_u32_e32 v4, vcc, v5, v4, vcc
+	flat_load_dwordx2 v[5:6], v[3:4]
+	v_mov_b32_e32 v7, 0
+	ds_read_b64 v[7:8], v7
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	v_div_scale_f64 v[9:10], s[6:7], v[7:8], v[7:8], v[5:6]
+	v_rcp_f64_e32 v[11:12], v[9:10]
+	v_fma_f64 v[13:14], -v[9:10], v[11:12], 1.0
+	v_fma_f64 v[11:12], v[11:12], v[13:14], v[11:12]
+	v_fma_f64 v[13:14], -v[9:10], v[11:12], 1.0
+	v_div_scale_f64 v[15:16], vcc, v[5:6], v[7:8], v[5:6]
+	v_fma_f64 v[11:12], v[11:12], v[13:14], v[11:12]
+	v_mul_f64 v[13:14], v[15:16], v[11:12]
+	v_fma_f64 v[9:10], -v[9:10], v[13:14], v[15:16]
+	s_nop 0
+	v_div_fmas_f64 v[9:10], v[9:10], v[11:12], v[13:14]
+	v_div_fixup_f64 v[5:6], v[9:10], v[7:8], v[5:6]
+	flat_store_dwordx2 v[3:4], v[5:6]
+BB1_4:
+	s_or_b64 exec, exec, s[4:5]
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	v_cmp_eq_u32_e32 vcc, 0, v2
+	s_and_saveexec_b64 s[4:5], vcc
+	s_cbranch_execz BB1_9
+; %bb.5:
+	v_mov_b32_e32 v3, s10
+	v_mov_b32_e32 v4, s11
+	flat_load_dwordx2 v[3:4], v[3:4]
+	v_mov_b32_e32 v5, s14
+	v_mov_b32_e32 v6, s15
+	s_cmp_lt_i32 s9, 2
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	flat_store_dwordx2 v[5:6], v[3:4]
+	s_cbranch_scc1 BB1_8
+; %bb.6:                                ; %.lr.ph.preheader
+	v_mov_b32_e32 v3, s14
+	v_mov_b32_e32 v4, s15
+	flat_load_dwordx2 v[3:4], v[3:4]
+	s_add_u32 s6, s10, 8
+	s_addc_u32 s7, s11, 0
+	s_add_u32 s10, s14, 8
+	s_addc_u32 s11, s15, 0
+	s_add_i32 s8, s9, -1
+BB1_7:                                  ; %.lr.ph
+                                        ; =>This Inner Loop Header: Depth=1
+	v_mov_b32_e32 v5, s6
+	v_mov_b32_e32 v6, s7
+	flat_load_dwordx2 v[5:6], v[5:6]
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	v_add_f64 v[3:4], v[5:6], v[3:4]
+	v_mov_b32_e32 v5, s10
+	v_mov_b32_e32 v6, s11
+	s_add_u32 s6, s6, 8
+	s_addc_u32 s7, s7, 0
+	s_add_u32 s10, s10, 8
+	s_addc_u32 s11, s11, 0
+	s_add_i32 s8, s8, -1
+	s_cmp_lg_u32 s8, 0
+	flat_store_dwordx2 v[5:6], v[3:4]
+	s_cbranch_scc1 BB1_7
+BB1_8:                                  ; %_Z7cdfCalcPdS_i.exit
+	v_cvt_f64_i32_e32 v[3:4], s9
+	v_div_scale_f64 v[5:6], s[6:7], v[3:4], v[3:4], 1.0
+	v_rcp_f64_e32 v[7:8], v[5:6]
+	v_fma_f64 v[9:10], -v[5:6], v[7:8], 1.0
+	v_fma_f64 v[7:8], v[7:8], v[9:10], v[7:8]
+	v_div_scale_f64 v[9:10], vcc, 1.0, v[3:4], 1.0
+	v_fma_f64 v[11:12], -v[5:6], v[7:8], 1.0
+	v_fma_f64 v[7:8], v[7:8], v[11:12], v[7:8]
+	v_mul_f64 v[11:12], v[9:10], v[7:8]
+	v_mov_b32_e32 v13, s18
+	v_mov_b32_e32 v14, s19
+	v_fma_f64 v[5:6], -v[5:6], v[11:12], v[9:10]
+	flat_load_dword v9, v[13:14]
+	s_mov_b32 s6, 0x41c64e6d
+	s_mov_b32 s7, 0x40000001
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	v_mul_lo_u32 v9, v9, s6
+	v_div_fmas_f64 v[5:6], v[5:6], v[7:8], v[11:12]
+	v_add_u32_e32 v7, vcc, 0x3039, v9
+	v_mul_hi_i32 v8, v7, s7
+	s_brev_b32 s6, -2
+	v_lshrrev_b32_e32 v9, 31, v8
+	v_ashrrev_i32_e32 v8, 29, v8
+	v_add_u32_e32 v8, vcc, v8, v9
+	v_mul_lo_u32 v8, v8, s6
+	v_subrev_u32_e32 v19, vcc, v8, v7
+	v_cvt_f64_i32_e32 v[7:8], v19
+	s_mov_b32 s7, 0x41dfffff
+	s_mov_b32 s6, 0xffc00000
+	v_div_scale_f64 v[9:10], s[10:11], s[6:7], s[6:7], v[7:8]
+	v_rcp_f64_e32 v[11:12], v[9:10]
+	v_fma_f64 v[15:16], -v[9:10], v[11:12], 1.0
+	v_fma_f64 v[11:12], v[11:12], v[15:16], v[11:12]
+	v_fma_f64 v[15:16], -v[9:10], v[11:12], 1.0
+	v_div_scale_f64 v[17:18], vcc, v[7:8], s[6:7], v[7:8]
+	v_fma_f64 v[11:12], v[11:12], v[15:16], v[11:12]
+	v_mul_f64 v[15:16], v[17:18], v[11:12]
+	v_fma_f64 v[9:10], -v[9:10], v[15:16], v[17:18]
+	s_nop 0
+	v_div_fmas_f64 v[9:10], v[9:10], v[11:12], v[15:16]
+	v_div_fixup_f64 v[3:4], v[5:6], v[3:4], 1.0
+	v_div_fixup_f64 v[5:6], v[9:10], s[6:7], v[7:8]
+	v_mul_f64 v[3:4], v[3:4], |v[5:6]|
+	flat_store_dword v[13:14], v19
+	v_mov_b32_e32 v5, s16
+	v_mov_b32_e32 v6, s17
+	flat_store_dwordx2 v[5:6], v[3:4]
+BB1_9:                                  ; %Flow55
+	s_or_b64 exec, exec, s[4:5]
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_mov_b32 m0, -1
+	s_and_saveexec_b64 s[4:5], s[0:1]
+	s_cbranch_execz BB1_11
+; %bb.10:
+	v_mov_b32_e32 v3, s16
+	v_mov_b32_e32 v4, s17
+	flat_load_dwordx2 v[3:4], v[3:4]
+	v_mov_b32_e32 v5, 0
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	ds_write_b64 v5, v[3:4] offset:8
+BB1_11:
+	s_or_b64 exec, exec, s[4:5]
+	s_waitcnt lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_and_saveexec_b64 s[0:1], s[2:3]
+	s_cbranch_execz BB1_13
+; %bb.12:
+	v_cvt_f64_i32_e32 v[2:3], v2
+	v_cvt_f64_i32_e32 v[4:5], s9
+	v_div_scale_f64 v[6:7], s[0:1], v[4:5], v[4:5], v[2:3]
+	v_rcp_f64_e32 v[8:9], v[6:7]
+	v_fma_f64 v[10:11], -v[6:7], v[8:9], 1.0
+	v_fma_f64 v[8:9], v[8:9], v[10:11], v[8:9]
+	v_fma_f64 v[10:11], -v[6:7], v[8:9], 1.0
+	v_div_scale_f64 v[12:13], vcc, v[2:3], v[4:5], v[2:3]
+	v_fma_f64 v[8:9], v[8:9], v[10:11], v[8:9]
+	v_mul_f64 v[10:11], v[12:13], v[8:9]
+	v_fma_f64 v[6:7], -v[6:7], v[10:11], v[12:13]
+	s_nop 0
+	v_div_fmas_f64 v[6:7], v[6:7], v[8:9], v[10:11]
+	v_div_fixup_f64 v[2:3], v[6:7], v[4:5], v[2:3]
+	v_mov_b32_e32 v4, 0
+	ds_read_b64 v[4:5], v4 offset:8
+	s_waitcnt lgkmcnt(0)
+	v_add_f64 v[2:3], v[2:3], v[4:5]
+	v_lshlrev_b64 v[0:1], 3, v[0:1]
+	v_mov_b32_e32 v4, s17
+	v_add_u32_e32 v0, vcc, s16, v0
+	v_addc_u32_e32 v1, vcc, v4, v1, vcc
+	flat_store_dwordx2 v[0:1], v[2:3]
+BB1_13:
+	s_endpgm
+	.section	.rodata,#alloc
+	.p2align	6
+	.amdhsa_kernel _Z24normalize_weights_kernelPdiS_S_S_Pi
+		.amdhsa_group_segment_fixed_size 16
+		.amdhsa_private_segment_fixed_size 0
+		.amdhsa_user_sgpr_private_segment_buffer 1
+		.amdhsa_user_sgpr_dispatch_ptr 1
+		.amdhsa_user_sgpr_queue_ptr 0
+		.amdhsa_user_sgpr_kernarg_segment_ptr 1
+		.amdhsa_user_sgpr_dispatch_id 0
+		.amdhsa_user_sgpr_flat_scratch_init 0
+		.amdhsa_user_sgpr_private_segment_size 0
+		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
+		.amdhsa_system_sgpr_workgroup_id_x 1
+		.amdhsa_system_sgpr_workgroup_id_y 0
+		.amdhsa_system_sgpr_workgroup_id_z 0
+		.amdhsa_system_sgpr_workgroup_info 0
+		.amdhsa_system_vgpr_workitem_id 0
+		.amdhsa_next_free_vgpr 20
+		.amdhsa_next_free_sgpr 20
+		.amdhsa_reserve_flat_scratch 0
+		.amdhsa_float_round_mode_32 0
+		.amdhsa_float_round_mode_16_64 0
+		.amdhsa_float_denorm_mode_32 3
+		.amdhsa_float_denorm_mode_16_64 3
+		.amdhsa_dx10_clamp 1
+		.amdhsa_ieee_mode 1
+		.amdhsa_exception_fp_ieee_invalid_op 0
+		.amdhsa_exception_fp_denorm_src 0
+		.amdhsa_exception_fp_ieee_div_zero 0
+		.amdhsa_exception_fp_ieee_overflow 0
+		.amdhsa_exception_fp_ieee_underflow 0
+		.amdhsa_exception_fp_ieee_inexact 0
+		.amdhsa_exception_int_div_zero 0
+	.end_amdhsa_kernel
+	.text
+.Lfunc_end1:
+	.size	_Z24normalize_weights_kernelPdiS_S_S_Pi, .Lfunc_end1-_Z24normalize_weights_kernelPdiS_S_S_Pi
+                                        ; -- End function
+	.section	.AMDGPU.csdata
+; Kernel info:
+; codeLenInByte = 1028
+; NumSgprs: 24
+; NumVgprs: 20
+; ScratchSize: 0
+; MemoryBound: 0
+; FloatMode: 240
+; IeeeMode: 1
+; LDSByteSize: 16 bytes/workgroup (compile time only)
+; SGPRBlocks: 2
+; VGPRBlocks: 4
+; NumSGPRsForWavesPerEU: 24
+; NumVGPRsForWavesPerEU: 20
+; Occupancy: 10
+; WaveLimiterHint : 1
+; COMPUTE_PGM_RSRC2:USER_SGPR: 8
+; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
+; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
+; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
+; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
+; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
+	.text
+	.amdgcn_target "amdgcn-amd-amdhsa--gfx801+xnack"
+	.protected	_Z17find_index_kernelPdS_S_S_S_S_S_i ; -- Begin function _Z17find_index_kernelPdS_S_S_S_S_S_i
+	.globl	_Z17find_index_kernelPdS_S_S_S_S_S_i
+	.p2align	8
+	.type	_Z17find_index_kernelPdS_S_S_S_S_S_i,@function
+_Z17find_index_kernelPdS_S_S_S_S_S_i:   ; @_Z17find_index_kernelPdS_S_S_S_S_S_i
+_Z17find_index_kernelPdS_S_S_S_S_S_i$local:
+; %bb.0:
+	v_mov_b32_e32 v1, 0
+	s_load_dword s0, s[4:5], 0x4
+	s_waitcnt lgkmcnt(0)
+	s_and_b32 s0, s0, 0xffff
+	v_mov_b32_e32 v2, s8
+	v_mad_u64_u32 v[0:1], s[0:1], s0, v2, v[0:1]
+	s_load_dword s2, s[6:7], 0x38
+	s_waitcnt lgkmcnt(0)
+	v_cmp_gt_i32_e32 vcc, s2, v0
+	s_and_saveexec_b64 s[0:1], vcc
+	s_cbranch_execz BB0_8
+; %bb.1:                                ; %.preheader
+	s_load_dwordx8 s[12:19], s[6:7], 0x0
+	s_load_dwordx4 s[8:11], s[6:7], 0x20
+	s_cmp_lt_i32 s2, 1
+	v_mov_b32_e32 v1, -1
+	s_cbranch_scc1 BB0_7
+; %bb.2:                                ; %.lr.ph
+	s_mov_b32 s3, 0
+	v_mov_b32_e32 v1, 0
+	v_mov_b32_e32 v2, v0
+	v_ashrrev_i64 v[1:2], 29, v[1:2]
+	s_waitcnt lgkmcnt(0)
+	v_mov_b32_e32 v3, s19
+	v_add_u32_e32 v1, vcc, s18, v1
+	v_addc_u32_e32 v2, vcc, v3, v2, vcc
+	flat_load_dwordx2 v[2:3], v[1:2]
+	s_mov_b64 s[4:5], 0
+                                        ; implicit-def: $sgpr6_sgpr7
+	s_branch BB0_4
+BB0_3:                                  ; %Flow
+                                        ;   in Loop: Header=BB0_4 Depth=1
+	s_or_b64 exec, exec, s[18:19]
+	s_and_b64 s[18:19], exec, s[6:7]
+	s_or_b64 s[4:5], s[18:19], s[4:5]
+	s_andn2_b64 exec, exec, s[4:5]
+	s_cbranch_execz BB0_6
+BB0_4:                                  ; =>This Inner Loop Header: Depth=1
+	s_load_dwordx2 s[18:19], s[16:17], 0x0
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	v_cmp_nge_f64_e32 vcc, s[18:19], v[2:3]
+	v_mov_b32_e32 v1, s3
+	s_or_b64 s[6:7], s[6:7], exec
+	s_and_saveexec_b64 s[18:19], vcc
+	s_cbranch_execz BB0_3
+; %bb.5:                                ;   in Loop: Header=BB0_4 Depth=1
+	s_add_i32 s3, s3, 1
+	s_add_u32 s16, s16, 8
+	s_addc_u32 s17, s17, 0
+	v_mov_b32_e32 v1, s3
+	v_cmp_eq_u32_e32 vcc, s2, v1
+	v_mov_b32_e32 v1, -1
+	s_andn2_b64 s[6:7], s[6:7], exec
+	s_and_b64 s[20:21], vcc, exec
+	s_or_b64 s[6:7], s[6:7], s[20:21]
+	s_branch BB0_3
+BB0_6:                                  ; %Flow61
+	s_or_b64 exec, exec, s[4:5]
+BB0_7:                                  ; %._crit_edge
+	s_add_i32 s2, s2, -1
+	v_mov_b32_e32 v2, s2
+	v_cmp_eq_u32_e32 vcc, -1, v1
+	v_cndmask_b32_e32 v1, v1, v2, vcc
+	v_ashrrev_i32_e32 v2, 31, v1
+	v_lshlrev_b64 v[1:2], 3, v[1:2]
+	s_waitcnt lgkmcnt(0)
+	v_mov_b32_e32 v4, s13
+	v_add_u32_e32 v3, vcc, s12, v1
+	v_addc_u32_e32 v4, vcc, v4, v2, vcc
+	flat_load_dwordx2 v[3:4], v[3:4]
+	v_mov_b32_e32 v5, 0
+	v_mov_b32_e32 v6, v0
+	v_mov_b32_e32 v0, s9
+	v_mov_b32_e32 v9, s15
+	v_ashrrev_i64 v[5:6], 29, v[5:6]
+	v_add_u32_e32 v7, vcc, s8, v5
+	v_addc_u32_e32 v8, vcc, v0, v6, vcc
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	flat_store_dwordx2 v[7:8], v[3:4]
+	v_add_u32_e32 v0, vcc, s14, v1
+	v_addc_u32_e32 v1, vcc, v9, v2, vcc
+	flat_load_dwordx2 v[0:1], v[0:1]
+	v_mov_b32_e32 v3, s11
+	v_add_u32_e32 v2, vcc, s10, v5
+	v_addc_u32_e32 v3, vcc, v3, v6, vcc
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	flat_store_dwordx2 v[2:3], v[0:1]
+BB0_8:                                  ; %Flow63
+	s_or_b64 exec, exec, s[0:1]
+	s_waitcnt vmcnt(0) lgkmcnt(0)
+	s_barrier
+	s_waitcnt lgkmcnt(0)
+	s_endpgm
+	.section	.rodata,#alloc
+	.p2align	6
+	.amdhsa_kernel _Z17find_index_kernelPdS_S_S_S_S_S_i
+		.amdhsa_group_segment_fixed_size 0
+		.amdhsa_private_segment_fixed_size 0
+		.amdhsa_user_sgpr_private_segment_buffer 1
+		.amdhsa_user_sgpr_dispatch_ptr 1
+		.amdhsa_user_sgpr_queue_ptr 0
+		.amdhsa_user_sgpr_kernarg_segment_ptr 1
+		.amdhsa_user_sgpr_dispatch_id 0
+		.amdhsa_user_sgpr_flat_scratch_init 0
+		.amdhsa_user_sgpr_private_segment_size 0
+		.amdhsa_system_sgpr_private_segment_wavefront_offset 0
+		.amdhsa_system_sgpr_workgroup_id_x 1
+		.amdhsa_system_sgpr_workgroup_id_y 0
+		.amdhsa_system_sgpr_workgroup_id_z 0
+		.amdhsa_system_sgpr_workgroup_info 0
+		.amdhsa_system_vgpr_workitem_id 0
+		.amdhsa_next_free_vgpr 10
+		.amdhsa_next_free_sgpr 22
+		.amdhsa_reserve_flat_scratch 0
+		.amdhsa_float_round_mode_32 0
+		.amdhsa_float_round_mode_16_64 0
+		.amdhsa_float_denorm_mode_32 3
+		.amdhsa_float_denorm_mode_16_64 3
+		.amdhsa_dx10_clamp 1
+		.amdhsa_ieee_mode 1
+		.amdhsa_exception_fp_ieee_invalid_op 0
+		.amdhsa_exception_fp_denorm_src 0
+		.amdhsa_exception_fp_ieee_div_zero 0
+		.amdhsa_exception_fp_ieee_overflow 0
+		.amdhsa_exception_fp_ieee_underflow 0
+		.amdhsa_exception_fp_ieee_inexact 0
+		.amdhsa_exception_int_div_zero 0
+	.end_amdhsa_kernel
+	.text
+.Lfunc_end0:
+	.size	_Z17find_index_kernelPdS_S_S_S_S_S_i, .Lfunc_end0-_Z17find_index_kernelPdS_S_S_S_S_S_i
+                                        ; -- End function
+	.section	.AMDGPU.csdata
+; Kernel info:
+; codeLenInByte = 392
+; NumSgprs: 26
+; NumVgprs: 10
+; ScratchSize: 0
+; MemoryBound: 0
+; FloatMode: 240
+; IeeeMode: 1
+; LDSByteSize: 0 bytes/workgroup (compile time only)
+; SGPRBlocks: 3
+; VGPRBlocks: 2
+; NumSGPRsForWavesPerEU: 26
+; NumVGPRsForWavesPerEU: 10
+; Occupancy: 10
+; WaveLimiterHint : 1
+; COMPUTE_PGM_RSRC2:USER_SGPR: 8
+; COMPUTE_PGM_RSRC2:TRAP_HANDLER: 0
+; COMPUTE_PGM_RSRC2:TGID_X_EN: 1
+; COMPUTE_PGM_RSRC2:TGID_Y_EN: 0
+; COMPUTE_PGM_RSRC2:TGID_Z_EN: 0
+; COMPUTE_PGM_RSRC2:TIDIG_COMP_CNT: 0
