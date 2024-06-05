@@ -140,10 +140,10 @@ class Graph():
             assert start <= end
             loop_body = self.__topological_ordering[start:end+1]
 
-            # Get an index to insert the new basic blocks at the appropriate of
-            # the topological ordering. If there is nothing after the loop, we
-            # can append at the end of the list. Otherwise, we need to insert
-            # at the index of the successor of the loop.
+            # Get an index to insert the new basic blocks at the appropriate
+            # position in the topological ordering. If there is nothing after
+            # the loop, we can append at the end of the list. Otherwise, we
+            # need to insert at the index of the successor of the loop.
             loop_successor_idx = len(self.__topological_ordering)
             if len(tail_successors) == 1:
                 loop_successor_idx = \
