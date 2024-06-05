@@ -15,18 +15,21 @@ INST = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
 BB_LABEL = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
 KERNEL_START = r"^\;\s*%bb\.0"
 KERNEL_END = r"^s_endpgm.*"
-DOUBLE_WORD_COMPARE = r"^v_[^\s]*\ss.*"
+DOUBLE_WORD_COMPARE = r"^v_cmp[^\s]*\ss.*"
 DOUBLE_WORD_INST = r"v_.*_e64.*"
 # These instructions are normally a single word long, but they may have 32-bit
 # immediates that make them double word instructions
 DOUBLE_WORD_LONG_IMM_INSTS = [
     "s_and_b32",
     "s_mov_b32",
+    "s_sub_i32",
     "v_add_u32_e32",
     "v_and_b32",
     "v_mov_b32",
     "v_mul_f32",
-    "v_mul_u32_u24_e32", # TODO: Check if all instances are double word
+    "v_mul_i32_i24_e32",
+    "v_mul_u32_u24_e32",
+    "v_or_b32",
     "v_sub_f32_e32",
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
@@ -65,12 +68,15 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_lshlrev_b64",
     "v_lshrrev_b64",
     "v_mad_i32_i24",
+    "v_mad_i64_i32",
     "v_mad_u32_u24",
     "v_mad_u64_u32",
     "v_max_f64",
+    "v_max3_i32",
     "v_mbcnt_hi_u32_b32",
     "v_mbcnt_lo_u32_b32",
     "v_min_f64",
+    "v_min3_i32",
     "v_mul_f64",
     "v_mul_hi_i32",
     "v_mul_hi_u32",
