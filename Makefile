@@ -2,7 +2,7 @@ BENCHMARK=backprop
 KERNEL=000
 
 run:
-	# python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
+	python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
 	python extract.py -i data/rodinia/backprop.s -l data/rodinia/backprop.log -u -r
 	python extract.py -i data/rodinia/bfs.s -l data/rodinia/bfs.log -u -r
 	python extract.py -i data/rodinia/bitonic_sort.s -l data/rodinia/bitonic_sort.log -u -r
