@@ -292,7 +292,7 @@ BB2_2:
 	s_andn2_b64 vcc, exec, s[0:1]
 	s_cbranch_vccz BB2_41
 BB2_4:
-	s_endpgm
+	s_branch BB2_60                     ; manually moving s_endpgm to last instruction
 BB2_5:
 	v_add_u32_e32 v2, vcc, -1, v2
 	v_addc_u32_e64 v3, s[0:1], 0, -1, vcc
@@ -870,6 +870,7 @@ BB2_59:
 	s_waitcnt lgkmcnt(0)
 	s_barrier
 	s_waitcnt lgkmcnt(0)
+BB2_60:
 	s_endpgm
 	.section	.rodata,#alloc
 	.p2align	6
