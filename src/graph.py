@@ -33,18 +33,25 @@ class Graph():
         executions
         """
 
-        self.__loopbacks: list[tuple[int, int]] = []
+        self.__loopbacks: deque[tuple[int, int]] = []
+        """
+        A container of all loopback edges found in the CFG
+        """
+
         self.__topological_ordering: list[int] = []
+        """
+        The basic block indices of this CFG in a topologically-ordered list
+        """
 
     def get_loopback_edges(
         self
-    ) -> list[tuple[int, int]]:
+    ) -> deque[tuple[int, int]]:
         """
-        Finds and removes any loopback edges in the graph. Returns a list of
+        Finds and removes any loopback edges in the graph. Returns a queue of
         the removed loopback edges encoded as source and sink basic block
         pairs.
         """
-        self.__loopbacks = []
+        self.__loopbacks = deque()
         S = [0]
         visited: deque[str] = deque()
         in_progress: set[str] = set()
@@ -113,7 +120,7 @@ class Graph():
             # First, we remove the loopback edge that will be unrolled from the
             # CFG and from the list of loopback edges
             self.cfg[tail].remove_successor(head)
-            loopbacks.pop(0)
+            loopbacks.popleft()
 
             # The basic block at the end of the loop should only have a single
             # successor out of the loop at this point since we removed all
