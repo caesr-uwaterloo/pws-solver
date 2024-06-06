@@ -296,10 +296,10 @@ class Graph():
             # If the instruction is a branch, we consider the case where the
             # branch is taken and add the target basic block index as a
             # candidate.
-            if re.search(pattern.UNCOND_BRANCH_INST, inst) or \
-                re.search(pattern.COND_BRANCH_INST, inst):
+            if re.search(pattern.INST_BRANCH_UNCOND, inst) or \
+                re.search(pattern.INST_BRANCH_COND, inst):
                 target = inst.split()[-1]
-                assert re.search(pattern.BB_LABEL, target)
+                assert re.search(pattern.LABEL_BB, target)
                 start_candidates.append(int(re.findall(r'\d+', target)[-1]))
 
             # If the instruction is a conditional branch or a non-branch
@@ -309,7 +309,7 @@ class Graph():
             # as the candidate. Otherwise, we choose the basic block containing
             # the start PC. In either case, getting the basic block index of
             # the next PC gives the candidate.
-            if not re.search(pattern.UNCOND_BRANCH_INST, inst):
+            if not re.search(pattern.INST_BRANCH_UNCOND, inst):
                 start_candidates.append(
                     self.next_instruction_basic_block(start_pc)
                 )

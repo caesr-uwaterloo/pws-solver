@@ -38,7 +38,7 @@ class Extractor():
         Extract the basic block number from the line that defines the basic
         block label
         """
-        assert re.search(pattern.BB_LABEL, line)
+        assert re.search(pattern.LABEL_BB, line)
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
         if line.startswith(';'):
             return numbers_in_line[0]
@@ -48,25 +48,27 @@ class Extractor():
         """
         Extract the basic block number from the branch instruction target
         """
-        assert re.search(pattern.COND_BRANCH_INST, line) or \
-            re.search(pattern.UNCOND_BRANCH_INST, line)
+        assert re.search(pattern.INST_BRANCH_COND, line) or \
+            re.search(pattern.INST_BRANCH_UNCOND, line)
         numbers_in_line = [int(x) for x in re.findall(r'\d+', line)]
-        if re.search(pattern.COND_BRANCH_SCC_INST, line):
+        if re.search(pattern.INST_BRANCH_COND_SCC, line):
             return numbers_in_line[2]
         return numbers_in_line[1]
 
-    def is_double_word_inst(self, line: str) -> bool:
+    def is_inst_double_word(self, line: str) -> bool:
         """
         Determine whether an instruction should be 64 bits
         """
-        return bool(re.search(pattern.SMEM_INST, line) or \
-            re.search(pattern.DS_INST, line) or \
-            re.search(pattern.VMEM_INST, line) or \
-            re.search(pattern.DOUBLE_WORD_LONG_IMM, line) or \
-            re.search(pattern.DOUBLE_WORD_MISC, line) or \
-            re.search(pattern.DOUBLE_WORD_ALU, line) or \
-            re.search(pattern.DOUBLE_WORD_COMPARE, line) or \
-            re.search(pattern.DOUBLE_WORD_INST, line))
+        return bool(
+            re.search(pattern.INST_MEM_SCALAR, line) or \
+            re.search(pattern.INST_MEM_LDS, line) or \
+            re.search(pattern.INST_MEM_VECTOR, line) or \
+            re.search(pattern.INST_DOUBLE_WORD_LONG_IMM, line) or \
+            re.search(pattern.INST_DOUBLE_WORD_MISC, line) or \
+            re.search(pattern.INST_DOUBLE_WORD_ALU, line)
+            # re.search(pattern.INST_DOUBLE_WORD_CMP, line) or \
+            # re.search(pattern.INST_DOUBLE_WORD, line)
+        )
 
     def parse_asm(self) -> None:
         """
@@ -82,7 +84,7 @@ class Extractor():
         with open(self.input, encoding="utf-8") as fi:
             for line in fi:
                 line = line.strip()
-                if re.search(pattern.BB_LABEL, line):
+                if re.search(pattern.LABEL_BB, line):
                     if re.search(pattern.KERNEL_START, line):
                         g.insert_basic_block(0)
                     elif previous_inst_uncond_branch:
@@ -98,12 +100,12 @@ class Extractor():
                     previous_inst_uncond_branch = False
                 elif re.search(pattern.INST, line):
                     previous_inst_uncond_branch = False
-                    if re.search(pattern.COND_BRANCH_INST, line):
+                    if re.search(pattern.INST_BRANCH_COND, line):
                         g.insert_edge(
                             src=current_bb_number,
                             dst=self.read_branch_target(line)
                         )
-                    elif re.search(pattern.UNCOND_BRANCH_INST, line):
+                    elif re.search(pattern.INST_BRANCH_UNCOND, line):
                         g.insert_edge(
                             src=current_bb_number,
                             dst=self.read_branch_target(line)
@@ -114,7 +116,7 @@ class Extractor():
                         pc=pc,
                         bb=current_bb_number
                     )
-                    if self.is_double_word_inst(line):
+                    if self.is_inst_double_word(line):
                         pc += 8
                     else:
                         pc += 4

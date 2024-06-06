@@ -94,7 +94,7 @@ class BasicBlock():
             return self.is_a_bsb
         first_inst = list(self.__insts.values())[0]
         return bool(re.search(
-            pattern.BSB_START_INST,
+            pattern.INST_START_BSB,
             first_inst
         ))
 
@@ -107,7 +107,7 @@ class BasicBlock():
             return self.is_a_reconv
         first_inst = list(self.__insts.values())[0]
         return bool(re.search(
-            pattern.RECONV_START_INST,
+            pattern.INST_START_RECONV,
             first_inst
         ))
 

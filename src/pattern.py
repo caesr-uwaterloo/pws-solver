@@ -4,26 +4,7 @@
 This module defines some constants to use for pattern-matching
 """
 
-BSB_START_INST       = r"^s_or_saveexec_b64.*"
-COND_BRANCH_INST     = r"^s_cbranch_.*"
-COND_BRANCH_SCC_INST = r"^s_cbranch_scc[0|1].*"
-DOUBLE_WORD_COMPARE  = r"^v_cmp[^\s]*\ss.*"
-DOUBLE_WORD_INST     = r"v_.*_e64.*"
-DS_INST              = r"^ds_.*"
-RECONV_START_INST    = r"^s_or_b64 exec.*|^s_endpgm.*"
-SMEM_INST            = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
-                       r"atc_probe(_buffer)?|dcache_(inv|wb)(_vol)?|" \
-                       r"mem(real)?time)"
-UNCOND_BRANCH_INST   = r"^s_branch.*"
-VMEM_INST            = r"^((t?buffer|image|flat)_.*|export)"
-INST                 = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
-BB_LABEL             = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
-KERNEL_START         = r"^\;\s*%bb\.0"
-KERNEL_END           = r"^s_endpgm.*"
-IPT_EDGE             = r"\| Measure \|"
-# These instructions are normally a single word long, but they may have 32-bit
-# immediates that make them double word instructions
-DOUBLE_WORD_LONG_IMM_INSTS = [
+LIST_INST_DOUBLE_WORD_LONG_IMM = [
     "s_and_b32",
     "s_mov_b32",
     "s_sub_i32",
@@ -38,15 +19,22 @@ DOUBLE_WORD_LONG_IMM_INSTS = [
     "v_xor_b32_e32",
     "v_and_b32_e32",
 ]
-DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
-    r").*0x[0-9a-fA-F]{2}.*"
-DOUBLE_WORD_MISC_INSTS = [
+"""
+These instructions are normally a single word long, but they may have 32-bit
+immediates that make them double word instructions.
+"""
+
+LIST_INST_DOUBLE_WORD_MASK = [
     "s_add_u32",
     "s_addc_u32",
 ]
-DOUBLE_WORD_MISC = "^(" + '|'.join(DOUBLE_WORD_MISC_INSTS) + \
-    r").*d_mask@rel32@(lo|hi)\+4.*"
-DOUBLE_WORD_ALU_INSTS = [
+"""
+These instructions are normally a single word. However, they may appear with
+d_mask@rel32@lo or d_mask@rel32@hi operands. In those cases, they become double
+word instructions.
+"""
+
+LIST_INST_DOUBLE_WORD_ALU = [
     "v_add_f64",
     "v_ashrrev_i64",
     "v_bcnt_u32_b32",
@@ -93,5 +81,31 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_readlane_b32",
     "v_trig_preop_f64",
     "v_writelane_b32",
+    r"^v_.*_e64.*",
+    r"^v_cmp[^\s]*\ss.*",
 ]
-DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
+"""
+These ALU instructions are all encoded as double words.
+"""
+
+INST                      = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
+INST_BRANCH_COND          = r"^s_cbranch_.*"
+INST_BRANCH_COND_SCC      = r"^s_cbranch_scc[0|1].*"
+INST_BRANCH_UNCOND        = r"^s_branch.*"
+INST_DOUBLE_WORD_ALU      = "^(" + '|'.join(LIST_INST_DOUBLE_WORD_ALU) + ')'
+INST_DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(LIST_INST_DOUBLE_WORD_LONG_IMM) + \
+                            r").*0x[0-9a-fA-F]{2}.*"
+INST_DOUBLE_WORD_MISC     = "^(" + '|'.join(LIST_INST_DOUBLE_WORD_MASK) + \
+                            r").*d_mask@rel32@(lo|hi)\+4.*"
+INST_MEM_LDS              = r"^ds_.*"
+INST_MEM_SCALAR           = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
+                            r"atc_probe(_buffer)?|dcache_(inv|wb)(_vol)?|" \
+                            r"mem(real)?time)"
+INST_MEM_VECTOR           = r"^((t?buffer|image|flat)_.*|export)"
+INST_START_BSB            = r"^s_or_saveexec_b64.*"
+INST_START_RECONV         = r"^s_or_b64 exec.*|^s_endpgm.*"
+
+IPT_EDGE                  = r"\| Measure \|"
+KERNEL_END                = r"^s_endpgm.*"
+KERNEL_START              = r"^\;\s*%bb\.0"
+LABEL_BB                  = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
