@@ -30,7 +30,7 @@ run:
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
 mypy:
-	mypy src/graph.py src/block.py src/pattern.py extract.py
+	mypy --ignore-missing-imports src/*.py extract.py solver.py
 
 comp:
 	rm -f pc.ext.txt && cat data/rodinia/$(BENCHMARK)-$(KERNEL)-anno.s | cut -d" " -f"1-" | sort -u > pc.ext.txt
