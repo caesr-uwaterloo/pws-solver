@@ -24,9 +24,9 @@ run:
 	python extract.py -i data/rodinia/particlefilter_float.s -l data/rodinia/particlefilter_float.log -u -r
 	python extract.py -i data/rodinia/particlefilter_naive.s -l data/rodinia/particlefilter_naive.log -u -r
 	python extract.py -i data/rodinia/pathfinder.s -l data/rodinia/pathfinder.log -u -r
-	python extract.py -i data/rodinia/prefix_sum.s -l data/rodinia/prefix_sum.s -u -r
-	python extract.py -i data/rodinia/srad_v1.s -l data/rodinia/srad_v1.s -u -r
-	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.s -u -r
+	python extract.py -i data/rodinia/prefix_sum.s -l data/rodinia/prefix_sum.log -u -r
+	python extract.py -i data/rodinia/srad_v1.s -l data/rodinia/srad_v1.log -u -r
+	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.log -u -r
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
 mypy:

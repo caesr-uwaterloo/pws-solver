@@ -4,19 +4,23 @@
 This module defines some constants to use for pattern-matching
 """
 
-SMEM_INST = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
-    r"atc_probe(_buffer)?|dcache_(inv|wb)(_vol)?|mem(real)?time)"
-DS_INST = r"^ds_.*"
-VMEM_INST = r"^((t?buffer|image|flat)_.*|export)"
-COND_BRANCH_INST = r"^s_cbranch_.*"
+BSB_START_INST       = r"^s_or_saveexec_b64.*"
+COND_BRANCH_INST     = r"^s_cbranch_.*"
 COND_BRANCH_SCC_INST = r"^s_cbranch_scc[0|1].*"
-UNCOND_BRANCH_INST = r"^s_branch.*"
-INST = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
-BB_LABEL = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
-KERNEL_START = r"^\;\s*%bb\.0"
-KERNEL_END = r"^s_endpgm.*"
-DOUBLE_WORD_COMPARE = r"^v_cmp[^\s]*\ss.*"
-DOUBLE_WORD_INST = r"v_.*_e64.*"
+DOUBLE_WORD_COMPARE  = r"^v_cmp[^\s]*\ss.*"
+DOUBLE_WORD_INST     = r"v_.*_e64.*"
+DS_INST              = r"^ds_.*"
+RECONV_START_INST    = r"^s_or_b64 exec.*|^s_endpgm.*"
+SMEM_INST            = r"^s_((buffer_)?(load|store|)_dword(x[0-9]+)?|" \
+                       r"atc_probe(_buffer)?|dcache_(inv|wb)(_vol)?|" \
+                       r"mem(real)?time)"
+UNCOND_BRANCH_INST   = r"^s_branch.*"
+VMEM_INST            = r"^((t?buffer|image|flat)_.*|export)"
+INST                 = r"^(s_|v_|ds_|flat_|t?buffer_|image_|export).*"
+BB_LABEL             = r"^(\;\s*%bb\.[0-9]+|BB[0-9]+_[0-9]+)"
+KERNEL_START         = r"^\;\s*%bb\.0"
+KERNEL_END           = r"^s_endpgm.*"
+IPT_EDGE             = r"\| Measure \|"
 # These instructions are normally a single word long, but they may have 32-bit
 # immediates that make them double word instructions
 DOUBLE_WORD_LONG_IMM_INSTS = [
@@ -32,9 +36,10 @@ DOUBLE_WORD_LONG_IMM_INSTS = [
     "v_or_b32",
     "v_sub_f32_e32",
     "v_xor_b32_e32",
+    "v_and_b32_e32",
 ]
 DOUBLE_WORD_LONG_IMM = "^(" + '|'.join(DOUBLE_WORD_LONG_IMM_INSTS) + \
-    r").*0x[0-9a-fA-F]{3}.*"
+    r").*0x[0-9a-fA-F]{2}.*"
 DOUBLE_WORD_MISC_INSTS = [
     "s_add_u32",
     "s_addc_u32",
@@ -90,6 +95,3 @@ DOUBLE_WORD_ALU_INSTS = [
     "v_writelane_b32",
 ]
 DOUBLE_WORD_ALU = "^(" + '|'.join(DOUBLE_WORD_ALU_INSTS) + ')'
-IPT_EDGE = r"\| Measure \|"
-BSB_START_INST = "^s_or_saveexec_b64.*"
-RECONV_START_INST = "^s_or_b64 exec.*|^s_endpgm.*"
