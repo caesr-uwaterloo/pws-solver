@@ -258,10 +258,6 @@ class Graph():
         assert start_pc == 0 or start_pc in self.pc_map
         assert end_pc in self.pc_map
 
-        # FIXME: This actually doesn't cover all cases that we
-        # want, need to find a way to capture everything
-        # (inserting raw assembly generates a new basic block
-        # that is undetected by IPTs)
         bb_idx = self.choose_basic_block(start_pc=start_pc, end_pc=end_pc)
         if bb_idx >= 0:
             self.cfg[bb_idx].wcet = max(latency, self.cfg[bb_idx].wcet)
