@@ -37,4 +37,4 @@ comp:
 	rm -f pc.sim.txt && grep "Kernel $(KERNEL) inst" data/rodinia/$(BENCHMARK).log | cut -d" " -f"6-" | sort -u > pc.sim.txt
 
 clean:
-	rm -rf data/rodinia/*anno.s data/rodinia/*.csv data/rodinia/*.png pc.ext.txt pc.sim.txt
+	rm -rf data/*/*anno.s data/*/*.csv data/*/*.png pc.ext.txt pc.sim.txt

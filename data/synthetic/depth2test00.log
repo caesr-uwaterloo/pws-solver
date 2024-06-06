@@ -1,67 +1,291 @@
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel ID 0 start address 7fff67201000
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 624  | 48000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 620  | 620  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 600  | 620  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 600  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 588  | 588  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 532  | 552  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 532  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 520  | 520  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 500  | 520  | 368000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 472  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 468  | 468  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 448  | 267000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 436  | 436  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 416  | 436  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 404  | 416  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 136  | 156  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 380  | 272000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 368  | 368  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 136  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 124  | 124  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 92   | 104  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 160  | 172  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 172  | 192  | 231000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 92   | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 88   | 88   | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 556  | 568  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 320  | 332  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 36   | 56   | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 68   | 88   | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 16   | 36   | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 484  | 500  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 248  | 260  | 219000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 160  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 156  | 156  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 104  | 124  | 272000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 472  | 484  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 0    | 16   | 1416999      |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 348  | 368  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 192  | 212  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 448  | 468  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 224  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 212  | 212  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 224  | 244  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 248  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 244  | 244  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 260  | 280  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 292  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 280  | 280  | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 68   | 287000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 56   | 56   | 196000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 292  | 312  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 316  | 215000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 312  | 312  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 556  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 552  | 552  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 316  | 320  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 568  | 588  | 427000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 332  | 348  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 380  | 400  | 256000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 404  | 64000        |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: Kernel 0   | 400  | 400  | 192000       |
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: ~ 0 ~ Total Kernel Time ~ 16210999
-77998945000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (5) does not divide range [1:75] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:10] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (2) does not divide range [1:64] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (10000) does not divide range [1:1.6e+06] into equal-sized buckets. Rounding up.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.1.0.0
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  6 2024 01:25:39
+gem5 executing on 908dcad321bf, pid 10832
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/synthetic/depth2/test00/synthetic.out -o '64 1 64'
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:668: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall get_mempolicy(...)
+build/GCN3_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/gpu-compute/gpu_compute_driver.cc:710: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.hh:1890: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/gpu-compute/gpu_compute_driver.cc:460: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:604: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:614: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+info: running on device 
+info: launch 'synthetic' kernel
+src/sim/syscall_emul.cc:85: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+PASSED!
+78902016000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 v_and_b32 v0, 63, v0
+78902020000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00004 v_cmp_lt_u32 vcc, 31, v0
+78902023000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_and_saveexec_b64 s0, vcc_lo
+78902027000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00012 s_xor_b64 s0, exec, s0
+78902031000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_cbranch_execz label_4c
+78902032000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00020 v_cmp_lt_u32 vcc, 47, v0
+78902035000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_and_saveexec_b64 s2, vcc_lo
+78902039000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00028 s_xor_b64 s2, exec, s2
+78902043000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_cbranch_execz label_18
+78902047000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 s_mov_b32 s4, 3
+78902051000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_add_i32 s4, s4, -1
+78902055000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_cmp_lg_u32 s4, 0
+78902056000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_and_b32 v1, 1, v1
+78902059000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00052 s_cbranch_scc1
+78902066000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_add_i32 s4, s4, -1
+78902070000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_cmp_lg_u32 s4, 0
+78902071000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_and_b32 v1, 1, v1
+78902074000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00052 s_cbranch_scc1
+78902081000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_add_i32 s4, s4, -1
+78902085000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_cmp_lg_u32 s4, 0
+78902086000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_and_b32 v1, 1, v1
+78902089000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00052 s_cbranch_scc1
+78902093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 s_or_saveexec_b64 s2, s2
+78902417000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00060 s_xor_b64 exec, exec, s2
+78902421000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 s_cbranch_execz label_18
+78902425000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 s_mov_b32 s4, 1
+78902429000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 s_add_i32 s4, s4, -1
+78902433000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00076 s_cmp_lg_u32 s4, 0
+78902434000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 v_and_b32 v1, 1, v1
+78902437000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 s_cbranch_scc0
+78902444000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 s_add_i32 s4, s4, -1
+78902448000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00076 s_cmp_lg_u32 s4, 0
+78902449000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 v_and_b32 v1, 1, v1
+78902452000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 s_cbranch_scc0
+78902456000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 s_or_b64 exec, exec, s2
+78902460000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00092 s_or_saveexec_b64 s0, s0
+78902464000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 s_xor_b64 exec, exec, s0
+78902468000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 s_cbranch_execz label_48
+78902469000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_cmp_lt_u32 vcc, 15, v0
+78902472000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00108 s_and_saveexec_b64 s0, vcc_lo
+78902476000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 s_xor_b64 s0, exec, s0
+78902480000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 s_cbranch_execz label_18
+78902484000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00120 s_mov_b32 s2, 3
+78902808000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 s_add_i32 s2, s2, -1
+78902812000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 s_cmp_eq_u32 s2, 0
+78902813000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 v_and_b32 v1, 1, v1
+78902816000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 s_cbranch_scc0
+78902827000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 s_add_i32 s2, s2, -1
+78902831000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 s_cmp_eq_u32 s2, 0
+78902832000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 v_and_b32 v1, 1, v1
+78902835000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 s_cbranch_scc0
+78902846000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 s_add_i32 s2, s2, -1
+78902850000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 s_cmp_eq_u32 s2, 0
+78902851000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 v_and_b32 v1, 1, v1
+78902854000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 s_cbranch_scc0
+78902858000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00140 s_or_saveexec_b64 s0, s0
+78902862000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 s_xor_b64 exec, exec, s0
+78902866000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00148 s_cbranch_execz label_18
+78902870000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 s_mov_b32 s0, 1
+78902874000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 s_add_i32 s0, s0, -1
+78902878000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_cmp_lg_u32 s0, 0
+78902879000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 v_and_b32 v1, 1, v1
+78902882000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_cbranch_scc0
+78902889000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 s_add_i32 s0, s0, -1
+78902893000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_cmp_lg_u32 s0, 0
+78902894000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 v_and_b32 v1, 1, v1
+78902897000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_cbranch_scc0
+78902901000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 s_endpgm
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff67201000             |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 148   | 168   | 1     | 16000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 116   | 1     | 12000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 88    | 100   | 1     | 12000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 172   | 1     | 4000         |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 168   | 1     | 15000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 116   | 136   | 1     | 336000       |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 64    | 84    | 1     | 16000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 136   | 148   | 1     | 12000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 136   | 136   | 2     | 19000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 84    | 88    | 1     | 4000         |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 84    | 84    | 1     | 15000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 32    | 52    | 1     | 16000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 16    | 32    | 1     | 12000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 52    | 64    | 1     | 332000       |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 52    | 52    | 2     | 15000        |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 16    | 1     | 1317999      |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 2187999                       |
+78902901000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+Ticks: 82170108500
+Exiting because  exiting with last active thread context
+
+Time elapsed: 1m27.186s

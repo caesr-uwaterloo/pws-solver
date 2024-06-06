@@ -13,319 +13,87 @@ _Z9syntheticm$local:
 	;;#ASMEND
 	v_cmp_lt_u32_e32 vcc, 31, v0
 	s_and_saveexec_b64 s[0:1], vcc
-	s_xor_b64 s[2:3], exec, s[0:1]
-	s_cbranch_execz BB0_14
+	s_xor_b64 s[0:1], exec, s[0:1]
+	s_cbranch_execz BB0_8
 ; %bb.1:
 	;;#ASMSTART
-	; Branch (3)
-	;;#ASMEND
-	v_cmp_lt_u32_e64 s[0:1], 47, v0
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_xor_b64 s[4:5], exec, s[4:5]
-	s_cbranch_execz BB0_4
-; %bb.2:
-	;;#ASMSTART
-	; Iterations (4)
-	;;#ASMEND
-	s_mov_b32 s6, 4
-BB0_3:                                  ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s6, s6, -1
-	s_cmp_lg_u32 s6, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc1 BB0_3
-BB0_4:                                  ; %Flow232
-	s_or_saveexec_b64 s[4:5], s[4:5]
-	s_xor_b64 exec, exec, s[4:5]
-	s_cbranch_execz BB0_7
-; %bb.5:
-	;;#ASMSTART
-	; Iterations (3)
-	;;#ASMEND
-	s_mov_b32 s6, 3
-BB0_6:                                  ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s6, s6, -1
-	s_cmp_eq_u32 s6, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_6
-BB0_7:                                  ; %Flow233
-	s_or_b64 exec, exec, s[4:5]
-	;;#ASMSTART
-	; Branch (4)
-	;;#ASMEND
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_xor_b64 s[0:1], exec, s[4:5]
-	s_cbranch_execz BB0_10
-; %bb.8:
-	;;#ASMSTART
-	; Iterations (3)
-	;;#ASMEND
-	s_mov_b32 s4, 3
-BB0_9:                                  ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_lg_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc1 BB0_9
-BB0_10:                                 ; %Flow228
-	s_or_saveexec_b64 s[0:1], s[0:1]
-	s_xor_b64 exec, exec, s[0:1]
-	s_cbranch_execz BB0_13
-; %bb.11:
-	;;#ASMSTART
-	; Iterations (2)
-	;;#ASMEND
-	s_mov_b32 s4, 1
-BB0_12:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_lg_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_12
-BB0_13:                                 ; %Flow229
-	s_or_b64 exec, exec, s[0:1]
-BB0_14:                                 ; %Flow244
-	s_or_saveexec_b64 s[2:3], s[2:3]
-	s_xor_b64 exec, exec, s[2:3]
-	s_cbranch_execz BB0_28
-; %bb.15:
-	;;#ASMSTART
-	; Branch (1)
-	;;#ASMEND
-	v_cmp_lt_u32_e64 s[0:1], 15, v0
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_xor_b64 s[4:5], exec, s[4:5]
-	s_cbranch_execz BB0_18
-; %bb.16:
-	;;#ASMSTART
-	; Iterations (4)
-	;;#ASMEND
-	s_mov_b32 s6, 4
-BB0_17:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s6, s6, -1
-	s_cmp_lg_u32 s6, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc1 BB0_17
-BB0_18:                                 ; %Flow242
-	s_or_saveexec_b64 s[4:5], s[4:5]
-	s_xor_b64 exec, exec, s[4:5]
-	s_cbranch_execz BB0_21
-; %bb.19:
-	;;#ASMSTART
-	; Iterations (2)
-	;;#ASMEND
-	s_mov_b32 s6, 1
-BB0_20:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s6, s6, -1
-	s_cmp_lg_u32 s6, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_20
-BB0_21:                                 ; %Flow243
-	s_or_b64 exec, exec, s[4:5]
-	;;#ASMSTART
 	; Branch (2)
-	;;#ASMEND
-	s_and_saveexec_b64 s[4:5], s[0:1]
-	s_xor_b64 s[0:1], exec, s[4:5]
-	s_cbranch_execz BB0_24
-; %bb.22:
-	;;#ASMSTART
-	; Iterations (4)
-	;;#ASMEND
-	s_mov_b32 s4, 4
-BB0_23:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_eq_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_23
-BB0_24:                                 ; %Flow237
-	s_or_saveexec_b64 s[0:1], s[0:1]
-	s_xor_b64 exec, exec, s[0:1]
-	s_cbranch_execz BB0_27
-; %bb.25:
-	;;#ASMSTART
-	; Iterations (3)
-	;;#ASMEND
-	s_mov_b32 s4, 3
-BB0_26:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_eq_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_26
-BB0_27:                                 ; %Flow238
-	s_or_b64 exec, exec, s[0:1]
-BB0_28:                                 ; %Flow245
-	s_or_b64 exec, exec, s[2:3]
-	;;#ASMSTART
-	; Branch (5)
-	;;#ASMEND
-	s_and_saveexec_b64 s[0:1], vcc
-	s_xor_b64 s[0:1], exec, s[0:1]
-	s_cbranch_execz BB0_42
-; %bb.29:
-	;;#ASMSTART
-	; Branch (8)
 	;;#ASMEND
 	v_cmp_lt_u32_e32 vcc, 47, v0
 	s_and_saveexec_b64 s[2:3], vcc
 	s_xor_b64 s[2:3], exec, s[2:3]
-	s_cbranch_execz BB0_32
-; %bb.30:
-	;;#ASMSTART
-	; Iterations (2)
-	;;#ASMEND
-	s_mov_b32 s4, 1
-BB0_31:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_eq_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc1 BB0_31
-BB0_32:                                 ; %Flow208
-	s_or_saveexec_b64 s[2:3], s[2:3]
-	s_xor_b64 exec, exec, s[2:3]
-	s_cbranch_execz BB0_35
-; %bb.33:
+	s_cbranch_execz BB0_4
+; %bb.2:
 	;;#ASMSTART
 	; Iterations (3)
 	;;#ASMEND
 	s_mov_b32 s4, 3
-BB0_34:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s4, s4, -1
-	s_cmp_eq_u32 s4, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_34
-BB0_35:                                 ; %Flow209
-	s_or_b64 exec, exec, s[2:3]
-	;;#ASMSTART
-	; Branch (9)
-	;;#ASMEND
-	s_and_saveexec_b64 s[2:3], vcc
-	s_xor_b64 s[2:3], exec, s[2:3]
-	s_cbranch_execz BB0_38
-; %bb.36:
-	;;#ASMSTART
-	; Iterations (3)
-	;;#ASMEND
-	s_mov_b32 s4, 3
-BB0_37:                                 ; =>This Inner Loop Header: Depth=1
+BB0_3:                                  ; =>This Inner Loop Header: Depth=1
 	s_add_i32 s4, s4, -1
 	s_cmp_lg_u32 s4, 0
 	;;#ASMSTART
 	v_and_b32_e32 v1, 1, v1
 	;;#ASMEND
-	s_cbranch_scc1 BB0_37
-BB0_38:                                 ; %Flow203
+	s_cbranch_scc1 BB0_3
+BB0_4:                                  ; %Flow52
 	s_or_saveexec_b64 s[2:3], s[2:3]
 	s_xor_b64 exec, exec, s[2:3]
-	s_cbranch_execz BB0_41
-; %bb.39:
+	s_cbranch_execz BB0_7
+; %bb.5:
 	;;#ASMSTART
-	; Iterations (4)
+	; Iterations (2)
 	;;#ASMEND
-	s_mov_b32 s4, 4
-BB0_40:                                 ; =>This Inner Loop Header: Depth=1
+	s_mov_b32 s4, 1
+BB0_6:                                  ; =>This Inner Loop Header: Depth=1
 	s_add_i32 s4, s4, -1
-	s_cmp_eq_u32 s4, 0
+	s_cmp_lg_u32 s4, 0
 	;;#ASMSTART
 	v_and_b32_e32 v1, 1, v1
 	;;#ASMEND
-	s_cbranch_scc0 BB0_40
-BB0_41:                                 ; %Flow204
+	s_cbranch_scc0 BB0_6
+BB0_7:                                  ; %Flow53
 	s_or_b64 exec, exec, s[2:3]
-BB0_42:                                 ; %Flow222
+BB0_8:                                  ; %Flow61
 	s_or_saveexec_b64 s[0:1], s[0:1]
 	s_xor_b64 exec, exec, s[0:1]
-	s_cbranch_execz BB0_55
-; %bb.43:
+	s_cbranch_execz BB0_15
+; %bb.9:
 	;;#ASMSTART
-	; Branch (6)
+	; Branch (1)
 	;;#ASMEND
 	v_cmp_lt_u32_e32 vcc, 15, v0
 	s_and_saveexec_b64 s[0:1], vcc
 	s_xor_b64 s[0:1], exec, s[0:1]
-	s_cbranch_execz BB0_46
-; %bb.44:
+	s_cbranch_execz BB0_12
+; %bb.10:
 	;;#ASMSTART
 	; Iterations (3)
 	;;#ASMEND
 	s_mov_b32 s2, 3
-BB0_45:                                 ; =>This Inner Loop Header: Depth=1
+BB0_11:                                 ; =>This Inner Loop Header: Depth=1
 	s_add_i32 s2, s2, -1
-	s_cmp_lg_u32 s2, 0
+	s_cmp_eq_u32 s2, 0
 	;;#ASMSTART
 	v_and_b32_e32 v1, 1, v1
 	;;#ASMEND
-	s_cbranch_scc1 BB0_45
-BB0_46:                                 ; %Flow219
+	s_cbranch_scc0 BB0_11
+BB0_12:                                 ; %Flow58
 	s_or_saveexec_b64 s[0:1], s[0:1]
 	s_xor_b64 exec, exec, s[0:1]
-	s_cbranch_execz BB0_49
-; %bb.47:
+	s_cbranch_execz BB0_15
+; %bb.13:
 	;;#ASMSTART
 	; Iterations (2)
 	;;#ASMEND
-	s_mov_b32 s2, 1
-BB0_48:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s2, s2, -1
-	s_cmp_lg_u32 s2, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_48
-BB0_49:                                 ; %Flow220
-	s_or_b64 exec, exec, s[0:1]
-	;;#ASMSTART
-	; Branch (7)
-	;;#ASMEND
-	s_and_saveexec_b64 s[0:1], vcc
-	s_xor_b64 s[0:1], exec, s[0:1]
-	s_cbranch_execz BB0_52
-; %bb.50:
-	;;#ASMSTART
-	; Iterations (2)
-	;;#ASMEND
-	s_mov_b32 s2, 1
-BB0_51:                                 ; =>This Inner Loop Header: Depth=1
-	s_add_i32 s2, s2, -1
-	s_cmp_lg_u32 s2, 0
-	;;#ASMSTART
-	v_and_b32_e32 v1, 1, v1
-	;;#ASMEND
-	s_cbranch_scc0 BB0_51
-BB0_52:                                 ; %Flow214
-	s_or_saveexec_b64 s[0:1], s[0:1]
-	s_xor_b64 exec, exec, s[0:1]
-	s_cbranch_execz BB0_55
-; %bb.53:
-	;;#ASMSTART
-	; Iterations (4)
-	;;#ASMEND
-	s_mov_b32 s0, 4
-BB0_54:                                 ; =>This Inner Loop Header: Depth=1
+	s_mov_b32 s0, 1
+BB0_14:                                 ; =>This Inner Loop Header: Depth=1
 	s_add_i32 s0, s0, -1
-	s_cmp_eq_u32 s0, 0
+	s_cmp_lg_u32 s0, 0
 	;;#ASMSTART
 	v_and_b32_e32 v1, 1, v1
 	;;#ASMEND
-	s_cbranch_scc0 BB0_54
-BB0_55:                                 ; %.loopexit
+	s_cbranch_scc0 BB0_14
+BB0_15:                                 ; %.loopexit
 	s_endpgm
 	.section	.rodata,#alloc
 	.p2align	6
@@ -346,7 +114,7 @@ BB0_55:                                 ; %.loopexit
 		.amdhsa_system_sgpr_workgroup_info 0
 		.amdhsa_system_vgpr_workitem_id 0
 		.amdhsa_next_free_vgpr 2
-		.amdhsa_next_free_sgpr 7
+		.amdhsa_next_free_sgpr 5
 		.amdhsa_reserve_flat_scratch 0
 		.amdhsa_float_round_mode_32 0
 		.amdhsa_float_round_mode_16_64 0
@@ -368,8 +136,8 @@ BB0_55:                                 ; %.loopexit
                                         ; -- End function
 	.section	.AMDGPU.csdata
 ; Kernel info:
-; codeLenInByte = 692
-; NumSgprs: 11
+; codeLenInByte = 192
+; NumSgprs: 9
 ; NumVgprs: 1
 ; ScratchSize: 0
 ; MemoryBound: 0
@@ -378,7 +146,7 @@ BB0_55:                                 ; %.loopexit
 ; LDSByteSize: 0 bytes/workgroup (compile time only)
 ; SGPRBlocks: 1
 ; VGPRBlocks: 0
-; NumSGPRsForWavesPerEU: 11
+; NumSGPRsForWavesPerEU: 9
 ; NumVGPRsForWavesPerEU: 2
 ; Occupancy: 10
 ; WaveLimiterHint : 0
@@ -433,7 +201,7 @@ amdhsa.kernels:
     .max_flat_workgroup_size: 256
     .name:           _Z9syntheticm
     .private_segment_fixed_size: 0
-    .sgpr_count:     11
+    .sgpr_count:     9
     .sgpr_spill_count: 0
     .symbol:         _Z9syntheticm.kd
     .vgpr_count:     2
