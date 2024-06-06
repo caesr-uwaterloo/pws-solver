@@ -66,8 +66,6 @@ class Extractor():
             re.search(pattern.INST_DOUBLE_WORD_LONG_IMM, line) or \
             re.search(pattern.INST_DOUBLE_WORD_MISC, line) or \
             re.search(pattern.INST_DOUBLE_WORD_ALU, line)
-            # re.search(pattern.INST_DOUBLE_WORD_CMP, line) or \
-            # re.search(pattern.INST_DOUBLE_WORD, line)
         )
 
     def parse_asm(self) -> None:
