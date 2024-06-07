@@ -59,7 +59,7 @@ if __name__ == '__main__':
     for a in algs:
         # print(f"{a.name():<25} ", end="")
         signal.signal(signal.SIGALRM, handler)
-        signal.alarm(10)
+        signal.alarm(60)
         start = timeit.default_timer()
         try:
             sp = a.solve()
@@ -71,7 +71,7 @@ if __name__ == '__main__':
         runtimes.append(str(end-start))
         # print(f"{wcet:<25} {end-start:.9f}")
     csv_row = f"{args.input},{','.join(wcets)},{','.join(runtimes)}\n"
-    print(csv_row)
+#    print(csv_row)
 
     with open("solver-data.csv", mode="a+") as fo:
         fo.write(csv_row)

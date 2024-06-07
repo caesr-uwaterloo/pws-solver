@@ -65,10 +65,11 @@ class Algorithm():
         while idx < bb.reconv \
             and idx != self.graph.next_block_in_sequence(idx):
             assert idx in cfg.keys()
-            if cfg[idx].is_branch():
-                right += self.wcet_branch(splits, idx)
-            else:
-                right += cfg[idx].wcet
+            if idx != bb.bsb: # avoid double-counting BSB
+                if cfg[idx].is_branch():
+                    right += self.wcet_branch(splits, idx)
+                else:
+                    right += cfg[idx].wcet
             idx = self.graph.next_block_in_sequence(idx)
 
         self.benefit[start] = min(left, right)

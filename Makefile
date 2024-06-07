@@ -30,7 +30,7 @@ run:
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
 solve:
-	echo "no split wcet,dws wcet,random wcet,naive wcet,dp wcet,force wcet,ilp wcet,no split time,dws time,random time,naive time,dp time,force time,ilp time" > solver-data.csv
+	echo "name,no split wcet,dws wcet,random wcet,naive wcet,dp wcet,force wcet,ilp wcet,no split time,dws time,random time,naive time,dp time,force time,ilp time" > solver-data.csv
 	python solver.py -i data/synthetic/depth2test00-000.csv
 	python solver.py -i data/synthetic/depth3test00-000.csv
 	python solver.py -i data/synthetic/depth4test00-000.csv
