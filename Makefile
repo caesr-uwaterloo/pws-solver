@@ -29,6 +29,14 @@ run:
 	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.log -u -r
 	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
 
+solve:
+	echo "no split wcet,dws wcet,random wcet,naive wcet,dp wcet,force wcet,ilp wcet,no split time,dws time,random time,naive time,dp time,force time,ilp time" > solver-data.csv
+	python solver.py -i data/synthetic/depth2test00-000.csv
+	python solver.py -i data/synthetic/depth3test00-000.csv
+	python solver.py -i data/synthetic/depth4test00-000.csv
+	python solver.py -i data/synthetic/depth5test00-000.csv
+	python solver.py -i data/synthetic/depth6test00-000.csv
+
 mypy:
 	mypy --ignore-missing-imports src/*.py extract.py solver.py
 

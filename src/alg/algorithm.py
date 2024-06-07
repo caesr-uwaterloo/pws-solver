@@ -34,6 +34,8 @@ class Algorithm():
         Returns the WCET of a kernel given a starting point and a set of
         split points
         """
+        if len(splits) == 1 and splits[0] == -1:
+            return -1
         idx = start
         w = 0
         while idx < len(self.graph.cfg) - 1:
