@@ -103,9 +103,9 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled Jun  6 2024 02:16:37
-gem5 started Jun  6 2024 15:28:01
-gem5 executing on 5464cce7d08e, pid 20050
+gem5 compiled Jun  3 2024 19:16:39
+gem5 started Jun  7 2024 02:05:13
+gem5 executing on 908dcad321bf, pid 116184
 command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/synthetic/depth3/test00/synthetic.out -o '64 1 64'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
@@ -379,7 +379,7 @@ PASSED!
 78939097000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 78939097000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 3514999                       |
 78939097000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-Ticks: 82205264000
+Ticks: 82206180000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 3m30.990s
+Time elapsed: 1m25.826s
