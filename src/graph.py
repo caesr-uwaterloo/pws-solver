@@ -181,7 +181,7 @@ class Graph():
                             self.cfg[new_idx].add_successor(bb_map[succ])
                             # If we add a loopback edge, we need to add it to
                             # the list of loopback edges to unroll in a later
-                            # iteration
+                            # iteration of the outer while loop
                             if (old_idx, succ) in loopbacks:
                                 loopbacks.append((new_idx, bb_map[succ]))
                 # Append the new subgraph after the previously inserted
@@ -540,7 +540,8 @@ class Graph():
         for idx in sorted(self.cfg.keys()):
             bb = self.cfg[idx]
             successors = ';'.join(str(j) for j in bb.successors())
-            csv_str += f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
+            csv_str += \
+                f"{bb.wcet},{bb.is_bsb()},{bb.is_reconv()},{successors}\n"
 
         with open(file_name, 'w+', encoding="utf-8") as fo:
             fo.write(csv_str)
