@@ -47,7 +47,7 @@ if __name__ == '__main__':
         ILPAlgorithm(g, 3)
     ]
 
-    print(f"{f'Algorithm':<25} {f'Analytical WCET':<25} {'Algorithm Runtime (s)'}")
+    print(f"{f'Algorithm':<25} {f'Split Choices':<25} {f'Analytical WCET':<25} {'Algorithm Runtime (s)':<25}")
     wcets = []
     runtimes = []
     a: Algorithm
@@ -56,7 +56,8 @@ if __name__ == '__main__':
         sp = a.solve()
         end = timeit.default_timer()
         wcet = a.wcet(splits=sp)
+        choice = ','.join([str(i) for i in sp])
         wcets.append(str(wcet))
         runtimes.append(str(end-start))
-        print(f"{a.name():<25} {wcet:<25} {end-start:0.9f}")
+        print(f"{a.name():<25} {choice:<25} {wcet:<25} {end-start:0.9f}")
     # print(f"{args.input},{','.join(wcets)},{','.join(runtimes)}")
