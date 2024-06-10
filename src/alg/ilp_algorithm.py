@@ -89,25 +89,25 @@ class ILPAlgorithm(Algorithm):
                 ilp_str += f"    t{idx}split"
                 for j in li:
                     ilp_str += f" - t{j}"
-                if bb.is_branch():
-                    ilp_str += f" - t{bb.reconv}"
-                ilp_str += " >= 0\n"
+                if bb.has_else_path():
+                    ilp_str += f" - t{bb.bsb}"
+                ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}split"
                 for j in ri:
                     ilp_str += f" - t{j}"
-                if bb.is_branch():
-                    ilp_str += f" - t{bb.reconv}"
-                ilp_str += " >= 0\n"
+                if bb.has_else_path():
+                    ilp_str += f" - t{bb.bsb}"
+                ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}dontsplit"
                 for j in li:
                     ilp_str += f" - t{j}"
                 for j in ri:
                     ilp_str += f" - t{j}"
-                if bb.is_branch():
-                    ilp_str += f" - t{bb.reconv}"
-                ilp_str += " = 0\n"
+                if bb.has_else_path():
+                    ilp_str += f" - t{bb.bsb}"
+                ilp_str += f" - t{bb.reconv} = 0\n"
 
                 ilp_str += \
                     f"    t{idx} - [ b{idx} * t{idx}split ] + " \
