@@ -47,22 +47,17 @@ class DPAlgorithm(Algorithm):
         # fill_tables
         for j in range(2, self.s + 1):
             for b_i in sorted(self.graph.branch_vertices(), reverse=True):
-                m_l = self.graph.execution_time(b_i) \
+                self.t[b_i][j] = self.graph.execution_time(b_i) \
                     + self.sum_children(b_i, j, left=True) \
-                    + self.sum_children(b_i, 1, left=False)
-                m_r = self.graph.execution_time(b_i) \
-                    + self.sum_children(b_i, 1, left=True) \
                     + self.sum_children(b_i, j, left=False)
-                m = min(m_l, m_r)
-                self.n[b_i][j] = [j, 1, j] if m_l < m_r else [1, j, j]
+                self.n[b_i][j] = [j, j, j]
                 for d in range(1, j):
                     max_value = max(self.sum_children(b_i, d, left=True), \
                                     self.sum_children(b_i, j-d, left=False))
-                    if self.graph.execution_time(b_i) + max_value < m:
+                    if self.graph.execution_time(b_i) + max_value < self.t[b_i][j]:
                         self.t[b_i][j] = self.graph.execution_time(b_i) \
                             + max_value
                         self.n[b_i][j] = [d, j-d, j]
-                        m = self.t[b_i][j]
 
         splits = []
         stack = deque([(0, self.s)])
