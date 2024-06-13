@@ -35,7 +35,7 @@ if __name__ == '__main__':
         "--input",
         help="Input file name",
         type=str,
-        required=True
+        default=""
     )
     parser.add_argument(
         "-s",
@@ -58,11 +58,18 @@ if __name__ == '__main__':
         type=int,
         default=60
     )
+    parser.add_argument(
+        "-o",
+        "--omit",
+        help="Omit data and just output a CSV header",
+        action="store_true"
+    )
     args = parser.parse_args()
 
     g = Graph()
-    g.read_from_csv(args.input)
-    g.find_branches()
+    if Path(args.input).is_file():
+        g.read_from_csv(args.input)
+        g.find_branches()
     s = args.simds
     algs = [
         NoSplitAlgorithm(g, s),
@@ -86,29 +93,36 @@ if __name__ == '__main__':
         )
     wcets = []
     runtimes = []
-    a: Algorithm
-    for a in algs:
-        signal.signal(signal.SIGALRM, handler)
-        signal.alarm(args.timeout)
-        start = timeit.default_timer()
-        try:
-            sp = a.solve()
-        except TimeoutError:
-            sp = [-1]
-        end = timeit.default_timer()
-        wcet = a.wcet(splits=sp)
-        choice = ','.join([str(i) for i in sp])
-        wcets.append(str(wcet))
-        runtimes.append(str(end-start))
-        if not valid_output:
-            print(
-                f"{a.name():<25} "
-                f"{choice:<25} "
-                f"{wcet:<25} "
-                f"{end-start:0.9f}"
-            )
-    # csv_row = f"{args.input},{','.join(wcets)}\n"
-    csv_row = f"{args.input},{','.join(wcets)},{','.join(runtimes)}\n"
+    wcet_header = ','.join([f"{a.name()} WCET" for a in algs])
+    time_header = ','.join([f"{a.name()} Runtime" for a in algs])
+    csv_row = ""
+    if args.omit:
+        csv_row = f"{wcet_header},{time_header}"
+    else:
+        assert Path(args.input).is_file()
+        a: Algorithm
+        for a in algs:
+            signal.signal(signal.SIGALRM, handler)
+            signal.alarm(args.timeout)
+            start = timeit.default_timer()
+            try:
+                sp = a.solve()
+            except TimeoutError:
+                sp = [-1]
+            end = timeit.default_timer()
+            wcet = a.wcet(splits=sp)
+            choice = ','.join([str(i) for i in sp])
+            wcets.append(str(wcet))
+            runtimes.append(str(end-start))
+            if not valid_output:
+                print(
+                    f"{a.name():<25} "
+                    f"{choice:<25} "
+                    f"{wcet:<25} "
+                    f"{end-start:0.9f}"
+                )
+        # csv_row = f"{args.input},{','.join(wcets)}\n"
+        csv_row = f"{args.input},{','.join(wcets)},{','.join(runtimes)}\n"
 
     if valid_output:
         with open(args.csv, mode="a+") as fo:
