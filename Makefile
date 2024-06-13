@@ -1,41 +1,28 @@
 BENCHMARK=backprop
 KERNEL=000
 
-run:
-	python extract.py -i data/rodinia/b+tree.s -l data/rodinia/b+tree.log -u -r
-	python extract.py -i data/rodinia/backprop.s -l data/rodinia/backprop.log -u -r
-	python extract.py -i data/rodinia/bfs.s -l data/rodinia/bfs.log -u -r
-	python extract.py -i data/rodinia/bitonic_sort.s -l data/rodinia/bitonic_sort.log -u -r
-	python extract.py -i data/rodinia/cfd.s -l data/rodinia/cfd.log -u -r
-	python extract.py -i data/rodinia/convolution.s -l data/rodinia/convolution.log -u -r
-	python extract.py -i data/rodinia/dwt2d.s -l data/rodinia/dwt2d.log -u -r
-	python extract.py -i data/rodinia/floyd_warshall.s -l data/rodinia/floyd_warshall.log -u -r
-	python extract.py -i data/rodinia/gaussian.s -l data/rodinia/gaussian.log -u -r
-	python extract.py -i data/rodinia/heartwall.s -l data/rodinia/heartwall.log -u -r
-	python extract.py -i data/rodinia/hotspot.s -l data/rodinia/hotspot.log -u -r
-	python extract.py -i data/rodinia/hybridsort.s -l data/rodinia/hybridsort.log -u -r
-	python extract.py -i data/rodinia/kmeans.s -l data/rodinia/kmeans.log -u -r
-	python extract.py -i data/rodinia/lavaMD.s -l data/rodinia/lavaMD.log -u -r
-	python extract.py -i data/rodinia/loop.s -l data/rodinia/loop.log -u -r
-	python extract.py -i data/rodinia/lud.s -l data/rodinia/lud.log -u -r
-	python extract.py -i data/rodinia/myocyte.s -l data/rodinia/myocyte.log -u -r
-	python extract.py -i data/rodinia/nn.s -l data/rodinia/nn.log -u -r
-	python extract.py -i data/rodinia/nw.s -l data/rodinia/nw.log -u -r
-	python extract.py -i data/rodinia/particlefilter_float.s -l data/rodinia/particlefilter_float.log -u -r
-	python extract.py -i data/rodinia/particlefilter_naive.s -l data/rodinia/particlefilter_naive.log -u -r
-	python extract.py -i data/rodinia/pathfinder.s -l data/rodinia/pathfinder.log -u -r
-	python extract.py -i data/rodinia/prefix_sum.s -l data/rodinia/prefix_sum.log -u -r
-	python extract.py -i data/rodinia/srad_v1.s -l data/rodinia/srad_v1.log -u -r
-	python extract.py -i data/rodinia/srad_v2.s -l data/rodinia/srad_v2.log -u -r
-	python extract.py -i data/rodinia/streamcluster.s -l data/rodinia/streamcluster.log -u -r
+CSV_DATA_OUTPUT=solver-data.csv
+TIMEOUT=60
+
+CSV_INPUTS=$(wildcard data/synthetic/*.csv)
+RODINIA_ASM=$(wildcard data/rodinia/*[!anno].s)
+SYNTHETIC_ASM=$(wildcard data/synthetic/*[!anno].s)
+ALL_ASM=$(RODINIA_ASM) $(SYNTHETIC_ASM)
+BENCHMARKS=$(ALL_ASM:.s=)
+
+extract:
+	@for asm in $(BENCHMARKS); do \
+		echo "python extract.py -i $$asm.s -l $$asm.log -u -r"; \
+		python extract.py -i $$asm.s -l $$asm.log -u -r; \
+	done
 
 solve:
-	echo "name,no split wcet,dws wcet,random wcet,naive wcet,dp wcet,force wcet,ilp wcet,no split time,dws time,random time,naive time,dp time,force time,ilp time" > solver-data.csv
-	python solver.py -i data/synthetic/depth2test00-000.csv
-	python solver.py -i data/synthetic/depth3test00-000.csv
-	python solver.py -i data/synthetic/depth4test00-000.csv
-	python solver.py -i data/synthetic/depth5test00-000.csv
-	python solver.py -i data/synthetic/depth6test00-000.csv
+	rm $(CSV_DATA_OUTPUT)
+	python solver.py -c $(CSV_DATA_OUTPUT) -o
+	@for input in $(CSV_INPUTS); do \
+		echo "python solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT)"; \
+		python solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT); \
+	done
 
 mypy:
 	mypy --ignore-missing-imports src/*.py extract.py solver.py
@@ -45,4 +32,5 @@ comp:
 	rm -f pc.sim.txt && grep "Kernel $(KERNEL) inst" data/rodinia/$(BENCHMARK).log | cut -d" " -f"6-" | sort -u > pc.sim.txt
 
 clean:
-	rm -rf data/*/*anno.s data/*/*.csv data/*/*.png pc.ext.txt pc.sim.txt gurobi.log
+	rm -rf data/*/*anno.s data/*/*.csv data/*/*.png pc.ext.txt pc.sim.txt \
+		gurobi.log $(CSV_DATA_OUTPUT)
