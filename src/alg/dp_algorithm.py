@@ -61,7 +61,7 @@ class DPAlgorithm(Algorithm):
 
         splits = []
         stack = deque([(0, self.s)])
-        outer_branch = 0
+        outer_node = 0
         while len(stack):
             (u, j) = stack.pop()
             entry = self.n[u][j]
@@ -73,12 +73,11 @@ class DPAlgorithm(Algorithm):
             for l in self.graph.left_children(u):
                 if l in self.graph.branch_vertices() and entry[0] > 1:
                     stack.append((l, int(entry[0])))
-            # TODO: Find a more elegant way to look at reuse in the
-            # outermost branch
-            if len(stack) == 0 and self.graph.cfg[outer_branch].reconv \
-                in self.graph.branch_vertices():
-                outer_branch = self.graph.cfg[outer_branch].reconv
-                stack.append((outer_branch, self.s))
+            if len(stack) == 0:
+                (is_branch, outer_node) = \
+                    self.graph.next_branch_in_sequence(outer_node)
+                if is_branch:
+                    stack.append((outer_node, self.s))
 
         return sorted(splits)
 

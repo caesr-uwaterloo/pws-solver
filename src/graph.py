@@ -106,6 +106,39 @@ class Graph():
         self.cfg = new_cfg
         self.pc_map = new_pc_map
 
+    def separate_branches_from_joins(
+        self
+    ) -> None:
+        """
+        Finds any nodes that act as both a branch and reconvergence node and
+        splits them into two distinct nodes
+        """
+        nodes = self.__topological_ordering
+        for idx, bb_idx in enumerate(nodes):
+            bb = self.cfg[bb_idx]
+            if bb.is_branch() and bb.is_reconv():
+                # Add a new node to the CFG that will act as a new branch node.
+                # The existing node will only act as a reconvergence node.
+                new_idx = len(self.cfg)
+                new_block = BasicBlock(num=new_idx, wcet=bb.wcet)
+                self.cfg[new_idx] = new_block
+                self.cfg[bb_idx].wcet = 0
+                # Add the new node to the topological ordering immediately
+                # after the existing node
+                assert idx < len(self.__topological_ordering) - 1
+                self.__topological_ordering.insert(
+                    idx+1,
+                    new_idx
+                )
+                # All the successors of the existing node should now be
+                # successors of the new node. The only remaining successor of
+                # the existing node is the new node.
+                old_successors = bb.successors()
+                for succ in old_successors:
+                    self.cfg[bb_idx].remove_successor(succ)
+                    self.cfg[new_idx].add_successor(succ)
+                self.cfg[bb_idx].add_successor(new_idx)
+
     def unroll_loops(
         self
     ) -> None:
@@ -424,6 +457,21 @@ class Graph():
                 return reconv_block.num
             bb = reconv_block
         return bb.immediate_successor()
+
+    def next_branch_in_sequence(self, node: int) -> tuple[bool, int]:
+        """
+        Return whether there exists a branch node that shares a parent with the
+        given node and follows it in the CFG topological order. Also returns
+        the index of the first such branch node.
+        """
+        # Advance the selected node until we reach the next branch node with
+        # the same parent or the end of the CFG
+        next_node = self.next_block_in_sequence(node)
+        while next_node not in self.branch_vertices() \
+            and next_node < len(self.cfg) - 1:
+            next_node = \
+                self.next_block_in_sequence(next_node)
+        return (next_node in self.branch_vertices(), next_node)
 
     def left_children(self, node: int) -> list[int]:
         """

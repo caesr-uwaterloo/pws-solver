@@ -51,16 +51,16 @@ class ILPAlgorithm(Algorithm):
             f"    OBJ2: Priority = 0 Weight = 1 AbsTol=0 RelTol=0\n" \
             f"        s\n" \
             f"subject to\n" \
-            f"    s <= {self.s}\n" \
-            f"    u0 - s <= 0\n"
+            f"    s <= {self.s}\n"
         
         # constraints for each node in CFG
         for idx, bb in self.graph.cfg.items():
             if bb.is_branch():
                 # (a) ui <= u(parenti)
-                if idx > 0:
+                if bb.parent == -1:
+                    ilp_str += f"    u{idx} - s <= 0\n"
+                else:
                     ilp_str += f"    u{idx} - u{bb.parent} <= 0\n"
-                # else idx == 0 --- already addressed above outside for loop
 
                 # (b) ui >= 1
                 ilp_str += f"    u{idx} >= 1\n"
@@ -86,39 +86,25 @@ class ILPAlgorithm(Algorithm):
                 
                 # (e) bi = 1 ==> ti = ei + max{t(li), t(ri)}
                 #     bi = 0 ==> ti = ei + t(li) + t(ri)
-                # TODO: Preprocess the CFG to remove branch nodes that are also
-                # reconvergence nodes
                 ilp_str += f"    t{idx}split"
-                # for j in li:
-                #     ilp_str += f" - t{j}"
-                for i, j in enumerate(li):
-                    if i == 0 or not self.graph.cfg[j].is_branch():
-                        ilp_str += f" - t{j}"
+                for j in li:
+                    ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}split"
-                # for j in ri:
-                #     ilp_str += f" - t{j}"
-                for i, j in enumerate(ri):
-                    if i == 0 or not self.graph.cfg[j].is_branch():
-                        ilp_str += f" - t{j}"
+                for j in ri:
+                    ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}dontsplit"
-                # for j in li:
-                #     ilp_str += f" - t{j}"
-                # for j in ri:
-                #     ilp_str += f" - t{j}"
-                for i, j in enumerate(li):
-                    if i == 0 or not self.graph.cfg[j].is_branch():
-                        ilp_str += f" - t{j}"
-                for i, j in enumerate(ri):
-                    if i == 0 or not self.graph.cfg[j].is_branch():
-                        ilp_str += f" - t{j}"
+                for j in li:
+                    ilp_str += f" - t{j}"
+                for j in ri:
+                    ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} = 0\n"
@@ -126,7 +112,17 @@ class ILPAlgorithm(Algorithm):
                 ilp_str += \
                     f"    t{idx} - [ b{idx} * t{idx}split ] + " \
                         f"[ b{idx} * t{idx}dontsplit ] - " \
-                        f"t{idx}dontsplit = {bb.wcet}\n"
+                        f"t{idx}dontsplit"
+                # The outermost branch nodes are a special case. Since we want
+                # to minimize the WCET of the entire CFG via t0, we need to
+                # chain together the next branch in the outermost sequence to
+                # account for it.
+                if bb.parent == -1:
+                    (is_branch, next_node) = \
+                        self.graph.next_branch_in_sequence(bb.num)
+                    if is_branch:
+                        ilp_str += f" - t{next_node}"
+                ilp_str += f" = {bb.wcet}\n"
             else:
                 ilp_str += \
                     f"    u{idx} = 1\n" \
