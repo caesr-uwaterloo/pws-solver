@@ -54,11 +54,14 @@ class DPAlgorithm(Algorithm):
                 for d in range(1, j):
                     max_value = max(self.sum_children(b_i, d, left=True), \
                                     self.sum_children(b_i, j-d, left=False))
-                    if self.graph.execution_time(b_i) + max_value < self.t[b_i][j]:
+                    candidate_wcet = self.graph.execution_time(b_i) + max_value
+                    if candidate_wcet < self.t[b_i][j]:
                         self.t[b_i][j] = self.graph.execution_time(b_i) \
                             + max_value
                         self.n[b_i][j] = [d, j-d, j]
 
+        # We proceed through the CFG top down and use the tables to determine
+        # the optimal split points
         splits = []
         stack = deque([(0, self.s)])
         outer_node = 0
