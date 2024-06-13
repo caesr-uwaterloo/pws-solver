@@ -86,25 +86,39 @@ class ILPAlgorithm(Algorithm):
                 
                 # (e) bi = 1 ==> ti = ei + max{t(li), t(ri)}
                 #     bi = 0 ==> ti = ei + t(li) + t(ri)
+                # TODO: Preprocess the CFG to remove branch nodes that are also
+                # reconvergence nodes
                 ilp_str += f"    t{idx}split"
-                for j in li:
-                    ilp_str += f" - t{j}"
+                # for j in li:
+                #     ilp_str += f" - t{j}"
+                for i, j in enumerate(li):
+                    if i == 0 or not self.graph.cfg[j].is_branch():
+                        ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}split"
-                for j in ri:
-                    ilp_str += f" - t{j}"
+                # for j in ri:
+                #     ilp_str += f" - t{j}"
+                for i, j in enumerate(ri):
+                    if i == 0 or not self.graph.cfg[j].is_branch():
+                        ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} >= 0\n"
 
                 ilp_str += f"    t{idx}dontsplit"
-                for j in li:
-                    ilp_str += f" - t{j}"
-                for j in ri:
-                    ilp_str += f" - t{j}"
+                # for j in li:
+                #     ilp_str += f" - t{j}"
+                # for j in ri:
+                #     ilp_str += f" - t{j}"
+                for i, j in enumerate(li):
+                    if i == 0 or not self.graph.cfg[j].is_branch():
+                        ilp_str += f" - t{j}"
+                for i, j in enumerate(ri):
+                    if i == 0 or not self.graph.cfg[j].is_branch():
+                        ilp_str += f" - t{j}"
                 if bb.has_else_path():
                     ilp_str += f" - t{bb.bsb}"
                 ilp_str += f" - t{bb.reconv} = 0\n"
