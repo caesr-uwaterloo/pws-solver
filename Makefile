@@ -12,16 +12,16 @@ BENCHMARKS=$(ALL_ASM:.s=)
 
 extract:
 	@for asm in $(BENCHMARKS); do \
-		echo "python extract.py -i $$asm.s -l $$asm.log -u -r"; \
-		python extract.py -i $$asm.s -l $$asm.log -u -r; \
+		echo "python3.12 extract.py -i $$asm.s -l $$asm.log -u -r"; \
+		python3.12 extract.py -i $$asm.s -l $$asm.log -u -r; \
 	done
 
 solve:
 	rm $(CSV_DATA_OUTPUT)
-	python solver.py -c $(CSV_DATA_OUTPUT) -o
+	python3.12 solver.py -c $(CSV_DATA_OUTPUT) -o
 	@for input in $(CSV_INPUTS); do \
-		echo "python solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT)"; \
-		python solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT); \
+		echo "python3.12 solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT)"; \
+		python3.12 solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT); \
 	done
 
 mypy:

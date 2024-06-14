@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.12
 
 """\
 This script takes a graph as input and solves for the split points using each
