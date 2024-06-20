@@ -47,9 +47,8 @@ class Graph():
         self
     ) -> deque[tuple[int, int]]:
         """
-        Finds and removes any loopback edges in the graph. Returns a queue of
-        the removed loopback edges encoded as source and sink basic block
-        pairs.
+        Finds any loopback edges in the graph. Returns a queue of the loopback
+        edges encoded as source and destination basic block pairs.
         """
         self.__loopbacks = deque()
         S = [0]
@@ -203,8 +202,8 @@ class Graph():
 
             # If a loop bound is missing from the log file or no log file is
             # provided, assume only one loop iteration
-            # if (tail, head) not in self.loop_bounds:
-            self.loop_bounds[(tail, head)] = 1
+            if (tail, head) not in self.loop_bounds:
+                self.loop_bounds[(tail, head)] = 1
 
             # Next, we duplicate the subgraph based on the loop bound and
             # insert into the graph. We copy the vertices of the subgraph
@@ -407,25 +406,44 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
+        # The assumption at the start of this method is that the graph has been
+        # fully constructed. Thus, we can add corresponding predecessor edges
+        # for each successor edge.
         self.map_predecessors()
         assert len(self.__loopbacks) == 0
+        # Keep track of the parent of each branch. A stack is needed here
+        # because we may have nested branches.
         parent_stack: list[int] = []
         for idx, u in enumerate(self.__topological_ordering):
             bb = self.cfg[u]
+            # If we're at a reconvergence point for any branches in the stack,
+            # this means we are taking one step out in the nesting hierarchy.
+            # A node can serve as a reconvergence point for multiple nested
+            # branches, so we keep popping the stack until that is no longer
+            # true. Afterwards, we are left with the parent branch of the
+            # current block we are updating (unless it is an outermost branch).
             while len(parent_stack) > 0 \
                 and u == self.cfg[parent_stack[-1]].reconv:
                 parent_stack.pop()
             if len(parent_stack) > 0:
                 bb.parent = parent_stack[-1]
+
+            # Nodes with multiple successors are either BSBs or branch nodes.
             if len(bb.successors()) > 1:
                 if not bb.is_bsb():
                     parent_stack.append(u)
-                forward_branch_targets = \
-                    [v for v in bb.successors() if self.__topological_ordering.index(v) > idx + 1]
+                # Here we find all successors that don't immediately follow the
+                # node in topological order, which may be a BSB or
+                # reconvergence block. We use them to update the BSB (if
+                # applicable) and reconvergence point for each branch.
+                forward_branch_targets = [
+                    v for v in bb.successors() \
+                    if self.__topological_ordering.index(v) > idx + 1
+                ]
                 for v in forward_branch_targets:
                     if self.cfg[v].is_bsb():
                         self.cfg[u].bsb = v
-                    if self.cfg[v].is_reconv():
+                    elif self.cfg[v].is_reconv():
                         if bb.is_bsb():
                             self.cfg[bb.parent].reconv = v
                             self.cfg[v].parent = bb.parent

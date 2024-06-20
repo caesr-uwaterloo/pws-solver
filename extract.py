@@ -214,6 +214,8 @@ if __name__ == '__main__':
             g.find_branches()
         g.separate_branches_from_joins()
         if args.renumber:
+            if not args.unroll:
+                g.get_loopback_edges()
             g.renumber_basic_blocks()
     path = Path(args.input)
     for i, graph in enumerate(e.graphs):
