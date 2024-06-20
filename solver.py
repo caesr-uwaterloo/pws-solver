@@ -98,7 +98,7 @@ if __name__ == '__main__':
     time_header = ','.join([f"{a.name()} Runtime" for a in algs])
     csv_row = ""
     if args.omit:
-        csv_row = f"{wcet_header},{time_header}"
+        csv_row = f"Name,{wcet_header},{time_header}\n"
     else:
         assert Path(args.input).is_file()
         a: Algorithm

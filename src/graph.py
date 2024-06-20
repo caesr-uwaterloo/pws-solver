@@ -104,7 +104,20 @@ class Graph():
             new_pc_map[pc] = new_bb_idx
 
         self.cfg = new_cfg
+        self.__topological_ordering = \
+            list(range(0, len(self.cfg)))
         self.pc_map = new_pc_map
+
+    def map_predecessors(
+        self
+    ) -> None:
+        """
+        Given a CFG, if an edge exists from a basic block to a successor, adds
+        a predecessor edge in the opposite direction
+        """
+        for bb_idx, bb in self.cfg.items():
+            for succ in bb.successors():
+                self.cfg[succ].add_predecessor(bb_idx)
 
     def separate_branches_from_joins(
         self
@@ -136,6 +149,8 @@ class Graph():
                 old_successors = bb.successors()
                 for succ in old_successors:
                     self.cfg[bb_idx].remove_successor(succ)
+                    if bb_idx in self.cfg[succ].predecessors():
+                        self.cfg[succ].remove_predecessor(bb_idx)
                     self.cfg[new_idx].add_successor(succ)
                 self.cfg[bb_idx].add_successor(new_idx)
 
@@ -153,6 +168,8 @@ class Graph():
             # First, we remove the loopback edge that will be unrolled from the
             # CFG and from the list of loopback edges
             self.cfg[tail].remove_successor(head)
+            if tail in self.cfg[head].predecessors():
+                self.cfg[head].remove_predecessor(tail)
             loopbacks.popleft()
 
             # The basic block at the end of the loop should only have a single
@@ -165,6 +182,8 @@ class Graph():
             # CFG until unrolling is complete
             if len(tail_successors) == 1:
                 self.cfg[tail].remove_successor(tail_successors[0])
+                if tail in self.cfg[tail_successors[0]].predecessors():
+                    self.cfg[tail_successors[0]].remove_predecessor(tail)
 
             # Get the subgraph induced by the head and tail of the loopback
             # edge and every edge between them in topological order
@@ -184,8 +203,8 @@ class Graph():
 
             # If a loop bound is missing from the log file or no log file is
             # provided, assume only one loop iteration
-            if (tail, head) not in self.loop_bounds:
-                self.loop_bounds[(tail, head)] = 1
+            # if (tail, head) not in self.loop_bounds:
+            self.loop_bounds[(tail, head)] = 1
 
             # Next, we duplicate the subgraph based on the loop bound and
             # insert into the graph. We copy the vertices of the subgraph
@@ -388,9 +407,10 @@ class Graph():
         Set properties of each branching block for use by the split point
         selection algorithms
         """
+        self.map_predecessors()
         assert len(self.__loopbacks) == 0
         parent_stack: list[int] = []
-        for u in sorted(self.cfg.keys()):
+        for idx, u in enumerate(self.__topological_ordering):
             bb = self.cfg[u]
             while len(parent_stack) > 0 \
                 and u == self.cfg[parent_stack[-1]].reconv:
@@ -401,7 +421,7 @@ class Graph():
                 if not bb.is_bsb():
                     parent_stack.append(u)
                 forward_branch_targets = \
-                    [v for v in bb.successors() if v > u + 1]
+                    [v for v in bb.successors() if self.__topological_ordering.index(v) > idx + 1]
                 for v in forward_branch_targets:
                     if self.cfg[v].is_bsb():
                         self.cfg[u].bsb = v
@@ -468,7 +488,7 @@ class Graph():
         # the same parent or the end of the CFG
         next_node = self.next_block_in_sequence(node)
         while next_node not in self.branch_vertices() \
-            and next_node < len(self.cfg) - 1:
+            and len(self.cfg[next_node].successors()) > 0:
             next_node = \
                 self.next_block_in_sequence(next_node)
         return (next_node in self.branch_vertices(), next_node)
@@ -564,7 +584,10 @@ class Graph():
         self.cfg = {}
         self.pc_map = {}
         self.loop_bounds = {}
-        df = pd.read_csv(file_name)
+        # For some reason, pandas sometimes reads the successors as floats if
+        # we don't specify the dtype explicitly here, causing some errors down
+        # the line
+        df = pd.read_csv(file_name, dtype={'successors': str})
         for idx, row in df.iterrows():
             self.insert_basic_block(num=idx, wcet=row["wcet"])
             bb = self.cfg[idx]

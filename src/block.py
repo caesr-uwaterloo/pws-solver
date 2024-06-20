@@ -29,6 +29,7 @@ class BasicBlock():
         self.is_a_bsb: bool = False
         self.is_a_reconv: bool = False
         self.__successors: set[int] = set()
+        self.__predecessors: set[int] = set()
         self.__insts: dict[int, str] = {}
 
         if other:
@@ -62,6 +63,25 @@ class BasicBlock():
         Returns the basic block successor set
         """
         return sorted(self.__successors)
+
+    def add_predecessor(self, bb: int) -> None:
+        """
+        Map a predecessor node to this basic block
+        """
+        self.__predecessors.add(bb)
+
+    def remove_predecessor(self, bb: int) -> None:
+        """
+        Remove a predecessor node of this basic block
+        """
+        assert bb in self.__predecessors
+        self.__predecessors.remove(bb)
+
+    def predecessors(self) -> list[int]:
+        """
+        Returns the basic block predecessor set
+        """
+        return sorted(self.__predecessors)
 
     def immediate_successor(self) -> int:
         """
@@ -105,6 +125,11 @@ class BasicBlock():
         """
         if len(self.__insts) == 0:
             return self.is_a_reconv
+        # In some cases, the conditional branch that causes divergence is not
+        # based on the execution mask and the reconvergence block does not
+        # restore the execution mask. We aim to detect that here.
+        if len(self.__predecessors) > 1 and not self.is_bsb():
+            return True
         first_inst = list(self.__insts.values())[0]
         return bool(re.search(
             pattern.INST_START_RECONV,

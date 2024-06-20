@@ -20,7 +20,10 @@ class NaiveAlgorithm(Algorithm):
         return "Naive"
 
     def solve(self) -> list[int]:
-        start = self.graph.branch_vertices()[0]
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
+        start = branches[0]
         self.wcet(splits=[], start=start)
         splits = [m[0] for m in sorted(self.benefit.items(),
                                        key=lambda item: item[1],

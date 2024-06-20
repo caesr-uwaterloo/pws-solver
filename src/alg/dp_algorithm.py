@@ -44,9 +44,13 @@ class DPAlgorithm(Algorithm):
         return "DP"
 
     def solve(self) -> list[int]:
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
+
         # fill_tables
         for j in range(2, self.s + 1):
-            for b_i in sorted(self.graph.branch_vertices(), reverse=True):
+            for b_i in sorted(branches, reverse=True):
                 self.t[b_i][j] = self.graph.execution_time(b_i) \
                     + self.sum_children(b_i, j, left=True) \
                     + self.sum_children(b_i, j, left=False)
@@ -63,19 +67,34 @@ class DPAlgorithm(Algorithm):
         # We proceed through the CFG top down and use the tables to determine
         # the optimal split points
         splits = []
+        # Maintain a stack of tuples representing a node index and the number
+        # of SIMDs available to that node in the optimal solution
         stack = deque([(0, self.s)])
         outer_node = 0
         while len(stack):
             (u, j) = stack.pop()
-            entry = self.n[u][j]
-            if entry[0] + entry[1] == j:
-                splits.append(u)
-            for r in self.graph.right_children(u):
-                if r in self.graph.branch_vertices() and entry[1] > 1:
-                    stack.append((r, int(entry[1])))
-            for l in self.graph.left_children(u):
-                if l in self.graph.branch_vertices() and entry[0] > 1:
-                    stack.append((l, int(entry[0])))
+            # If the popped node is a branch, then we check if the algorithm
+            # chose to split here, then add the left and right children to the
+            # stack to check if there are any split points there
+            if u in branches:
+                entry = self.n[u][j]
+                if entry[0] + entry[1] == j:
+                    splits.append(u)
+                for r in self.graph.right_children(u):
+                    if r in branches and entry[1] > 1:
+                        stack.append((r, int(entry[1])))
+                for l in self.graph.left_children(u):
+                    if l in branches and entry[0] > 1:
+                        stack.append((l, int(entry[0])))
+            # If the popped node is not a branch, then we don't check if we
+            # split on it and we don't check for any children, just proceed to
+            # the next node
+            else:
+                bb = self.graph.cfg[u]
+                assert not bb.is_branch()
+                stack.append((bb.immediate_successor(), j))
+            # The outermost branch may converge, but there may be additional
+            # branches past this point in the CFG. We consider them here.
             if len(stack) == 0:
                 (is_branch, outer_node) = \
                     self.graph.next_branch_in_sequence(outer_node)

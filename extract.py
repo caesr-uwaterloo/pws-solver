@@ -205,6 +205,7 @@ if __name__ == '__main__':
     if len(args.log):
         e.parse_log(args.log)
     for g in e.graphs:
+        g.map_predecessors()
         if args.unroll:
             g.unroll_loops()
             # We need to separate nodes that act as both branch nodes and get

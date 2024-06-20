@@ -21,7 +21,10 @@ class RandomAlgorithm(Algorithm):
 
     def solve(self) -> list[int]:
         random.seed(0)
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
         return sorted(random.choices(
-            population=self.graph.branch_vertices(),
+            population=branches,
             k=self.s-1
         ))

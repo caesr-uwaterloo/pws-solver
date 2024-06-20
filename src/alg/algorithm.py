@@ -38,7 +38,8 @@ class Algorithm():
             return -1
         idx = start
         w = 0
-        while idx < len(self.graph.cfg) - 1:
+        while idx < len(self.graph.cfg) - 1 and \
+            len(self.graph.cfg[idx].successors()) > 0:
             w += self.wcet_branch(splits, idx)
             idx = self.graph.next_block_in_sequence(idx)
         return w
