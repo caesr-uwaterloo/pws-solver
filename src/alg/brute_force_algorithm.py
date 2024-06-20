@@ -23,6 +23,10 @@ class BruteForceAlgorithm(Algorithm):
         return "Brute Force"
 
     def solve(self) -> list[int]:
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
+
         n = len(self.branches)
         combos = itertools.product([0, 1], repeat=n)
         min_wcet = np.inf

@@ -24,6 +24,10 @@ class ILPAlgorithm(Algorithm):
         return "ILP"
     
     def solve(self) -> list[int]:
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
+
         ret = []
         if self.has_gurobi:
             subprocess.call([

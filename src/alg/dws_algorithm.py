@@ -19,4 +19,8 @@ class DWSAlgorithm(Algorithm):
         return "DWS"
 
     def solve(self) -> list[int]:
+        branches = self.graph.branch_vertices()
+        if len(branches) == 0:
+            return []
+
         return sorted(self.graph.branch_vertices())[:self.s-1]
