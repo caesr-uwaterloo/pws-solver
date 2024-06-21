@@ -5,10 +5,12 @@ This module defines some constants to use for pattern-matching
 """
 
 LIST_INST_DOUBLE_WORD_LONG_IMM = [
+    "s_add_i32",
     "s_and_b32",
     "s_mov_b32",
     "s_sub_i32",
     "v_add_u32_e32",
+    "v_and_b32_e32",
     "v_and_b32",
     "v_mov_b32",
     "v_mul_f32",
@@ -17,7 +19,6 @@ LIST_INST_DOUBLE_WORD_LONG_IMM = [
     "v_or_b32",
     "v_sub_f32_e32",
     "v_xor_b32_e32",
-    "v_and_b32_e32",
 ]
 """
 These instructions are normally a single word long, but they may have 32-bit
