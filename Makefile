@@ -3,6 +3,7 @@ KERNEL=000
 
 CSV_DATA_OUTPUT=solver-data.csv
 TIMEOUT=60
+NUM_SIMDS=3
 
 CSV_SYNTHETIC_INPUTS=$(wildcard data/synthetic/*.csv)
 CSV_RODINIA_INPUTS=$(wildcard data/rodinia/*.csv)
@@ -27,8 +28,9 @@ solve:
 	python3.12 solver.py -c $(CSV_DATA_OUTPUT) -o
 	@for input in $(CSV_INPUTS); do \
 		echo "python3.12 solver.py \
-			-i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT)"; \
-		python3.12 solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT); \
+			-i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) -s $(NUM_SIMDS)"; \
+		python3.12 solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) \
+			-s $(NUM_SIMDS); \
 	done
 
 mypy:
