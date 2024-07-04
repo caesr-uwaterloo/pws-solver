@@ -4,6 +4,7 @@ KERNEL=000
 CSV_DATA_OUTPUT=solver-data.csv
 TIMEOUT=60
 NUM_SIMDS=3
+ALGORITHMS=No Splitting,DWS,Random,Naive,DP,Brute Force,ILP
 
 PYTHON=python3.12
 
@@ -27,12 +28,12 @@ extract:
 
 solve:
 	rm -f $(CSV_DATA_OUTPUT)
-	$(PYTHON) solver.py -c $(CSV_DATA_OUTPUT) -o
+	$(PYTHON) solver.py -c $(CSV_DATA_OUTPUT) -a "$(ALGORITHMS)" -o
 	@for input in $(CSV_INPUTS); do \
 		echo "$(PYTHON) solver.py \
 			-i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) -s $(NUM_SIMDS)"; \
 		$(PYTHON) solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) \
-			-s $(NUM_SIMDS); \
+			-s $(NUM_SIMDS) -a "$(ALGORITHMS)"; \
 	done
 
 mypy:
