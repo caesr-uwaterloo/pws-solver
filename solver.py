@@ -106,12 +106,13 @@ if __name__ == '__main__':
             signal.signal(signal.SIGALRM, handler)
             signal.alarm(args.timeout)
             start = timeit.default_timer()
+            wcet = -1
             try:
                 sp = a.solve()
+                wcet = a.wcet(splits=sp)
             except TimeoutError:
                 sp = [-1]
             end = timeit.default_timer()
-            wcet = a.wcet(splits=sp)
             choice = ','.join([str(i) for i in sp])
             wcets.append(str(wcet))
             runtimes.append(str(end-start))
