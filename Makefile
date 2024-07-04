@@ -5,6 +5,8 @@ CSV_DATA_OUTPUT=solver-data.csv
 TIMEOUT=60
 NUM_SIMDS=3
 
+PYTHON=python3.12
+
 CSV_SYNTHETIC_INPUTS=$(wildcard data/synthetic/*.csv)
 CSV_RODINIA_INPUTS=$(wildcard data/rodinia/*.csv)
 CSV_INPUTS= $(CSV_RODINIA_INPUTS) $(CSV_SYNTHETIC_INPUTS)
@@ -19,17 +21,17 @@ BENCHMARKS=$(ALL_ASM:.s=)
 
 extract:
 	@for asm in $(BENCHMARKS); do \
-		echo "python3.12 extract.py -i $$asm.s -l $$asm.log -u -r"; \
-		python3.12 extract.py -i $$asm.s -l $$asm.log -u -r; \
+		echo "$(PYTHON) extract.py -i $$asm.s -l $$asm.log -u -r"; \
+		$(PYTHON) extract.py -i $$asm.s -l $$asm.log -u -r; \
 	done
 
 solve:
 	rm -f $(CSV_DATA_OUTPUT)
-	python3.12 solver.py -c $(CSV_DATA_OUTPUT) -o
+	$(PYTHON) solver.py -c $(CSV_DATA_OUTPUT) -o
 	@for input in $(CSV_INPUTS); do \
-		echo "python3.12 solver.py \
+		echo "$(PYTHON) solver.py \
 			-i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) -s $(NUM_SIMDS)"; \
-		python3.12 solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) \
+		$(PYTHON) solver.py -i $$input -c $(CSV_DATA_OUTPUT) -t $(TIMEOUT) \
 			-s $(NUM_SIMDS); \
 	done
 
