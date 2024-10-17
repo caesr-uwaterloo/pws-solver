@@ -1,10 +1,11 @@
+__pycache__/
+.vscode/
 *.csv
 *.lp
 *.png
 *.sol
 *anno.s
-.vscode/
-__pycache__/
 env/
 gurobi.log
 pc.*.txt
+temp*

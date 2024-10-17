@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  4 2024 17:45:48
-gem5 executing on 908dcad321bf, pid 103379
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /rocm-examples/Applications/prefix_sum/applications_prefix_sum -o ' -n 64'
+gem5 compiled Oct 11 2024 18:07:55
+gem5 started Oct 11 2024 18:57:11
+gem5 executing on 908dcad321bf, pid 71915
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /rocm-examples/Applications/prefix_sum/applications_prefix_sum -o ' -n 64'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -586,7 +586,7 @@ Final sum on
   host  : 0.213136
 
 PASSED!
-Ticks: 83289862500
+Ticks: 83290844500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m29.112s
+Time elapsed: 1m30.042s

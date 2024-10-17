@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  4 2024 16:48:32
-gem5 executing on 908dcad321bf, pid 72621
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/b+tree/b+tree -o 'file /hip-benchmarks/rodinia_3.0/data/b+tree/hundred.txt command /hip-benchmarks/rodinia_3.0/data/b+tree/command-small.txt'
+gem5 compiled Oct 11 2024 18:07:55
+gem5 started Oct 11 2024 18:15:48
+gem5 executing on 908dcad321bf, pid 49922
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/b+tree/b+tree -o 'file /hip-benchmarks/rodinia_3.0/data/b+tree/hundred.txt command /hip-benchmarks/rodinia_3.0/data/b+tree/command-small.txt'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -206,95 +206,95 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 # of blocks = 1, # of threads/block = 256 (ensure that device can handle)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-80094356000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dwordx16 s[12:27], s[4:5], 0x00
-80094360000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dwordx4 s[8:11], s[4:5], 0x50
-80094376000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_load_dwordx4 s[28:31], s[4:5], 0x40
-80094377000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_waitcnt lgkmcnt(0)
-80095709000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00028 v_cmp_lt_i64 s[0:1], s[12:13], 1
-80095713000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 v_mov_b32 v1, 0
-80095714000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_and_b64 vcc_lo, exec, s0
-80095718000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_cbranch_vccnz
-80096046000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00808 s_ashr_i32 s7, s6, 31
-80096058000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00812 s_lshl_b64 s10, s6, 3
-80096074000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00816 s_add_u32 s0, s18, s10
-80096090000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00820 s_addc_u32 s1, s19, s11
-80096093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00824 v_mov_b32 v3, s1
-80096371000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00828 v_mov_b32 v2, s0
-80096372000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00832 flat_load_dwordx2 v2, v[2:3]
-80096373000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00840 s_movk_i32 s2, 0x0814
-80096375000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00844 v_mov_b32 v8, s15
-80096379000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00848 v_lshlrev_b64 v[4:5], 2, v[0:1]
-80096381000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00856 s_movk_i32 s3, 0x0408
-80096389000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00860 s_lshl_b64 s0, s6, 2
-80096405000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00864 s_add_u32 s4, s26, s0
-80096421000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00868 s_addc_u32 s5, s27, s1
-80096424000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00872 v_mov_b32 v7, s5
-80096428000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00876 v_mov_b32 v6, s4
-80096441000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00880 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80097691000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00884 v_mul_lo_u32 v9, v3, s2
-80097695000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00892 v_mul_hi_u32 v10, v2, s2
-80097696000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00900 flat_load_dword v6, v[6:7]
-80097699000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00908 v_mul_lo_u32 v7, v2, s2
-80097703000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00916 v_add_u32 v9, vcc, v10, v9
-80097707000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00920 v_add_u32 v7, vcc, s14, v7
-80097711000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00924 v_addc_u32 v8, vcc, v8, v9, vcc
-80097715000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00928 v_add_u32 v4, vcc, v7, v4
-80097719000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00932 v_addc_u32 v5, vcc, v8, v5, vcc
-80097723000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00936 v_add_u32 v4, vcc, s3, v4
-80097727000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00940 v_addc_u32 v5, vcc, 0, v5, vcc
-80098724000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00944 flat_load_dword v4, v[4:5]
-80098725000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00952 s_add_u32 s4, s30, s0
-80098729000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00956 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80100063000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00960 v_cmp_eq_u32 vcc, v4, v6
-80100064000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00964 s_addc_u32 s5, s31, s1
-80100068000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00968 s_and_saveexec_b64 s6, vcc_lo
-80100072000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00972 s_cbranch_execz label_60
-80100400000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01068 s_or_b64 exec, exec, s6
-80100404000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01072 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80100416000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01076 s_barrier
-80101987000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01080 s_waitcnt lgkmcnt(0)
-80102003000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01084 s_add_u32 s6, s22, s10
-80102019000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01088 s_addc_u32 s7, s23, s11
-80102020000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01092 v_mov_b32 v2, s6
-80102024000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01096 v_mov_b32 v3, s7
-80102025000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01100 flat_load_dwordx2 v2, v[2:3]
-80102028000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01108 v_mov_b32 v8, s15
-80102032000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01112 v_lshlrev_b64 v[4:5], 2, v[0:1]
-80102035000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01120 s_add_u32 s6, s28, s0
-80102039000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01124 s_addc_u32 s7, s29, s1
-80102047000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01128 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80103343000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01132 v_mul_lo_u32 v9, v3, s2
-80103347000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01140 v_mul_hi_u32 v10, v2, s2
-80103351000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01148 v_mov_b32 v6, s6
-80103355000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01152 v_mov_b32 v7, s7
-80103359000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01156 v_mul_lo_u32 v11, v2, s2
-80103363000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01164 v_add_u32 v9, vcc, v10, v9
-80103367000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01168 v_add_u32 v10, vcc, s14, v11
-80103371000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01172 v_addc_u32 v8, vcc, v8, v9, vcc
-80103375000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01176 v_add_u32 v4, vcc, v10, v4
-80103379000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01180 v_addc_u32 v5, vcc, v8, v5, vcc
-80103383000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01184 v_add_u32 v4, vcc, s3, v4
-80103387000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01188 v_addc_u32 v5, vcc, 0, v5, vcc
-80103388000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01192 flat_load_dword v8, v[4:5]
-80103392000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01200 flat_load_dword v9, v[6:7]
-80103393000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01208 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80104711000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01212 v_cmp_eq_u32 vcc, v8, v9
-80104714000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01216 s_and_saveexec_b64 s2, vcc_lo
-80104718000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01220 s_cbranch_execz label_84
-80105046000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01352 s_endpgm
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77a000             |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1220  | 1352  | 1     | 2184000      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1068  | 1220  | 1     | 4330000      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 972   | 1068  | 1     | 665000       |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 44    | 972   | 1     | 4408000      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 44    | 1     | 2688999      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13864999                      |
-80106918000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80093498000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dwordx16 s[12:27], s[4:5], 0x00
+80093502000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dwordx4 s[8:11], s[4:5], 0x50
+80093518000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_load_dwordx4 s[28:31], s[4:5], 0x40
+80093519000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_waitcnt lgkmcnt(0)
+80094851000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00028 v_cmp_lt_i64 s[0:1], s[12:13], 1
+80094855000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 v_mov_b32 v1, 0
+80094856000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_and_b64 vcc_lo, exec, s0
+80094860000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_cbranch_vccnz
+80095191000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00808 s_ashr_i32 s7, s6, 31
+80095203000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00812 s_lshl_b64 s10, s6, 3
+80095219000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00816 s_add_u32 s0, s18, s10
+80095235000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00820 s_addc_u32 s1, s19, s11
+80095238000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00824 v_mov_b32 v3, s1
+80095516000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00828 v_mov_b32 v2, s0
+80095517000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00832 flat_load_dwordx2 v2, v[2:3]
+80095518000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00840 s_movk_i32 s2, 0x0814
+80095520000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00844 v_mov_b32 v8, s15
+80095524000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00848 v_lshlrev_b64 v[4:5], 2, v[0:1]
+80095526000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00856 s_movk_i32 s3, 0x0408
+80095534000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00860 s_lshl_b64 s0, s6, 2
+80095550000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00864 s_add_u32 s4, s26, s0
+80095566000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00868 s_addc_u32 s5, s27, s1
+80095569000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00872 v_mov_b32 v7, s5
+80095573000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00876 v_mov_b32 v6, s4
+80095586000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00880 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80096836000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00884 v_mul_lo_u32 v9, v3, s2
+80096840000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00892 v_mul_hi_u32 v10, v2, s2
+80096841000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00900 flat_load_dword v6, v[6:7]
+80096844000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00908 v_mul_lo_u32 v7, v2, s2
+80096848000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00916 v_add_u32 v9, vcc, v10, v9
+80096852000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00920 v_add_u32 v7, vcc, s14, v7
+80096856000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00924 v_addc_u32 v8, vcc, v8, v9, vcc
+80096860000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00928 v_add_u32 v4, vcc, v7, v4
+80096864000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00932 v_addc_u32 v5, vcc, v8, v5, vcc
+80096868000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00936 v_add_u32 v4, vcc, s3, v4
+80096872000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00940 v_addc_u32 v5, vcc, 0, v5, vcc
+80097869000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00944 flat_load_dword v4, v[4:5]
+80097870000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00952 s_add_u32 s4, s30, s0
+80097874000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00956 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80099208000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00960 v_cmp_eq_u32 vcc, v4, v6
+80099209000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00964 s_addc_u32 s5, s31, s1
+80099213000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00968 s_and_saveexec_b64 s6, vcc_lo
+80099217000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00972 s_cbranch_execz label_60
+80099545000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01068 s_or_b64 exec, exec, s6
+80099549000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01072 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80099561000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01076 s_barrier
+80101132000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01080 s_waitcnt lgkmcnt(0)
+80101148000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01084 s_add_u32 s6, s22, s10
+80101164000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01088 s_addc_u32 s7, s23, s11
+80101165000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01092 v_mov_b32 v2, s6
+80101169000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01096 v_mov_b32 v3, s7
+80101170000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01100 flat_load_dwordx2 v2, v[2:3]
+80101173000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01108 v_mov_b32 v8, s15
+80101177000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01112 v_lshlrev_b64 v[4:5], 2, v[0:1]
+80101180000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01120 s_add_u32 s6, s28, s0
+80101184000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01124 s_addc_u32 s7, s29, s1
+80101192000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01128 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80102488000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01132 v_mul_lo_u32 v9, v3, s2
+80102492000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01140 v_mul_hi_u32 v10, v2, s2
+80102496000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01148 v_mov_b32 v6, s6
+80102500000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01152 v_mov_b32 v7, s7
+80102504000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01156 v_mul_lo_u32 v11, v2, s2
+80102508000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01164 v_add_u32 v9, vcc, v10, v9
+80102512000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01168 v_add_u32 v10, vcc, s14, v11
+80102516000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01172 v_addc_u32 v8, vcc, v8, v9, vcc
+80102520000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01176 v_add_u32 v4, vcc, v10, v4
+80102524000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01180 v_addc_u32 v5, vcc, v8, v5, vcc
+80102528000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01184 v_add_u32 v4, vcc, s3, v4
+80102532000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01188 v_addc_u32 v5, vcc, 0, v5, vcc
+80102533000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01192 flat_load_dword v8, v[4:5]
+80102537000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01200 flat_load_dword v9, v[6:7]
+80102538000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01208 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80103856000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01212 v_cmp_eq_u32 vcc, v8, v9
+80103859000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01216 s_and_saveexec_b64 s2, vcc_lo
+80103863000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01220 s_cbranch_execz label_84
+80104192000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01352 s_endpgm
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e77a000             |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1220  | 1352  | 1     | 1933000      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1068  | 1220  | 1     | 4330000      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 972   | 1068  | 1     | 665000       |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 44    | 972   | 1     | 4400000      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 44    | 1     | 2688999      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13616999                      |
+80105812000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 > In main loop, instruction is  > In main loop, instruction is 1> In main loop, instruction is  > In main loop, instruction is 2> In main loop, instruction is 
 > In main loop, instruction is k
  ******command: k count=1 
@@ -302,89 +302,89 @@ records_elem=100, records_unit_mem=4, records_mem=400
 knodes_elem=1, knodes_unit_mem=2068, knodes_mem=2068
 # of blocks = 1, # of threads/block = 256 (ensure that device can handle)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-81966219000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00000 s_load_dwordx16 s[8:23], s[4:5], 0x00
-81966220000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00008 s_waitcnt lgkmcnt(0)
-81966277000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00012 v_cmp_lt_i64 s[0:1], s[8:9], 1
-81966281000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00020 v_mov_b32 v1, 0
-81966282000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00024 s_and_b64 vcc_lo, exec, s0
-81966286000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00028 s_cbranch_vccnz
-81966614000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00484 s_ashr_i32 s7, s6, 31
-81966626000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00488 s_lshl_b64 s0, s6, 3
-81966642000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00492 s_add_u32 s0, s16, s0
-81966658000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00496 s_addc_u32 s1, s17, s1
-81966661000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00500 v_mov_b32 v3, s1
-81966665000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00504 v_mov_b32 v2, s0
-81966939000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00508 flat_load_dwordx2 v2, v[2:3]
-81966940000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00516 s_movk_i32 s2, 0x0814
-81966941000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00520 v_mov_b32 v8, s11
-81966945000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00524 v_lshlrev_b64 v[4:5], 2, v[0:1]
-81966948000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00532 s_movk_i32 s3, 0x0408
-81966956000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00536 s_lshl_b64 s0, s6, 2
-81966972000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00540 s_add_u32 s4, s20, s0
-81966988000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00544 s_addc_u32 s5, s21, s1
-81967004000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00548 s_waitcnt vmcnt(0) & lgkmcnt(0)
-81968258000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00552 v_mul_lo_u32 v9, v3, s2
-81968262000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00560 v_mul_hi_u32 v10, v2, s2
-81968266000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00568 v_mov_b32 v7, s5
-81968270000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00572 v_mov_b32 v6, s4
-81968274000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00576 v_mul_lo_u32 v11, v2, s2
-81968278000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00584 v_add_u32 v9, vcc, v10, v9
-81968282000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00588 v_add_u32 v10, vcc, s10, v11
-81968286000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00592 v_addc_u32 v8, vcc, v8, v9, vcc
-81968290000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00596 v_add_u32 v4, vcc, v10, v4
-81968294000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00600 v_addc_u32 v5, vcc, v8, v5, vcc
-81968298000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00604 v_add_u32 v4, vcc, s3, v4
-81968302000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00608 v_addc_u32 v5, vcc, 0, v5, vcc
-81968303000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00612 flat_load_dword v8, v[4:5]
-81968307000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00620 flat_load_dword v9, v[6:7]
-81968308000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00628 s_waitcnt vmcnt(0) & lgkmcnt(0)
-81969714000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00632 v_cmp_eq_u32 vcc, v8, v9
-81969717000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00636 s_and_saveexec_b64 s4, vcc_lo
-81969721000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00640 s_cbranch_execz label_8c
-81969722000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00644 v_mul_lo_u32 v3, v3, s2
-81969726000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00652 v_mul_hi_u32 v4, v2, s2
-81969730000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00660 v_mul_lo_u32 v2, v2, s2
-81969734000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00668 v_add_u32 v3, vcc, v4, v3
-81969738000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00672 v_mov_b32 v4, s11
-81969742000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00676 v_add_u32 v2, vcc, s10, v2
-81969746000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00680 v_addc_u32 v3, vcc, v4, v3, vcc
-81969750000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00684 v_lshlrev_b64 v[0:1], 2, v[0:1]
-81969754000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00692 v_add_u32 v0, vcc, v2, v0
-81969758000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00696 v_addc_u32 v1, vcc, v3, v1, vcc
-81970049000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00700 v_add_u32 v0, vcc, 4, v0
-81970053000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00704 v_addc_u32 v1, vcc, 0, v1, vcc
-81970054000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00708 flat_load_dword v0, v[0:1]
-81970057000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00716 v_mov_b32 v2, s15
-81970058000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00720 s_waitcnt vmcnt(0) & lgkmcnt(0)
-81970400000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00724 v_ashrrev_i32 v1, 31, v0
-81970404000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00728 v_lshlrev_b64 v[0:1], 2, v[0:1]
-81970408000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00736 v_add_u32 v0, vcc, s14, v0
-81970412000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00740 v_addc_u32 v1, vcc, v2, v1, vcc
-81970413000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00744 flat_load_dword v2, v[0:1]
-81970414000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00752 s_add_u32 s0, s22, s0
-81970418000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00756 s_addc_u32 s1, s23, s1
-81970419000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00760 v_mov_b32 v0, s0
-81970423000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00764 v_mov_b32 v1, s1
-81970424000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00768 s_waitcnt vmcnt(0) & lgkmcnt(0)
-81971732000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00772 flat_store_dword v[0:1], v2
-81972956000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00780 s_endpgm
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e771000             |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 640   | 780   | 1     | 3235000      |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 28    | 640   | 1     | 3439000      |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 28    | 1     | 1525999      |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 8171999                       |
-81972956000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81964967000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00000 s_load_dwordx16 s[8:23], s[4:5], 0x00
+81964968000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00008 s_waitcnt lgkmcnt(0)
+81965025000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00012 v_cmp_lt_i64 s[0:1], s[8:9], 1
+81965029000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00020 v_mov_b32 v1, 0
+81965030000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00024 s_and_b64 vcc_lo, exec, s0
+81965034000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00028 s_cbranch_vccnz
+81965362000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00484 s_ashr_i32 s7, s6, 31
+81965374000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00488 s_lshl_b64 s0, s6, 3
+81965390000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00492 s_add_u32 s0, s16, s0
+81965406000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00496 s_addc_u32 s1, s17, s1
+81965409000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00500 v_mov_b32 v3, s1
+81965413000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00504 v_mov_b32 v2, s0
+81965687000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00508 flat_load_dwordx2 v2, v[2:3]
+81965688000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00516 s_movk_i32 s2, 0x0814
+81965689000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00520 v_mov_b32 v8, s11
+81965693000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00524 v_lshlrev_b64 v[4:5], 2, v[0:1]
+81965696000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00532 s_movk_i32 s3, 0x0408
+81965704000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00536 s_lshl_b64 s0, s6, 2
+81965720000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00540 s_add_u32 s4, s20, s0
+81965736000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00544 s_addc_u32 s5, s21, s1
+81965752000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00548 s_waitcnt vmcnt(0) & lgkmcnt(0)
+81967006000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00552 v_mul_lo_u32 v9, v3, s2
+81967010000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00560 v_mul_hi_u32 v10, v2, s2
+81967014000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00568 v_mov_b32 v7, s5
+81967018000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00572 v_mov_b32 v6, s4
+81967022000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00576 v_mul_lo_u32 v11, v2, s2
+81967026000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00584 v_add_u32 v9, vcc, v10, v9
+81967030000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00588 v_add_u32 v10, vcc, s10, v11
+81967034000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00592 v_addc_u32 v8, vcc, v8, v9, vcc
+81967038000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00596 v_add_u32 v4, vcc, v10, v4
+81967042000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00600 v_addc_u32 v5, vcc, v8, v5, vcc
+81967046000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00604 v_add_u32 v4, vcc, s3, v4
+81967050000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00608 v_addc_u32 v5, vcc, 0, v5, vcc
+81967051000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00612 flat_load_dword v8, v[4:5]
+81967055000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00620 flat_load_dword v9, v[6:7]
+81967056000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00628 s_waitcnt vmcnt(0) & lgkmcnt(0)
+81968462000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00632 v_cmp_eq_u32 vcc, v8, v9
+81968465000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00636 s_and_saveexec_b64 s4, vcc_lo
+81968469000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00640 s_cbranch_execz label_8c
+81968470000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00644 v_mul_lo_u32 v3, v3, s2
+81968474000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00652 v_mul_hi_u32 v4, v2, s2
+81968478000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00660 v_mul_lo_u32 v2, v2, s2
+81968482000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00668 v_add_u32 v3, vcc, v4, v3
+81968486000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00672 v_mov_b32 v4, s11
+81968490000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00676 v_add_u32 v2, vcc, s10, v2
+81968494000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00680 v_addc_u32 v3, vcc, v4, v3, vcc
+81968498000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00684 v_lshlrev_b64 v[0:1], 2, v[0:1]
+81968502000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00692 v_add_u32 v0, vcc, v2, v0
+81968506000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00696 v_addc_u32 v1, vcc, v3, v1, vcc
+81968797000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00700 v_add_u32 v0, vcc, 4, v0
+81968801000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00704 v_addc_u32 v1, vcc, 0, v1, vcc
+81968802000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00708 flat_load_dword v0, v[0:1]
+81968805000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00716 v_mov_b32 v2, s15
+81968806000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00720 s_waitcnt vmcnt(0) & lgkmcnt(0)
+81969148000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00724 v_ashrrev_i32 v1, 31, v0
+81969152000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00728 v_lshlrev_b64 v[0:1], 2, v[0:1]
+81969156000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00736 v_add_u32 v0, vcc, s14, v0
+81969160000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00740 v_addc_u32 v1, vcc, v2, v1, vcc
+81969161000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00744 flat_load_dword v2, v[0:1]
+81969162000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00752 s_add_u32 s0, s22, s0
+81969166000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00756 s_addc_u32 s1, s23, s1
+81969167000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00760 v_mov_b32 v0, s0
+81969171000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00764 v_mov_b32 v1, s1
+81969172000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00768 s_waitcnt vmcnt(0) & lgkmcnt(0)
+81970480000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00772 flat_store_dword v[0:1], v2
+81971704000: system.cpu3.CUs0.wavefronts00: Kernel 001 inst: 00780 s_endpgm
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 1    start address 0x7fff5e771000             |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 640   | 780   | 1     | 3235000      |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 28    | 640   | 1     | 3439000      |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 1      | 0     | 28    | 1     | 1393999      |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 8039999                       |
+81971704000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 > In main loop, instruction is  > In main loop, instruction is 1> In main loop, instruction is 
 > In main loop, instruction is 
 > In main loop, instruction is 
 > 
 PASSED!
-Ticks: 85420909500
+Ticks: 85420433500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m33.240s
+Time elapsed: 1m30.990s

@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  4 2024 17:44:17
-gem5 executing on 908dcad321bf, pid 102585
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/pathfinder/pathfinder -o '1000 10 2'
+gem5 compiled Oct 11 2024 18:07:55
+gem5 started Oct 11 2024 18:55:40
+gem5 executing on 908dcad321bf, pid 71110
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/rodinia_3.0/hip/pathfinder/pathfinder -o '1000 10 2'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -195,280 +195,280 @@ src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
 src/gpu-compute/gpu_command_processor.cc:528: warn: Ignoring vendor packet
-80921255000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dword s14, s[4:5], 0x00
-80921259000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dwordx4 s[8:11], s[4:5], 0x08
-80921275000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_load_dwordx2 s[2:3], s[4:5], 0x18
-80922608000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_load_dword s7, s[4:5], 0x20
-80922612000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_load_dwordx2 s[12:13], s[4:5], 0x28
-80922613000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_waitcnt lgkmcnt(0)
-80922669000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_lshl_b32 s0, s14, 1
-80922673000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 s_sub_i32 s0, 0x00000100, s0
-80922677000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 s_mul_i32 s6, s0, s6
-80922681000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00060 s_sub_i32 s5, s6, s13
-80922684000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 v_add_u32 v1, vcc, s5, v0
-80922688000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 v_cmp_lt_i32 vcc, -1, v1
-80922692000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 v_cmp_gt_i32 s[0:1], s7, v1
-80922705000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 s_and_b64 s16, vcc_lo, s0
-80922706000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 v_ashrrev_i32 v2, 31, v1
-80922710000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 v_lshlrev_b32 v3, 2, v0
-80922721000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00092 s_mov_b32 m0, -1
-80922733000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 s_and_saveexec_b64 s0, s16
-80922749000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 s_cbranch_execz label_2c
-80922750000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_lshlrev_b64 v[4:5], 2, v[1:2]
-80922754000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 v_mov_b32 v6, s11
-80922758000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 v_add_u32 v4, vcc, s10, v4
-80922762000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00120 v_addc_u32 v5, vcc, v6, v5, vcc
-80923077000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 flat_load_dword v4, v[4:5]
-80923078000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80924411000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 ds_write_b32 v3, v4
-80924412000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 s_or_b64 exec, exec, s0
-80924416000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00148 s_waitcnt lgkmcnt(0)
-80924437000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 s_barrier
-80924805000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 s_waitcnt lgkmcnt(0)
-80924821000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_cmp_lt_i32 s14, 1
-80924837000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 s_mov_b32 m0, -1
-80924853000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_cbranch_scc1
-80924869000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 s_mov_b32 s4, 0
-80924885000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00176 s_sub_i32 s0, 0, s5
-80924901000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00180 s_movk_i32 s1, 0x00ff
-80924917000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00184 s_add_i32 s10, s5, s1
-80925176000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00188 s_ashr_i32 s11, s5, 31
-80925188000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00192 s_and_b32 s0, s11, s0
-80925204000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00196 s_not_b32 s5, s5
-80925220000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00200 s_add_i32 s5, s5, s7
-80925236000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00204 s_cmp_ge_i32 s10, s7
-80925252000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00208 s_cselect_b32 s1, s5, s1
-80925253000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00212 v_add_u32 v4, vcc, -1, v0
-80925257000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00216 v_add_u32 v5, vcc, 1, v0
-80925261000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00220 v_mov_b32 v6, s0
-80925265000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00224 v_cmp_lt_i32 vcc, s0, v0
-80925269000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00228 v_cndmask_b32 v4, v6, v4, vcc
-80925273000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00232 v_mov_b32 v6, s1
-80925277000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00236 v_cmp_gt_i32 vcc, s1, v0
-80925281000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00240 v_cndmask_b32 v5, v6, v5, vcc
-80925285000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00244 v_cmp_gt_i32 vcc, s0, v0
-80925289000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00248 v_cmp_lt_i32 s[0:1], s1, v0
-80925504000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00256 s_or_b64 s10, vcc_lo, s0
-80925505000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00260 v_lshlrev_b32 v4, 2, v4
-80925509000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00264 v_lshlrev_b32 v5, 2, v5
-80925513000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00268 v_lshlrev_b32 v6, 2, v0
-80925517000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00272 v_or_b32 v6, 0x00000400, v6
-80925520000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00280 s_add_i32 s5, s14, -1
-80925524000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00284 s_mul_i32 s0, s12, s7
-80925536000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00288 s_add_i32 s6, s6, s0
-80925539000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00292 v_add_u32 v7, vcc, s6, v0
-80925543000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00296 v_subrev_u32 v7, vcc, s13, v7
-80925556000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00300 s_movk_i32 s6, 0x00fe
-80925568000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00304 s_mov_b32 m0, -1
-80925580000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00308 s_branch
-80925908000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00352 v_cmp_ge_u32 vcc, s4, v0
-80925912000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00356 v_cmp_lt_i32 s[0:1], s6, v0
-80925915000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00364 s_or_b64 s0, vcc_lo, s0
-80925927000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 s_or_b64 s0, s10, s0
-80925943000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00372 s_xor_b64 s0, s0, -1
-80925959000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 s_and_saveexec_b64 s12, s0
-80926233000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00380 s_cbranch_execz label_58
-80926234000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 ds_read_b32 v10, v5
-80926238000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 ds_read_b32 v11, v4
-80926246000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00400 ds_read_b32 v12, v3
-80926247000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 v_ashrrev_i32 v8, 31, v7
-80926251000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00412 v_lshlrev_b64 v[8:9], 2, v[7:8]
-80926252000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00420 s_waitcnt lgkmcnt(0)
-80926302000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 v_min3_i32 v10, v11, v12, v10
-80926306000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 v_mov_b32 v11, s9
-80926310000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00436 v_add_u32 v8, vcc, s8, v8
-80926314000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 v_addc_u32 v9, vcc, v11, v9, vcc
-80926561000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 flat_load_dword v8, v[8:9]
-80926562000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00452 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80927895000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 v_add_u32 v8, vcc, v10, v8
-80927896000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 ds_write_b32 v6, v8
-80927897000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00468 s_or_b64 exec, exec, s12
-80927901000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 s_waitcnt lgkmcnt(0)
-80927922000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 s_barrier
-80928290000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00480 s_cmp_eq_u32 s5, s4
-80928302000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 s_waitcnt lgkmcnt(0)
-80928318000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00488 s_cbranch_scc1
-80928334000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00492 s_and_saveexec_b64 s12, s0
-80928350000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00496 s_cbranch_execz label_3ff48
-80928351000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00500 ds_read_b32 v8, v6
-80928678000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00508 s_waitcnt lgkmcnt(0)
-80928680000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00512 ds_write_b32 v3, v8
-80928690000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00520 s_branch
-80928706000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00312 s_or_b64 exec, exec, s12
-80928718000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00316 s_waitcnt lgkmcnt(0)
-80928734000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00320 s_barrier
-80928758000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00324 s_waitcnt lgkmcnt(0)
-80928760000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00328 v_add_u32 v7, vcc, s7, v7
-80928774000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00332 s_add_i32 s6, s6, -1
-80928790000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00336 s_mov_b64 s12, 0
-80928806000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00340 s_add_i32 s4, s4, 1
-80928822000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00344 s_and_b64 vcc_lo, exec, s12
-80928838000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00348 s_cbranch_vccnz
-80928839000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00352 v_cmp_ge_u32 vcc, s4, v0
-80928843000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00356 v_cmp_lt_i32 s[0:1], s6, v0
-80928854000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00364 s_or_b64 s0, vcc_lo, s0
-80928866000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 s_or_b64 s0, s10, s0
-80928882000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00372 s_xor_b64 s0, s0, -1
-80928898000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 s_and_saveexec_b64 s12, s0
-80928914000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00380 s_cbranch_execz label_58
-80928915000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 ds_read_b32 v10, v5
-80928919000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 ds_read_b32 v11, v4
-80928923000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00400 ds_read_b32 v12, v3
-80928924000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 v_ashrrev_i32 v8, 31, v7
-80928928000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00412 v_lshlrev_b64 v[8:9], 2, v[7:8]
-80928934000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00420 s_waitcnt lgkmcnt(0)
-80928967000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 v_min3_i32 v10, v11, v12, v10
-80928971000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 v_mov_b32 v11, s9
-80928975000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00436 v_add_u32 v8, vcc, s8, v8
-80928979000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 v_addc_u32 v9, vcc, v11, v9, vcc
-80928980000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 flat_load_dword v8, v[8:9]
-80928981000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00452 s_waitcnt vmcnt(0) & lgkmcnt(0)
-80930313000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 v_add_u32 v8, vcc, v10, v8
-80930314000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 ds_write_b32 v6, v8
-80930315000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00468 s_or_b64 exec, exec, s12
-80930319000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 s_waitcnt lgkmcnt(0)
-80930340000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 s_barrier
-80930982000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00480 s_cmp_eq_u32 s5, s4
-80930994000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 s_waitcnt lgkmcnt(0)
-80931010000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00488 s_cbranch_scc1
-80931030000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00524 s_mov_b64 s12, -1
-80931042000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00528 s_branch
-80931058000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00340 s_add_i32 s4, s4, 1
-80931070000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00344 s_and_b64 vcc_lo, exec, s12
-80931086000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00348 s_cbranch_vccnz
-80931102000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00532 s_and_saveexec_b64 s4, s0
-80931118000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00536 s_cbranch_execz label_30
-80931119000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00540 v_lshlrev_b32 v3, 2, v0
-80931123000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00544 v_lshlrev_b64 v[0:1], 2, v[1:2]
-80931127000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00552 v_mov_b32 v2, s3
-80931131000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00556 v_add_u32 v0, vcc, s2, v0
-80931135000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00560 v_addc_u32 v1, vcc, v2, v1, vcc
-80931136000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00564 ds_read_b32 v2, v3 offset:1024
-80931386000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00572 s_waitcnt lgkmcnt(0)
-80931388000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00576 flat_store_dword v[0:1], v2
-80932626000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00584 s_endpgm
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 695000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 132000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2023000      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 349000       |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2840999      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 52000        |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13137999                      |
-80933090000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 2     | 1987000      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 4     | 1087000      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 2     | 20000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 2     | 172000       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 2     | 2023000      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 2     | 653000       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 2     | 448000       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 2     | 752000       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 2     | 36000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 2     | 32000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 4     | 2056000      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 2     | 349000       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 2     | 2840999      |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 2     | 32000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 2     | 80000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 2     | 52000        |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 6056999                       |
-80944271000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 3     | 1987000      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 6     | 1413000      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 3     | 20000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 3     | 172000       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 3     | 2023000      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 3     | 653000       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 3     | 448000       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 3     | 752000       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 3     | 36000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 3     | 32000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 6     | 2056000      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 3     | 349000       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 3     | 2840999      |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 3     | 32000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 3     | 80000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 3     | 52000        |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 5819999                       |
-80955215000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 4     | 1987000      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 8     | 1413000      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 4     | 20000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 4     | 172000       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 4     | 2023000      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 4     | 653000       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 4     | 448000       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 4     | 752000       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 4     | 36000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 4     | 32000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 8     | 2056000      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 4     | 349000       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 4     | 2840999      |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 4     | 32000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 4     | 80000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 4     | 52000        |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 5623999                       |
-80965963000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 5     | 1987000      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 9     | 1413000      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 4     | 20000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 4     | 172000       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 5     | 2023000      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 5     | 653000       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 5     | 448000       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 5     | 752000       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 5     | 36000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 4     | 32000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 9     | 2056000      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 4     | 349000       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 5     | 2840999      |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 5     | 32000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 4     | 80000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 5     | 52000        |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 3664999                       |
-80974752000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80921152000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dword s14, s[4:5], 0x00
+80921156000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dwordx4 s[8:11], s[4:5], 0x08
+80921172000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_load_dwordx2 s[2:3], s[4:5], 0x18
+80921188000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_load_dword s7, s[4:5], 0x20
+80921204000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_load_dwordx2 s[12:13], s[4:5], 0x28
+80921205000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_waitcnt lgkmcnt(0)
+80922512000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 s_lshl_b32 s0, s14, 1
+80922516000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 s_sub_i32 s0, 0x00000100, s0
+80922532000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00056 s_mul_i32 s6, s0, s6
+80922548000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00060 s_sub_i32 s5, s6, s13
+80922551000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 v_add_u32 v1, vcc, s5, v0
+80922555000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 v_cmp_lt_i32 vcc, -1, v1
+80922559000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 v_cmp_gt_i32 s[0:1], s7, v1
+80922572000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 s_and_b64 s16, vcc_lo, s0
+80922573000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 v_ashrrev_i32 v2, 31, v1
+80922577000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 v_lshlrev_b32 v3, 2, v0
+80922580000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00092 s_mov_b32 m0, -1
+80922588000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 s_and_saveexec_b64 s0, s16
+80922596000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 s_cbranch_execz label_2c
+80922597000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_lshlrev_b64 v[4:5], 2, v[1:2]
+80922601000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 v_mov_b32 v6, s11
+80922605000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 v_add_u32 v4, vcc, s10, v4
+80922609000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00120 v_addc_u32 v5, vcc, v6, v5, vcc
+80922924000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00124 flat_load_dword v4, v[4:5]
+80922925000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00132 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80924258000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 ds_write_b32 v3, v4
+80924259000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 s_or_b64 exec, exec, s0
+80924263000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00148 s_waitcnt lgkmcnt(0)
+80924284000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 s_barrier
+80924652000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 s_waitcnt lgkmcnt(0)
+80924668000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_cmp_lt_i32 s14, 1
+80924684000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00164 s_mov_b32 m0, -1
+80924700000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_cbranch_scc1
+80924716000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 s_mov_b32 s4, 0
+80924732000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00176 s_sub_i32 s0, 0, s5
+80924748000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00180 s_movk_i32 s1, 0x00ff
+80924764000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00184 s_add_i32 s10, s5, s1
+80925023000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00188 s_ashr_i32 s11, s5, 31
+80925035000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00192 s_and_b32 s0, s11, s0
+80925051000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00196 s_not_b32 s5, s5
+80925067000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00200 s_add_i32 s5, s5, s7
+80925083000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00204 s_cmp_ge_i32 s10, s7
+80925099000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00208 s_cselect_b32 s1, s5, s1
+80925100000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00212 v_add_u32 v4, vcc, -1, v0
+80925104000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00216 v_add_u32 v5, vcc, 1, v0
+80925108000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00220 v_mov_b32 v6, s0
+80925112000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00224 v_cmp_lt_i32 vcc, s0, v0
+80925116000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00228 v_cndmask_b32 v4, v6, v4, vcc
+80925120000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00232 v_mov_b32 v6, s1
+80925124000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00236 v_cmp_gt_i32 vcc, s1, v0
+80925128000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00240 v_cndmask_b32 v5, v6, v5, vcc
+80925132000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00244 v_cmp_gt_i32 vcc, s0, v0
+80925136000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00248 v_cmp_lt_i32 s[0:1], s1, v0
+80925351000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00256 s_or_b64 s10, vcc_lo, s0
+80925352000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00260 v_lshlrev_b32 v4, 2, v4
+80925356000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00264 v_lshlrev_b32 v5, 2, v5
+80925360000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00268 v_lshlrev_b32 v6, 2, v0
+80925364000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00272 v_or_b32 v6, 0x00000400, v6
+80925367000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00280 s_add_i32 s5, s14, -1
+80925371000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00284 s_mul_i32 s0, s12, s7
+80925383000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00288 s_add_i32 s6, s6, s0
+80925386000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00292 v_add_u32 v7, vcc, s6, v0
+80925390000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00296 v_subrev_u32 v7, vcc, s13, v7
+80925403000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00300 s_movk_i32 s6, 0x00fe
+80925415000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00304 s_mov_b32 m0, -1
+80925427000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00308 s_branch
+80925755000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00352 v_cmp_ge_u32 vcc, s4, v0
+80925759000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00356 v_cmp_lt_i32 s[0:1], s6, v0
+80925762000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00364 s_or_b64 s0, vcc_lo, s0
+80925774000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 s_or_b64 s0, s10, s0
+80925790000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00372 s_xor_b64 s0, s0, -1
+80925806000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 s_and_saveexec_b64 s12, s0
+80926080000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00380 s_cbranch_execz label_58
+80926081000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 ds_read_b32 v10, v5
+80926085000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 ds_read_b32 v11, v4
+80926093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00400 ds_read_b32 v12, v3
+80926094000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 v_ashrrev_i32 v8, 31, v7
+80926098000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00412 v_lshlrev_b64 v[8:9], 2, v[7:8]
+80926099000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00420 s_waitcnt lgkmcnt(0)
+80926149000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 v_min3_i32 v10, v11, v12, v10
+80926153000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 v_mov_b32 v11, s9
+80926157000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00436 v_add_u32 v8, vcc, s8, v8
+80926161000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 v_addc_u32 v9, vcc, v11, v9, vcc
+80926408000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 flat_load_dword v8, v[8:9]
+80926409000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00452 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80927742000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 v_add_u32 v8, vcc, v10, v8
+80927743000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 ds_write_b32 v6, v8
+80927744000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00468 s_or_b64 exec, exec, s12
+80927748000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 s_waitcnt lgkmcnt(0)
+80927769000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 s_barrier
+80928137000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00480 s_cmp_eq_u32 s5, s4
+80928149000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 s_waitcnt lgkmcnt(0)
+80928165000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00488 s_cbranch_scc1
+80928181000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00492 s_and_saveexec_b64 s12, s0
+80928197000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00496 s_cbranch_execz label_3ff48
+80928198000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00500 ds_read_b32 v8, v6
+80928520000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00508 s_waitcnt lgkmcnt(0)
+80928522000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00512 ds_write_b32 v3, v8
+80928532000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00520 s_branch
+80928548000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00312 s_or_b64 exec, exec, s12
+80928560000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00316 s_waitcnt lgkmcnt(0)
+80928576000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00320 s_barrier
+80928600000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00324 s_waitcnt lgkmcnt(0)
+80928602000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00328 v_add_u32 v7, vcc, s7, v7
+80928616000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00332 s_add_i32 s6, s6, -1
+80928632000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00336 s_mov_b64 s12, 0
+80928648000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00340 s_add_i32 s4, s4, 1
+80928664000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00344 s_and_b64 vcc_lo, exec, s12
+80928680000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00348 s_cbranch_vccnz
+80928681000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00352 v_cmp_ge_u32 vcc, s4, v0
+80928685000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00356 v_cmp_lt_i32 s[0:1], s6, v0
+80928696000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00364 s_or_b64 s0, vcc_lo, s0
+80928708000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 s_or_b64 s0, s10, s0
+80928724000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00372 s_xor_b64 s0, s0, -1
+80928740000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 s_and_saveexec_b64 s12, s0
+80928756000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00380 s_cbranch_execz label_58
+80928757000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 ds_read_b32 v10, v5
+80928761000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 ds_read_b32 v11, v4
+80928765000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00400 ds_read_b32 v12, v3
+80928766000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 v_ashrrev_i32 v8, 31, v7
+80928770000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00412 v_lshlrev_b64 v[8:9], 2, v[7:8]
+80928776000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00420 s_waitcnt lgkmcnt(0)
+80928809000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 v_min3_i32 v10, v11, v12, v10
+80928813000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 v_mov_b32 v11, s9
+80928817000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00436 v_add_u32 v8, vcc, s8, v8
+80928821000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 v_addc_u32 v9, vcc, v11, v9, vcc
+80928822000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 flat_load_dword v8, v[8:9]
+80928823000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00452 s_waitcnt vmcnt(0) & lgkmcnt(0)
+80930151000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 v_add_u32 v8, vcc, v10, v8
+80930152000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 ds_write_b32 v6, v8
+80930153000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00468 s_or_b64 exec, exec, s12
+80930157000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 s_waitcnt lgkmcnt(0)
+80930178000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 s_barrier
+80930817000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00480 s_cmp_eq_u32 s5, s4
+80930829000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 s_waitcnt lgkmcnt(0)
+80930845000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00488 s_cbranch_scc1
+80930865000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00524 s_mov_b64 s12, -1
+80930873000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00528 s_branch
+80930893000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00340 s_add_i32 s4, s4, 1
+80930905000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00344 s_and_b64 vcc_lo, exec, s12
+80930921000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00348 s_cbranch_vccnz
+80930937000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00532 s_and_saveexec_b64 s4, s0
+80930953000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00536 s_cbranch_execz label_30
+80930954000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00540 v_lshlrev_b32 v3, 2, v0
+80930958000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00544 v_lshlrev_b64 v[0:1], 2, v[1:2]
+80930962000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00552 v_mov_b32 v2, s3
+80930966000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00556 v_add_u32 v0, vcc, s2, v0
+80930970000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00560 v_addc_u32 v1, vcc, v2, v1, vcc
+80930971000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00564 ds_read_b32 v2, v3 offset:1024
+80931246000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00572 s_waitcnt lgkmcnt(0)
+80931248000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00576 flat_store_dword v[0:1], v2
+80932486000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00584 s_endpgm
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 692000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 132000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2027000      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 344000       |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2786999      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 56000        |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 13105999                      |
+80932955000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 1090000      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 172000       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2027000      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 344000       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2786999      |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 56000        |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 1 ~ Total Kernel Time ~ 6021999                       |
+80944101000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 1413000      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 172000       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2027000      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 344000       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2786999      |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 56000        |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 2 ~ Total Kernel Time ~ 5591999                       |
+80952606000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 1413000      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 172000       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2027000      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 344000       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2786999      |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 56000        |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 3 ~ Total Kernel Time ~ 5513999                       |
+80963247000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e778000             |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 536   | 584   | 1     | 1987000      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 468   | 488   | 2     | 1413000      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 520   | 312   | 1     | 20000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 312   | 348   | 1     | 172000       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 144   | 1     | 2027000      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 308   | 380   | 1     | 653000       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 144   | 168   | 1     | 448000       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 168   | 308   | 1     | 752000       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 528   | 1     | 36000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 488   | 496   | 1     | 32000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 380   | 468   | 2     | 2056000      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 496   | 520   | 1     | 344000       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 100   | 1     | 2786999      |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 536   | 1     | 32000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 348   | 380   | 1     | 80000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 528   | 348   | 1     | 56000        |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 4 ~ Total Kernel Time ~ 3742999                       |
+80972114000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 PASSED!
-Ticks: 84699970000
+Ticks: 84702361000
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m31.215s
+Time elapsed: 1m30.984s

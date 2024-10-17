@@ -103,10 +103,10 @@ gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
-gem5 compiled Jun  3 2024 19:16:39
-gem5 started Jun  7 2024 02:08:05
-gem5 executing on 908dcad321bf, pid 117689
-command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT,PWSDebug /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/synthetic/depth3/test02/synthetic.out -o '64 1 64'
+gem5 compiled Oct 14 2024 17:31:54
+gem5 started Oct 16 2024 17:58:26
+gem5 executing on 908dcad321bf, pid 13125
+command line: /pws-gem5/build/GCN3_X86/gem5.opt --debug-flags=IPT /pws-gem5/configs/example/apu_se.py -n 3 -c /hip-benchmarks/synthetic/depth3/test02/synthetic.out -o '64 1 64'
 
 Num SQC =  1 Num scalar caches =  1 Num CU =  4
 warn: system.ruby.network adopting orphan SimObject param 'ext_links'
@@ -835,7 +835,7 @@ PASSED!
 79030556000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
 79030556000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 9513999                       |
 79030556000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
-Ticks: 82302175000
+Ticks: 82300213500
 Exiting because  exiting with last active thread context
 
-Time elapsed: 1m26.117s
+Time elapsed: 1m27.056s
