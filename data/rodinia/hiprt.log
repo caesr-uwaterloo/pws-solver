@@ -1,0 +1,870 @@
+79748796001: system.cpu3.CUs0: WF[0][0] mapped to WG0 DS0
+79748796001: system.cpu3.CUs1: WF[0][0] mapped to WG1 DS0
+79748796001: system.cpu3.CUs2: WF[0][0] mapped to WG2 DS0
+79748796001: system.cpu3.CUs3: WF[0][0] mapped to WG3 DS0
+79748796001: system.cpu3.CUs0: WF[1][0] mapped to WG4 DS0
+79748796001: system.cpu3.CUs1: WF[1][0] mapped to WG5 DS0
+79750099000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00000 s_load_dwordx4 s[12:15], s[6:7], 0x08
+79750103000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00008 s_load_dword s0, s[4:5], 0x04
+79750104000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00016 s_waitcnt lgkmcnt(0)
+79751452000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00020 s_lshr_b32 s1, s0, 16
+79751456000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00024 s_and_b32 s0, s0, 0x0000ffff
+79751464000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00032 s_mul_i32 s8, s8, s0
+79751467000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00036 v_add_u32 v0, vcc, s8, v0
+79751472000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00040 s_mul_i32 s9, s9, s1
+79751475000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00044 v_add_u32 v1, vcc, s9, v1
+79751479000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00048 v_cmp_gt_i32 vcc, s12, v0
+79751483000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00052 v_cmp_gt_i32 s[0:1], s13, v1
+79751486000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_1510 target 05460
+79751486000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_1510 target 05460
+79751486000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00060 s_and_b64 s0, vcc_lo, s0
+79751490000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00064 s_and_saveexec_b64 s2, s0
+79751494000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_1510 target 05460
+79751494000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00068 s_cbranch_execz label_1510
+79751494000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_1510 target 05460
+79751495000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00072 s_load_dwordx2 s[4:5], s[6:7], 0x00
+79751502000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00080 s_mov_b32 s8, 0
+79751510000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00084 s_cmp_lt_i32 s14, 1
+79751511000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00088 v_mov_b32 v2, 0
+79751514000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_1510 target 05460
+79751514000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_1510 target 05460
+79751515000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00092 v_mov_b32 v3, v2
+79751519000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00096 v_mov_b32 v4, v2
+79751526000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00100 s_cbranch_scc1
+79751527000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00104 v_cvt_f32_i32 v2, v0
+79751531000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00108 v_cvt_f32_i32 v3, s12
+79751535000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00112 v_cvt_f32_i32 v4, v1
+79751539000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00116 v_cvt_f32_i32 v8, s13
+79751543000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00120 v_div_scale_f32 v5, s[0:1], v3, v3, v2
+79751880000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00128 v_div_scale_f32 v6, s[0:1], v8, v8, v4
+79751884000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00136 v_div_scale_f32 v7, vcc_lo, v2, v3, v2
+79751888000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00144 v_div_scale_f32 v9, s[0:1], v4, v8, v4
+79751892000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00152 v_rcp_f32 v10, v5
+79751896000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00156 v_rcp_f32 v11, v6
+79751897000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00160 s_load_dwordx4 s[16:19], s[6:7], 0x18
+79751898000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00168 s_waitcnt lgkmcnt(0)
+79751955000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00172 s_load_dwordx16 s[36:51], s[16:17], 0x00
+79751956000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00180 v_fma_f32 v12, -v5, v10, 1
+79752205000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00188 v_fma_f32 v13, -v6, v11, 1
+79752209000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00196 v_fma_f32 v10, v12, v10, v10
+79752213000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00204 v_fma_f32 v11, v13, v11, v11
+79752217000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00212 v_mul_f32 v12, v7, v10
+79752221000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00216 v_mul_f32 v13, v9, v11
+79752225000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00220 v_fma_f32 v14, -v5, v12, v7
+79752229000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00228 v_fma_f32 v15, -v6, v13, v9
+79752233000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00236 v_fma_f32 v12, v14, v10, v12
+79752237000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00244 v_fma_f32 v13, v15, v11, v13
+79752533000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00252 v_fma_f32 v5, -v5, v12, v7
+79752537000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00260 v_fma_f32 v6, -v6, v13, v9
+79752541000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00268 v_div_fmas_f32 v9, v5, v10, v12
+79752542000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00276 s_mov_b64 vcc_lo, s0
+79752545000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00280 v_div_fmas_f32 v10, v6, v11, v13
+79752546000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00288 s_load_dwordx2 s[0:1], s[16:17], 0x40
+79752550000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00296 s_load_dword s2, s[16:17], 0x54
+79752551000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00304 s_waitcnt lgkmcnt(0)
+79753309000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00308 v_mul_f32 v5, s2, 0.5
+79753313000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00316 v_mov_b32 v11, s39
+79753317000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00320 v_mul_f32 v6, s51, v5
+79753321000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00324 v_mul_f32 v7, s0, v5
+79753325000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00328 v_mul_f32 v12, s1, v5
+79753329000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00332 v_fma_f32 v13, s48, v5, v6
+79753333000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00340 v_fma_f32 v14, s49, v5, v7
+79753337000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00348 v_fma_f32 v12, s50, v5, v12
+79753341000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00356 v_add_f32 v5, s36, v13
+79753345000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00360 v_add_f32 v6, s37, v14
+79753349000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00364 v_add_f32 v7, s38, v12
+79753353000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00368 v_div_fixup_f32 v2, v9, v3, v2
+79753357000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00376 v_div_fixup_f32 v3, v10, v8, v4
+79753642000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00384 v_fma_f32 v4, v2, s42, v11
+79753646000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00392 v_mov_b32 v8, s40
+79753650000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00396 v_fma_f32 v8, v2, s43, v8
+79753654000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00404 v_mov_b32 v9, s41
+79753658000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00408 v_fma_f32 v2, v2, s44, v9
+79753662000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00416 v_fma_f32 v4, v3, s45, v4
+79753666000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00424 v_fma_f32 v8, v3, s46, v8
+79753670000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00432 v_fma_f32 v2, v3, s47, v2
+79753674000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00440 v_subrev_f32 v3, s36, v4
+79753967000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00444 v_subrev_f32 v4, s37, v8
+79753971000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00448 v_subrev_f32 v2, s38, v2
+79753975000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00452 v_sub_f32 v8, v3, v13
+79753979000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00456 v_sub_f32 v9, v4, v14
+79753983000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00460 v_sub_f32 v10, v2, v12
+79753987000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00464 v_cmp_gt_i32 s[6:7], s15, 0
+79753991000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00472 v_mov_b32 v2, 0
+79753992000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00476 s_mov_b32 s9, 0x0f800000
+79753996000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00484 s_mov_b32 s10, 0x4f800000
+79754004000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00492 s_movk_i32 s11, 0x0260
+79754012000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00496 s_mov_b32 s13, 0x37800000
+79754020000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00504 s_mov_b32 s16, 0x3a83126f
+79754295000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00512 s_mov_b32 s17, 0x3e800000
+79754299000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00520 s_mov_b32 s20, 0x3eb33333
+79754307000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00528 s_brev_b32 s21, 1
+79754315000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00532 s_mov_b32 s22, 0x3f2aaaab
+79754323000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00540 s_mov_b32 s23, 0x3e76c4e1
+79754331000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00548 s_mov_b32 s24, 0x3ecccdef
+79754339000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00556 s_mov_b32 s25, 0x3f317218
+79754347000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00564 s_mov_b32 s26, 0xb102e308
+79754620000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00572 s_mov_b32 s27, 0x40a00000
+79754624000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00580 s_movk_i32 s28, 0x0204
+79754632000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00584 s_mov_b32 s29, 0x7f800000
+79754640000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00592 s_mov_b32 s30, 0x3ab42872
+79754648000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00600 s_mov_b32 s31, 0x3d2aadcc
+79754656000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00608 s_mov_b32 s33, 0x3e2aaa47
+79754664000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00616 s_mov_b32 s34, 0x3efffffc
+79754672000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00624 s_mov_b32 s35, 0x42b20000
+79754680000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00632 s_mov_b32 s36, 0xc2d00000
+79754948000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00640 s_movk_i32 s37, 0x0200
+79754952000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00644 s_brev_b32 s38, -2
+79754953000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00648 v_mov_b32 v3, v2
+79754957000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00652 v_mov_b32 v4, v2
+79754964000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00656 s_branch
+79754972000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00688 s_mov_b64 s40, 0
+79754973000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00692 v_mov_b32 v27, 1
+79754977000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00696 v_mov_b32 v40, v10
+79755299000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00700 v_mov_b32 v35, v9
+79755303000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00704 v_mov_b32 v36, v8
+79755307000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00708 v_mov_b32 v37, v7
+79755311000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00712 v_mov_b32 v38, v6
+79755315000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00716 v_mov_b32 v39, v5
+79755319000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00720 v_mov_b32 v33, v27
+79755323000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00724 v_mov_b32 v34, v27
+79755324000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00728 s_mov_b32 s39, 0
+79755328000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00732 s_branch
+79755340000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00756 s_andn2_b64 vcc_lo, exec, s6
+79755344000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00760 s_cbranch_vccnz
+79755667000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00764 v_mul_f32 v44, v35, v35
+79755671000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00768 v_fma_f32 v44, v36, v36, v44
+79755675000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00776 v_fma_f32 v44, v40, v40, v44
+79755676000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00784 s_mov_b64 s2, 0
+79755679000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00788 v_mov_b32 v45, 0x7f7fffff
+79755684000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00796 s_mov_b32 s44, s15
+79755692000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00800 s_mov_b64 s46, s18
+79755700000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00804 s_branch
+79756016000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00876 v_mov_b32 v46, s46
+79756020000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00880 v_mov_b32 v47, s47
+79756021000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00884 flat_load_dwordx4 v46, v[46:47]
+79756341000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00892 s_waitcnt vmcnt(0) & lgkmcnt(0)
+79757340000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00896 v_sub_f32 v50, v39, v46
+79757344000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00900 v_sub_f32 v51, v38, v47
+79757348000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00904 v_sub_f32 v52, v37, v48
+79757352000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00908 v_mul_f32 v53, v35, v51
+79757356000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00912 v_mul_f32 v51, v51, v51
+79757360000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00916 v_fma_f32 v53, v36, v50, v53
+79757364000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00924 v_fma_f32 v50, v50, v50, v51
+79757368000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00932 v_fma_f32 v53, v40, v52, v53
+79757372000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00940 v_fma_f32 v50, v52, v52, v50
+79757376000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00948 v_fma_f32 v50, -v49, v49, v50
+79757380000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00956 v_mul_f32 v50, v44, v50
+79757384000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00960 v_fma_f32 v50, v53, v53, -v50
+79757388000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00968 v_cmp_lt_f32 vcc, 0, v50
+79757389000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00972 s_or_b64 s42, s42, exec
+79757393000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00976 s_and_saveexec_b64 s48, vcc_lo
+79757401000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00980 s_cbranch_execz label_3ff64
+79757401000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ff64 target 00824
+79757402000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00984 v_mov_b32 v51, s10
+79757406000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00988 v_cmp_gt_f32 vcc, s9, v50
+79757409000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_3ff64 target 00824
+79757410000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00992 v_cndmask_b32 v51, 1, v51, vcc
+79757414000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00996 v_mul_f32 v50, v50, v51
+79757416000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] JOIN: Detected branch join point
+79757418000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01000 v_sqrt_f32 v51, v50
+79757422000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01004 v_add_u32 v52, s[0:1], -1, v51
+79757426000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01012 v_add_u32 v54, s[0:1], 1, v51
+79757501000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ff64 target 00824
+79757509000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_3ff64 target 00824
+79757516000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] JOIN: Detected branch join point
+79757597000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ff64 target 00824
+79757697000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_3ff64 target 00824
+79757704000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] JOIN: Detected branch join point
+79757729000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01020 v_mov_b32 v55, s13
+79757733000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01024 v_cndmask_b32 v55, 1, v55, vcc
+79757737000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01028 v_fma_f32 v56, -v54, v51, v50
+79757741000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01036 v_fma_f32 v57, -v52, v51, v50
+79757745000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01044 v_cmp_ge_f32 vcc, 0, v57
+79757749000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01048 v_cndmask_b32 v51, v51, v52, vcc
+79757753000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01052 v_cmp_lt_f32 vcc, 0, v56
+79757757000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01056 v_cndmask_b32 v51, v51, v54, vcc
+79757761000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01060 v_mul_f32 v51, v55, v51
+79757765000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01064 v_cmp_class_f32 s[106:107], v50, s11
+79757769000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01072 v_cndmask_b32 v54, v51, v50, vcc
+79757773000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01076 v_sub_f32 v55, -v53, v54
+79758057000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01084 v_div_scale_f32 v52, s[0:1], v44, v44, v55
+79758061000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01092 v_div_scale_f32 v56, vcc_lo, v55, v44, v55
+79758065000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01100 v_rcp_f32 v57, v52
+79758066000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01104 s_add_u32 s0, s46, 16
+79758070000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01108 s_addc_u32 s1, s47, 0
+79758073000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01112 v_mov_b32 v51, s1
+79758077000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01116 v_mov_b32 v50, s0
+79758081000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01120 v_fma_f32 v58, -v52, v57, 1
+79758085000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01128 v_fma_f32 v57, v58, v57, v57
+79758089000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01136 v_mul_f32 v58, v56, v57
+79758093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01140 v_fma_f32 v59, -v52, v58, v56
+79758121000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_f8 target 01920
+79758121000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_f8 target 01920
+79758121000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_f8 target 01920
+79758385000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01148 v_fma_f32 v58, v59, v57, v58
+79758389000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01156 v_fma_f32 v52, -v52, v58, v56
+79758393000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01164 v_div_fmas_f32 v56, v52, v57, v58
+79758394000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01172 flat_load_dwordx2 v51, v[50:51]
+79758397000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01180 v_div_fixup_f32 v50, v56, v44, v55
+79758401000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01188 v_cmp_nlt_f32 vcc, v50, v45
+79758405000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01192 v_cmp_nlt_f32 s[0:1], s16, v50
+79758408000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01200 s_or_b64 s50, vcc_lo, s0
+79758412000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01204 s_and_saveexec_b64 s52, s50
+79758416000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01208 s_xor_b64 s50, exec, s52
+79758713000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01212 s_cbranch_execz label_118
+79758713000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_118 target 01492
+79758713000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_118 target 01492
+79758713000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_118 target 01492
+79759041000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01492 s_or_saveexec_b64 s50, s50
+79759041000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] BSB: Detected branch serialization block
+79759041000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] BSB: Detected branch serialization block
+79759041000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] BSB: Detected branch serialization block
+79759045000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01496 s_xor_b64 exec, exec, s50
+79759049000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01500 s_cbranch_execz label_3fd4c
+79759049000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3fd4c target 00808
+79759049000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3fd4c target 00808
+79759049000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3fd4c target 00808
+79759050000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01504 v_div_scale_f32 v11, s[52:53], v49, v49, 1
+79759054000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01512 v_div_scale_f32 v12, vcc_lo, 1, v49, 1
+79759058000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01520 v_rcp_f32 v13, v11
+79759062000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01524 v_fma_f32 v23, -v11, v13, 1
+79759377000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01532 v_fma_f32 v13, v23, v13, v13
+79759381000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01540 v_mul_f32 v23, v12, v13
+79759385000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01544 v_fma_f32 v24, -v11, v23, v12
+79759389000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01552 v_fma_f32 v23, v24, v13, v23
+79759393000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01560 v_fma_f32 v11, -v11, v23, v12
+79759397000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01568 v_div_fmas_f32 v23, v11, v13, v23
+79759401000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01576 v_fma_f32 v13, v36, v50, v39
+79759405000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01584 v_fma_f32 v12, v35, v50, v38
+79759409000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01592 v_fma_f32 v11, v40, v50, v37
+79759410000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01600 s_andn2_b64 s0, s0, exec
+79759414000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01604 s_waitcnt vmcnt(0) & lgkmcnt(0)
+79759416000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01608 v_mov_b32 v28, v51
+79759420000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01612 v_mov_b32 v29, v52
+79759424000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01616 v_sub_f32 v24, v13, v46
+79759428000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01620 v_sub_f32 v26, v12, v47
+79759432000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01624 v_sub_f32 v46, v11, v48
+79759434000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] BSB: Detected branch serialization block
+79759434000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] BSB: Detected branch serialization block
+79759434000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] BSB: Detected branch serialization block
+79759436000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01628 v_div_fixup_f32 v23, v23, v49, 1
+79759440000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01636 v_mul_f32 v25, v23, v24
+79759444000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01640 v_mul_f32 v24, v23, v26
+79759446000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_bec target 04984
+79759446000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_bec target 04984
+79759446000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_bec target 04984
+79759448000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01644 v_mul_f32 v23, v23, v46
+79759452000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01648 v_mov_b32 v26, v50
+79759453000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01652 s_branch
+79759460000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79759460000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79759460000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00808 s_or_b64 exec, exec, s50
+79759460000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79759464000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00812 s_andn2_b64 s42, s42, exec
+79759468000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00816 s_and_b64 s0, s0, exec
+79759472000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00820 s_or_b64 s42, s42, s0
+79759476000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79759476000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79759476000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00824 s_or_b64 exec, exec, s48
+79759476000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79759480000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00828 s_xor_b64 s0, s42, -1
+79759484000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00832 s_or_b64 s0, s2, s0
+79759488000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00836 s_add_u32 s46, s46, 24
+79759492000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00840 s_addc_u32 s47, s47, 0
+79759496000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00844 s_add_i32 s44, s44, -1
+79759500000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00848 s_andn2_b64 s2, s2, exec
+79759504000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00852 s_and_b64 s48, s0, exec
+79759508000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00856 s_or_b64 s2, s2, s48
+79759512000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00860 s_cmp_eq_u32 s44, 0
+79759513000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00864 v_cndmask_b32 v45, v26, v45, s[42:43]
+79759516000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00872 s_cbranch_scc1
+79759527000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01660 s_xor_b64 s0, s0, -1
+79759531000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01664 s_and_saveexec_b64 s2, s0
+79759535000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01668 s_xor_b64 s2, exec, s2
+79759539000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01672 s_cbranch_execz label_f8
+79759539000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_f8 target 01920
+79759539000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_f8 target 01920
+79759539000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_f8 target 01920
+79759540000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01676 v_mul_f32 v44, v35, v35
+79759544000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01680 v_fma_f32 v44, v36, v36, v44
+79759548000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01688 v_fma_f32 v44, v40, v40, v44
+79759552000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01696 v_mov_b32 v45, s10
+79759556000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01700 v_cmp_gt_f32 vcc, s9, v44
+79759560000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01704 v_cndmask_b32 v45, 1, v45, vcc
+79759564000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01708 v_mul_f32 v44, v44, v45
+79759568000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01712 v_sqrt_f32 v45, v44
+79759572000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01716 v_add_u32 v46, s[0:1], -1, v45
+79759576000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01724 v_add_u32 v47, s[0:1], 1, v45
+79759580000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01732 v_mov_b32 v48, s13
+79759584000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01736 v_cndmask_b32 v48, 1, v48, vcc
+79759588000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01740 v_fma_f32 v49, -v47, v45, v44
+79759592000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01748 v_fma_f32 v50, -v46, v45, v44
+79759596000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01756 v_cmp_ge_f32 vcc, 0, v50
+79759600000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01760 v_cndmask_b32 v45, v45, v46, vcc
+79759604000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01764 v_cmp_lt_f32 vcc, 0, v49
+79759608000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01768 v_cndmask_b32 v45, v45, v47, vcc
+79759612000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01772 v_mul_f32 v45, v48, v45
+79759616000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01776 v_cmp_class_f32 s[106:107], v44, s11
+79759620000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01784 v_cndmask_b32 v44, v45, v44, vcc
+79759624000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01788 v_div_scale_f32 v45, s[0:1], v44, v44, 1
+79759628000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01796 v_div_scale_f32 v46, vcc_lo, 1, v44, 1
+79759632000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01804 v_rcp_f32 v47, v45
+79759636000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01808 v_fma_f32 v48, -v45, v47, 1
+79759640000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01816 v_fma_f32 v47, v48, v47, v47
+79759644000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01824 v_mul_f32 v48, v46, v47
+79759648000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01828 v_fma_f32 v49, -v45, v48, v46
+79759652000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01836 v_fma_f32 v48, v49, v47, v48
+79759656000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01844 v_fma_f32 v45, -v45, v48, v46
+79759660000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01852 v_div_fmas_f32 v45, v45, v47, v48
+79759664000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01860 v_div_fixup_f32 v44, v45, v44, 1
+79759668000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01868 v_fma_f32 v44, v35, v44, 1
+79759672000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01876 v_fma_f32 v45, v44, -0.5, 1
+79759676000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01884 v_fma_f32 v46, v44, s17, v45
+79759680000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01892 v_fma_f32 v47, v44, s20, v45
+79759684000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01900 v_fma_f32 v48, v44, 0.5, v45
+79759688000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01908 v_mul_f32 v44, v34, v46
+79759692000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01912 v_mul_f32 v45, v33, v47
+79759696000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01916 v_mul_f32 v46, v27, v48
+79759697000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01920 s_or_saveexec_b64 s42, s2
+79759697000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] BSB: Detected branch serialization block
+79759697000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] BSB: Detected branch serialization block
+79759697000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] BSB: Detected branch serialization block
+79759701000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01924 s_mov_b64 s0, 0
+79759705000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01928 s_xor_b64 exec, exec, s42
+79759709000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01932 s_cbranch_execz label_bec
+79759709000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_bec target 04984
+79759709000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_bec target 04984
+79759709000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_bec target 04984
+79759710000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01936 v_add_u32 v48, vcc, 20, v28
+79759714000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01940 v_addc_u32 v49, vcc, 0, v29, vcc
+79759715000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01944 flat_load_dwordx4 v44, v[28:29]
+79759719000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01952 flat_load_dword v54, v[48:49]
+79759720000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01960 s_waitcnt vmcnt(0) & lgkmcnt(0)
+79760747000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] JOIN: Detected branch join point
+79760747000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] JOIN: Detected branch join point
+79760747000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] JOIN: Detected branch join point
+79761039000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01964 v_cmp_lt_i32 vcc, 0, v44
+79761040000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01968 s_mov_b64 s44, 0
+79761044000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01972 s_mov_b64 s0, 0
+79761048000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01976 s_and_saveexec_b64 s2, vcc_lo
+79761052000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01980 s_xor_b64 s46, exec, s2
+79761056000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01984 s_cbranch_execz label_a6c
+79761056000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_a6c target 04652
+79761093000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_3ef48 target 00736
+79761093000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_3ef48 target 00736
+79761093000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_3ef48 target 00736
+79761100000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] JOIN: Detected branch join point
+79761100000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] JOIN: Detected branch join point
+79761100000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] JOIN: Detected branch join point
+79761116000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] s_cbranch_execz label_3ffa4 target 00660
+79761116000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] s_cbranch_execz label_3ffa4 target 00660
+79761116000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] s_cbranch_execz label_3ffa4 target 00660
+79761123000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] JOIN: Detected branch join point
+79761123000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] JOIN: Detected branch join point
+79761123000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] JOIN: Detected branch join point
+79761160000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_a6c target 04652
+79761264000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_a6c target 04652
+79761384000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] BSB: Detected branch serialization block
+79761384000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] BSB: Detected branch serialization block
+79761384000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04652 s_or_saveexec_b64 s2, s46
+79761384000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] BSB: Detected branch serialization block
+79761388000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04656 s_xor_b64 exec, exec, s2
+79761392000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04660 s_mov_b64 s44, exec
+79761393000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04664 v_cmp_ne_u32 vcc, 0, v44
+79761709000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04668 s_andn2_b64 s0, s0, exec
+79761713000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04672 s_and_b64 s46, vcc_lo, exec
+79761717000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04676 s_or_b64 s0, s0, s46
+79761721000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04680 s_or_b64 exec, exec, s2
+79761721000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79761721000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79761721000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79761722000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04684 v_mov_b32 v44, v11
+79761726000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04688 v_mov_b32 v54, v12
+79761730000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04692 v_mov_b32 v59, v13
+79761731000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04696 s_and_saveexec_b64 s2, s0
+79761735000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04700 s_xor_b64 s0, exec, s2
+79761739000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04704 s_cbranch_execz label_3c
+79761739000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3c target 04764
+79761739000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3c target 04764
+79761739000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3c target 04764
+79762072000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79762072000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79762072000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04764 s_or_b64 exec, exec, s0
+79762072000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79762073000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04768 v_mov_b32 v14, v58
+79762077000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04772 v_mov_b32 v16, v57
+79762081000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04776 v_mov_b32 v18, v56
+79762085000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04780 v_mov_b32 v20, v59
+79762089000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04784 v_mov_b32 v21, v54
+79762093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04788 v_mov_b32 v22, v44
+79762097000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04792 v_mov_b32 v15, v53
+79762398000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04796 v_mov_b32 v17, v52
+79762402000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04800 v_mov_b32 v19, v51
+79762403000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04804 s_and_saveexec_b64 s0, s44
+79762407000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04808 s_cbranch_execz label_44
+79762407000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_44 target 04876
+79762407000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_44 target 04876
+79762407000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_44 target 04876
+79762408000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04812 v_add_f32 v14, v13, v25
+79762412000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04816 v_add_f32 v16, v12, v24
+79762416000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04820 v_add_f32 v18, v11, v23
+79762420000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04824 v_sub_f32 v15, v14, v13
+79762424000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04828 v_sub_f32 v17, v16, v12
+79762428000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04832 v_sub_f32 v19, v18, v11
+79762432000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04836 v_mov_b32 v55, 1
+79762436000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04840 v_mov_b32 v14, v45
+79762440000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04844 v_mov_b32 v16, v46
+79762444000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04848 v_mov_b32 v18, v47
+79762448000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04852 v_mov_b32 v20, v13
+79762452000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04856 v_mov_b32 v21, v12
+79762735000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04860 v_mov_b32 v22, v11
+79762739000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04864 v_mov_b32 v49, v32
+79762743000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04868 v_mov_b32 v48, v31
+79762747000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04872 v_mov_b32 v50, v30
+79762748000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79762748000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79762748000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04876 s_or_b64 exec, exec, s0
+79762748000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79762751000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04880 v_cmp_eq_u32 vcc, 0, v55
+79762755000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04884 v_cmp_ne_u32 s[0:1], 0, v55
+79762759000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04892 v_mov_b32 v44, 0
+79762763000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04896 v_mov_b32 v45, v44
+79762767000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04900 v_mov_b32 v46, v44
+79762768000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04904 s_and_saveexec_b64 s2, s0
+79762772000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_34 target 04960
+79762772000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_34 target 04960
+79762772000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04908 s_cbranch_execz label_34
+79762772000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_34 target 04960
+79762773000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04912 v_mul_f32 v34, v34, v14
+79762777000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04916 v_mul_f32 v33, v33, v16
+79762781000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04920 v_mul_f32 v27, v27, v18
+79762785000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04924 v_mov_b32 v39, v20
+79762789000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04928 v_mov_b32 v38, v21
+79762793000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04932 v_mov_b32 v37, v22
+79762797000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04936 v_mov_b32 v36, v15
+79762801000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04940 v_mov_b32 v35, v17
+79762805000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04944 v_mov_b32 v44, v43
+79762809000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04948 v_mov_b32 v45, v42
+79762813000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04952 v_mov_b32 v46, v41
+79762817000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04956 v_mov_b32 v40, v19
+79762818000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79762818000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79762818000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04960 s_or_b64 exec, exec, s2
+79762818000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79762822000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04964 s_xor_b64 s0, vcc_lo, -1
+79762826000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04968 s_and_b64 s0, s0, exec
+79762827000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04972 v_mov_b32 v30, v50
+79762831000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04976 v_mov_b32 v31, v48
+79762835000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04980 v_mov_b32 v32, v49
+79762836000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79762836000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79762836000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04984 s_or_b64 exec, exec, s42
+79762836000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79762839000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04988 v_mov_b32 v43, v44
+79762843000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04992 v_mov_b32 v42, v45
+79762847000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04996 v_mov_b32 v41, v46
+79762848000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05000 s_mov_b64 s2, -1
+79762851000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05004 v_mov_b32 v46, v45
+79762855000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05008 v_mov_b32 v45, v41
+79762856000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05012 s_and_saveexec_b64 s42, s0
+79762860000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ef48 target 00736
+79762860000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ef48 target 00736
+79762860000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05016 s_cbranch_execz label_3ef48
+79762860000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ef48 target 00736
+79762864000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05020 s_add_i32 s39, s39, 1
+79762867000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05024 v_cmp_eq_u32 s[0:1], s39, 50
+79762871000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05032 v_mov_b32 v44, 0
+79762872000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05036 s_orn2_b64 s2, s0, exec
+79762875000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05040 v_mov_b32 v46, v44
+79762879000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05044 v_mov_b32 v45, v44
+79762880000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05048 s_branch
+79762887000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00736 s_or_b64 exec, exec, s42
+79762887000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79762887000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79762887000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79762891000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00740 s_and_b64 s0, exec, s2
+79762895000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00744 s_or_b64 s40, s0, s40
+79762899000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00748 s_andn2_b64 exec, exec, s40
+79762903000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00752 s_cbranch_execz label_3ffa4
+79762903000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ffa4 target 00660
+79762903000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ffa4 target 00660
+79762903000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ffa4 target 00660
+79762907000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00756 s_andn2_b64 vcc_lo, exec, s6
+79762911000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00760 s_cbranch_vccnz
+79762918000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00764 v_mul_f32 v44, v35, v35
+79762922000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00768 v_fma_f32 v44, v36, v36, v44
+79762926000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00776 v_fma_f32 v44, v40, v40, v44
+79762927000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00784 s_mov_b64 s2, 0
+79762930000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00788 v_mov_b32 v45, 0x7f7fffff
+79762931000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00796 s_mov_b32 s44, s15
+79762935000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00800 s_mov_b64 s46, s18
+79762939000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00804 s_branch
+79762946000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00876 v_mov_b32 v46, s46
+79762950000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00880 v_mov_b32 v47, s47
+79762951000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00884 flat_load_dwordx4 v46, v[46:47]
+79762952000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00892 s_waitcnt vmcnt(0) & lgkmcnt(0)
+79763059000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00896 v_sub_f32 v50, v39, v46
+79763063000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00900 v_sub_f32 v51, v38, v47
+79763067000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00904 v_sub_f32 v52, v37, v48
+79763071000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00908 v_mul_f32 v53, v35, v51
+79763075000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00912 v_mul_f32 v51, v51, v51
+79763079000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00916 v_fma_f32 v53, v36, v50, v53
+79763083000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00924 v_fma_f32 v50, v50, v50, v51
+79763087000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00932 v_fma_f32 v53, v40, v52, v53
+79763091000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00940 v_fma_f32 v50, v52, v52, v50
+79763095000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00948 v_fma_f32 v50, -v49, v49, v50
+79763099000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00956 v_mul_f32 v50, v44, v50
+79763103000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00960 v_fma_f32 v50, v53, v53, -v50
+79763107000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00968 v_cmp_lt_f32 vcc, 0, v50
+79763108000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00972 s_or_b64 s42, s42, exec
+79763112000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00976 s_and_saveexec_b64 s48, vcc_lo
+79763116000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ff64 target 00824
+79763116000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ff64 target 00824
+79763116000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00980 s_cbranch_execz label_3ff64
+79763116000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ff64 target 00824
+79763117000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00984 v_mov_b32 v51, s10
+79763121000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00988 v_cmp_gt_f32 vcc, s9, v50
+79763125000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00992 v_cndmask_b32 v51, 1, v51, vcc
+79763129000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00996 v_mul_f32 v50, v50, v51
+79763133000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01000 v_sqrt_f32 v51, v50
+79763137000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01004 v_add_u32 v52, s[0:1], -1, v51
+79763141000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01012 v_add_u32 v54, s[0:1], 1, v51
+79763145000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01020 v_mov_b32 v55, s13
+79763149000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01024 v_cndmask_b32 v55, 1, v55, vcc
+79763153000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01028 v_fma_f32 v56, -v54, v51, v50
+79763157000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01036 v_fma_f32 v57, -v52, v51, v50
+79763161000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01044 v_cmp_ge_f32 vcc, 0, v57
+79763165000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01048 v_cndmask_b32 v51, v51, v52, vcc
+79763169000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01052 v_cmp_lt_f32 vcc, 0, v56
+79763173000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01056 v_cndmask_b32 v51, v51, v54, vcc
+79763177000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01060 v_mul_f32 v51, v55, v51
+79763181000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01064 v_cmp_class_f32 s[106:107], v50, s11
+79763185000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01072 v_cndmask_b32 v54, v51, v50, vcc
+79763189000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01076 v_sub_f32 v55, -v53, v54
+79763193000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01084 v_div_scale_f32 v52, s[0:1], v44, v44, v55
+79763197000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01092 v_div_scale_f32 v56, vcc_lo, v55, v44, v55
+79763201000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01100 v_rcp_f32 v57, v52
+79763202000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01104 s_add_u32 s0, s46, 16
+79763206000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01108 s_addc_u32 s1, s47, 0
+79763209000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01112 v_mov_b32 v51, s1
+79763213000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01116 v_mov_b32 v50, s0
+79763217000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01120 v_fma_f32 v58, -v52, v57, 1
+79763221000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01128 v_fma_f32 v57, v58, v57, v57
+79763225000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01136 v_mul_f32 v58, v56, v57
+79763229000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01140 v_fma_f32 v59, -v52, v58, v56
+79763233000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01148 v_fma_f32 v58, v59, v57, v58
+79763237000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01156 v_fma_f32 v52, -v52, v58, v56
+79763241000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01164 v_div_fmas_f32 v56, v52, v57, v58
+79763242000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01172 flat_load_dwordx2 v51, v[50:51]
+79763245000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01180 v_div_fixup_f32 v50, v56, v44, v55
+79763249000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01188 v_cmp_nlt_f32 vcc, v50, v45
+79763253000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01192 v_cmp_nlt_f32 s[0:1], s16, v50
+79763256000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01200 s_or_b64 s50, vcc_lo, s0
+79763260000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01204 s_and_saveexec_b64 s52, s50
+79763264000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01208 s_xor_b64 s50, exec, s52
+79763268000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_118 target 01492
+79763268000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_118 target 01492
+79763268000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01212 s_cbranch_execz label_118
+79763268000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_118 target 01492
+79763269000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01216 v_sub_f32 v53, v54, v53
+79763273000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01220 v_div_scale_f32 v54, s[0:1], v44, v44, v53
+79763277000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01228 v_div_scale_f32 v55, vcc_lo, v53, v44, v53
+79763281000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01236 v_rcp_f32 v56, v54
+79763285000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01240 v_fma_f32 v57, -v54, v56, 1
+79763289000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01248 v_fma_f32 v56, v57, v56, v56
+79763293000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01256 v_mul_f32 v57, v55, v56
+79763297000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01260 v_fma_f32 v58, -v54, v57, v55
+79763301000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01268 v_fma_f32 v57, v58, v56, v57
+79763596000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01276 v_fma_f32 v54, -v54, v57, v55
+79763600000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01284 v_div_fmas_f32 v54, v54, v56, v57
+79763604000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01292 v_div_fixup_f32 v53, v54, v44, v53
+79763608000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01300 v_cmp_lt_f32 vcc, v53, v45
+79763612000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01304 v_cmp_lt_f32 s[0:1], s16, v53
+79763615000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01312 s_and_b64 s54, vcc_lo, s0
+79763619000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01316 s_mov_b64 s52, -1
+79763623000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01320 s_and_saveexec_b64 s0, s54
+79763627000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01324 s_cbranch_execz label_98
+79763627000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_98 target 01476
+79763627000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_98 target 01476
+79763627000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_98 target 01476
+79763634000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763634000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763634000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01476 s_or_b64 exec, exec, s0
+79763634000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763638000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01480 s_andn2_b64 s0, s0, exec
+79763642000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01484 s_and_b64 s52, s52, exec
+79763646000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01488 s_or_b64 s0, s0, s52
+79763650000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] BSB: Detected branch serialization block
+79763650000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] BSB: Detected branch serialization block
+79763650000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01492 s_or_saveexec_b64 s50, s50
+79763650000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] BSB: Detected branch serialization block
+79763654000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01496 s_xor_b64 exec, exec, s50
+79763658000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3fd4c target 00808
+79763658000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3fd4c target 00808
+79763658000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01500 s_cbranch_execz label_3fd4c
+79763658000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3fd4c target 00808
+79763665000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00808 s_or_b64 exec, exec, s50
+79763665000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763665000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763665000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763669000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00812 s_andn2_b64 s42, s42, exec
+79763673000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00816 s_and_b64 s0, s0, exec
+79763677000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00820 s_or_b64 s42, s42, s0
+79763681000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00824 s_or_b64 exec, exec, s48
+79763681000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763681000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763681000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763685000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00828 s_xor_b64 s0, s42, -1
+79763689000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00832 s_or_b64 s0, s2, s0
+79763693000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00836 s_add_u32 s46, s46, 24
+79763697000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00840 s_addc_u32 s47, s47, 0
+79763701000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00844 s_add_i32 s44, s44, -1
+79763705000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00848 s_andn2_b64 s2, s2, exec
+79763709000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00852 s_and_b64 s48, s0, exec
+79763713000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00856 s_or_b64 s2, s2, s48
+79763717000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00860 s_cmp_eq_u32 s44, 0
+79763718000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00864 v_cndmask_b32 v45, v26, v45, s[42:43]
+79763721000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00872 s_cbranch_scc1
+79763732000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01660 s_xor_b64 s0, s0, -1
+79763736000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01664 s_and_saveexec_b64 s2, s0
+79763740000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01668 s_xor_b64 s2, exec, s2
+79763744000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_f8 target 01920
+79763744000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_f8 target 01920
+79763744000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01672 s_cbranch_execz label_f8
+79763744000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_f8 target 01920
+79763745000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01676 v_mul_f32 v44, v35, v35
+79763749000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01680 v_fma_f32 v44, v36, v36, v44
+79763753000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01688 v_fma_f32 v44, v40, v40, v44
+79763757000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01696 v_mov_b32 v45, s10
+79763761000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01700 v_cmp_gt_f32 vcc, s9, v44
+79763765000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01704 v_cndmask_b32 v45, 1, v45, vcc
+79763769000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01708 v_mul_f32 v44, v44, v45
+79763773000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01712 v_sqrt_f32 v45, v44
+79763777000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01716 v_add_u32 v46, s[0:1], -1, v45
+79763781000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01724 v_add_u32 v47, s[0:1], 1, v45
+79763785000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01732 v_mov_b32 v48, s13
+79763789000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01736 v_cndmask_b32 v48, 1, v48, vcc
+79763793000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01740 v_fma_f32 v49, -v47, v45, v44
+79763797000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01748 v_fma_f32 v50, -v46, v45, v44
+79763801000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01756 v_cmp_ge_f32 vcc, 0, v50
+79763805000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01760 v_cndmask_b32 v45, v45, v46, vcc
+79763809000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01764 v_cmp_lt_f32 vcc, 0, v49
+79763813000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01768 v_cndmask_b32 v45, v45, v47, vcc
+79763817000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01772 v_mul_f32 v45, v48, v45
+79763821000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01776 v_cmp_class_f32 s[106:107], v44, s11
+79763825000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01784 v_cndmask_b32 v44, v45, v44, vcc
+79763829000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01788 v_div_scale_f32 v45, s[0:1], v44, v44, 1
+79763833000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01796 v_div_scale_f32 v46, vcc_lo, 1, v44, 1
+79763837000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01804 v_rcp_f32 v47, v45
+79763841000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01808 v_fma_f32 v48, -v45, v47, 1
+79763845000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01816 v_fma_f32 v47, v48, v47, v47
+79763849000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01824 v_mul_f32 v48, v46, v47
+79763853000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01828 v_fma_f32 v49, -v45, v48, v46
+79763857000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01836 v_fma_f32 v48, v49, v47, v48
+79763861000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01844 v_fma_f32 v45, -v45, v48, v46
+79763865000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01852 v_div_fmas_f32 v45, v45, v47, v48
+79763869000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01860 v_div_fixup_f32 v44, v45, v44, 1
+79763873000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01868 v_fma_f32 v44, v35, v44, 1
+79763877000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01876 v_fma_f32 v45, v44, -0.5, 1
+79763881000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01884 v_fma_f32 v46, v44, s17, v45
+79763885000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01892 v_fma_f32 v47, v44, s20, v45
+79763889000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01900 v_fma_f32 v48, v44, 0.5, v45
+79763893000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01908 v_mul_f32 v44, v34, v46
+79763897000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01912 v_mul_f32 v45, v33, v47
+79763901000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01916 v_mul_f32 v46, v27, v48
+79763902000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] BSB: Detected branch serialization block
+79763902000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] BSB: Detected branch serialization block
+79763902000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01920 s_or_saveexec_b64 s42, s2
+79763902000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] BSB: Detected branch serialization block
+79763906000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01924 s_mov_b64 s0, 0
+79763910000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01928 s_xor_b64 exec, exec, s42
+79763914000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_bec target 04984
+79763914000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_bec target 04984
+79763914000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 01932 s_cbranch_execz label_bec
+79763914000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_bec target 04984
+79763921000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04984 s_or_b64 exec, exec, s42
+79763921000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763921000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763921000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763925000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04988 v_mov_b32 v43, v44
+79763929000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04992 v_mov_b32 v42, v45
+79763933000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 04996 v_mov_b32 v41, v46
+79763934000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05000 s_mov_b64 s2, -1
+79763937000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05004 v_mov_b32 v46, v45
+79763941000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05008 v_mov_b32 v45, v41
+79763942000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05012 s_and_saveexec_b64 s42, s0
+79763946000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ef48 target 00736
+79763946000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ef48 target 00736
+79763946000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05016 s_cbranch_execz label_3ef48
+79763946000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ef48 target 00736
+79763953000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00736 s_or_b64 exec, exec, s42
+79763953000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763953000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763953000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763957000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00740 s_and_b64 s0, exec, s2
+79763961000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00744 s_or_b64 s40, s0, s40
+79763965000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00748 s_andn2_b64 exec, exec, s40
+79763969000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00752 s_cbranch_execz label_3ffa4
+79763969000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] s_cbranch_execz label_3ffa4 target 00660
+79763969000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] s_cbranch_execz label_3ffa4 target 00660
+79763969000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] s_cbranch_execz label_3ffa4 target 00660
+79763976000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+79763976000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79763976000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00660 s_or_b64 exec, exec, s40
+79763976000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79763977000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00664 v_add_f32 v2, v2, v44
+79763981000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00668 v_add_f32 v3, v3, v46
+79763982000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00672 s_add_i32 s8, s8, 1
+79763986000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00676 s_cmp_eq_u32 s8, s14
+79763987000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00680 v_add_f32 v4, v4, v45
+79763990000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 00684 s_cbranch_scc1
+79764001000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05052 v_mul_lo_u32 v1, v1, s12
+79764005000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05060 v_add_u32 v0, vcc, v1, v0
+79764009000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05064 v_cvt_f32_i32 v1, s14
+79764013000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05068 v_div_scale_f32 v5, s[0:1], v1, v1, 1
+79764017000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05076 v_div_scale_f32 v6, vcc_lo, 1, v1, 1
+79764021000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05084 v_rcp_f32 v7, v5
+79764025000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05088 v_fma_f32 v8, -v5, v7, 1
+79764029000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05096 v_fma_f32 v7, v8, v7, v7
+79764033000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05104 v_mul_f32 v8, v6, v7
+79764037000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05108 v_fma_f32 v9, -v5, v8, v6
+79764041000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05116 v_fma_f32 v8, v9, v7, v8
+79764045000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05124 v_fma_f32 v5, -v5, v8, v6
+79764049000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05132 v_div_fmas_f32 v5, v5, v7, v8
+79764050000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05140 s_mov_b32 s2, 0x0f800000
+79764053000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05148 v_mov_b32 v6, 0x4f800000
+79764054000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05156 s_movk_i32 s6, 0x0260
+79764057000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05160 v_mov_b32 v7, 0x37800000
+79764061000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05168 v_div_fixup_f32 v1, v5, v1, 1
+79764065000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05176 v_mul_f32 v2, v1, v2
+79764069000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05180 v_mul_f32 v3, v1, v3
+79764073000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05184 v_mul_f32 v1, v1, v4
+79764077000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05188 v_cmp_gt_f32 vcc, s2, v2
+79764081000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05192 v_cndmask_b32 v4, 1, v6, vcc
+79764085000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05196 v_cmp_gt_f32 s[0:1], s2, v3
+79764089000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05204 v_cndmask_b32 v5, 1, v6, s[0:1]
+79764093000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05212 v_cmp_gt_f32 s[2:3], s2, v1
+79764097000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05220 v_cndmask_b32 v6, 1, v6, s[2:3]
+79764101000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05228 v_mul_f32 v2, v2, v4
+79764105000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05232 v_cndmask_b32 v4, 1, v7, vcc
+79764109000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05236 v_mul_f32 v3, v3, v5
+79764113000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05240 v_cndmask_b32 v5, 1, v7, s[0:1]
+79764117000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05248 v_mul_f32 v6, v1, v6
+79764121000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05252 v_sqrt_f32 v1, v2
+79764125000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05256 v_sqrt_f32 v8, v3
+79764129000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05260 v_sqrt_f32 v9, v6
+79764133000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05264 v_add_u32 v10, vcc, -1, v1
+79764137000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05268 v_add_u32 v11, vcc, 1, v1
+79764141000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05272 v_add_u32 v12, vcc, -1, v8
+79764145000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05276 v_add_u32 v13, vcc, 1, v8
+79764149000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05280 v_fma_f32 v14, -v11, v1, v2
+79764153000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05288 v_fma_f32 v15, -v10, v1, v2
+79764157000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05296 v_fma_f32 v16, -v13, v8, v3
+79764161000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05304 v_fma_f32 v17, -v12, v8, v3
+79764165000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05312 v_cmp_ge_f32 vcc, 0, v15
+79764169000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05316 v_cndmask_b32 v1, v1, v10, vcc
+79764173000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05320 v_cmp_ge_f32 vcc, 0, v17
+79764177000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05324 v_cndmask_b32 v8, v8, v12, vcc
+79764181000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05328 v_cmp_lt_f32 vcc, 0, v14
+79764185000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05332 v_cndmask_b32 v1, v1, v11, vcc
+79764189000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05336 v_cmp_lt_f32 vcc, 0, v16
+79764193000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05340 v_cndmask_b32 v8, v8, v13, vcc
+79764197000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05344 v_mul_f32 v1, v4, v1
+79764201000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05348 v_mul_f32 v4, v5, v8
+79764205000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05352 v_cmp_class_f32 s[106:107], v2, s6
+79764209000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05360 v_cndmask_b32 v1, v1, v2, vcc
+79764213000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05364 v_cmp_class_f32 s[106:107], v3, s6
+79764217000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05372 v_cndmask_b32 v2, v4, v3, vcc
+79764221000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05376 v_add_u32 v3, vcc, -1, v9
+79764225000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05380 v_add_u32 v4, vcc, 1, v9
+79764229000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05384 v_cndmask_b32 v7, 1, v7, s[2:3]
+79764233000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05392 v_fma_f32 v5, -v4, v9, v6
+79764237000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05400 v_fma_f32 v8, -v3, v9, v6
+79764241000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05408 v_cmp_ge_f32 vcc, 0, v8
+79764245000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05412 v_cndmask_b32 v3, v9, v3, vcc
+79764249000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05416 v_cmp_lt_f32 vcc, 0, v5
+79764253000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05420 v_cndmask_b32 v3, v3, v4, vcc
+79764254000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05424 s_waitcnt lgkmcnt(0)
+79764257000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05428 v_mad_i64_i32 v4, s[0:1], v0, 12, s4
+79764261000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05436 v_mul_f32 v0, v7, v3
+79764265000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05440 v_cmp_class_f32 s[106:107], v6, s6
+79764269000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05448 v_cndmask_b32 v3, v0, v6, vcc
+79764270000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05452 flat_store_dwordx3 v[4:5], v1
+79764678000: system.cpu3.CUs0.wavefronts10: CU0: WF[1][0]: wave[4] JOIN: Detected branch join point
+79764744000: system.cpu3.CUs1.wavefronts10: CU1: WF[1][0]: wave[5] JOIN: Detected branch join point
+79764772000: system.cpu3.CUs3.wavefronts00: CU3: WF[0][0]: wave[3] JOIN: Detected branch join point
+79764865000: system.cpu3.CUs0.wavefronts00: Kernel 000 inst: 05460 s_endpgm
+79764865000: system.cpu3.CUs0.wavefronts00: CU0: WF[0][0]: wave[0] JOIN: Detected branch join point
+79765040000: system.cpu3.CUs1.wavefronts00: CU1: WF[0][0]: wave[1] JOIN: Detected branch join point
+79765065000: system.cpu3.CUs2.wavefronts00: CU2: WF[0][0]: wave[2] JOIN: Detected branch join point
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Kernel ID 0    start address 0x7fff5e771000             |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: |         | Kernel | Start | End   | Count | Latency      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2940  | 3128  | 1     | 412000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2672  | 2940  | 1     | 1668000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4644  | 4680  | 1     | 704000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2056  | 2364  | 1     | 1900000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 5048  | 736   | 1     | 96000        |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2020  | 2056  | 1     | 460000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2364  | 2672  | 1     | 376000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4960  | 4984  | 1     | 300000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4876  | 4908  | 1     | 228000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 872   | 1672  | 1     | 1182000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 872   | 980   | 1     | 1455000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2004  | 4332  | 1     | 492000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 2004  | 2020  | 1     | 264000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 824   | 872   | 1     | 960000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 980   | 1212  | 1     | 1542000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 980   | 824   | 1     | 970000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1212  | 1324  | 1     | 706000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1212  | 1500  | 1     | 921000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4808  | 4876  | 1     | 396000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1324  | 1476  | 1     | 427000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1672  | 1932  | 1     | 1612000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 3164  | 4292  | 1     | 96000        |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1984  | 2004  | 1     | 368000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1984  | 4680  | 1     | 724000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 804   | 980   | 1     | 2153000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4332  | 4644  | 1     | 1456000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1500  | 1652  | 1     | 1045000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1500  | 808   | 1     | 383000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 732   | 760   | 1     | 326000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4300  | 4332  | 1     | 368000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 760   | 804   | 1     | 668000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4704  | 4764  | 1     | 342000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 656   | 732   | 1     | 701000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 68    | 100   | 1     | 284000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 0     | 68    | 1     | 3377999      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1652  | 808   | 1     | 940000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 3128  | 3164  | 1     | 420000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1476  | 1500  | 1     | 552000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 5016  | 5048  | 1     | 304000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 5016  | 736   | 1     | 96000        |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 100   | 656   | 1     | 5135000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 808   | 824   | 1     | 368000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4984  | 5016  | 1     | 528000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 736   | 752   | 1     | 368000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4680  | 4704  | 1     | 296000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4908  | 4960  | 1     | 264000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 660   | 684   | 1     | 284000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 684   | 5460  | 1     | 3751000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 684   | 732   | 1     | 372000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4292  | 4300  | 1     | 176000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1932  | 1984  | 1     | 2562000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 1932  | 4984  | 1     | 1384000      |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 752   | 760   | 1     | 184000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 752   | 660   | 1     | 100000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | Measure | 0      | 4764  | 4808  | 1     | 484000       |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: | ~ 0 ~ Total Kernel Time ~ 1666729999                    |
+81405301000: system.cpu0.workload.drivers0.device.dispatcher: -----------------------------------------------------------
+took 0.002349 seconds.
+Result stored in out.ppm
+PASSED!
+Ticks: 83744151000
+Exiting because  exiting with last active thread context
+
+Time elapsed: 1m28.185s
